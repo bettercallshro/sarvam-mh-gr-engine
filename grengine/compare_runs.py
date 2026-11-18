@@ -62,6 +62,9 @@ def measures(r):
         "answer_first_flags": sum(1 for f in r.get("issues", []) if f.startswith("answer-first")),
         "quote_not_found": sum(1 for f in r.get("issues", []) if "quote not found" in f),
         "corrections": len(r.get("corrections", [])),
+        "product_shown": bool(chk) and bool((chk or {}).get("answer")),
+        "format_repaired": bool((chk or {}).get("format_repaired")),
+        "rule_flag": any(f.startswith("current-rule-first") for f in r.get("issues", [])),
         "cost": r.get("cost_inr", 0.0),
         "first": first_sentence(raw.get("answer") or ""),
     }
@@ -89,6 +92,27 @@ def main(argv=None):
             r.setdefault("case", meta[i]["case"])
 
     M = {(label, i): measures(q[i]) for label, _, q, _ in runs for i in ids if i in q}
+
+    # The current-rule-first code check, applied the same way to every run's scored
+    # reply (offline), so older runs that predate the check can be compared.
+    from .answer import Answerer, current_rule_check
+    answerer = Answerer()
+    ctx_cache = {}
+    for label, _, q, _ in runs:
+        for i in ids:
+            if i not in q:
+                continue
+            p = q[i].get("parsed_model_output")
+            res = {"applies": False, "ok": True}
+            if isinstance(p, dict):
+                if i not in ctx_cache:
+                    ctx_cache[i] = answerer.build_context(q[i]["question"])
+                try:
+                    res = current_rule_check(answerer, ctx_cache[i], p)
+                except Exception:
+                    pass
+            M[(label, i)]["rule_applies"] = res["applies"]
+            M[(label, i)]["rule_ok"] = res["ok"]
     labels = [l for l, _, _, _ in runs]
     n = len(ids)
 
@@ -96,7 +120,7 @@ def main(argv=None):
         vals = [M[(label, i)][key] for i in ids if (label, i) in M]
         return sum(bool(v) for v in vals)
 
-    L = ["# Before/after: F1 vs the fixed engine (two runs)\n",
+    L = ["# Before/after across runs\n",
          "Automatic measures only; they are proxies, not the hand scores. \"Raw\" is the model's "
          "own output; \"checked\" is after the product checks (repairs, drops, metadata).\n",
          "| Run | Log | Prompt |", "|---|---|---|"]
@@ -117,12 +141,18 @@ def main(argv=None):
         return ", ".join(f"{k} {v}" for k, v in sorted(c.items()))
     row("Format", fmt_counts)
     row("Format failures", lambda l: str(sum(1 for i in ids if M.get((l, i), {}).get("format") == "failed")))
+    row("Product answer shown (checked)", lambda l: f"{agg(l, 'product_shown')}/{n}")
+    row("…of which format repaired", lambda l: str(agg(l, "format_repaired")))
     row("Status as expected (raw)", lambda l: f"{agg(l, 'status_ok')}/{n}")
     row("Any gold GR cited or newer (raw)", lambda l: f"{agg(l, 'gold_any_raw')}/{n}")
     row("Any gold GR cited or newer (checked)", lambda l: f"{agg(l, 'gold_any_checked')}/{n}")
     row("All gold GRs cited or newer (raw)", lambda l: f"{agg(l, 'gold_all_raw')}/{n}")
     row("All gold GRs cited or newer (checked)", lambda l: f"{agg(l, 'gold_all_checked')}/{n}")
     row("Questions with a gold GR left unreviewed", lambda l: str(agg(l, "gold_unreviewed")))
+    row("Current rule first: holds / applies (code check, all runs)",
+        lambda l: f"{sum(1 for i in ids if M.get((l, i), {}).get('rule_applies') and M[(l, i)]['rule_ok'])}"
+                  f"/{agg(l, 'rule_applies')}")
+    row("Current-rule-first flags in the log (round 2 only)", lambda l: str(agg(l, "rule_flag")))
     row("Answer-first flags", lambda l: str(sum(M[(l, i)]["answer_first_flags"] for i in ids if (l, i) in M)))
     row("Quotes not found", lambda l: str(sum(M[(l, i)]["quote_not_found"] for i in ids if (l, i) in M)))
     row("Corrections by checks", lambda l: str(sum(M[(l, i)]["corrections"] for i in ids if (l, i) in M)))
