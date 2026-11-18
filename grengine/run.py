@@ -68,7 +68,8 @@ def question_record(q: dict, out: dict) -> dict:
         "model_content": out["model_content"],
         "parsed_model_output": out["parsed_model_output"],
         "raw_answer": out["raw_answer"],        # model output, no checks (scored in the eval)
-        "format": out["format"],                # ok | retried_ok | failed
+        "format": out["format"],                # ok | repaired | retried_ok | failed
+        "chosen_attempt": out["chosen_attempt"],
         "format_attempts": out["format_attempts"],  # every reply, with its schema errors
         "answer": out["result"],                # after the post-answer checks (the product)
         "corrections": out["corrections"],      # every change the checks made
@@ -210,7 +211,12 @@ def main(argv=None) -> int:
             "questions_with_corrections": sum(1 for r in records if r["corrections"]),
             "format": dict(Counter(r["format"] for r in records)),
             "format_failures": sum(1 for r in records if r["format"] == "failed"),
-            "format_retries": sum(1 for r in records if r["format"] != "ok"),
+            "format_retries": sum(1 for r in records if len(r["format_attempts"]) > 1),
+            "calls": sum(len(r["format_attempts"]) for r in records),
+            "retry_reasons": dict(Counter(a["why"] for r in records for a in r["format_attempts"][1:])),
+            "missing_review_attempts": sum(1 for r in records for a in r["format_attempts"] if a["missing_reviews"]),
+            "repairs": dict(Counter(x.split(" ", 1)[-1] if x.startswith("candidates_reviewed[") else x
+                                     for r in records for x in r["format_attempts"][r["chosen_attempt"]]["repairs"])),
         }
         log(summary)
 

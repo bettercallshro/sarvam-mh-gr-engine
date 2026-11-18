@@ -124,3 +124,60 @@ class TestRepair(TestChecks):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class TestRepairsAndCoverage(unittest.TestCase):
+    def test_missing_asked_for_code_becomes_null(self):
+        from grengine.answer import repair_reply
+        p, reps = repair_reply({"status": "answered", "answer": "x"})
+        self.assertIsNone(p["asked_for_code"])
+        self.assertEqual(len(reps), 1)
+
+    def test_code_keyed_review_flattened(self):
+        from grengine.answer import repair_reply
+        p, reps = repair_reply({"asked_for_code": None, "candidates_reviewed": [
+            {"202403051249430211": {"effect": "clarifies", "reason": "r"}}]})
+        self.assertEqual(p["candidates_reviewed"][0],
+                         {"code": "202403051249430211", "effect": "clarifies", "reason": "r"})
+        self.assertEqual(len(reps), 1)
+
+    def test_review_coverage(self):
+        from grengine.answer import review_coverage
+        parsed = {"candidates_reviewed": [{"code": "A", "effect": "cites_only", "reason": ""}]}
+        self.assertEqual(review_coverage(parsed, ["A", "B"], {}), ["B"])
+
+
+@unittest.skipUnless((INDEX_DIR / "grs.json").exists(), "index not built")
+class TestLayoutAndAnswerFirst(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.a = Answerer()
+
+    def test_retrieved_candidate_gets_its_own_block(self):
+        # Q18: the 19-03-2021 corrigendum is retrieved AND a candidate of 20-03-2018
+        ctx = self.a.build_context("Whose concurrence is needed for a consultant's scope of work?")
+        self.assertIn("202103191753279311", ctx.listed_candidates)
+        block = ctx.user_message.split("NEWER-GR CANDIDATES", 1)[1]
+        self.assertIn("code: 202103191753279311", block)
+        self.assertIn("Also RETRIEVED #", block)
+
+    def test_number_facts(self):
+        ctx = self.a.build_context("मातंस ३८१४/प्र.क्र.१७४/३९: what is the current limit?")
+        self.assertIn("NUMBER FACTS", ctx.user_message)
+        self.assertIn("202304131657547811", ctx.user_message.split("NUMBER FACTS", 1)[1].split("RETRIEVED", 1)[0])
+
+    def test_compact_context_is_shorter(self):
+        q = "Which university is responsible for the Academic module of the IUMS project?"
+        self.assertLess(len(self.a.build_context(q, compact=True).user_message),
+                        len(self.a.build_context(q).user_message))
+
+    def test_answer_first_flags(self):
+        ctx = Context("q", [], [], [], [CLOUD], "")
+        base = {"asked_for_code": CLOUD, "candidates_reviewed": [], "newer": [],
+                "cited": [{"code": CLOUD, "date": "29-01-2018", "title": "t", "quote": "q", "page": 1}]}
+        _, _, flags = self.a.finalize(ctx, dict(base, status="not_found",
+                                                answer="The circular sets a deadline. I couldn't find a GR on this in the corpus."))
+        self.assertTrue(any("first sentence does not say" in f for f in flags))
+        self.assertTrue(any("while citing the asked-for GR" in f for f in flags))
+        _, _, flags = self.a.finalize(ctx, dict(base, status="answered", answer="Yes. It is amended."))
+        self.assertFalse(any(f.startswith("answer-first") for f in flags))
