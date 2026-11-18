@@ -1,0 +1,12 @@
+# Secrets
+.env
+.env.*
+
+# Corpus clone and built index (re-created by scripts/fetch_corpus.sh and grengine.build_index)
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
