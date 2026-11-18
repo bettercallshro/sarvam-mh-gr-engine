@@ -5,7 +5,8 @@ The model gets full texts. What it returns is kept twice:
                   (the eval scores this)
   answer          after the post-answer checks (what the product shows)
 and every change the checks make is logged as a correction:
-  - cited/newer codes must be GRs that were given to it (others are dropped)
+  - cited/newer codes must be GRs that were given to it; a mistyped code whose
+    stated date matches exactly one given GR is repaired, others are dropped
   - date, title and url always come from the metadata (model values replaced)
   - each quote is searched in the GR's original text; its page is taken from
     where it is found (quotes not found are flagged, not removed)
@@ -24,7 +25,7 @@ from .normalize import to_ascii_digits
 from .search import INDEX_DIR, Retriever
 
 PROMPT_DIR = Path(__file__).parent / "prompts"
-PROMPT_VERSION = "answer_v1"
+PROMPT_VERSION = "answer_v2"
 
 TOP_K = 5                 # retrieved GRs given in full
 CANDIDATE_SOURCES = 3     # newer-GR candidates are collected for the top 3 retrieved GRs
@@ -34,19 +35,12 @@ MAX_EN_CHARS = 5000       # English machine translation of Marathi GRs, for refe
 MAX_TOKENS = 4096
 REASONING_EFFORT = "low"
 TEMPERATURE = 0.2
-CHARS_PER_TOKEN_ESTIMATE = 2.0  # conservative, for the pre-call spend check only
+CHARS_PER_TOKEN_ESTIMATE = 2.0  # conservative (measured ~3.9 on Q7), for the pre-call spend check only
 
 ANSWER_SCHEMA = {
     "type": "object",
     "properties": {
-        "status": {"type": "string", "enum": ["answered", "not_found"]},
-        "answer": {"type": "string"},
         "asked_for_code": {"type": ["string", "null"]},
-        "cited": {"type": "array", "items": {
-            "type": "object",
-            "properties": {"code": {"type": "string"}, "date": {"type": "string"}, "title": {"type": "string"},
-                           "quote": {"type": "string"}, "page": {"type": "integer"}},
-            "required": ["code", "date", "title", "quote", "page"], "additionalProperties": False}},
         "candidates_reviewed": {"type": "array", "items": {
             "type": "object",
             "properties": {"code": {"type": "string"},
@@ -59,8 +53,15 @@ ANSWER_SCHEMA = {
             "properties": {"code": {"type": "string"}, "date": {"type": "string"},
                            "what_changed": {"type": "string"}},
             "required": ["code", "date", "what_changed"], "additionalProperties": False}},
+        "cited": {"type": "array", "items": {
+            "type": "object",
+            "properties": {"code": {"type": "string"}, "date": {"type": "string"}, "title": {"type": "string"},
+                           "quote": {"type": "string"}, "page": {"type": "integer"}},
+            "required": ["code", "date", "title", "quote", "page"], "additionalProperties": False}},
+        "answer": {"type": "string"},
+        "status": {"type": "string", "enum": ["answered", "not_found"]},
     },
-    "required": ["status", "answer", "asked_for_code", "cited", "candidates_reviewed", "newer"],
+    "required": ["asked_for_code", "candidates_reviewed", "newer", "cited", "answer", "status"],
     "additionalProperties": False,
 }
 
@@ -92,7 +93,10 @@ class Answerer:
                 d = self.pages.setdefault(p["code"], {"orig": {}, "en": {}})
                 d["orig"][p["page"]] = p["text_orig"]
                 d["en"][p["page"]] = p["text_en"]
-        self.system_prompt = load_prompt()
+        # JSON mode (response_format json_object) with the schema stated in the prompt.
+        # Strict json_schema mode was tried first: on Q7 it returned an empty
+        # "not_found" without reading the texts (runs/experiments/2026-11-18-q7-format.json).
+        self.system_prompt = load_prompt() + "\n\nJSON schema of the reply:\n" + json.dumps(ANSWER_SCHEMA)
 
     # ---- context ------------------------------------------------------------
     def _doc(self, code: str, header: str) -> str:
@@ -234,16 +238,28 @@ class Answerer:
         def fix(check, where, before, after):
             corrections.append({"check": check, "where": where, "before": before, "after": after})
 
-        def resolve(code) -> str | None:
+        given_by_date: dict[str, set] = {}
+        for c in ctx.given_codes:
+            for m in self.rt.members[self.rt.group_of[c]]:
+                given_by_date.setdefault(self.rt.grs[m]["date"], set()).add(self.rt.group_of[m])
+
+        def resolve(code, date=None, where=None) -> str | None:
             code = (code or "").strip()
             if code in self.rt.group_of and self.rt.group_of[code] in given_groups:
                 return code
+            # A mistyped code whose stated date matches exactly one GR given to the
+            # model is repaired to that GR (logged as a correction).
+            groups = given_by_date.get((date or "").strip(), set())
+            if code not in self.rt.group_of and len(groups) == 1:
+                fixed = next(iter(groups))
+                fix("repair_code_by_date", f"{where}.code", code, fixed)
+                return fixed
             return None
 
         cited = []
         for i, c in enumerate(parsed.get("cited", [])):
             where = f"cited[{i}]"
-            code = resolve(c.get("code"))
+            code = resolve(c.get("code"), c.get("date"), where)
             if code is None:
                 known = (c.get("code") or "").strip() in self.rt.group_of
                 fix("drop_unknown_code", where,
@@ -276,7 +292,7 @@ class Answerer:
         newer = []
         for i, n in enumerate(parsed.get("newer", [])):
             where = f"newer[{i}]"
-            code = resolve(n.get("code"))
+            code = resolve(n.get("code"), n.get("date"), where)
             if code is None:
                 known = (n.get("code") or "").strip() in self.rt.group_of
                 fix("drop_unknown_code", where, {"code": n.get("code"), "date": n.get("date")},
@@ -309,7 +325,11 @@ class Answerer:
         return result, corrections, flags
 
 
-def parse_json(text: str | None) -> dict:
+def parse_json(text: str | None) -> tuple[dict, list[str]]:
+    """Parse the model's JSON. Returns (object, duplicate top-level keys).
+
+    With a duplicated key the last value wins (as json.loads does); the
+    duplicate is reported so it shows in the run log."""
     if not text:
         raise ValueError("empty content")
     text = text.strip()
@@ -317,7 +337,17 @@ def parse_json(text: str | None) -> dict:
     start, end = text.find("{"), text.rfind("}")
     if start < 0 or end < start:
         raise ValueError("no JSON object in content")
-    return json.loads(text[start:end + 1])
+    dups: list[str] = []
+
+    def hook(pairs):
+        seen = set()
+        for k, _ in pairs:
+            if k in seen:
+                dups.append(k)
+            seen.add(k)
+        return dict(pairs)
+    obj = json.loads(text[start:end + 1], object_pairs_hook=hook)
+    return obj, dups
 
 
 def answer_question(answerer: Answerer, client, question: str) -> dict:
@@ -329,19 +359,21 @@ def answer_question(answerer: Answerer, client, question: str) -> dict:
     t0 = time.monotonic()
     call = client.chat(messages, max_tokens=MAX_TOKENS, reasoning_effort=REASONING_EFFORT,
                        temperature=TEMPERATURE,
-                       response_format={"type": "json_schema",
-                                        "json_schema": {"name": "gr_answer", "strict": True, "schema": ANSWER_SCHEMA}},
+                       response_format={"type": "json_object"},
                        prompt_tokens_estimate=est_tokens)
     choice = (call.response.get("choices") or [{}])[0]
     msg = choice.get("message") or {}
     issues, corrections, parsed, raw_answer, result = [], [], None, None, None
     try:
-        parsed = parse_json(msg.get("content"))
+        parsed, dups = parse_json(msg.get("content"))
     except (ValueError, json.JSONDecodeError) as e:
         issues.append(f"could not parse model output: {type(e).__name__}: {e}")
+        dups = []
     if parsed is not None:
         raw_answer = answerer.raw_answer(parsed)
         result, corrections, issues = answerer.finalize(ctx, parsed)
+        if dups:
+            issues.append(f"duplicate keys in model output (last value kept): {', '.join(sorted(set(dups)))}")
     if choice.get("finish_reason") != "stop":
         issues.append(f"finish_reason={choice.get('finish_reason')}")
     return {
@@ -360,5 +392,6 @@ def answer_question(answerer: Answerer, client, question: str) -> dict:
         "attempts": call.attempts,
         "retries": call.retries,
         "settings": {"model": "sarvam-105b", "max_tokens": MAX_TOKENS, "reasoning_effort": REASONING_EFFORT,
-                     "temperature": TEMPERATURE, "prompt_version": PROMPT_VERSION},
+                     "temperature": TEMPERATURE, "response_format": "json_object",
+                     "prompt_version": PROMPT_VERSION},
     }

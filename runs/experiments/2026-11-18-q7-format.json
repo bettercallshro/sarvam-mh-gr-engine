@@ -1,0 +1,47 @@
+[
+ {
+  "variant": "json_object_low",
+  "usage": {
+   "prompt_tokens": 8673,
+   "cached_tokens": 800,
+   "completion_tokens": 447,
+   "reasoning_tokens": 0,
+   "total_tokens": 9120,
+   "cost_inr": 0.090105
+  },
+  "latency_s": 2.5156811049999988,
+  "finish_reason": "stop",
+  "content": "{\"status\":\"answered\",\"answer\":\"The maximum spend on a laptop or tablet for an IAS, IPS or IFS officer is Rs. 1,20,000, as fixed in the GR dated 12-04-2023 which amended the earlier ceiling of Rs. 85,000.\", \"asked_for_code\":null,\"cited\":[{\"code\":\"202304131657547811\",\"date\":\"12-04-2023\",\"title\":\"To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.\",\"quote\":\"सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी\",\"page\":1},{\"code\":\"201912241451082111\",\"date\":\"24-12-2019\",\"title\":\"To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.\",\"quote\":\"सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी\",\"page\":1}],\"candidates_reviewed\":[{\"code\":\"202304131657547811\",\"effect\":\"amends\",\"reason\":\"The GR dated 12-04-2023 explicitly revises the maximum purchase limit from Rs. 85,000 to Rs. 1,20,000 by stating 'सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी' in the re-read paragraph, replacing the prior figure.\"}],\"newer\":[{\"code\":\"202304131657547811\",\"date\":\"12-04-2023\",\"what_changed\":\"Increased the maximum purchase limit for laptops/tablets for IAS, IPS, IFS officers from Rs. 85,000 to Rs. 1,20,000.\"}]}",
+  "reasoning_chars": 0
+ },
+ {
+  "variant": "no_format_low",
+  "usage": {
+   "prompt_tokens": 8673,
+   "cached_tokens": 8640,
+   "completion_tokens": 4096,
+   "reasoning_tokens": 4095,
+   "total_tokens": 12769,
+   "cost_inr": 0.10489
+  },
+  "latency_s": 7.788205949000002,
+  "finish_reason": "length",
+  "content": null,
+  "reasoning_chars": 11760
+ },
+ {
+  "variant": "json_schema_medium",
+  "usage": {
+   "prompt_tokens": 8315,
+   "cached_tokens": 8256,
+   "completion_tokens": 161,
+   "reasoning_tokens": 0,
+   "total_tokens": 8476,
+   "cost_inr": 0.006679
+  },
+  "latency_s": 1.0819122829999799,
+  "finish_reason": "stop",
+  "content": "{\"status\": \"not_found\", \"answer\": \"I couldn't find a GR on this in the corpus. The GR 201912241451082111 dated 24-12-2019 mentions the maximum spend for IAS, IPS and IFS officers as Rs. 85,000, but the question asks about a different date. The GR 202304131657547811 dated 12-04-2023 updates this limit to Rs. 120,000.\", \"asked_for_code\": \"\", \"cited\": [], \"candidates_reviewed\": [], \"newer\": []}",
+  "reasoning_chars": 0
+ }
+]

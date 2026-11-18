@@ -56,5 +56,21 @@ class TestChecks(unittest.TestCase):
         self.assertIn("not given to the model", corrections[0]["after"])
 
 
+class TestRepair(TestChecks):
+    def test_mistyped_code_repaired_by_date(self):
+        parsed = {"status": "answered", "answer": "x", "cited": [], "candidates_reviewed": [],
+                  "newer": [{"code": "202304131657523211", "date": "12-04-2023", "what_changed": "x"}]}
+        result, corrections, _ = self.a.finalize(self.ctx([LAPTOP, "202304131657547811"]), parsed)
+        self.assertEqual(result["newer"][0]["code"], "202304131657547811")
+        self.assertEqual(corrections[0]["check"], "repair_code_by_date")
+
+    def test_unknown_code_with_unmatched_date_dropped(self):
+        parsed = {"status": "answered", "answer": "x", "cited": [], "candidates_reviewed": [],
+                  "newer": [{"code": "202304131657523211", "date": "01-01-2023", "what_changed": "x"}]}
+        result, corrections, _ = self.a.finalize(self.ctx([LAPTOP]), parsed)
+        self.assertEqual(result["newer"], [])
+        self.assertEqual(corrections[0]["check"], "drop_unknown_code")
+
+
 if __name__ == "__main__":
     unittest.main()
