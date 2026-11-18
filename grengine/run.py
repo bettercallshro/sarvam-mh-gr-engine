@@ -18,17 +18,27 @@ import argparse
 import csv
 import json
 import os
+import subprocess
 import sys
 from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
-from .answer import Answerer, answer_question
+from .answer import (MAX_TOKENS, PROMPT_VERSION, REASONING_EFFORT, TEMPERATURE, Answerer,
+                     answer_question)
 from .sarvam import IST, SarvamClient, SarvamError, SpendTracker
 
 QUESTIONS = Path("eval/questions.jsonl")
 RUNS_DIR = Path("runs")
 DEFAULT_RUN_CAP_INR = 20.0
+
+
+def _git_commit() -> str | None:
+    try:
+        return subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True,
+                              check=True).stdout.strip()
+    except Exception:
+        return None
 
 
 def run_cap() -> float:
@@ -138,6 +148,10 @@ def main(argv=None) -> int:
             f.flush()
 
         log({"type": "run_start", "name": args.name, "started": datetime.now(IST).isoformat(),
+             "prompt_version": PROMPT_VERSION,
+             "settings": {"model": "sarvam-105b", "max_tokens": MAX_TOKENS, "reasoning_effort": REASONING_EFFORT,
+                          "temperature": TEMPERATURE, "response_format": "json_object"},
+             "git_commit": _git_commit(),
              "question_ids": [q["id"] for q in questions], "run_cap_inr": cap,
              "daily_cap_inr": client.spend.cap, "daily_spent_before_inr": client.spend.spent()})
         for i, q in enumerate(questions, 1):

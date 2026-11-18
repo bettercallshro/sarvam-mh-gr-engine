@@ -138,7 +138,7 @@ class Answerer:
     def build_context(self, question: str) -> Context:
         hits = self.rt.search(question, k=TOP_K)
         retrieved = [{"code": h.group, "date": self.rt.grs[h.group]["date"], "title": self.rt.grs[h.group]["title"],
-                      "score": h.score, "reasons": h.reasons} for h in hits]
+                      "score": h.score, "reasons": h.reasons, "passages": h.passages} for h in hits]
         given = [h.group for h in hits]
 
         cands, seen = [], set(given)
