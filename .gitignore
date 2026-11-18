@@ -10,3 +10,6 @@ __pycache__/
 *.pyc
 .venv/
 venv/
+
+# Local daily spend ledger
+runs/spend/

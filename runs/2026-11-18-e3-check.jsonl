@@ -1,0 +1,2 @@
+{"type": "run_start", "name": "e3-check", "started": "2026-11-18T18:44:50.083988+05:30", "question_ids": [7], "run_cap_inr": 20.0, "daily_cap_inr": 50.0, "daily_spent_before_inr": 0.0}
+{"type": "run_end", "finished": "2026-11-18T18:44:51.766997+05:30", "completed": 0, "planned": 1, "stopped": "Q7: CreditsExhaustedError: HTTP 402 insufficient_quota_error: No credits available.. Credits exhausted; stopping, not retrying.", "cost_inr": 0.0, "prompt_tokens": 0, "completion_tokens": 0, "reasoning_tokens": 0, "cached_tokens": 0, "daily_spent_after_inr": 0.0}
