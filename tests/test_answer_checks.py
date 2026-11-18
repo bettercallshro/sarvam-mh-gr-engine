@@ -181,3 +181,13 @@ class TestLayoutAndAnswerFirst(unittest.TestCase):
         self.assertTrue(any("while citing the asked-for GR" in f for f in flags))
         _, _, flags = self.a.finalize(ctx, dict(base, status="answered", answer="Yes. It is amended."))
         self.assertFalse(any(f.startswith("answer-first") for f in flags))
+
+
+@unittest.skipUnless((INDEX_DIR / "grs.json").exists(), "index not built")
+class TestOddShapes(unittest.TestCase):
+    def test_raw_answer_tolerates_strings_in_lists(self):
+        a = Answerer()
+        raw = a.raw_answer({"status": "answered", "answer": "x", "cited": ["201801291824268911"],
+                            "newer": "none"})
+        self.assertEqual(raw["cited"], [{"raw": "201801291824268911"}])
+        self.assertEqual(raw["newer"], [{"raw": "none"}])

@@ -249,14 +249,29 @@ class Answerer:
         return ctx._dates
 
     def raw_answer(self, parsed: dict) -> dict:
-        """The model's output in the contract shape, with no checks applied."""
+        """The model's output in the contract shape, with no checks applied.
+        Works on any reply shape: list items that are not objects are kept as {"raw": item}."""
+        def items(key):
+            val = parsed.get(key)
+            return val if isinstance(val, list) else ([] if val is None else [val])
+
+        def cited(c):
+            if not isinstance(c, dict):
+                return {"raw": c}
+            return {"code": c.get("code"), "date": c.get("date"), "title": c.get("title"), "url": None,
+                    "quote": c.get("quote", ""), "page": c.get("page")}
+
+        def newer(n):
+            if not isinstance(n, dict):
+                return {"raw": n}
+            return {"code": n.get("code"), "date": n.get("date"), "what_changed": n.get("what_changed", "")}
+
+        ans = parsed.get("answer")
         return {
             "status": parsed.get("status"),
-            "answer": (parsed.get("answer") or "").strip(),
-            "cited": [{"code": c.get("code"), "date": c.get("date"), "title": c.get("title"), "url": None,
-                       "quote": c.get("quote", ""), "page": c.get("page")} for c in parsed.get("cited", [])],
-            "newer": [{"code": n.get("code"), "date": n.get("date"), "what_changed": n.get("what_changed", "")}
-                      for n in parsed.get("newer", [])],
+            "answer": ans.strip() if isinstance(ans, str) else ("" if ans is None else str(ans)),
+            "cited": [cited(c) for c in items("cited")],
+            "newer": [newer(n) for n in items("newer")],
             "coverage": COVERAGE,
         }
 
@@ -566,10 +581,17 @@ def answer_question(answerer: Answerer, client, question: str) -> dict:
 
     issues, corrections, raw_answer, result = [], [], None, None
     parsed = pick["parsed"]
-    if parsed is not None:
-        raw_answer = answerer.raw_answer(parsed)
-        if valid:
-            result, corrections, issues = answerer.finalize(pick_ctx, parsed)
+    processing_error = None
+    try:
+        if parsed is not None:
+            raw_answer = answerer.raw_answer(parsed)
+            if valid:
+                result, corrections, issues = answerer.finalize(pick_ctx, parsed)
+    except Exception as e:  # never lose a reply: log it and count it as a format failure
+        processing_error = f"{type(e).__name__}: {e}"
+        result, corrections = None, []
+        issues = [f"processing error (reply kept in log): {processing_error}"]
+        fmt = "failed"
     if not valid:
         issues.append("format failure after retry: " + "; ".join(pick["errors"]))
     if pick["finish_reason"] != "stop":
