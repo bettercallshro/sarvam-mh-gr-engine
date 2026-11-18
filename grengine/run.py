@@ -9,6 +9,8 @@ run_end line. Each question line has: question, retrieved GRs and the exact
 prompt (which holds the passages and candidate texts), prompt version, raw
 response, parsed answer, latency, tokens (incl. reasoning and cached) and cost.
 
+Before any call, a preflight estimates the run's worst-case cost from prompt
+sizes and refuses to start above RUN_SPEND_CAP_INR (default 20).
 The run stops (and says why in run_end) on:
   - any API error, a missing key, exhausted credits, or the daily cap
   - an unparseable model reply
@@ -26,11 +28,12 @@ from pathlib import Path
 
 from .answer import (MAX_TOKENS, PROMPT_VERSION, REASONING_EFFORT, TEMPERATURE, Answerer,
                      answer_question)
-from .sarvam import IST, SarvamClient, SarvamError, SpendTracker
+from .sarvam import IST, SarvamClient, SarvamError, SpendTracker, worst_case_cost_inr
 
 QUESTIONS = Path("eval/questions.jsonl")
 RUNS_DIR = Path("runs")
 DEFAULT_RUN_CAP_INR = 20.0
+PREFLIGHT_CHARS_PER_TOKEN = 3.5
 
 
 def _git_commit() -> str | None:
@@ -141,6 +144,19 @@ def main(argv=None) -> int:
         n += 1
         path = RUNS_DIR / f"{day}-{args.name}-{n}.jsonl"
 
+    # Preflight: worst-case cost of this run from prompt sizes, before any call.
+    # 3.5 characters per token is below the 3.9 measured on Q7 (so it overestimates),
+    # and every reply is assumed to use the full max_tokens.
+    est_prompt_tokens = sum(
+        int((len(answerer.system_prompt) + len(answerer.build_context(q["question"]).user_message)) / PREFLIGHT_CHARS_PER_TOKEN)
+        for q in questions)
+    worst = worst_case_cost_inr(est_prompt_tokens, MAX_TOKENS * len(questions))
+    print(f"Preflight: {len(questions)} questions, ~{est_prompt_tokens} prompt tokens, worst case Rs {worst:.2f} "
+          f"(run cap Rs {cap:.2f})", flush=True)
+    if worst > cap:
+        print(f"STOP: worst-case cost Rs {worst:.2f} is over the run cap Rs {cap:.2f}. No call made.", file=sys.stderr)
+        return 3
+
     records, spent, stop_reason = [], 0.0, None
     with path.open("w", encoding="utf-8") as f:
         def log(obj):
@@ -153,6 +169,7 @@ def main(argv=None) -> int:
                           "temperature": TEMPERATURE, "response_format": "json_object"},
              "git_commit": _git_commit(),
              "question_ids": [q["id"] for q in questions], "run_cap_inr": cap,
+             "preflight_worst_case_inr": round(worst, 4), "preflight_prompt_tokens": est_prompt_tokens,
              "daily_cap_inr": client.spend.cap, "daily_spent_before_inr": client.spend.spent()})
         for i, q in enumerate(questions, 1):
             try:
