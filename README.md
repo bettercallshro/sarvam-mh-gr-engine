@@ -19,12 +19,12 @@ Independent case study, not affiliated with Sarvam.
 |---|---|---|
 | E1 | Corpus, index, twin detection, citation graph | done |
 | E2 | Retrieval and retrieval check on the 37 questions | done: 37/37 in top 5 ([report](eval/results/e2_retrieval.md)) |
-| E3–E6 | Answer step (`sarvam-105b`), logging, key handling, smoke test | not started |
-| F1 | Baseline run of all 37 | not started |
+| E3–E6 | Answer step (`sarvam-105b`), logging, key handling, smoke test | done (reports in eval/results/) |
+| F1 | Baseline run of all 37 | run, not yet scored ([report](eval/results/f1_baseline.md), [CSV](runs/2026-11-18-baseline.csv)) |
 
 ## How to run
 
-Requires Python 3.10+ and git. E1 uses only the standard library.
+Requires Python 3.10+ and git. Standard library only.
 
 ```bash
 ./scripts/fetch_corpus.sh          # sparse clone of the IT-department GRs into data/mahGRs
@@ -32,6 +32,17 @@ python -m grengine.build_index     # writes data/index/ and prints a report
 python -m grengine.eval_retrieval  # retrieval check, writes eval/results/e2_retrieval.md
 python -m unittest discover -s tests
 ```
+
+Answer step (needs a Sarvam API key in `SARVAM_API_KEY`; `.env` is git-ignored):
+
+```bash
+python -m grengine.run --name smoke --ids 1,7,11,30,36
+python -m grengine.run --name baseline --csv     # all 37 + hand-scoring CSV
+```
+
+Guards: `DAILY_SPEND_CAP_INR` (default 50) and `RUN_SPEND_CAP_INR` (default 20). Our own
+rate limit is 30 requests a minute. On 402 the run stops; 429 and 5xx are retried with
+backoff.
 
 ## Layout
 
@@ -46,9 +57,14 @@ grengine/
   build_index.py   E1 entry point
   search.py        BM25 over both text files + lookup by date, GR number, missing cited date
   eval_retrieval.py  E2 retrieval check on the 37 questions
+  answer.py        E3 answer step: context, schema validation and retry, post-answer checks
+  prompts/         answer prompts (current: answer_v2.md)
+  sarvam.py        Sarvam API client: key, retries, rate limit, cost, spend cap
+  run.py           runs questions, one JSONL log per run in runs/, scoring CSV
 scripts/fetch_corpus.sh
 eval/questions.jsonl
-eval/results/      retrieval check reports
+eval/results/      step reports (E2 to F1)
+runs/              run logs and the scoring CSV
 tests/
 ```
 
