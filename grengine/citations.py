@@ -149,11 +149,24 @@ def build_graph(grs: list[GR], group_of: dict[str, str]) -> dict:
     return {"edges": edge_list, "unresolved": unresolved_list}
 
 
+# Strongest first. "same_file" alone is never proof of a newer GR, only a candidate.
+EVIDENCE_RANK = {"date+order": 0, "order": 1, "date": 2, "same_file": 3}
+
+
+def best_evidence(evidence: list[str]) -> str:
+    return min(evidence, key=EVIDENCE_RANK.__getitem__)
+
+
 def newer_candidates(code: str, graph: dict, group_of: dict[str, str]) -> list[dict]:
     """GRs that cite `code` (or its twin), directly or through a chain of citations.
 
     These are candidates for "a newer GR changes this"; the answer step reads
-    their text to decide what each one actually does.
+    their text to decide what each one actually does. Each candidate gets:
+      best_evidence   strongest evidence type on the edge
+      candidate_only  True when the only evidence is a shared file number
+      hops            1 = cites `code` directly; 2+ = cites a GR that does
+    Ranked by evidence (date+order, order, date, same_file), then hops, then
+    newest first.
     """
     cited_by = defaultdict(list)
     for e in graph["edges"]:
@@ -161,12 +174,16 @@ def newer_candidates(code: str, graph: dict, group_of: dict[str, str]) -> list[d
     seen, out, stack = {group_of[code]}, [], [(group_of[code], 0)]
     while stack:
         gid, depth = stack.pop()
-        for e in cited_by.get(gid, []):
+        # strongest edges first, so a GR reached by two routes keeps the better one
+        for e in sorted(cited_by.get(gid, []), key=lambda e: EVIDENCE_RANK[best_evidence(e["evidence"])]):
             src_gid = group_of[e["from"]]
             if src_gid in seen:
                 continue
             seen.add(src_gid)
-            out.append({**e, "hops": depth + 1})
+            best = best_evidence(e["evidence"])
+            out.append({**e, "hops": depth + 1, "best_evidence": best,
+                        "candidate_only": best == "same_file"})
             stack.append((src_gid, depth + 1))
-    out.sort(key=lambda e: date_key(e["from_date"]))
+    out.sort(key=lambda e: (EVIDENCE_RANK[e["best_evidence"]], e["hops"],
+                            tuple(-x for x in date_key(e["from_date"]))))
     return out
