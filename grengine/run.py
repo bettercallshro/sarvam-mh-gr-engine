@@ -70,6 +70,7 @@ def question_record(q: dict, out: dict) -> dict:
         "raw_answer": out["raw_answer"],        # model output, no checks (scored in the eval)
         "format": out["format"],                # ok | repaired | retried_ok | failed
         "chosen_attempt": out["chosen_attempt"],
+        "rule_check": out["rule_check"],
         "format_attempts": out["format_attempts"],  # every reply, with its schema errors
         "answer": out["result"],                # after the post-answer checks (the product)
         "corrections": out["corrections"],      # every change the checks made
@@ -214,6 +215,9 @@ def main(argv=None) -> int:
             "format_retries": sum(1 for r in records if len(r["format_attempts"]) > 1),
             "calls": sum(len(r["format_attempts"]) for r in records),
             "retry_reasons": dict(Counter(a["why"] for r in records for a in r["format_attempts"][1:])),
+            "format_repaired_in_product": sum(1 for r in records if (r["answer"] or {}).get("format_repaired")),
+            "rule_check_failed_final": sum(1 for r in records if (r.get("rule_check") or {}).get("ok") is False),
+            "rule_retries": sum(1 for r in records for a in r["format_attempts"] if a["why"].startswith("current rule")),
             "missing_review_attempts": sum(1 for r in records for a in r["format_attempts"] if a["missing_reviews"]),
             "repairs": dict(Counter(x.split(" ", 1)[-1] if x.startswith("candidates_reviewed[") else x
                                      for r in records for x in r["format_attempts"][r["chosen_attempt"]]["repairs"])),

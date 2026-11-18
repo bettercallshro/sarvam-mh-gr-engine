@@ -191,3 +191,52 @@ class TestOddShapes(unittest.TestCase):
                             "newer": "none"})
         self.assertEqual(raw["cited"], [{"raw": "201801291824268911"}])
         self.assertEqual(raw["newer"], [{"raw": "none"}])
+
+
+@unittest.skipUnless((INDEX_DIR / "grs.json").exists(), "index not built")
+class TestRound2(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.a = Answerer()
+        cls.q18 = "Whose concurrence is needed for a consultant's scope of work?"
+        cls.ctx18 = cls.a.build_context(cls.q18)
+
+    def parsed18(self, answer):
+        return {"asked_for_code": "201803201319308011", "status": "answered", "answer": answer, "cited": [],
+                "candidates_reviewed": [{"code": "202103191753279311", "effect": "amends"}],
+                "newer": [{"code": "202103191753279311", "date": "19-03-2021",
+                           "what_changed": "Changed the required concurrence from DIT to ACS / PS / Secretary of the concerned Department."}]}
+
+    def test_rule_check_fails_when_original_rule_first(self):
+        from grengine.answer import current_rule_check
+        rc = current_rule_check(self.a, self.ctx18, self.parsed18(
+            "The 2018 GR requires concurrence of DIT. Later this changed."))
+        self.assertTrue(rc["applies"])
+        self.assertFalse(rc["ok"])
+
+    def test_rule_check_passes_with_newest_date_or_new_rule(self):
+        from grengine.answer import current_rule_check
+        for ans in ("Since 19-03-2021, the department's ACS/PS/Secretary must concur. Earlier, DIT did.",
+                    "The concurrence of the ACS / PS / Secretary of the department is needed. Earlier, DIT."):
+            self.assertTrue(current_rule_check(self.a, self.ctx18, self.parsed18(ans))["ok"], ans)
+
+    def test_rule_check_skips_not_found(self):
+        from grengine.answer import current_rule_check
+        p = dict(self.parsed18("I couldn't find a GR on this in the corpus."), status="not_found")
+        self.assertFalse(current_rule_check(self.a, self.ctx18, p)["applies"])
+
+    def test_review_reason_is_optional(self):
+        good = {"asked_for_code": None, "candidates_reviewed": [{"code": "1", "effect": "amends"}],
+                "newer": [], "cited": [], "answer": "x", "status": "answered"}
+        self.assertEqual(validate(good, []), [])
+
+    def test_failed_format_still_gives_product_answer(self):
+        from grengine.answer import sanitize_for_product
+        clean, fixes = sanitize_for_product({"answer": "Group C and D.", "status": " ",
+                                             "cited": ["x", {"code": "202002241155355511"}], "newer": "none"})
+        self.assertEqual(clean["status"], "answered")
+        self.assertEqual(clean["cited"], [{"code": "202002241155355511"}])
+        self.assertEqual(clean["newer"], [])
+        self.assertTrue(all(f["check"] == "format_repair" for f in fixes))
+        result, corrections, flags = self.a.finalize(self.ctx18, clean)
+        self.assertEqual(result["answer"], "Group C and D.")

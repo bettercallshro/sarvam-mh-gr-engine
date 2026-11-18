@@ -26,7 +26,7 @@ from .orders import find_order_keys, key_str
 from .search import INDEX_DIR, Retriever
 
 PROMPT_DIR = Path(__file__).parent / "prompts"
-PROMPT_VERSION = "answer_v3"
+PROMPT_VERSION = "answer_v4"
 
 TOP_K = 5                 # retrieved GRs given in full
 CANDIDATE_SOURCES = 3     # newer-GR candidates are collected for the top 3 retrieved GRs
@@ -49,7 +49,7 @@ ANSWER_SCHEMA = {
                            "effect": {"type": "string", "enum": ["amends", "replaces", "stays", "extends",
                                                                   "clarifies", "cites_only", "unrelated"]},
                            "reason": {"type": "string"}},
-            "required": ["code", "effect", "reason"], "additionalProperties": False}},
+            "required": ["code", "effect"], "additionalProperties": False}},
         "newer": {"type": "array", "items": {
             "type": "object",
             "properties": {"code": {"type": "string"}, "date": {"type": "string"},
@@ -448,7 +448,7 @@ def validate(parsed: dict | None, dups: list[str]) -> list[str]:
     afc = parsed.get("asked_for_code")
     if "asked_for_code" in parsed and afc is not None and not isinstance(afc, str):
         errs.append("asked_for_code is not a string or null")
-    for arr, item_req in (("candidates_reviewed", ("code", "effect", "reason")),
+    for arr, item_req in (("candidates_reviewed", ("code", "effect")),
                           ("newer", ("code", "date", "what_changed")),
                           ("cited", ("code", "date", "title", "quote", "page"))):
         val = parsed.get(arr)
@@ -529,18 +529,144 @@ def _attempt(client, messages, est_tokens, listed, group_of, why) -> dict:
             "parsed": parsed, "dups": dups, "repairs": repairs, "errors": errors, "missing_reviews": missing}
 
 
+CHANGING_EFFECTS = ("amends", "replaces")
+_NUM = re.compile(r"\d[\d,]*(?:\.\d+)?")
+
+
+def _norm_num(x: str) -> str:
+    return x.replace(",", "").lstrip("0") or "0"
+
+
+def _values(text: str) -> set[str]:
+    """Dates (as dd-mm-yyyy) and other numbers (commas removed, 2+ digits) in a text."""
+    t = to_ascii_digits(text or "")
+    found = find_dates(t)
+    vals = {d.date for d in found}
+    for d in sorted(found, key=lambda d: -d.start):  # numbers inside dates are not values
+        t = t[:d.start] + " " + t[d.end:]
+    vals |= {_norm_num(n) for n in _NUM.findall(t) if len(_norm_num(n)) >= 2}
+    return vals
+
+
+# Words that describe a change rather than state the rule
+_CHANGE_WORDS = set("""amend amended amendment amends replace replaced replaces change changed changes
+paragraph para point line add added adds clarify clarified clarifies extend extended extends earlier
+new rule govern government resolution circular corrigendum addendum dated date read instead from
+require required requires gr grs original first word words supersede supersedes superseded
+revoke revokes revoked cancel cancels cancelled withdraw withdrawn stay stayed stays""".split())
+
+
+def _words(text: str) -> set[str]:
+    from .search import _stem, analyze
+    stems = {_stem(w) for w in _CHANGE_WORDS}
+    return {w for w in analyze(text or "") if len(w) >= 2 and not w.isdigit() and w not in stems}
+
+
+def current_rule_check(answerer: "Answerer", ctx: "Context", parsed: dict) -> dict:
+    """When `newer` holds a GR that amends or replaces the asked-for GR, the first
+    sentence must state the rule as it stands after the newest such change. Passes
+    if the first sentence names that GR's date, or a value or a distinctive word
+    from its change that is in neither the asked-for GR's text nor the question.
+    Not applied to not_found answers. Returns {"applies", "ok", "detail"}."""
+    if parsed.get("status") == "not_found":
+        return {"applies": False, "ok": True, "detail": "status not_found"}
+    rt = answerer.rt
+    effects = {}
+    for r in parsed.get("candidates_reviewed") or []:
+        if isinstance(r, dict) and r.get("code"):
+            effects[rt.group_of.get(str(r["code"]).strip(), str(r["code"]).strip())] = r.get("effect")
+    given_by_date = {}
+    for c in ctx.given_codes:
+        given_by_date.setdefault(rt.grs[c]["date"], set()).add(rt.group_of[c])
+    changing = []
+    for n in parsed.get("newer") or []:
+        if not isinstance(n, dict):
+            continue
+        code = str(n.get("code") or "").strip()
+        gid = rt.group_of.get(code)
+        if gid is None:  # mistyped code: same repair rule as the product check
+            g = given_by_date.get(str(n.get("date") or "").strip(), set())
+            gid = next(iter(g)) if len(g) == 1 else None
+        if gid is None:
+            continue
+        if effects.get(gid, "amends") in CHANGING_EFFECTS:
+            changing.append((gid, n))
+    if not changing:
+        return {"applies": False, "ok": True, "detail": "no amending or replacing GR in newer"}
+    gid, n = max(changing, key=lambda x: date_key(rt.grs[x[0]]["date"]))
+    newest_date = rt.grs[gid]["date"]
+    first = first_sentence(parsed.get("answer") or "")
+    asked = rt.group_of.get(str(parsed.get("asked_for_code") or "").strip())
+    old_text = ctx.question
+    if asked:
+        pg = answerer.pages.get(asked, {})
+        old_text += "\n" + "\n".join(pg.get("orig", {}).values()) + "\n" + "\n".join(pg.get("en", {}).values())
+    changed = n.get("what_changed") or ""
+    if newest_date in _values(first):
+        return {"applies": True, "ok": True, "detail": f"first sentence names {newest_date}"}
+    new_vals = (_values(changed) - _values(old_text)) & _values(first)
+    if new_vals:
+        return {"applies": True, "ok": True, "detail": f"first sentence states new value(s) {', '.join(sorted(new_vals))}"}
+    new_words = (_words(changed) - _words(old_text) - _CHANGE_WORDS) & _words(first)
+    if new_words:
+        return {"applies": True, "ok": True, "detail": f"first sentence states new term(s) {', '.join(sorted(new_words))}"}
+    return {"applies": True, "ok": False,
+            "detail": f"first sentence names neither the newest change's date {newest_date} ({gid}) "
+                      f"nor anything new from that change"}
+
+
+def sanitize_for_product(parsed: dict | None) -> tuple[dict, list[dict]]:
+    """Turn a reply that failed format into something the product checks can run on.
+    Every change is returned as a correction (check "format_repair")."""
+    fixes = []
+
+    def fix(where, before, after):
+        fixes.append({"check": "format_repair", "where": where, "before": before, "after": after})
+    if not isinstance(parsed, dict):
+        fix("reply", "no JSON object", "placeholder not_found answer")
+        return ({"status": "not_found", "answer": "No answer could be produced for this question (the model reply "
+                 "could not be read).", "asked_for_code": None, "cited": [], "newer": [],
+                 "candidates_reviewed": []}, fixes)
+    out = dict(parsed)
+    ans = out.get("answer")
+    if not isinstance(ans, str) or not ans.strip():
+        fix("answer", ans, "placeholder")
+        out["answer"] = "No answer text was produced for this question."
+    if out.get("status") not in ("answered", "not_found"):
+        new = "not_found" if COULDNT_FIND.search(out["answer"]) else "answered"
+        fix("status", out.get("status"), new)
+        out["status"] = new
+    for key, need in (("cited", ("code",)), ("newer", ("code",)), ("candidates_reviewed", ("code",))):
+        val = out.get(key)
+        if not isinstance(val, list):
+            if val is not None:
+                fix(key, val, [])
+            out[key] = []
+            continue
+        keep = []
+        for k, it in enumerate(val):
+            if isinstance(it, dict) and all(it.get(x) for x in need):
+                keep.append(it)
+            else:
+                fix(f"{key}[{k}]", it, "dropped (malformed)")
+        out[key] = keep
+    if "asked_for_code" not in out or not isinstance(out.get("asked_for_code"), (str, type(None))):
+        out["asked_for_code"] = None
+    return out, fixes
+
+
 def answer_question(answerer: Answerer, client, question: str) -> dict:
     """One full answer, with everything E4 logs.
 
-    Attempt 1 uses the full context. If its reply is invalid (schema, empty, or a
-    listed candidate without a review) it is retried once:
-      - with the same prompt, or
-      - with a compact context (no English translations, shorter texts) if the
-        reply hit the length limit.
-    If that retry also hits the length limit, one more compact attempt is made.
-    Every attempt is logged. The scored raw answer is the last valid reply, or,
-    if none is valid, the reply with the fewest errors (format = "failed").
-    Two harmless slips are repaired and logged (see repair_reply).
+    Attempts (at most 3 calls):
+      - an invalid reply (schema, empty, a listed candidate without a review) is
+        retried once with the same prompt; after a length-limit reply the retry
+        uses a compact context (and one further compact try is allowed);
+      - a valid reply that fails the current-rule-first check is retried once.
+    Every attempt is logged. The scored raw answer is the best attempt: valid and
+    passing the rule check, else the last valid one, else the least broken.
+    If no attempt is valid, the product still shows the least broken reply's
+    answer and status with the checks applied, marked "format repaired".
     """
     ctx = answerer.build_context(question)
     compact_ctx = None
@@ -552,48 +678,80 @@ def answer_question(answerer: Answerer, client, question: str) -> dict:
     def est(msgs):
         return int(sum(len(m["content"]) for m in msgs) / CHARS_PER_TOKEN_ESTIMATE)
 
-    t0 = time.monotonic()
-    msgs = messages_for(ctx)
-    attempts = [_attempt(client, msgs, est(msgs), ctx.listed_candidates, answerer.rt.group_of, "first")]
-    used_ctx = [ctx]
-    while attempts[-1]["errors"] and len(attempts) < 3:
-        prev = attempts[-1]
-        if prev["finish_reason"] == "length":
-            if compact_ctx is None:
-                compact_ctx = answerer.build_context(question, compact=True)
-            c, why = compact_ctx, "length limit: compact context"
-        elif len(attempts) == 1:
-            c, why = ctx, "invalid reply: same prompt"
-        else:
-            break  # one retry only, except a further compact retry after a length limit
+    def run(c, why):
         m = messages_for(c)
-        attempts.append(_attempt(client, m, est(m), c.listed_candidates, answerer.rt.group_of, why))
+        a = _attempt(client, m, est(m), c.listed_candidates, answerer.rt.group_of, why)
+        a["rule"] = None
+        if not a["errors"]:
+            try:
+                a["rule"] = current_rule_check(answerer, c, a["parsed"])
+            except Exception as e:
+                a["rule"] = {"applies": False, "ok": True, "detail": f"check error: {type(e).__name__}: {e}"}
+        attempts.append(a)
         used_ctx.append(c)
 
+    t0 = time.monotonic()
+    attempts, used_ctx = [], []
+    run(ctx, "first")
+    format_retry = rule_retry = False
+    while len(attempts) < 3:
+        last = attempts[-1]
+        if last["errors"]:
+            if last["finish_reason"] == "length":
+                if compact_ctx is None:
+                    compact_ctx = answerer.build_context(question, compact=True)
+                run(compact_ctx, "length limit: compact context")
+            elif not format_retry:
+                format_retry = True
+                run(used_ctx[-1], "invalid reply: same prompt")
+            else:
+                break
+        elif last["rule"] and not last["rule"]["ok"] and not rule_retry:
+            rule_retry = True
+            run(used_ctx[-1], "current rule not first: same prompt")
+        else:
+            break
+
     valid = [k for k, a in enumerate(attempts) if not a["errors"]]
-    chosen = valid[-1] if valid else min(range(len(attempts)),
-                                         key=lambda k: (attempts[k]["parsed"] is None, len(attempts[k]["errors"]), -k))
+    passing = [k for k in valid if attempts[k]["rule"] and attempts[k]["rule"]["ok"]]
+    if passing:
+        chosen = passing[-1]
+    elif valid:
+        chosen = valid[-1]
+    else:
+        chosen = min(range(len(attempts)),
+                     key=lambda k: (attempts[k]["parsed"] is None, len(attempts[k]["errors"]), -k))
     pick, pick_ctx = attempts[chosen], used_ctx[chosen]
+    format_failed_first = bool(attempts[0]["errors"])
     if valid:
-        fmt = "ok" if chosen == 0 and not pick["repairs"] else ("repaired" if chosen == 0 else "retried_ok")
+        if chosen == 0:
+            fmt = "repaired" if pick["repairs"] else "ok"
+        else:
+            fmt = "retried_ok" if format_failed_first else ("repaired" if pick["repairs"] else "ok")
     else:
         fmt = "failed"
 
     issues, corrections, raw_answer, result = [], [], None, None
     parsed = pick["parsed"]
-    processing_error = None
     try:
         if parsed is not None:
             raw_answer = answerer.raw_answer(parsed)
-            if valid:
-                result, corrections, issues = answerer.finalize(pick_ctx, parsed)
-    except Exception as e:  # never lose a reply: log it and count it as a format failure
-        processing_error = f"{type(e).__name__}: {e}"
+        if valid:
+            result, corrections, issues = answerer.finalize(pick_ctx, parsed)
+        else:
+            clean, fixes = sanitize_for_product(parsed)
+            result, corrections, issues = answerer.finalize(pick_ctx, clean)
+            corrections = fixes + corrections
+            result["format_repaired"] = True
+            issues.insert(0, "format repaired: the product shows the least broken reply with the checks applied")
+    except Exception as e:  # never lose a reply: log it
         result, corrections = None, []
-        issues = [f"processing error (reply kept in log): {processing_error}"]
+        issues = [f"processing error (reply kept in log): {type(e).__name__}: {e}"]
         fmt = "failed"
     if not valid:
         issues.append("format failure after retry: " + "; ".join(pick["errors"]))
+    if pick["rule"] and not pick["rule"]["ok"]:
+        issues.append("current-rule-first: " + pick["rule"]["detail"])
     if pick["finish_reason"] != "stop":
         issues.append(f"finish_reason={pick['finish_reason']}")
 
@@ -603,8 +761,10 @@ def answer_question(answerer: Answerer, client, question: str) -> dict:
         "messages": messages_for(pick_ctx),
         "format": fmt,
         "chosen_attempt": chosen,
+        "rule_check": pick["rule"],
         "format_attempts": [{"why": a["why"], "model_content": a["content"], "errors": a["errors"],
                              "repairs": a["repairs"], "missing_reviews": a["missing_reviews"],
+                             "rule_check": a["rule"],
                              "usage": a["call"].usage, "finish_reason": a["finish_reason"],
                              "latency_s": round(a["call"].latency_s, 2)} for a in attempts],
         "raw_response": pick["call"].response,
