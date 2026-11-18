@@ -15,7 +15,8 @@ The run stops (and says why in run_end) on:
   - any API error, a missing key, exhausted credits, or the daily cap
   (a reply that is invalid against the schema is retried once; if it is still
    invalid the question is recorded as a format failure and the run continues)
-  - a projected cost for this run above RUN_SPEND_CAP_INR (default 20)
+  - this run's actual cost above RUN_SPEND_CAP_INR (default 20), or a projected
+    cost above it once at least 5 questions are done
 """
 import argparse
 import csv
@@ -35,6 +36,7 @@ QUESTIONS = Path("eval/questions.jsonl")
 RUNS_DIR = Path("runs")
 DEFAULT_RUN_CAP_INR = 20.0
 PREFLIGHT_CHARS_PER_TOKEN = 3.5
+PROJECTION_MIN_QUESTIONS = 5  # a projection from fewer questions is too noisy (Q1 alone is ~3x the average)
 
 
 def _git_commit() -> str | None:
@@ -195,7 +197,11 @@ def main(argv=None) -> int:
                   f"(reasoning {u['reasoning_tokens']:>5})  Rs {rec['cost_inr']:.4f}  "
                   f"{(rec['raw_answer'] or {}).get('status')}  format {rec['format']}  corrections: {len(rec['corrections'])}  flags: {len(rec['issues'])}", flush=True)
             projected = spent / i * len(questions)
-            if projected > cap:
+            if spent > cap:
+                stop_reason = (f"this run has spent Rs {spent:.2f}, over the run cap Rs {cap:.2f} "
+                               f"(after {i} of {len(questions)} questions)")
+                break
+            if i >= PROJECTION_MIN_QUESTIONS and projected > cap:
                 stop_reason = (f"projected cost for this run Rs {projected:.2f} is over the run cap Rs {cap:.2f} "
                                f"(after {i} of {len(questions)} questions, Rs {spent:.4f} spent)")
                 break
