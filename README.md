@@ -18,7 +18,7 @@ Independent case study, not affiliated with Sarvam.
 | Step | What | State |
 |---|---|---|
 | E1 | Corpus, index, twin detection, citation graph | done |
-| E2 | Retrieval and retrieval check on the 37 questions | not started |
+| E2 | Retrieval and retrieval check on the 37 questions | done: 37/37 in top 5 ([report](eval/results/e2_retrieval.md)) |
 | E3–E6 | Answer step (`sarvam-105b`), logging, key handling, smoke test | not started |
 | F1 | Baseline run of all 37 | not started |
 
@@ -29,6 +29,7 @@ Requires Python 3.10+ and git. E1 uses only the standard library.
 ```bash
 ./scripts/fetch_corpus.sh          # sparse clone of the IT-department GRs into data/mahGRs
 python -m grengine.build_index     # writes data/index/ and prints a report
+python -m grengine.eval_retrieval  # retrieval check, writes eval/results/e2_retrieval.md
 python -m unittest discover -s tests
 ```
 
@@ -41,10 +42,13 @@ grengine/
   orders.py        GR numbers reduced to a (file, case) key across scripts and OCR forms
   corpus.py        load GRs.json and the per-GR text files, split pages
   twins.py         English/Marathi copies of one GR (different codes)
-  citations.py     citation graph and newer-GR candidates
+  citations.py     citation graph and newer-GR candidates (ranked by evidence)
   build_index.py   E1 entry point
+  search.py        BM25 over both text files + lookup by date, GR number, missing cited date
+  eval_retrieval.py  E2 retrieval check on the 37 questions
 scripts/fetch_corpus.sh
 eval/questions.jsonl
+eval/results/      retrieval check reports
 tests/
 ```
 
@@ -65,7 +69,23 @@ tests/
   that doesn't exist. An edge means "cites". Whether the later GR changes the earlier one
   has to be read from its text. Edge evidence, strongest first: `date+order`, `order`,
   `date`, `same_file` (only the shared file number in the header).
+- **Newer-GR candidates** come from the graph, ranked by evidence (date+order, order,
+  date, same_file). A candidate whose only link is a shared file number is marked
+  *candidate only*: it is never proof of a newer GR, and the answer step must read its text.
 - **`order_type`** in the metadata is sometimes wrong, so nothing depends on it.
+
+## Retrieval
+
+`grengine/search.py`, standard library only:
+
+- **Text:** BM25 over ~120-word passages from both text files (original language and
+  English version), with the title prepended to each passage. A GR scores its best
+  passage. Twins share one result. Dates and GR numbers are removed from the text query.
+- **Direct lookup:** an exact date or a GR number in the question matches GRs directly.
+  A month and year adds a smaller boost.
+- **Missing GRs:** if a question names a date that no GR in the corpus has, the GRs that
+  cite that date are returned, but only when the citation shares a distinctive word with
+  the question. The answer must then say the asked-for GR isn't in the corpus.
 
 ## Corpus credit
 

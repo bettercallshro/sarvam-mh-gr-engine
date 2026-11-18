@@ -1,0 +1,2911 @@
+[
+ {
+  "id": 1,
+  "question": "Is the 29 January 2018 cloud computing circular still current?",
+  "task": "S",
+  "case": "AM",
+  "lang": "EN,MR",
+  "gold_grs": [
+   "201801291824268911",
+   "201906191741481211",
+   "201907051642210511",
+   "202104231756150811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "29-01-2018"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     1,
+     2018
+    ]
+   ],
+   "years": [
+    2018
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201801291824268911",
+    "codes": [
+     "201801291824268911"
+    ],
+    "score": 2.3748,
+    "reasons": {
+     "text": 0.925,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201805211415360511",
+    "codes": [
+     "201805211415360511"
+    ],
+    "score": 1.1,
+    "reasons": {
+     "text": 1.0,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201808041826435611",
+    "codes": [
+     "201808041826435611"
+    ],
+    "score": 1.0956,
+    "reasons": {
+     "text": 0.996,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 1.0348,
+    "reasons": {
+     "text": 0.935,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201906191741481211",
+    "codes": [
+     "201906191741481211"
+    ],
+    "score": 0.9225,
+    "reasons": {
+     "text": 0.923
+    }
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "question": "What is the deadline for moving existing department applications to the cloud?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "201906191741481211"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 3,
+  "results": [
+   {
+    "group": "201801291824268911",
+    "codes": [
+     "201801291824268911"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201907051642210511",
+    "codes": [
+     "201907051642210511"
+    ],
+    "score": 0.9968,
+    "reasons": {
+     "text": 0.997
+    }
+   },
+   {
+    "group": "201906191741481211",
+    "codes": [
+     "201906191741481211"
+    ],
+    "score": 0.9785,
+    "reasons": {
+     "text": 0.979
+    }
+   },
+   {
+    "group": "202211041809363311",
+    "codes": [
+     "202211041809363311"
+    ],
+    "score": 0.9233,
+    "reasons": {
+     "text": 0.923
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.8831,
+    "reasons": {
+     "text": 0.883
+    }
+   }
+  ]
+ },
+ {
+  "id": 3,
+  "question": "There was a cloud policy circular a couple of years ago, something about migration. Which GR?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "201801291824268911",
+   "201906191741481211",
+   "201907051642210511",
+   "202104231756150811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201906191741481211",
+    "codes": [
+     "201906191741481211"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.8605,
+    "reasons": {
+     "text": 0.861
+    }
+   },
+   {
+    "group": "201907051642210511",
+    "codes": [
+     "201907051642210511"
+    ],
+    "score": 0.8261,
+    "reasons": {
+     "text": 0.826
+    }
+   },
+   {
+    "group": "201801291824268911",
+    "codes": [
+     "201801291824268911"
+    ],
+    "score": 0.7627,
+    "reasons": {
+     "text": 0.763
+    }
+   },
+   {
+    "group": "201808041826435611",
+    "codes": [
+     "201808041826435611"
+    ],
+    "score": 0.6881,
+    "reasons": {
+     "text": 0.688
+    }
+   }
+  ]
+ },
+ {
+  "id": 4,
+  "question": "A file cites the State cloud policy dated 19/01/2018. Is that current?",
+  "task": "S",
+  "case": "AM",
+  "lang": "EN,MR",
+  "gold_grs": [
+   "201801291824268911",
+   "201906191741481211",
+   "201907051642210511",
+   "202104231756150811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "19-01-2018"
+   ],
+   "order_keys": [],
+   "months": [],
+   "years": [
+    2018
+   ]
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201802161919110111",
+    "codes": [
+     "201802161919110111"
+    ],
+    "score": 1.8666,
+    "reasons": {
+     "text": 0.867,
+     "cites_missing": 0.9,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201801291824268911",
+    "codes": [
+     "201801291824268911"
+    ],
+    "score": 1.0963,
+    "reasons": {
+     "text": 0.996,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 1.0119,
+    "reasons": {
+     "text": 0.912,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201907301723317811",
+    "codes": [
+     "201907301723317811"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201906191741481211",
+    "codes": [
+     "201906191741481211"
+    ],
+    "score": 0.9934,
+    "reasons": {
+     "text": 0.993
+    }
+   }
+  ]
+ },
+ {
+  "id": 5,
+  "question": "Can my department still buy cloud services from the empanelled cloud providers?",
+  "task": "L",
+  "case": "ST",
+  "lang": "MR",
+  "gold_grs": [
+   "202104231756150811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 5,
+  "results": [
+   {
+    "group": "201801291824268911",
+    "codes": [
+     "201801291824268911"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.859,
+    "reasons": {
+     "text": 0.859
+    }
+   },
+   {
+    "group": "201805211415360511",
+    "codes": [
+     "201805211415360511"
+    ],
+    "score": 0.8313,
+    "reasons": {
+     "text": 0.831
+    }
+   },
+   {
+    "group": "201808041826435611",
+    "codes": [
+     "201808041826435611"
+    ],
+    "score": 0.8159,
+    "reasons": {
+     "text": 0.816
+    }
+   },
+   {
+    "group": "202104231756150811",
+    "codes": [
+     "202104231756150811"
+    ],
+    "score": 0.6423,
+    "reasons": {
+     "text": 0.642
+    }
+   }
+  ]
+ },
+ {
+  "id": 6,
+  "question": "What did the July 2019 cloud GR change?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "201907051642210511"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [
+    [
+     7,
+     2019
+    ]
+   ],
+   "years": [
+    2019
+   ]
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201907111447186811",
+    "codes": [
+     "201907111447186811"
+    ],
+    "score": 1.3796,
+    "reasons": {
+     "text": 0.93,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201907051642210511",
+    "codes": [
+     "201907051642210511"
+    ],
+    "score": 1.3088,
+    "reasons": {
+     "text": 0.859,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201908011113322811",
+    "codes": [
+     "201908011113322811"
+    ],
+    "score": 1.1605,
+    "reasons": {
+     "text": 0.711,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201912301131123011",
+    "codes": [
+     "201912301131123011"
+    ],
+    "score": 1.1,
+    "reasons": {
+     "text": 1.0,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201907311131241311",
+    "codes": [
+     "201907311131241311"
+    ],
+    "score": 1.0853,
+    "reasons": {
+     "text": 0.635,
+     "month": 0.35,
+     "year": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": 7,
+  "question": "What is the maximum spend on a laptop or tablet for an IAS, IPS or IFS officer?",
+  "task": "L",
+  "case": "AM",
+  "lang": "MR",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201912241451082111",
+    "codes": [
+     "201912241451082111"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202304131657547811",
+    "codes": [
+     "202304131657547811"
+    ],
+    "score": 0.9172,
+    "reasons": {
+     "text": 0.917
+    }
+   },
+   {
+    "group": "201910191159422311",
+    "codes": [
+     "201910191159422311"
+    ],
+    "score": 0.1967,
+    "reasons": {
+     "text": 0.197
+    }
+   },
+   {
+    "group": "201908161445040311",
+    "codes": [
+     "201908161445040311"
+    ],
+    "score": 0.1794,
+    "reasons": {
+     "text": 0.179
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 0.162,
+    "reasons": {
+     "text": 0.162
+    }
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "question": "Is the 24 December 2019 laptop corrigendum still in force?",
+  "task": "S",
+  "case": "ST",
+  "lang": "MR",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "24-12-2019"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     12,
+     2019
+    ]
+   ],
+   "years": [
+    2019
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201912241451082111",
+    "codes": [
+     "201912241451082111"
+    ],
+    "score": 2.0914,
+    "reasons": {
+     "text": 0.641,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202304131657547811",
+    "codes": [
+     "202304131657547811"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201910041107154511",
+    "codes": [
+     "201910041107154511"
+    ],
+    "score": 0.7573,
+    "reasons": {
+     "text": 0.657,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201811301240117211",
+    "codes": [
+     "201811301240117211"
+    ],
+    "score": 0.6808,
+    "reasons": {
+     "text": 0.681
+    }
+   },
+   {
+    "group": "202303301831230311",
+    "codes": [
+     "202303301831230311"
+    ],
+    "score": 0.6677,
+    "reasons": {
+     "text": 0.668
+    }
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "question": "Show me the 24 February 2015 GR on laptops for officers.",
+  "task": "S",
+  "case": "MI",
+  "lang": "MR",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "24-02-2015"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     2,
+     2015
+    ]
+   ],
+   "years": [
+    2015
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201912241451082111",
+    "codes": [
+     "201912241451082111"
+    ],
+    "score": 1.9,
+    "reasons": {
+     "text": 1.0,
+     "cites_missing": 0.9
+    }
+   },
+   {
+    "group": "202304131657547811",
+    "codes": [
+     "202304131657547811"
+    ],
+    "score": 1.8713,
+    "reasons": {
+     "text": 0.971,
+     "cites_missing": 0.9
+    }
+   },
+   {
+    "group": "201804201114401011",
+    "codes": [
+     "201804201114401011"
+    ],
+    "score": 0.3988,
+    "reasons": {
+     "text": 0.399
+    }
+   },
+   {
+    "group": "201910101158307111",
+    "codes": [
+     "201910101158307111"
+    ],
+    "score": 0.3595,
+    "reasons": {
+     "text": 0.359
+    }
+   },
+   {
+    "group": "202010191540488111",
+    "codes": [
+     "202010191540488111"
+    ],
+    "score": 0.3525,
+    "reasons": {
+     "text": 0.353
+    }
+   }
+  ]
+ },
+ {
+  "id": 10,
+  "question": "मातंस ३८१४/प्र.क्र.१७४/३९: what is the current limit?",
+  "task": "L",
+  "case": "DV",
+  "lang": "MR",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [
+    "3814/174"
+   ],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201912241451082111",
+    "codes": [
+     "201912241451082111"
+    ],
+    "score": 1.491,
+    "reasons": {
+     "text": 0.491,
+     "number": 1.0
+    }
+   },
+   {
+    "group": "202304131657547811",
+    "codes": [
+     "202304131657547811"
+    ],
+    "score": 1.4886,
+    "reasons": {
+     "text": 0.489,
+     "number": 1.0
+    }
+   },
+   {
+    "group": "201811061202283811",
+    "codes": [
+     "201811061202283811"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201807211744208711",
+    "codes": [
+     "201807211744208711"
+    ],
+    "score": 0.5758,
+    "reasons": {
+     "text": 0.576
+    }
+   },
+   {
+    "group": "201805211415360511",
+    "codes": [
+     "201805211415360511"
+    ],
+    "score": 0.5679,
+    "reasons": {
+     "text": 0.568
+    }
+   }
+  ]
+ },
+ {
+  "id": 11,
+  "question": "Is the 26 November 2020 GR on the computer qualification certificate in force?",
+  "task": "S",
+  "case": "ST",
+  "lang": "MR",
+  "gold_grs": [
+   "202011261535430611",
+   "202011271209526511"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "26-11-2020"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     11,
+     2020
+    ]
+   ],
+   "years": [
+    2020
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202011261535430611",
+    "codes": [
+     "202011261535430611"
+    ],
+    "score": 2.45,
+    "reasons": {
+     "text": 1.0,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202011271209526511",
+    "codes": [
+     "202011271209526511"
+    ],
+    "score": 1.3149,
+    "reasons": {
+     "text": 0.865,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201907301723317811",
+    "codes": [
+     "201907301723317811"
+    ],
+    "score": 0.8307,
+    "reasons": {
+     "text": 0.831
+    }
+   },
+   {
+    "group": "202102051649105211",
+    "codes": [
+     "202102051649105211"
+    ],
+    "score": 0.6814,
+    "reasons": {
+     "text": 0.681
+    }
+   },
+   {
+    "group": "202011251138477511",
+    "codes": [
+     "202011251138477511"
+    ],
+    "score": 0.6363,
+    "reasons": {
+     "text": 0.186,
+     "month": 0.35,
+     "year": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": 12,
+  "question": "Will excess salary be recovered from staff who were late with the computer certificate?",
+  "task": "L",
+  "case": "ST",
+  "lang": "MR",
+  "gold_grs": [
+   "202011261535430611",
+   "202011271209526511"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202011261535430611",
+    "codes": [
+     "202011261535430611"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202011271209526511",
+    "codes": [
+     "202011271209526511"
+    ],
+    "score": 0.8658,
+    "reasons": {
+     "text": 0.866
+    }
+   },
+   {
+    "group": "201907301723317811",
+    "codes": [
+     "201907301723317811"
+    ],
+    "score": 0.4471,
+    "reasons": {
+     "text": 0.447
+    }
+   },
+   {
+    "group": "201807161600222011",
+    "codes": [
+     "201807161600222011"
+    ],
+    "score": 0.4285,
+    "reasons": {
+     "text": 0.429
+    }
+   },
+   {
+    "group": "202112241234462311",
+    "codes": [
+     "202112241234462311"
+    ],
+    "score": 0.428,
+    "reasons": {
+     "text": 0.428
+    }
+   }
+  ]
+ },
+ {
+  "id": 13,
+  "question": "Is the 2018 empanelment of IT consultants still valid?",
+  "task": "S",
+  "case": "ST",
+  "lang": "EN",
+  "gold_grs": [
+   "201803201319308011",
+   "202304241816282211",
+   "202310041905383211"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": [
+    2018
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201803201319308011",
+    "codes": [
+     "201803201319308011"
+    ],
+    "score": 1.0834,
+    "reasons": {
+     "text": 0.983,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201802171427235111",
+    "codes": [
+     "201802171427235111"
+    ],
+    "score": 0.797,
+    "reasons": {
+     "text": 0.697,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201810121542077211",
+    "codes": [
+     "201810121542077211",
+     "201810161857288711"
+    ],
+    "score": 0.747,
+    "reasons": {
+     "text": 0.647,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202304241816282211",
+    "codes": [
+     "202304241816282211"
+    ],
+    "score": 0.7158,
+    "reasons": {
+     "text": 0.716
+    }
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "question": "From what date do the new IT consultant rates apply?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "202310041905383211",
+   "202312151508137711"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201803201319308011",
+    "codes": [
+     "201803201319308011"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 0.8318,
+    "reasons": {
+     "text": 0.832
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.6505,
+    "reasons": {
+     "text": 0.651
+    }
+   },
+   {
+    "group": "201808011629400011",
+    "codes": [
+     "201808011629400011"
+    ],
+    "score": 0.6138,
+    "reasons": {
+     "text": 0.614
+    }
+   },
+   {
+    "group": "202312151508137711",
+    "codes": [
+     "202312151508137711"
+    ],
+    "score": 0.6039,
+    "reasons": {
+     "text": 0.604
+    }
+   }
+  ]
+ },
+ {
+  "id": 15,
+  "question": "What is the monthly rate for a Principal Consultant?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "202310041905383211"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201803201319308011",
+    "codes": [
+     "201803201319308011"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 0.9961,
+    "reasons": {
+     "text": 0.996
+    }
+   },
+   {
+    "group": "202103191753279311",
+    "codes": [
+     "202103191753279311"
+    ],
+    "score": 0.9116,
+    "reasons": {
+     "text": 0.912
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.8803,
+    "reasons": {
+     "text": 0.88
+    }
+   },
+   {
+    "group": "202312151508137711",
+    "codes": [
+     "202312151508137711"
+    ],
+    "score": 0.5932,
+    "reasons": {
+     "text": 0.593
+    }
+   }
+  ]
+ },
+ {
+  "id": 16,
+  "question": "What did the 9 May 2019 IT consultant GR say?",
+  "task": "S",
+  "case": "MI",
+  "lang": "EN",
+  "gold_grs": [
+   "202103191753279311"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "09-05-2019"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     5,
+     2019
+    ]
+   ],
+   "years": [
+    2019
+   ]
+  },
+  "hit": true,
+  "rank": 3,
+  "results": [
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 1.9,
+    "reasons": {
+     "text": 1.0,
+     "cites_missing": 0.9
+    }
+   },
+   {
+    "group": "202304241816282211",
+    "codes": [
+     "202304241816282211"
+    ],
+    "score": 1.8436,
+    "reasons": {
+     "text": 0.944,
+     "cites_missing": 0.9
+    }
+   },
+   {
+    "group": "202103191753279311",
+    "codes": [
+     "202103191753279311"
+    ],
+    "score": 1.7707,
+    "reasons": {
+     "text": 0.871,
+     "cites_missing": 0.9
+    }
+   },
+   {
+    "group": "202403051249430211",
+    "codes": [
+     "202403051249430211"
+    ],
+    "score": 0.9846,
+    "reasons": {
+     "text": 0.985
+    }
+   },
+   {
+    "group": "201803201319308011",
+    "codes": [
+     "201803201319308011"
+    ],
+    "score": 0.9604,
+    "reasons": {
+     "text": 0.96
+    }
+   }
+  ]
+ },
+ {
+  "id": 17,
+  "question": "Can a department change the qualifications it asks of empanelled consultants?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "202403051249430211"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202403051249430211",
+    "codes": [
+     "202403051249430211"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 0.9805,
+    "reasons": {
+     "text": 0.981
+    }
+   },
+   {
+    "group": "202310271649358711",
+    "codes": [
+     "202310271649358711"
+    ],
+    "score": 0.7526,
+    "reasons": {
+     "text": 0.753
+    }
+   },
+   {
+    "group": "201803201319308011",
+    "codes": [
+     "201803201319308011"
+    ],
+    "score": 0.7402,
+    "reasons": {
+     "text": 0.74
+    }
+   },
+   {
+    "group": "201808011629400011",
+    "codes": [
+     "201808011629400011"
+    ],
+    "score": 0.637,
+    "reasons": {
+     "text": 0.637
+    }
+   }
+  ]
+ },
+ {
+  "id": 18,
+  "question": "Whose concurrence is needed for a consultant's scope of work?",
+  "task": "L",
+  "case": "AM",
+  "lang": "MR",
+  "gold_grs": [
+   "202103191753279311"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201803201319308011",
+    "codes": [
+     "201803201319308011"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202103191753279311",
+    "codes": [
+     "202103191753279311"
+    ],
+    "score": 0.8981,
+    "reasons": {
+     "text": 0.898
+    }
+   },
+   {
+    "group": "201808011629400011",
+    "codes": [
+     "201808011629400011"
+    ],
+    "score": 0.75,
+    "reasons": {
+     "text": 0.75
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 0.6194,
+    "reasons": {
+     "text": 0.619
+    }
+   },
+   {
+    "group": "202010191540488111",
+    "codes": [
+     "202010191540488111"
+    ],
+    "score": 0.4183,
+    "reasons": {
+     "text": 0.418
+    }
+   }
+  ]
+ },
+ {
+  "id": 19,
+  "question": "Has the Maha DBT disbursement GR of 12 October 2018 been changed?",
+  "task": "S",
+  "case": "DU,AM",
+  "lang": "MR",
+  "gold_grs": [
+   "201810121542077211",
+   "201810161857288711",
+   "202111301536272711"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "12-10-2018"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     10,
+     2018
+    ]
+   ],
+   "years": [
+    2018
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201810121542077211",
+    "codes": [
+     "201810121542077211",
+     "201810161857288711"
+    ],
+    "score": 2.3944,
+    "reasons": {
+     "text": 0.944,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202111301536272711",
+    "codes": [
+     "202111301536272711"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202105141255466911",
+    "codes": [
+     "202105141255466911"
+    ],
+    "score": 0.8263,
+    "reasons": {
+     "text": 0.826
+    }
+   },
+   {
+    "group": "201909202117198311",
+    "codes": [
+     "201909202117198311"
+    ],
+    "score": 0.4221,
+    "reasons": {
+     "text": 0.422
+    }
+   },
+   {
+    "group": "201812201557477511",
+    "codes": [
+     "201812201557477511"
+    ],
+    "score": 0.3442,
+    "reasons": {
+     "text": 0.244,
+     "year": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": 20,
+  "question": "Which bank must hold a scheme's Maha DBT Central Pool Account?",
+  "task": "L",
+  "case": "AM",
+  "lang": "MR",
+  "gold_grs": [
+   "202111301536272711"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201810121542077211",
+    "codes": [
+     "201810121542077211",
+     "201810161857288711"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202111301536272711",
+    "codes": [
+     "202111301536272711"
+    ],
+    "score": 0.8802,
+    "reasons": {
+     "text": 0.88
+    }
+   },
+   {
+    "group": "202105141255466911",
+    "codes": [
+     "202105141255466911"
+    ],
+    "score": 0.6332,
+    "reasons": {
+     "text": 0.633
+    }
+   },
+   {
+    "group": "201909202117198311",
+    "codes": [
+     "201909202117198311"
+    ],
+    "score": 0.2627,
+    "reasons": {
+     "text": 0.263
+    }
+   },
+   {
+    "group": "202202042136207511",
+    "codes": [
+     "202202042136207511"
+    ],
+    "score": 0.2508,
+    "reasons": {
+     "text": 0.251
+    }
+   }
+  ]
+ },
+ {
+  "id": 21,
+  "question": "What rent support does the Fintech policy give start-ups?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "201802161919110111",
+   "201811301239595811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201811301239595811",
+    "codes": [
+     "201811301239595811"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201802161919110111",
+    "codes": [
+     "201802161919110111"
+    ],
+    "score": 0.7795,
+    "reasons": {
+     "text": 0.779
+    }
+   },
+   {
+    "group": "201904111526241211",
+    "codes": [
+     "201904111526241211"
+    ],
+    "score": 0.3754,
+    "reasons": {
+     "text": 0.375
+    }
+   },
+   {
+    "group": "201811301240117211",
+    "codes": [
+     "201811301240117211"
+    ],
+    "score": 0.2778,
+    "reasons": {
+     "text": 0.278
+    }
+   },
+   {
+    "group": "201811061202283811",
+    "codes": [
+     "201811061202283811"
+    ],
+    "score": 0.2653,
+    "reasons": {
+     "text": 0.265
+    }
+   }
+  ]
+ },
+ {
+  "id": 22,
+  "question": "Did the 30 November 2018 Fintech corrigendum change any benefit?",
+  "task": "L",
+  "case": "TY",
+  "lang": "EN",
+  "gold_grs": [
+   "201811301240117211"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "30-11-2018"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     11,
+     2018
+    ]
+   ],
+   "years": [
+    2018
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201811301240117211",
+    "codes": [
+     "201811301240117211"
+    ],
+    "score": 2.45,
+    "reasons": {
+     "text": 1.0,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201811301239595811",
+    "codes": [
+     "201811301239595811"
+    ],
+    "score": 1.8925,
+    "reasons": {
+     "text": 0.442,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201811061202283811",
+    "codes": [
+     "201811061202283811"
+    ],
+    "score": 0.8473,
+    "reasons": {
+     "text": 0.397,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201802161919110111",
+    "codes": [
+     "201802161919110111"
+    ],
+    "score": 0.8004,
+    "reasons": {
+     "text": 0.7,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201804201439329111",
+    "codes": [
+     "201804201439329111"
+    ],
+    "score": 0.6833,
+    "reasons": {
+     "text": 0.583,
+     "year": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": 23,
+  "question": "Who represents the National Health Mission on the blockchain health-records working group?",
+  "task": "L",
+  "case": "AM",
+  "lang": "MR",
+  "gold_grs": [
+   "201904111526241211",
+   "201910041107154511"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201910041107154511",
+    "codes": [
+     "201910041107154511"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201904111526241211",
+    "codes": [
+     "201904111526241211"
+    ],
+    "score": 0.6701,
+    "reasons": {
+     "text": 0.67
+    }
+   },
+   {
+    "group": "202010191540488111",
+    "codes": [
+     "202010191540488111"
+    ],
+    "score": 0.5381,
+    "reasons": {
+     "text": 0.538
+    }
+   },
+   {
+    "group": "201908011113322811",
+    "codes": [
+     "201908011113322811"
+    ],
+    "score": 0.4754,
+    "reasons": {
+     "text": 0.475
+    }
+   },
+   {
+    "group": "202007301546438111",
+    "codes": [
+     "202007301546438111"
+    ],
+    "score": 0.465,
+    "reasons": {
+     "text": 0.465
+    }
+   }
+  ]
+ },
+ {
+  "id": 24,
+  "question": "Did the April 2019 Urban MahaNet GR replace the September 2018 GR?",
+  "task": "S",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "201809281816318011",
+   "201904101409364011"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [
+    [
+     4,
+     2019
+    ],
+    [
+     9,
+     2018
+    ]
+   ],
+   "years": [
+    2019,
+    2018
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201904101409364011",
+    "codes": [
+     "201904101409364011"
+    ],
+    "score": 1.45,
+    "reasons": {
+     "text": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201809281811031811",
+    "codes": [
+     "201809281811031811",
+     "201809281816318011"
+    ],
+    "score": 1.2469,
+    "reasons": {
+     "text": 0.797,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201904091114390811",
+    "codes": [
+     "201904091114390811"
+    ],
+    "score": 1.1293,
+    "reasons": {
+     "text": 0.679,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201809181145411511",
+    "codes": [
+     "201809181145411511"
+    ],
+    "score": 1.0754,
+    "reasons": {
+     "text": 0.625,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201909202117198311",
+    "codes": [
+     "201909202117198311"
+    ],
+    "score": 1.0249,
+    "reasons": {
+     "text": 0.925,
+     "year": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": 25,
+  "question": "Find the Urban MahaNet GR of 28 September 2018.",
+  "task": "S",
+  "case": "DU",
+  "lang": "EN,MR",
+  "gold_grs": [
+   "201809281816318011",
+   "201809281811031811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "28-09-2018"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     9,
+     2018
+    ]
+   ],
+   "years": [
+    2018
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201809281811031811",
+    "codes": [
+     "201809281811031811",
+     "201809281816318011"
+    ],
+    "score": 2.45,
+    "reasons": {
+     "text": 1.0,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201812241259427911",
+    "codes": [
+     "201812241259427911"
+    ],
+    "score": 0.9865,
+    "reasons": {
+     "text": 0.887,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201904101409364011",
+    "codes": [
+     "201904101409364011"
+    ],
+    "score": 0.9361,
+    "reasons": {
+     "text": 0.936
+    }
+   },
+   {
+    "group": "201909202117198311",
+    "codes": [
+     "201909202117198311"
+    ],
+    "score": 0.6764,
+    "reasons": {
+     "text": 0.676
+    }
+   },
+   {
+    "group": "201802161919110111",
+    "codes": [
+     "201802161919110111"
+    ],
+    "score": 0.4741,
+    "reasons": {
+     "text": 0.374,
+     "year": 0.1
+    }
+   }
+  ]
+ },
+ {
+  "id": 26,
+  "question": "Within how many days must a department pay MahaIT's Urban MahaNet invoice?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "201812241259427911"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201812241259427911",
+    "codes": [
+     "201812241259427911"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201808011629400011",
+    "codes": [
+     "201808011629400011"
+    ],
+    "score": 0.7274,
+    "reasons": {
+     "text": 0.727
+    }
+   },
+   {
+    "group": "201809281811031811",
+    "codes": [
+     "201809281811031811",
+     "201809281816318011"
+    ],
+    "score": 0.7241,
+    "reasons": {
+     "text": 0.724
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.6231,
+    "reasons": {
+     "text": 0.623
+    }
+   },
+   {
+    "group": "201904101409364011",
+    "codes": [
+     "201904101409364011"
+    ],
+    "score": 0.5718,
+    "reasons": {
+     "text": 0.572
+    }
+   }
+  ]
+ },
+ {
+  "id": 27,
+  "question": "Which university is responsible for the Academic module of the IUMS project?",
+  "task": "L",
+  "case": "AM",
+  "lang": "EN",
+  "gold_grs": [
+   "201812121239033611",
+   "201904181742272811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201804031706228211",
+    "codes": [
+     "201804031706228211"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201904181742272811",
+    "codes": [
+     "201904181742272811"
+    ],
+    "score": 0.8972,
+    "reasons": {
+     "text": 0.897
+    }
+   },
+   {
+    "group": "201812121239033611",
+    "codes": [
+     "201812121239033611"
+    ],
+    "score": 0.8938,
+    "reasons": {
+     "text": 0.894
+    }
+   },
+   {
+    "group": "201908161757560411",
+    "codes": [
+     "201908161757560411"
+    ],
+    "score": 0.2679,
+    "reasons": {
+     "text": 0.268
+    }
+   },
+   {
+    "group": "201808011629400011",
+    "codes": [
+     "201808011629400011"
+    ],
+    "score": 0.2507,
+    "reasons": {
+     "text": 0.251
+    }
+   }
+  ]
+ },
+ {
+  "id": 28,
+  "question": "Which groups does the Maha-Pariksha GR of 20 February 2020 apply to?",
+  "task": "L",
+  "case": "AM",
+  "lang": "MR",
+  "gold_grs": [
+   "202002201713214911",
+   "202002241155355511"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "20-02-2020"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     2,
+     2020
+    ]
+   ],
+   "years": [
+    2020
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202002201713214911",
+    "codes": [
+     "202002201713214911"
+    ],
+    "score": 2.3823,
+    "reasons": {
+     "text": 0.932,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202002241155355511",
+    "codes": [
+     "202002241155355511"
+    ],
+    "score": 1.3823,
+    "reasons": {
+     "text": 0.932,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201811281816489211",
+    "codes": [
+     "201811281816489211",
+     "201811291757404011"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201810121542077211",
+    "codes": [
+     "201810121542077211",
+     "201810161857288711"
+    ],
+    "score": 0.5453,
+    "reasons": {
+     "text": 0.545
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.4824,
+    "reasons": {
+     "text": 0.482
+    }
+   }
+  ]
+ },
+ {
+  "id": 29,
+  "question": "What did the 19 July 2021 corrigendum change in the 6 April 2021 disability-reservation GR?",
+  "task": "L",
+  "case": "AM",
+  "lang": "MR",
+  "gold_grs": [
+   "202104061557307811",
+   "202107191443218111"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "19-07-2021",
+    "06-04-2021"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     7,
+     2021
+    ],
+    [
+     4,
+     2021
+    ]
+   ],
+   "years": [
+    2021,
+    2021
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202107191443218111",
+    "codes": [
+     "202107191443218111"
+    ],
+    "score": 2.1645,
+    "reasons": {
+     "text": 0.714,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202104061557307811",
+    "codes": [
+     "202104061557307811"
+    ],
+    "score": 2.1645,
+    "reasons": {
+     "text": 0.714,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202107061242530711",
+    "codes": [
+     "202107061242530711"
+    ],
+    "score": 1.0941,
+    "reasons": {
+     "text": 0.644,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201811301240117211",
+    "codes": [
+     "201811301240117211"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201910041107154511",
+    "codes": [
+     "201910041107154511"
+    ],
+    "score": 0.9656,
+    "reasons": {
+     "text": 0.966
+    }
+   }
+  ]
+ },
+ {
+  "id": 30,
+  "question": "Is the e-Tenders GR of 11 May 2021 still the latest on e-tendering?",
+  "task": "S",
+  "case": "CO",
+  "lang": "MR",
+  "gold_grs": [
+   "202105111646307611"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "11-05-2021"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     5,
+     2021
+    ]
+   ],
+   "years": [
+    2021
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202105111646307611",
+    "codes": [
+     "202105111646307611"
+    ],
+    "score": 2.45,
+    "reasons": {
+     "text": 1.0,
+     "date": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201802171427235111",
+    "codes": [
+     "201802171427235111"
+    ],
+    "score": 0.8992,
+    "reasons": {
+     "text": 0.899
+    }
+   },
+   {
+    "group": "201804051601333111",
+    "codes": [
+     "201804051601333111"
+    ],
+    "score": 0.8931,
+    "reasons": {
+     "text": 0.893
+    }
+   },
+   {
+    "group": "201809281811031811",
+    "codes": [
+     "201809281811031811",
+     "201809281816318011"
+    ],
+    "score": 0.8345,
+    "reasons": {
+     "text": 0.834
+    }
+   },
+   {
+    "group": "201803201319308011",
+    "codes": [
+     "201803201319308011"
+    ],
+    "score": 0.8331,
+    "reasons": {
+     "text": 0.833
+    }
+   }
+  ]
+ },
+ {
+  "id": 31,
+  "question": "Has the model RFP GR of September 2019 been updated?",
+  "task": "S",
+  "case": "CO",
+  "lang": "EN",
+  "gold_grs": [
+   "201909202117198311"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [
+    [
+     9,
+     2019
+    ]
+   ],
+   "years": [
+    2019
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201909202117198311",
+    "codes": [
+     "201909202117198311"
+    ],
+    "score": 1.45,
+    "reasons": {
+     "text": 1.0,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201909161302563811",
+    "codes": [
+     "201909161302563811"
+    ],
+    "score": 0.7596,
+    "reasons": {
+     "text": 0.31,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201909111829110711",
+    "codes": [
+     "201909111829110711"
+    ],
+    "score": 0.7025,
+    "reasons": {
+     "text": 0.252,
+     "month": 0.35,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 0.7014,
+    "reasons": {
+     "text": 0.701
+    }
+   },
+   {
+    "group": "201802171427235111",
+    "codes": [
+     "201802171427235111"
+    ],
+    "score": 0.6882,
+    "reasons": {
+     "text": 0.688
+    }
+   }
+  ]
+ },
+ {
+  "id": 32,
+  "question": "What is the latest GR on the State Data Center as critical information infrastructure?",
+  "task": "L",
+  "case": "CO",
+  "lang": "EN",
+  "gold_grs": [
+   "201910051257224511"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "201910051257224511",
+    "codes": [
+     "201910051257224511"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201903081945167511",
+    "codes": [
+     "201903081945167511"
+    ],
+    "score": 0.5812,
+    "reasons": {
+     "text": 0.581
+    }
+   },
+   {
+    "group": "201801291824268911",
+    "codes": [
+     "201801291824268911"
+    ],
+    "score": 0.5281,
+    "reasons": {
+     "text": 0.528
+    }
+   },
+   {
+    "group": "201812241259427911",
+    "codes": [
+     "201812241259427911"
+    ],
+    "score": 0.4083,
+    "reasons": {
+     "text": 0.408
+    }
+   },
+   {
+    "group": "201810161335463211",
+    "codes": [
+     "201810161335463211"
+    ],
+    "score": 0.3952,
+    "reasons": {
+     "text": 0.395
+    }
+   }
+  ]
+ },
+ {
+  "id": 33,
+  "question": "What is the latest GR on the Maharashtra Unified Citizen Data Hub?",
+  "task": "L",
+  "case": "CO",
+  "lang": "MR",
+  "gold_grs": [
+   "202202042136207511"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202202042136207511",
+    "codes": [
+     "202202042136207511"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201810161335463211",
+    "codes": [
+     "201810161335463211"
+    ],
+    "score": 0.3643,
+    "reasons": {
+     "text": 0.364
+    }
+   },
+   {
+    "group": "201811301240117211",
+    "codes": [
+     "201811301240117211"
+    ],
+    "score": 0.343,
+    "reasons": {
+     "text": 0.343
+    }
+   },
+   {
+    "group": "201910051257224511",
+    "codes": [
+     "201910051257224511"
+    ],
+    "score": 0.3427,
+    "reasons": {
+     "text": 0.343
+    }
+   },
+   {
+    "group": "201810121542077211",
+    "codes": [
+     "201810121542077211",
+     "201810161857288711"
+    ],
+    "score": 0.3413,
+    "reasons": {
+     "text": 0.341
+    }
+   }
+  ]
+ },
+ {
+  "id": 34,
+  "question": "Is there a GR on a 5G task force, and has it changed?",
+  "task": "L",
+  "case": "CO",
+  "lang": "MR",
+  "gold_grs": [
+   "202303301831230311"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202303301831230311",
+    "codes": [
+     "202303301831230311"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202211041809363311",
+    "codes": [
+     "202211041809363311"
+    ],
+    "score": 0.7945,
+    "reasons": {
+     "text": 0.794
+    }
+   },
+   {
+    "group": "202310041905383211",
+    "codes": [
+     "202310041905383211"
+    ],
+    "score": 0.3281,
+    "reasons": {
+     "text": 0.328
+    }
+   },
+   {
+    "group": "202101211644450911",
+    "codes": [
+     "202101211644450911"
+    ],
+    "score": 0.3099,
+    "reasons": {
+     "text": 0.31
+    }
+   },
+   {
+    "group": "202103041719472911",
+    "codes": [
+     "202103041719472911"
+    ],
+    "score": 0.3053,
+    "reasons": {
+     "text": 0.305
+    }
+   }
+  ]
+ },
+ {
+  "id": 35,
+  "question": "What is the latest GR on the Setu Kendra tender process?",
+  "task": "L",
+  "case": "CO",
+  "lang": "MR",
+  "gold_grs": [
+   "202407191742379111"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": []
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202407191742379111",
+    "codes": [
+     "202407191742379111"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "201909111829110711",
+    "codes": [
+     "201909111829110711"
+    ],
+    "score": 0.386,
+    "reasons": {
+     "text": 0.386
+    }
+   },
+   {
+    "group": "202105111646307611",
+    "codes": [
+     "202105111646307611"
+    ],
+    "score": 0.3529,
+    "reasons": {
+     "text": 0.353
+    }
+   },
+   {
+    "group": "202002201713214911",
+    "codes": [
+     "202002201713214911"
+    ],
+    "score": 0.3436,
+    "reasons": {
+     "text": 0.344
+    }
+   },
+   {
+    "group": "201805171357566211",
+    "codes": [
+     "201805171357566211"
+    ],
+    "score": 0.2815,
+    "reasons": {
+     "text": 0.281
+    }
+   }
+  ]
+ },
+ {
+  "id": 36,
+  "question": "Is the 2022 GR on generative AI use in government offices in force?",
+  "task": "S",
+  "case": "MI",
+  "lang": "MR",
+  "gold_grs": [
+   "202003031509142811"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [],
+   "order_keys": [],
+   "months": [],
+   "years": [
+    2022
+   ]
+  },
+  "hit": true,
+  "rank": 1,
+  "results": [
+   {
+    "group": "202003031509142811",
+    "codes": [
+     "202003031509142811"
+    ],
+    "score": 1.0,
+    "reasons": {
+     "text": 1.0
+    }
+   },
+   {
+    "group": "202211041809363311",
+    "codes": [
+     "202211041809363311"
+    ],
+    "score": 0.5356,
+    "reasons": {
+     "text": 0.436,
+     "year": 0.1
+    }
+   },
+   {
+    "group": "201802161919110111",
+    "codes": [
+     "201802161919110111"
+    ],
+    "score": 0.4986,
+    "reasons": {
+     "text": 0.499
+    }
+   },
+   {
+    "group": "202303301831230311",
+    "codes": [
+     "202303301831230311"
+    ],
+    "score": 0.3823,
+    "reasons": {
+     "text": 0.382
+    }
+   },
+   {
+    "group": "202302231826565311",
+    "codes": [
+     "202302231826565311"
+    ],
+    "score": 0.3622,
+    "reasons": {
+     "text": 0.362
+    }
+   }
+  ]
+ },
+ {
+  "id": 37,
+  "question": "What did the 19 September 2017 Maha-Pariksha GR say?",
+  "task": "S",
+  "case": "MI",
+  "lang": "MR",
+  "gold_grs": [
+   "202002201713214911"
+  ],
+  "unknown_gold": [],
+  "parsed": {
+   "dates": [
+    "19-09-2017"
+   ],
+   "order_keys": [],
+   "months": [
+    [
+     9,
+     2017
+    ]
+   ],
+   "years": [
+    2017
+   ]
+  },
+  "hit": true,
+  "rank": 2,
+  "results": [
+   {
+    "group": "201811281816489211",
+    "codes": [
+     "201811281816489211",
+     "201811291757404011"
+    ],
+    "score": 1.9,
+    "reasons": {
+     "text": 1.0,
+     "cites_missing": 0.9
+    }
+   },
+   {
+    "group": "202002201713214911",
+    "codes": [
+     "202002201713214911"
+    ],
+    "score": 1.8323,
+    "reasons": {
+     "text": 0.932,
+     "cites_missing": 0.9
+    }
+   },
+   {
+    "group": "202002241155355511",
+    "codes": [
+     "202002241155355511"
+    ],
+    "score": 0.9323,
+    "reasons": {
+     "text": 0.932
+    }
+   },
+   {
+    "group": "201810121542077211",
+    "codes": [
+     "201810121542077211",
+     "201810161857288711"
+    ],
+    "score": 0.3845,
+    "reasons": {
+     "text": 0.384
+    }
+   },
+   {
+    "group": "202004221243514111",
+    "codes": [
+     "202004221243514111"
+    ],
+    "score": 0.3414,
+    "reasons": {
+     "text": 0.341
+    }
+   }
+  ]
+ }
+]
