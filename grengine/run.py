@@ -19,6 +19,7 @@ import csv
 import json
 import os
 import sys
+from collections import Counter
 from datetime import datetime
 from pathlib import Path
 
@@ -50,9 +51,12 @@ def question_record(q: dict, out: dict) -> dict:
         "date_facts": ctx.date_facts,
         "messages": out["messages"],
         "raw_response": out["raw_response"],
+        "model_content": out["model_content"],
         "parsed_model_output": out["parsed_model_output"],
-        "answer": out["result"],
-        "issues": out["issues"],
+        "raw_answer": out["raw_answer"],        # model output, no checks (scored in the eval)
+        "answer": out["result"],                # after the post-answer checks (the product)
+        "corrections": out["corrections"],      # every change the checks made
+        "issues": out["issues"],                # problems flagged but left in place
         "latency_s": out["latency_s"],
         "attempts": out["attempts"],
         "retries": out["retries"],
@@ -61,24 +65,41 @@ def question_record(q: dict, out: dict) -> dict:
     }
 
 
+def _fmt_cited(cited):
+    return "; ".join(f"{c.get('date')} {c.get('code')} p{c.get('page')}"
+                     + ("" if c.get("quote_verified", True) else " [quote not found]") for c in cited)
+
+
+def _fmt_newer(newer):
+    return "; ".join(f"{n.get('date')} {n.get('code')}: {n.get('what_changed')}" for n in newer)
+
+
 def write_csv(path: Path, records: list[dict]) -> None:
+    """Hand-scoring sheet. model_answer, cited, newer and status are the RAW model
+    output (before the post-answer checks). check_corrections lists what the
+    checks changed, and checked_cited / checked_newer show the result after them,
+    so the effect of the checks can be compared."""
     cols = ["id", "question", "gold_answer", "model_answer", "cited", "newer", "status",
-            "answer_score", "citation", "latest", "confident_wrong", "notes"]
+            "answer_score", "citation", "latest", "confident_wrong", "notes",
+            "check_corrections", "checked_cited", "checked_newer", "flags"]
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
         for r in records:
-            a = r.get("answer") or {}
+            raw = r.get("raw_answer") or {}
+            chk = r.get("answer") or {}
             w.writerow({
                 "id": r["id"], "question": r["question"], "gold_answer": r.get("gold_answer", ""),
-                "model_answer": a.get("answer", ""),
-                "cited": "; ".join(f"{c['date']} {c['code']} p{c['page']}"
-                                   + ("" if c.get("quote_verified") else " [quote not verified]")
-                                   for c in a.get("cited", [])),
-                "newer": "; ".join(f"{n['date']} {n['code']}: {n['what_changed']}" for n in a.get("newer", [])),
-                "status": a.get("status", ""),
-                "answer_score": "", "citation": "", "latest": "", "confident_wrong": "",
-                "notes": "; ".join(r.get("issues", [])),
+                "model_answer": raw.get("answer", ""),
+                "cited": _fmt_cited(raw.get("cited", [])),
+                "newer": _fmt_newer(raw.get("newer", [])),
+                "status": raw.get("status", ""),
+                "answer_score": "", "citation": "", "latest": "", "confident_wrong": "", "notes": "",
+                "check_corrections": "; ".join(f"{c['check']} {c['where']}: {c['before']} -> {c['after']}"
+                                               for c in r.get("corrections", [])),
+                "checked_cited": _fmt_cited(chk.get("cited", [])),
+                "checked_newer": _fmt_newer(chk.get("newer", [])),
+                "flags": "; ".join(r.get("issues", [])),
             })
 
 
@@ -135,7 +156,7 @@ def main(argv=None) -> int:
             u = rec["usage"]
             print(f"Q{q['id']:>2}  {rec['latency_s']:>6.1f}s  in {u['prompt_tokens']:>6} out {u['completion_tokens']:>5} "
                   f"(reasoning {u['reasoning_tokens']:>5})  Rs {rec['cost_inr']:.4f}  "
-                  f"{(rec['answer'] or {}).get('status', 'PARSE FAILED')}  issues: {len(rec['issues'])}", flush=True)
+                  f"{(rec['raw_answer'] or {}).get('status', 'PARSE FAILED')}  corrections: {len(rec['corrections'])}  flags: {len(rec['issues'])}", flush=True)
             if rec["answer"] is None:
                 stop_reason = f"Q{q['id']}: model reply could not be parsed"
                 break
@@ -153,6 +174,8 @@ def main(argv=None) -> int:
             "reasoning_tokens": sum(r["usage"]["reasoning_tokens"] for r in records),
             "cached_tokens": sum(r["usage"]["cached_tokens"] for r in records),
             "daily_spent_after_inr": client.spend.spent(),
+            "corrections_by_check": dict(Counter(c["check"] for r in records for c in r["corrections"])),
+            "questions_with_corrections": sum(1 for r in records if r["corrections"]),
         }
         log(summary)
 

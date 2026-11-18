@@ -1,12 +1,15 @@
 """E3 answer step: retrieved GRs + newer-GR candidates -> sarvam-105b -> answer contract.
 
-The model gets full texts. Everything it returns is checked before it reaches
-the answer contract:
-  - cited/newer codes must be GRs that were given to it (others are dropped and flagged)
-  - date, title and url always come from the metadata, never from the model
+The model gets full texts. What it returns is kept twice:
+  raw_answer      the model's own output in the contract shape, untouched
+                  (the eval scores this)
+  answer          after the post-answer checks (what the product shows)
+and every change the checks make is logged as a correction:
+  - cited/newer codes must be GRs that were given to it (others are dropped)
+  - date, title and url always come from the metadata (model values replaced)
   - each quote is searched in the GR's original text; its page is taken from
-    where it is found (flagged if not found)
-  - wording rules are checked (bare "in force", "does not exist")
+    where it is found (quotes not found are flagged, not removed)
+Wording rules (bare "in force", "does not exist") are flagged, not rewritten.
 """
 import json
 import re
@@ -41,8 +44,9 @@ ANSWER_SCHEMA = {
         "asked_for_code": {"type": ["string", "null"]},
         "cited": {"type": "array", "items": {
             "type": "object",
-            "properties": {"code": {"type": "string"}, "quote": {"type": "string"}, "page": {"type": "integer"}},
-            "required": ["code", "quote", "page"], "additionalProperties": False}},
+            "properties": {"code": {"type": "string"}, "date": {"type": "string"}, "title": {"type": "string"},
+                           "quote": {"type": "string"}, "page": {"type": "integer"}},
+            "required": ["code", "date", "title", "quote", "page"], "additionalProperties": False}},
         "candidates_reviewed": {"type": "array", "items": {
             "type": "object",
             "properties": {"code": {"type": "string"},
@@ -52,8 +56,9 @@ ANSWER_SCHEMA = {
             "required": ["code", "effect", "reason"], "additionalProperties": False}},
         "newer": {"type": "array", "items": {
             "type": "object",
-            "properties": {"code": {"type": "string"}, "what_changed": {"type": "string"}},
-            "required": ["code", "what_changed"], "additionalProperties": False}},
+            "properties": {"code": {"type": "string"}, "date": {"type": "string"},
+                           "what_changed": {"type": "string"}},
+            "required": ["code", "date", "what_changed"], "additionalProperties": False}},
     },
     "required": ["status", "answer", "asked_for_code", "cited", "candidates_reviewed", "newer"],
     "additionalProperties": False,
@@ -204,71 +209,104 @@ class Answerer:
         whole = norm(" ".join(t for _, t in sorted(pages.items())))
         return (None, q in whole)
 
-    def finalize(self, ctx: Context, parsed: dict) -> tuple[dict, list[str]]:
-        issues = []
-        given = set(ctx.given_codes)
+    def raw_answer(self, parsed: dict) -> dict:
+        """The model's output in the contract shape, with no checks applied."""
+        return {
+            "status": parsed.get("status"),
+            "answer": (parsed.get("answer") or "").strip(),
+            "cited": [{"code": c.get("code"), "date": c.get("date"), "title": c.get("title"), "url": None,
+                       "quote": c.get("quote", ""), "page": c.get("page")} for c in parsed.get("cited", [])],
+            "newer": [{"code": n.get("code"), "date": n.get("date"), "what_changed": n.get("what_changed", "")}
+                      for n in parsed.get("newer", [])],
+            "coverage": COVERAGE,
+        }
 
-        def resolve(code: str) -> str | None:
+    def finalize(self, ctx: Context, parsed: dict) -> tuple[dict, list[dict], list[str]]:
+        """Apply the post-answer checks. Returns (checked answer, corrections, flags).
+
+        corrections: every change made to the model's output, as
+            {"check", "where", "before", "after"}
+        flags: problems found but left in place (quote not found, wording, ...)
+        """
+        corrections, flags = [], []
+        given_groups = {self.rt.group_of[c] for c in ctx.given_codes}
+
+        def fix(check, where, before, after):
+            corrections.append({"check": check, "where": where, "before": before, "after": after})
+
+        def resolve(code) -> str | None:
             code = (code or "").strip()
-            if code in self.rt.group_of and self.rt.group_of[code] in {self.rt.group_of[c] for c in given}:
+            if code in self.rt.group_of and self.rt.group_of[code] in given_groups:
                 return code
             return None
 
         cited = []
-        for c in parsed.get("cited", []):
+        for i, c in enumerate(parsed.get("cited", [])):
+            where = f"cited[{i}]"
             code = resolve(c.get("code"))
             if code is None:
-                issues.append(f"cited code not given to model, dropped: {c.get('code')}")
+                known = (c.get("code") or "").strip() in self.rt.group_of
+                fix("drop_unknown_code", where,
+                    {"code": c.get("code"), "date": c.get("date")},
+                    "dropped (" + ("in corpus but not given to the model" if known else "not a corpus GR code") + ")")
                 continue
-            g = self.rt.grs[code]
-            page, found = self._find_quote(code, c.get("quote", ""))
+            quote = c.get("quote", "")
+            page, found = self._find_quote(code, quote)
             if not found:
-                # the quote may be from the twin copy
-                for twin in self.rt.members[g["group"]]:
+                for twin in self.rt.members[self.rt.grs[code]["group"]]:
                     if twin != code:
-                        page, found = self._find_quote(twin, c.get("quote", ""))
+                        page, found = self._find_quote(twin, quote)
                         if found:
-                            issues.append(f"quote for {code} found in its twin {twin}")
-                            code, g = twin, self.rt.grs[twin]
+                            fix("move_quote_to_twin", f"{where}.code", code, twin)
+                            code = twin
                             break
+            g = self.rt.grs[code]
+            if (c.get("date") or "").strip() != g["date"]:
+                fix("date_from_metadata", f"{where}.date", c.get("date"), g["date"])
+            if (c.get("title") or "").strip() != g["title"].strip():
+                fix("title_from_metadata", f"{where}.title", c.get("title"), g["title"].strip())
             if not found:
-                issues.append(f"quote not found in original text of {code}")
+                flags.append(f"{where}: quote not found in the original text of {code}")
             elif page is not None and page != c.get("page"):
-                issues.append(f"page for {code} corrected {c.get('page')} -> {page}")
-            cited.append({"code": code, "date": g["date"], "title": g["title"], "url": g["url"],
-                          "quote": c.get("quote", ""), "page": page if page is not None else c.get("page"),
+                fix("page_from_quote", f"{where}.page", c.get("page"), page)
+            cited.append({"code": code, "date": g["date"], "title": g["title"].strip(), "url": g["url"],
+                          "quote": quote, "page": page if page is not None else c.get("page"),
                           "quote_verified": found})
 
         newer = []
-        for n in parsed.get("newer", []):
+        for i, n in enumerate(parsed.get("newer", [])):
+            where = f"newer[{i}]"
             code = resolve(n.get("code"))
             if code is None:
-                issues.append(f"newer code not given to model, dropped: {n.get('code')}")
+                known = (n.get("code") or "").strip() in self.rt.group_of
+                fix("drop_unknown_code", where, {"code": n.get("code"), "date": n.get("date")},
+                    "dropped (" + ("in corpus but not given to the model" if known else "not a corpus GR code") + ")")
                 continue
-            newer.append({"code": code, "date": self.rt.grs[code]["date"], "what_changed": n.get("what_changed", "")})
-        newer.sort(key=lambda n: date_key(n["date"]))
+            d = self.rt.grs[code]["date"]
+            if (n.get("date") or "").strip() != d:
+                fix("date_from_metadata", f"{where}.date", n.get("date"), d)
+            newer.append({"code": code, "date": d, "what_changed": n.get("what_changed", "")})
+        order = sorted(range(len(newer)), key=lambda k: date_key(newer[k]["date"]))
+        if order != list(range(len(newer))):
+            fix("sort_newer_by_date", "newer", [n["code"] for n in newer], [newer[k]["code"] for k in order])
+            newer = [newer[k] for k in order]
 
         reviewed = {self.rt.group_of.get(r.get("code", ""), r.get("code")) for r in parsed.get("candidates_reviewed", [])}
         unreviewed = [c["code"] for c in ctx.candidates if not c["already_retrieved"] and c["code"] not in reviewed]
         if unreviewed:
-            issues.append(f"candidates not reviewed by model: {', '.join(unreviewed)}")
+            flags.append(f"candidates not reviewed by the model: {', '.join(unreviewed)}")
 
         answer = (parsed.get("answer") or "").strip()
         if BARE_IN_FORCE.search(answer):
-            issues.append("wording: bare 'in force'")
+            flags.append("wording: bare 'in force'")
         if DOES_NOT_EXIST.search(answer):
-            issues.append("wording: says a GR does not exist")
+            flags.append("wording: says a GR does not exist")
         if parsed.get("status") not in ("answered", "not_found"):
-            issues.append(f"bad status {parsed.get('status')!r}")
+            flags.append(f"bad status {parsed.get('status')!r}")
 
-        result = {
-            "status": parsed.get("status"),
-            "answer": answer,
-            "cited": cited,
-            "newer": newer,
-            "coverage": COVERAGE,
-        }
-        return result, issues
+        result = {"status": parsed.get("status"), "answer": answer, "cited": cited, "newer": newer,
+                  "coverage": COVERAGE}
+        return result, corrections, flags
 
 
 def parse_json(text: str | None) -> dict:
@@ -296,21 +334,25 @@ def answer_question(answerer: Answerer, client, question: str) -> dict:
                        prompt_tokens_estimate=est_tokens)
     choice = (call.response.get("choices") or [{}])[0]
     msg = choice.get("message") or {}
-    issues, parsed, result, parse_error = [], None, None, None
+    issues, corrections, parsed, raw_answer, result = [], [], None, None, None
     try:
         parsed = parse_json(msg.get("content"))
-        result, issues = answerer.finalize(ctx, parsed)
     except (ValueError, json.JSONDecodeError) as e:
-        parse_error = f"{type(e).__name__}: {e}"
-        issues.append(f"could not parse model output: {parse_error}")
+        issues.append(f"could not parse model output: {type(e).__name__}: {e}")
+    if parsed is not None:
+        raw_answer = answerer.raw_answer(parsed)
+        result, corrections, issues = answerer.finalize(ctx, parsed)
     if choice.get("finish_reason") != "stop":
         issues.append(f"finish_reason={choice.get('finish_reason')}")
     return {
         "context": ctx,
         "messages": messages,
         "raw_response": call.response,
+        "model_content": msg.get("content"),
         "parsed_model_output": parsed,
+        "raw_answer": raw_answer,
         "result": result,
+        "corrections": corrections,
         "issues": issues,
         "usage": call.usage,
         "latency_s": round(call.latency_s, 2),

@@ -9,12 +9,12 @@ You get:
 How to work:
 1. Decide which GR the question asks about (the "asked-for GR").
 2. Read EVERY newer-GR candidate's text. For each one decide, from its own words, what it does to the asked-for GR: "amends" (changes some part, e.g. a deadline, a paragraph, an amount), "replaces" (supersedes it), "stays" (suspends it), "extends", "clarifies", "cites_only" (refers to it but changes nothing), or "unrelated". A shared file number or a reference is NOT enough to say it changes anything. Record every decision in candidates_reviewed.
-3. Put in "newer" only candidates that amend, replace, stay, extend or clarify the asked-for GR, and say in what_changed exactly what changed, from the text.
+3. Put in "newer" (code, date as given, what_changed) only candidates that amend, replace, stay, extend or clarify the asked-for GR, and say in what_changed exactly what changed, from the text.
 4. Answer the question from the texts. Use dates as dd-mm-yyyy.
 
 Rules you must follow:
 - Every claim must rest on a GR given to you. Never invent a GR, code, number, date or amount.
-- "cited" lists the GRs your answer rests on. For each: the code exactly as given, an exact quote copied character for character from that GR's ORIGINAL-LANGUAGE text (Marathi stays Marathi, with its digits; do not translate, paraphrase or fix spelling; 5 to 40 words), and the page number the quote is on.
+- "cited" lists the GRs your answer rests on. For each: the code exactly as given, its date and title as given, an exact quote copied character for character from that GR's ORIGINAL-LANGUAGE text (Marathi stays Marathi, with its digits; do not translate, paraphrase or fix spelling; 5 to 40 words), and the page number the quote is on.
 - Never write a bare "in force". When no GR changes the asked-for GR, write: "No newer GR found in this corpus (covers 2018 to 2024)".
 - Never write that a GR "does not exist" or "no such GR exists". When the asked-for GR is not among the texts, write: "I couldn't find a GR on this in the corpus" and, if a corpus GR cites it, name that GR and say what it says about the missing one.
 - If the question gives a date that no corpus GR has (see DATE FACTS) but a corpus GR matches what is described, say so plainly: "The corpus dates this GR <dd-mm-yyyy>", and mention where the other date comes from if a cited text shows it.
