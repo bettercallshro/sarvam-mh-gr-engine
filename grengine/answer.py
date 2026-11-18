@@ -213,6 +213,11 @@ class Answerer:
         whole = norm(" ".join(t for _, t in sorted(pages.items())))
         return (None, q in whole)
 
+    def _given_dates(self, ctx: Context) -> set[str]:
+        if not hasattr(ctx, "_dates"):
+            ctx._dates = {m.date for m in find_dates(ctx.question + "\n" + ctx.user_message)}
+        return ctx._dates
+
     def raw_answer(self, parsed: dict) -> dict:
         """The model's output in the contract shape, with no checks applied."""
         return {
@@ -307,10 +312,26 @@ class Answerer:
             fix("sort_newer_by_date", "newer", [n["code"] for n in newer], [newer[k]["code"] for k in order])
             newer = [newer[k] for k in order]
 
-        reviewed = {self.rt.group_of.get(r.get("code", ""), r.get("code")) for r in parsed.get("candidates_reviewed", [])}
-        unreviewed = [c["code"] for c in ctx.candidates if not c["already_retrieved"] and c["code"] not in reviewed]
-        if unreviewed:
-            flags.append(f"candidates not reviewed by the model: {', '.join(unreviewed)}")
+        # Only candidates of the asked-for GR must be reviewed. If the model names no
+        # asked-for GR (or one not given to it), nothing is checked.
+        asked = (parsed.get("asked_for_code") or "").strip()
+        asked_group = self.rt.group_of.get(asked) if asked else None
+        if asked_group in given_groups:
+            reviewed = {self.rt.group_of.get(r.get("code", ""), r.get("code"))
+                        for r in parsed.get("candidates_reviewed", [])}
+            owed = list(dict.fromkeys(c["code"] for c in ctx.candidates if c["of_code"] == asked_group))
+            unreviewed = [c for c in owed if c not in reviewed]
+            if unreviewed:
+                flags.append(f"candidates of the asked-for GR not reviewed: {', '.join(unreviewed)}")
+
+        # A date in the answer text that is no cited or newer GR's date is flagged
+        # (not corrected). The flag says whether the date occurs in the given texts.
+        gr_dates = {c.get("date") for c in cited} | {n.get("date") for n in newer}
+        for d in dict.fromkeys(m.date for m in find_dates(parsed.get("answer") or "")):
+            if d not in gr_dates:
+                where = ("occurs in the texts given" if d in self._given_dates(ctx)
+                         else "occurs nowhere in the question or the texts given")
+                flags.append(f"date in answer matches no cited or newer GR: {d} ({where})")
 
         answer = (parsed.get("answer") or "").strip()
         if BARE_IN_FORCE.search(answer):
@@ -350,48 +371,127 @@ def parse_json(text: str | None) -> tuple[dict, list[str]]:
     return obj, dups
 
 
+def validate(parsed: dict | None, dups: list[str]) -> list[str]:
+    """Problems that make a reply invalid against the answer schema."""
+    if parsed is None:
+        return ["not a JSON object"]
+    errs = []
+    if dups:
+        errs.append(f"duplicate keys: {', '.join(sorted(set(dups)))}")
+    props = ANSWER_SCHEMA["properties"]
+    for key in ANSWER_SCHEMA["required"]:
+        if key not in parsed:
+            errs.append(f"missing field: {key}")
+    extra = set(parsed) - set(props)
+    if extra:
+        errs.append(f"unexpected fields: {', '.join(sorted(extra))}")
+    if parsed.get("status") not in ("answered", "not_found"):
+        errs.append(f"bad status: {parsed.get('status')!r}")
+    if not isinstance(parsed.get("answer"), str) or not parsed.get("answer", "").strip():
+        errs.append("empty or non-string answer")
+    afc = parsed.get("asked_for_code")
+    if "asked_for_code" in parsed and afc is not None and not isinstance(afc, str):
+        errs.append("asked_for_code is not a string or null")
+    for arr, item_req in (("candidates_reviewed", ("code", "effect", "reason")),
+                          ("newer", ("code", "date", "what_changed")),
+                          ("cited", ("code", "date", "title", "quote", "page"))):
+        val = parsed.get(arr)
+        if arr in parsed and not isinstance(val, list):
+            errs.append(f"{arr} is not a list")
+            continue
+        for i, it in enumerate(val or []):
+            if not isinstance(it, dict):
+                errs.append(f"{arr}[{i}] is not an object")
+                continue
+            miss = [k for k in item_req if k not in it]
+            if miss:
+                errs.append(f"{arr}[{i}] missing {', '.join(miss)}")
+            if arr == "cited" and "page" in it and not isinstance(it["page"], int):
+                errs.append(f"cited[{i}].page is not an integer")
+            if arr == "candidates_reviewed" and it.get("effect") not in props[arr]["items"]["properties"]["effect"]["enum"]:
+                errs.append(f"candidates_reviewed[{i}] bad effect: {it.get('effect')!r}")
+    return errs
+
+
+def _attempt(client, messages, est_tokens) -> dict:
+    call = client.chat(messages, max_tokens=MAX_TOKENS, reasoning_effort=REASONING_EFFORT,
+                       temperature=TEMPERATURE, response_format={"type": "json_object"},
+                       prompt_tokens_estimate=est_tokens)
+    choice = (call.response.get("choices") or [{}])[0]
+    msg = choice.get("message") or {}
+    parsed, dups, parse_error = None, [], None
+    try:
+        parsed, dups = parse_json(msg.get("content"))
+        if not isinstance(parsed, dict):
+            parsed = None
+    except (ValueError, json.JSONDecodeError) as e:
+        parse_error = f"{type(e).__name__}: {e}"
+    errors = validate(parsed, dups)
+    if parse_error:
+        errors.insert(0, f"could not parse: {parse_error}")
+    return {"call": call, "finish_reason": choice.get("finish_reason"), "content": msg.get("content"),
+            "parsed": parsed, "dups": dups, "errors": errors}
+
+
 def answer_question(answerer: Answerer, client, question: str) -> dict:
-    """One full answer, with everything E4 logs."""
+    """One full answer, with everything E4 logs.
+
+    A reply that is invalid against the schema is retried once with the same
+    prompt. Both replies are logged. The scored raw answer is the last reply;
+    if that is still invalid the question is a format failure (format = "failed").
+    """
     ctx = answerer.build_context(question)
     messages = [{"role": "system", "content": answerer.system_prompt},
                 {"role": "user", "content": ctx.user_message}]
     est_tokens = int(sum(len(m["content"]) for m in messages) / CHARS_PER_TOKEN_ESTIMATE)
     t0 = time.monotonic()
-    call = client.chat(messages, max_tokens=MAX_TOKENS, reasoning_effort=REASONING_EFFORT,
-                       temperature=TEMPERATURE,
-                       response_format={"type": "json_object"},
-                       prompt_tokens_estimate=est_tokens)
-    choice = (call.response.get("choices") or [{}])[0]
-    msg = choice.get("message") or {}
-    issues, corrections, parsed, raw_answer, result = [], [], None, None, None
-    try:
-        parsed, dups = parse_json(msg.get("content"))
-    except (ValueError, json.JSONDecodeError) as e:
-        issues.append(f"could not parse model output: {type(e).__name__}: {e}")
-        dups = []
+
+    attempts = [_attempt(client, messages, est_tokens)]
+    if attempts[0]["errors"]:
+        attempts.append(_attempt(client, messages, est_tokens))
+    last = attempts[-1]
+    fmt = "ok" if not attempts[0]["errors"] else ("retried_ok" if not last["errors"] else "failed")
+
+    issues, corrections, raw_answer, result = [], [], None, None
+    parsed = last["parsed"]
     if parsed is not None:
         raw_answer = answerer.raw_answer(parsed)
-        result, corrections, issues = answerer.finalize(ctx, parsed)
-        if dups:
-            issues.append(f"duplicate keys in model output (last value kept): {', '.join(sorted(set(dups)))}")
-    if choice.get("finish_reason") != "stop":
-        issues.append(f"finish_reason={choice.get('finish_reason')}")
+        if not last["errors"]:
+            result, corrections, issues = answerer.finalize(ctx, parsed)
+    if last["errors"]:
+        issues.append("format failure after retry: " + "; ".join(last["errors"]))
+    if last["finish_reason"] != "stop":
+        issues.append(f"finish_reason={last['finish_reason']}")
+
+    usage = _sum_usage([a["call"].usage for a in attempts])
     return {
         "context": ctx,
         "messages": messages,
-        "raw_response": call.response,
-        "model_content": msg.get("content"),
+        "format": fmt,
+        "format_attempts": [{"model_content": a["content"], "errors": a["errors"], "usage": a["call"].usage,
+                             "finish_reason": a["finish_reason"], "latency_s": round(a["call"].latency_s, 2)}
+                            for a in attempts],
+        "raw_response": last["call"].response,
+        "model_content": last["content"],
         "parsed_model_output": parsed,
         "raw_answer": raw_answer,
         "result": result,
         "corrections": corrections,
         "issues": issues,
-        "usage": call.usage,
-        "latency_s": round(call.latency_s, 2),
+        "usage": usage,
+        "latency_s": round(sum(a["call"].latency_s for a in attempts), 2),
         "total_s": round(time.monotonic() - t0, 2),
-        "attempts": call.attempts,
-        "retries": call.retries,
+        "attempts": sum(a["call"].attempts for a in attempts),
+        "retries": [r for a in attempts for r in a["call"].retries],
         "settings": {"model": "sarvam-105b", "max_tokens": MAX_TOKENS, "reasoning_effort": REASONING_EFFORT,
                      "temperature": TEMPERATURE, "response_format": "json_object",
                      "prompt_version": PROMPT_VERSION},
     }
+
+
+def _sum_usage(usages: list[dict]) -> dict:
+    keys = ("prompt_tokens", "cached_tokens", "completion_tokens", "reasoning_tokens", "total_tokens")
+    out = {k: sum(u[k] for u in usages) for k in keys}
+    out["cost_inr"] = round(sum(u["cost_inr"] for u in usages), 6)
+    out["calls"] = len(usages)
+    return out

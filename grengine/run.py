@@ -13,7 +13,8 @@ Before any call, a preflight estimates the run's worst-case cost from prompt
 sizes and refuses to start above RUN_SPEND_CAP_INR (default 20).
 The run stops (and says why in run_end) on:
   - any API error, a missing key, exhausted credits, or the daily cap
-  - an unparseable model reply
+  (a reply that is invalid against the schema is retried once; if it is still
+   invalid the question is recorded as a format failure and the run continues)
   - a projected cost for this run above RUN_SPEND_CAP_INR (default 20)
 """
 import argparse
@@ -67,6 +68,8 @@ def question_record(q: dict, out: dict) -> dict:
         "model_content": out["model_content"],
         "parsed_model_output": out["parsed_model_output"],
         "raw_answer": out["raw_answer"],        # model output, no checks (scored in the eval)
+        "format": out["format"],                # ok | retried_ok | failed
+        "format_attempts": out["format_attempts"],  # every reply, with its schema errors
         "answer": out["result"],                # after the post-answer checks (the product)
         "corrections": out["corrections"],      # every change the checks made
         "issues": out["issues"],                # problems flagged but left in place
@@ -94,7 +97,7 @@ def write_csv(path: Path, records: list[dict]) -> None:
     so the effect of the checks can be compared."""
     cols = ["id", "question", "gold_answer", "model_answer", "cited", "newer", "status",
             "answer_score", "citation", "latest", "confident_wrong", "notes",
-            "check_corrections", "checked_cited", "checked_newer", "flags"]
+            "format", "check_corrections", "checked_cited", "checked_newer", "flags"]
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=cols)
         w.writeheader()
@@ -108,6 +111,7 @@ def write_csv(path: Path, records: list[dict]) -> None:
                 "newer": _fmt_newer(raw.get("newer", [])),
                 "status": raw.get("status", ""),
                 "answer_score": "", "citation": "", "latest": "", "confident_wrong": "", "notes": "",
+                "format": r.get("format", ""),
                 "check_corrections": "; ".join(f"{c['check']} {c['where']}: {c['before']} -> {c['after']}"
                                                for c in r.get("corrections", [])),
                 "checked_cited": _fmt_cited(chk.get("cited", [])),
@@ -187,10 +191,7 @@ def main(argv=None) -> int:
             u = rec["usage"]
             print(f"Q{q['id']:>2}  {rec['latency_s']:>6.1f}s  in {u['prompt_tokens']:>6} out {u['completion_tokens']:>5} "
                   f"(reasoning {u['reasoning_tokens']:>5})  Rs {rec['cost_inr']:.4f}  "
-                  f"{(rec['raw_answer'] or {}).get('status', 'PARSE FAILED')}  corrections: {len(rec['corrections'])}  flags: {len(rec['issues'])}", flush=True)
-            if rec["answer"] is None:
-                stop_reason = f"Q{q['id']}: model reply could not be parsed"
-                break
+                  f"{(rec['raw_answer'] or {}).get('status')}  format {rec['format']}  corrections: {len(rec['corrections'])}  flags: {len(rec['issues'])}", flush=True)
             projected = spent / i * len(questions)
             if projected > cap:
                 stop_reason = (f"projected cost for this run Rs {projected:.2f} is over the run cap Rs {cap:.2f} "
@@ -207,6 +208,9 @@ def main(argv=None) -> int:
             "daily_spent_after_inr": client.spend.spent(),
             "corrections_by_check": dict(Counter(c["check"] for r in records for c in r["corrections"])),
             "questions_with_corrections": sum(1 for r in records if r["corrections"]),
+            "format": dict(Counter(r["format"] for r in records)),
+            "format_failures": sum(1 for r in records if r["format"] == "failed"),
+            "format_retries": sum(1 for r in records if r["format"] != "ok"),
         }
         log(summary)
 

@@ -1,7 +1,7 @@
 """Post-answer checks: they correct the product answer, and every change is logged."""
 import unittest
 
-from grengine.answer import Answerer, Context
+from grengine.answer import Answerer, Context, validate
 from grengine.search import INDEX_DIR
 
 CLOUD = "201801291824268911"   # 29-01-2018 cloud circular (English original)
@@ -54,6 +54,56 @@ class TestChecks(unittest.TestCase):
         result, corrections, _ = self.a.finalize(self.ctx([CLOUD]), parsed)
         self.assertEqual(result["newer"], [])
         self.assertIn("not given to the model", corrections[0]["after"])
+
+
+class TestValidate(unittest.TestCase):
+    GOOD = {"asked_for_code": None, "candidates_reviewed": [], "newer": [], "cited": [],
+            "answer": "x", "status": "answered"}
+
+    def test_good(self):
+        self.assertEqual(validate(dict(self.GOOD), []), [])
+
+    def test_bad_status_missing_fields_and_dups(self):
+        bad = dict(self.GOOD, status=" ")
+        del bad["cited"]
+        errs = validate(bad, ["cited"])
+        self.assertTrue(any("bad status" in e for e in errs))
+        self.assertTrue(any("missing field: cited" in e for e in errs))
+        self.assertTrue(any("duplicate keys" in e for e in errs))
+
+    def test_echoed_document_is_invalid(self):
+        self.assertTrue(validate({"code": "1", "text": "..."}, []))
+
+    def test_none(self):
+        self.assertEqual(validate(None, []), ["not a JSON object"])
+
+
+@unittest.skipUnless((INDEX_DIR / "grs.json").exists(), "index not built")
+class TestFlags(unittest.TestCase):
+    @classmethod
+    def setUpClass(cls):
+        cls.a = Answerer()
+
+    def test_date_in_answer_matching_no_gr_is_flagged(self):
+        ctx = Context("q", [], [], [], [CLOUD], "text mentions 31.03.2020")
+        parsed = {"status": "answered", "asked_for_code": CLOUD, "candidates_reviewed": [], "newer": [],
+                  "cited": [{"code": CLOUD, "date": "29-01-2018", "title": "t", "quote": "q", "page": 1}],
+                  "answer": "The 29-01-2018 circular; deadline 31-03-2020; see 11-05-2011."}
+        _, _, flags = self.a.finalize(ctx, parsed)
+        date_flags = [f for f in flags if f.startswith("date in answer")]
+        self.assertEqual(len(date_flags), 2)
+        self.assertTrue(any("11-05-2011" in f and "nowhere" in f for f in date_flags))
+        self.assertTrue(any("31-03-2020" in f and "in the texts given" in f for f in date_flags))
+
+    def test_only_candidates_of_asked_for_gr_must_be_reviewed(self):
+        cands = [{"code": "201906191741481211", "of_code": CLOUD, "already_retrieved": False},
+                 {"code": "202304131657547811", "of_code": LAPTOP, "already_retrieved": False}]
+        ctx = Context("q", [], cands, [], [CLOUD, LAPTOP, "201906191741481211", "202304131657547811"], "")
+        base = {"status": "answered", "answer": "x", "newer": [], "cited": [], "candidates_reviewed": []}
+        _, _, flags = self.a.finalize(ctx, dict(base, asked_for_code=CLOUD))
+        self.assertTrue(any("201906191741481211" in f and "202304131657547811" not in f for f in flags))
+        _, _, flags = self.a.finalize(ctx, dict(base, asked_for_code=None))
+        self.assertFalse(any("not reviewed" in f for f in flags))
 
 
 class TestRepair(TestChecks):
