@@ -1,0 +1,350 @@
+{
+ "id": 104,
+ "set": "holdout",
+ "question": "Which GR sets MahaIT's current rates for supplying technical manpower to departments?",
+ "case": "AM",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "The GR of 22-04-2020, with rates for 01-04-2020 to 31-03-2021: the latest in this corpus. It follows the rate GRs for 2018-19 (03-04-2018) and 2019-20 (09-04-2019). No newer rate GR in this corpus",
+ "gold_grs": [
+  "201804031521270211",
+  "201904091114390811",
+  "202004221243514111"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201804031521270211",
+   "date": "03-04-2018",
+   "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf"
+  },
+  {
+   "code": "201904091114390811",
+   "date": "09-04-2019",
+   "title": "Regarding revised Pay Scale for making technical manpower available for the period from 01-04-2019 to 31-03-2020, from Maharashtra Information Technology Corporation.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904091114390811.pdf"
+  },
+  {
+   "code": "202004221243514111",
+   "date": "22-04-2020",
+   "title": "Renewal rate of Technical Manpower of Maha IT for year dated 01/04/2020 to 31/03/2021.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202004221243514111.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current rates for supplying technical manpower to departments are set by the 22-04-2020 GR (202004221243514111), which fixes rates for 01/04/2020 to 31/03/2021 via an annexure; earlier GRs set rates for 2018-19 and 2019-20. No later GR in the corpus amends these current rates.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "title": "Regarding revised Pay Scale for making technical manpower available for the period from 01-04-2019 to 31-03-2020, from Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904091114390811.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील. तथापि, महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने तांत्रिक मनुष्यबळ पुरवठा करणाऱ्या संस्थांसबत केलेल्या करारानुसार जोडपत्र-१ मध्ये नमूद केलेल्या संस्थांच्या तांत्रिक मनुष्यबळाच्या उपलब्धतेनुसार महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने कार्यादेश दयावेत.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "title": "Renewal rate of Technical Manpower of Maha IT for year dated 01/04/2020 to 31/03/2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202004221243514111.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील. तथापि, महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने तांत्रिक मनुष्यबळ पुरवठा करणाऱ्या संस्थांसबत केलेल्या करारानुसार जोडपत्र-१ मध्ये नमूद केलेल्या संस्थांच्या तांत्रिक मनुष्यबळाच्या उपलब्धतेनुसार महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने कार्यादेश दयावेत.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Sets rates for 01/04/2019 to 31/03/2020 via annexure and requires work orders per availability under Annexure-1 agreement."
+     },
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "what_changed": "Sets rates for 01/04/2020 to 31/03/2021 via annexure and requires work orders per availability under Annexure-1 agreement."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current rates for supplying technical manpower to departments are set by the 22-04-2020 GR (202004221243514111), which fixes rates for 01/04/2020 to 31/03/2021 via an annexure; earlier GRs set rates for 2018-19 and 2019-20. No later GR in the corpus amends these current rates.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील.",
+      "page": 1
+     },
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "title": "Regarding revised Pay Scale for making technical manpower available for the period from 01-04-2019 to 31-03-2020, from Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904091114390811.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील. तथापि, महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने तांत्रिक मनुष्यबळ पुरवठा करणाऱ्या संस्थांसबत केलेल्या करारानुसार जोडपत्र-१ मध्ये नमूद केलेल्या संस्थांच्या तांत्रिक मनुष्यबळाच्या उपलब्धतेनुसार महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने कार्यादेश दयावेत.",
+      "page": 1
+     },
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "title": "Renewal rate of Technical Manpower of Maha IT for year dated 01/04/2020 to 31/03/2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202004221243514111.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील. तथापि, महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने तांत्रिक मनुष्यबळ पुरवठा करणाऱ्या संस्थांसबत केलेल्या करारानुसार जोडपत्र-१ मध्ये नमूद केलेल्या संस्थांच्या तांत्रिक मनुष्यबळाच्या उपलब्धतेनुसार महाराष्ट्र माहिती तंत्रज्ञान महामंडळाने कार्यादेश दयावेत.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "2020042212439514111",
+      "date": "22-04-2020",
+      "what_changed": "Sets rates for 01/04/2020 to 31/03/2021 via annexure and requires work orders per availability under Annexure-1 agreement."
+     },
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Sets rates for 01/04/2019 to 31/03/2020 via annexure and requires work orders per availability under Annexure-1 agreement."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The GR dated 03-04-2018 (code 201804031521270211) originally set the rates for supplying technical manpower from 01/04/2018 to 31/03/2019 as per the attached Annexure. Later GRs in 2019 and 2020 amended this by adding a condition that Maharashtra IT Corporation shall issue work orders based on the availability of technical manpower of institutions mentioned in Annexure-I as per the agreement with supplying agencies.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "दिनांक ०१/०४/२०१८ ते दिनांक ३१/०३/२०१९ या कालावधीकरीता तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Added a conditional clause that Maharashtra IT Corporation shall issue work orders as per the availability of technical manpower of institutions mentioned in Annexure-I as per the agreement with supplying agencies."
+     },
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "what_changed": "Added a conditional clause that Maharashtra IT Corporation shall issue work orders as per the availability of technical manpower of institutions mentioned in Annexure-I as per the agreement with supplying agencies."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The GR dated 03-04-2018 (code 201804031521270211) originally set the rates for supplying technical manpower from 01/04/2018 to 31/03/2019 as per the attached Annexure. Later GRs in 2019 and 2020 amended this by adding a condition that Maharashtra IT Corporation shall issue work orders based on the availability of technical manpower of institutions mentioned in Annexure-I as per the agreement with supplying agencies.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "दिनांक ०१/०४/२०१८ ते दिनांक ३१/०३/२०१९ या कालावधीकरीता तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Added a conditional clause that Maharashtra IT Corporation shall issue work orders as per the availability of technical manpower of institutions mentioned in Annexure-I as per the agreement with supplying agencies."
+     },
+     {
+      "code": "202004221243510111",
+      "date": "22-04-2020",
+      "what_changed": "Added a conditional clause that Maharashtra IT Corporation shall issue work orders as per the availability of technical manpower of institutions mentioned in Annexure-I as per the agreement with supplying agencies."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current rate-setting GR is the one dated 22-04-2020, which establishes the rates for technical manpower supplied by MahaIT for the period 01/04/2020 to 31/03/2021 as per its attached annexure. Earlier, the GR dated 03-04-2018 set the rates for 01/04/2018 to 31/03/2019 as per its attached annexure.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "दिनांक ०१/०४/२०१८ ते दिनांक ३१/०३/२०१९ या कालावधीकरीता तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Supersedes the 2018 GR for the period 01/04/2019 to 31/03/2020, maintaining the annexure-based rate structure with an added condition that work orders must follow agency availability per Annexure-I."
+     },
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "what_changed": "Supersedes the 2018 GR for the period 01/04/2020 to 31/03/2021, maintaining the annexure-based rate structure with an added condition that work orders must follow agency availability per Annexure-I."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current rate-setting GR is the one dated 22-04-2020, which establishes the rates for technical manpower supplied by MahaIT for the period 01/04/2020 to 31/03/2021 as per its attached annexure. Earlier, the GR dated 03-04-2018 set the rates for 01/04/2018 to 31/03/2019 as per its attached annexure.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "दिनांक ०१/०४/२०१८ ते दिनांक ३१/०३/२०१९ या कालावधीकरीता तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "what_changed": "Supersedes the 2018 GR for the period 01/04/2020 to 31/03/2021, maintaining the annexure-based rate structure with an added condition that work orders must follow agency availability per Annexure-I."
+     },
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Supersedes the 2018 GR for the period 01/04/2019 to 31/03/2020, maintaining the annexure-based rate structure with an added condition that work orders must follow agency availability per Annexure-I."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current rates for supplying technical manpower are set by the GR dated 22-04-2020 (code 202004221243514111), which fixes rates for 01/04/2020 to 31/03/2021 as per the attached appendix. Earlier, the GR dated 03-04-2018 (code 201804031521270211) set rates for 01/04/2018 to 31/03/2019 as per its attached appendix.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Set technical manpower rates (excluding tax) for 01/04/2019 to 31/03/2020 as per the attached appendix, and added that work orders must be issued according to the availability of technical manpower of institutions mentioned in Annexure-1 as per the agreement with supplying agencies."
+     },
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "what_changed": "Set technical manpower rates (excluding tax) for 01/04/2020 to 31/03/2021 as per the attached appendix, and added that work orders must be issued according to the availability of technical manpower of institutions mentioned in Annexure-1 as per the agreement with supplying agencies."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current rates for supplying technical manpower are set by the GR dated 22-04-2020 (code 202004221243514111), which fixes rates for 01/04/2020 to 31/03/2021 as per the attached appendix. Earlier, the GR dated 03-04-2018 (code 201804031521270211) set rates for 01/04/2018 to 31/03/2019 as per its attached appendix.",
+    "cited": [
+     {
+      "code": "201804031521270211",
+      "date": "03-04-2018",
+      "title": "Rate for Supply of IT Human Resources by Maharashtra Information Technology Corporation for period 01/04/2018 to 31/03/2019.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031521270211.pdf",
+      "quote": "तांत्रिक मनुष्यबळाचे दर (कराव्यतिरीक्त) या शासन निर्णयाच्या सोबत जोडलेल्या परिशिष्टानुसार राहतील",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904091114390811",
+      "date": "09-04-2019",
+      "what_changed": "Set technical manpower rates (excluding tax) for 01/04/2019 to 31/03/2020 as per the attached appendix, and added that work orders must be issued according to the availability of technical manpower of institutions mentioned in Annexure-1 as per the agreement with supplying agencies."
+     },
+     {
+      "code": "202004221243514111",
+      "date": "22-04-2020",
+      "what_changed": "Set technical manpower rates (excluding tax) for 01/04/2020 to 31/03/2021 as per the attached appendix, and added that work orders must be issued according to the availability of technical manpower of institutions mentioned in Annexure-1 as per the agreement with supplying agencies."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

@@ -1,0 +1,489 @@
+{
+ "id": 16,
+ "set": "main",
+ "question": "What did the 9 May 2019 IT consultant GR say?",
+ "case": "MI",
+ "task": "S",
+ "lang": "EN",
+ "gold_answer": "Not in this corpus, though later GRs cite it",
+ "gold_grs": [
+  "202103191753279311"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202103191753279311",
+   "date": "19-03-2021",
+   "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on 9 May 2019 in the corpus. The 2021 GR (202103191753279311) cites it as 'शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९' and states that detailed instructions on empanelment of six consultant agencies were issued under it, and that the 2021 GR amends those earlier resolutions.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक 09/05/2019",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on 9 May 2019 in the corpus. The 2021 GR (202103191753279311) cites it as 'शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९' and states that detailed instructions on empanelment of six consultant agencies were issued under it, and that the 2021 GR amends those earlier resolutions.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत",
+      "page": 1
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक 09/05/2019",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 9 May 2019 IT consultant GR is cited in 202103191753279311 (dated 19-03-2021), which states that it had issued detailed instructions regarding consultant empanelment, and in 202310041905383211 (dated 05-10-2023) and 202304241816282211 (dated 24-04-2023), which list it among referenced resolutions.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ ०/० माहिती तंत्रज्ञान संचालनालय, दिनांक ०९/०५/२०१९",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/O Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304241816282211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-O/O Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 9 May 2019 IT consultant GR is cited in 202103191753279311 (dated 19-03-2021), which states that it had issued detailed instructions regarding consultant empanelment, and in 202310041905383211 (dated 05-10-2023) and 202304241816282211 (dated 24-04-2023), which list it among referenced resolutions.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ ०/० माहिती तंत्रज्ञान संचालनालय, दिनांक ०९/०५/२०१९",
+      "page": 1
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/O Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304241816282211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-O/O Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The corpus dates this GR 09-05-2019, and the 2021 GR (202103191753279311) cites it as a Government Resolution of the General Administration Department (IT 080/4/2014-O/O) dated 09/05/2019 that had issued detailed instructions regarding consultant empanelment, while the 2023 GRs (202310041905383211 and 202304241816282211) also cite it as a referenced Government Resolution for empanelment of IT consultants.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ ०/० मातंसं, दिनांक ०९/०५/२०१९ प्रस्तावना: शासनाच्या विविध विभागामध्ये आय. टी. प्रकल्प राबविण्याकरीत",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "२०/०३/२०१८ व शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत. सदर शासन निर्ण",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304241816282211.pdf",
+      "quote": "Resolution - GAD - IT 080/4/2014-O/O Directorate of IT-DIT (MH) dated 9th May, 2019 3. Government Circular - GAD - IT 080/4/2014-0/O Directorate of IT-DIT (MH)",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/0/O Directorate of IT-DIT (MH) dated 9th May, 2019 3. Government Circular - GAD - IT 080/4/4/O Directorate of IT-DIT (MH) dated 24th April, 2023",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The corpus dates this GR 09-05-2019, and the 2021 GR (202103191753279311) cites it as a Government Resolution of the General Administration Department (IT 080/4/2014-O/O) dated 09/05/2019 that had issued detailed instructions regarding consultant empanelment, while the 2023 GRs (202310041905383211 and 202304241816282211) also cite it as a referenced Government Resolution for empanelment of IT consultants.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ ०/० मातंसं, दिनांक ०९/०५/२०१९ प्रस्तावना: शासनाच्या विविध विभागामध्ये आय. टी. प्रकल्प राबविण्याकरीत",
+      "page": 1
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IIT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "२०/०३/२०१८ व शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत. सदर शासन निर्ण",
+      "page": 1
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304241816282211.pdf",
+      "quote": "Resolution - GAD - IT 080/4/2014-O/O Directorate of IT-DIT (MH) dated 9th May, 2019 3. Government Circular - GAD - IT 080/4/2014-0/O Directorate of IT-DIT (MH)",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/0/O Directorate of IT-DIT (MH) dated 9th May, 2019 3. Government Circular - GAD - IT 080/4/4/O Directorate of IT-DIT (MH) dated 24th April, 2023",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 202103191753279311 (dated 19-03-2021) cites the missing 09-05-2019 GR, noting that detailed instructions had been issued in accordance with it, and amends some paragraphs (e.g., changing DIT concurrence to ACS/PS/Secretary concurrence in paragraph 5, issue 1, and adding ACS/PS/Secretary in other paragraphs) based on that 2019 GR.",
+    "cited": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019 3. Government Circular - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 24th April, 2023",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304241816282211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-O/O Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "माहिती तंत्रज्ञान संचालनालय शासन निर्णय क्र. सामान्य प्रशासन विभाग मातंसं-०८०/४/२०१४ ०/० मातंसं, दिनांक ०९/०५/२०१९",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "२०/०३/२०१८ व शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत. सदर शासन निर्णयामध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 202103191753279311 (dated 19-03-2021) cites the missing 09-05-2019 GR, noting that detailed instructions had been issued in accordance with it, and amends some paragraphs (e.g., changing DIT concurrence to ACS/PS/Secretary concurrence in paragraph 5, issue 1, and adding ACS/PS/Secretary in other paragraphs) based on that 2019 GR.",
+    "cited": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019 3. Government Circular - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 24th April, 2023",
+      "page": 1
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304241816282211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-O/O Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "माहिती तंत्रज्ञान संचालनालय शासन निर्णय क्र. सामान्य प्रशासन विभाग मातंसं-०८०/४/२०१४ ०/० मातंसं, दिनांक ०९/०५/२०१९",
+      "page": 1
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "२०/०३/२०१८ व शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९ नुसार यासंदर्भात सविस्तर सूचना निर्गमित केलेल्या आहेत. सदर शासन निर्णयामध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 2021 GR (202103191753279311, dated 19-03-2021) and the 2023 GRs cite a 09-05-2019 resolution, stating it issued detailed instructions for empaneling six consultancy firms under file GAD-IT 080/4/2014, and the 2023 GR (202310041905383211) references it as one of the resolutions that empaneled firms for five years.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments may use RFP change-order clauses to alter the personnel profile but must not change the years of experience fixed in the GR for the resource category."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 2021 GR (202103191753279311, dated 19-03-2021) and the 2023 GRs cite a 09-05-2019 resolution, stating it issued detailed instructions for empaneling six consultancy firms under file GAD-IT 080/4/2014, and the 2023 GR (202310041905383211) references it as one of the resolutions that empaneled firms for five years.",
+    "cited": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2019",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं-०८०/४/२०१४ O/O मातंसं, दिनांक ०९/०५/२०१९",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for I...",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Government Resolution - GAD - IT 080/4/2014-0/0 Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": null,
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": null,
+      "quote": "Government Resolution - GAD - IT 080/4/2014-O/O Directorate of IT-DIT (MH) dated 9th May, 2019",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments may use RFP change-order clauses to alter the personnel profile but must not change the years of experience fixed in the GR for the resource category."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

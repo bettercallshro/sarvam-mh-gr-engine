@@ -1,0 +1,265 @@
+{
+ "id": 32,
+ "set": "main",
+ "question": "What is the latest GR on the State Data Center as critical information infrastructure?",
+ "case": "CO",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "05-10-2019; no newer GR found in this corpus",
+ "gold_grs": [
+  "201910051257224511"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201910051257224511",
+   "date": "05-10-2019",
+   "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on declaring the Maharashtra State Data Center as Critical Information Infrastructure (CII) is dated 05-10-2019 (Government Circular No. H – DIT2019/CR 34/3/39). It declares the Maharashtra State Data Center as CII and a protected site. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this 2019 declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State data center (SDC) is being declared a protected site considering below parameters:",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on declaring the Maharashtra State Data Center as Critical Information Infrastructure (CII) is dated 05-10-2019 (Government Circular No. H – DIT2019/CR 34/3/39). It declares the Maharashtra State Data Center as CII and a protected site. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this 2019 declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State data center (SDC) is being declared a protected site considering below parameters:",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the State Data Center as critical information infrastructure is dated 05-10-2019 (GR H – DIT2019/CR 34/3/39), which declares the Maharashtra State Data Center as Critical Information Infrastructure (CII). No newer GR in the corpus amends, replaces, or extends this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State data center (SDC) is being declared a protected site considering below parameters",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "1. Maharashtra State data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the State Data Center as critical information infrastructure is dated 05-10-2019 (GR H – DIT2019/CR 34/3/39), which declares the Maharashtra State Data Center as Critical Information Infrastructure (CII). No newer GR in the corpus amends, replaces, or extends this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State data center (SDC) is being declared a protected site considering below parameters",
+      "page": 2
+     },
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "1. Maharashtra State data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the State Data Center as critical information infrastructure is dated 05-10-2019. It declares the Maharashtra State Data Center as Critical Information Infrastructure (CII) for providing services to government organizations. No newer GR found in this corpus (covers 2018 to 2024) amends, replaces, stays, extends or clarifies this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "1. Maharashtra State data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE (CII) for providing tical services to the Critical Sectors of Government Departments, sub-ordinate offices, Public Sector Undertakings, Urban and Rural Local Bodies & any body/organization set up under any law of the State Government",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the State Data Center as critical information infrastructure is dated 05-10-2019. It declares the Maharashtra State Data Center as Critical Information Infrastructure (CII) for providing services to government organizations. No newer GR found in this corpus (covers 2018 to 2024) amends, replaces, stays, extends or clarifies this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "1. Maharashtra State data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE (CII) for providing tical services to the Critical Sectors of Government Departments, sub-ordinate offices, Public Sector Undertakings, Urban and Rural Local Bodies & any body/organization set up under any law of the State Government",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the State Data Center as critical information infrastructure is the 2019 GR dated 05-10-2019, which declares the Maharashtra State Data Center as Critical Information Infrastructure (CII). No newer GR in the corpus amends or replaces this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "1. Maharashtra State data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE (CII) for providing tical services to the Critical Sectors",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the State Data Center as critical information infrastructure is the 2019 GR dated 05-10-2019, which declares the Maharashtra State Data Center as Critical Information Infrastructure (CII). No newer GR in the corpus amends or replaces this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "1. Maharashtra State data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE (CII) for providing tical services to the Critical Sectors",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus declaring the Maharashtra State Data Center as Critical Information Infrastructure is dated 05-10-2019 (GR H – DIT2019/CR 34/3/39). No newer GR in the corpus amends, replaces, stays, extends, or clarifies this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State Data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE (CII)",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus declaring the Maharashtra State Data Center as Critical Information Infrastructure is dated 05-10-2019 (GR H – DIT2019/CR 34/3/39). No newer GR in the corpus amends, replaces, stays, extends, or clarifies this declaration.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State Data center is being hereby declared by DIT as CRITICAL INFORMATION INFRASTRUCTURE (CII)",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

@@ -16,6 +16,17 @@ locally.
 
 Independent case study, not affiliated with Sarvam.
 
+## How to read this repo (10 minutes)
+
+1. [Results](#results): the two tables below.
+2. [`eval/scores.csv`](eval/scores.csv): the hand score behind every number, one row per
+   question and run.
+3. [`eval/results/f1_diag_q2_q18_q28.md`](eval/results/f1_diag_q2_q18_q28.md): how the
+   baseline's worst failures were traced before anything was changed.
+4. [`eval/results/holdout_before_after.md`](eval/results/holdout_before_after.md): the 15
+   new questions, baseline and final side by side.
+5. [`docs/review-log.md`](docs/review-log.md): the human checks and decisions, dated.
+
 ## Results
 
 Scored on the raw model answer against the rubric below. "Fully correct" means right
@@ -137,10 +148,13 @@ grengine/          the engine
 corpus/            the 112 GRs, copied unchanged from orgpedia/mahGRs
 eval/              questions, hold-out questions, hand scores, step reports
 runs/              run logs and scoring sheets (see runs/README.md)
+replay/            logged runs exported for the website (see replay/README.md)
 docs/              review log
-scripts/           fetch_corpus.sh (re-fetch the corpus)
+scripts/           fetch_corpus.sh (re-fetch the corpus), export_replay.py (rebuild replay/)
 tests/
 ```
+
+Replay data for the website: [`replay/`](replay/) (logged runs, not live answers; see [`replay/README.md`](replay/README.md)).
 
 ## Data source and licence
 

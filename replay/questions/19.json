@@ -1,0 +1,475 @@
+{
+ "id": 19,
+ "set": "main",
+ "question": "Has the Maha DBT disbursement GR of 12 October 2018 been changed?",
+ "case": "DU,AM",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "Yes. Paragraphs 8 and 9 amended 30-11-2021. The English and Marathi copies of 12-10-2018 are one GR",
+ "gold_grs": [
+  "201810121542077211",
+  "201810161857288711",
+  "202111301536272711"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201810121542077211",
+   "date": "12-10-2018",
+   "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf"
+  },
+  {
+   "code": "201810161857288711",
+   "date": "12-10-2018",
+   "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810161857288711.pdf"
+  },
+  {
+   "code": "202111301536272711",
+   "date": "30-11-2021",
+   "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12-10-2018 has been amended. The 30-11-2021 GR amends paragraphs 8 and 9 of that GR, requiring DDOs to deposit funds into a State Bank of India Central Pool Account for each scheme and mandating Digital Service Certificate (DSC) authentication with cross-checking by State Bank of India for disbursements.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "8. After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "सदर निर्णयानुसार संदर्भाधिन शासन निर्णयातील परि.क्र. ८ व ९ मध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "परि. 8. - आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "परि. 9- निधी विभागाच्या योजनानिहाय “Central Pool Account ” खात्यामध्ये जमा झाल्यावर वितरणाची प्रक्रिया सुरु होईल आणि लाभार्थ्यांच्या आधार संलग्न किंवा प्राधिकृत संस्था / एजन्सी यांच्या खात्यामध्ये सार्वजनिक वित्तीय व्यवस्थापन प्रणाली (PFMS) 'मार्फत लाभाची रक्कम जमा होईल.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amended paragraphs 8 and 9 of the 12-10-2018 GR to specify that DDOs must deposit funds into a State Bank of India Central Pool Account for each scheme and that disbursement requires Digital Service Certificate (DSC) authentication and cross-checking with State Bank of India."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12-10-2018 has been amended. The 30-11-2021 GR amends paragraphs 8 and 9 of that GR, requiring DDOs to deposit funds into a State Bank of India Central Pool Account for each scheme and mandating Digital Service Certificate (DSC) authentication with cross-checking by State Bank of India for disbursements.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "8. After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "सदर निर्णयानुसार संदर्भाधिन शासन निर्णयातील परि.क्र. ८ व ९ मध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे.",
+      "page": 1
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for the delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "परि. 8. - आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा.",
+      "page": 1
+     },
+     {
+      "code": "2021113011536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for the delivery of benefits, subsidies and services in Maharashtra -",
+      "url": null,
+      "quote": "परि. 9- निधी विभागाच्या योजनानिहाय “Central Pool Account ” खात्यामध्ये जमा झाल्यावर वितरणाची प्रक्रिया सुरु होईल आणि लाभार्थ्यांच्या आधार संलग्न किंवा प्राधिकृत संस्था / एजन्सी यांच्या खात्यामध्ये सार्वजनिक वित्तीय व्यवस्थापन प्रणाली (PFMS) 'मार्फत लाभाची रक्कम जमा होईल.",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2011",
+      "what_changed": "Amended paragraphs 8 and 9 of the 12-10-2018 GR to specify that DDOs must deposit funds into a State Bank of India Central Pool Account for each scheme and that disbursement requires Digital Service Certificate (DSC) authentication and cross-checking with State Bank of India."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12-10-2018 has been amended. The 30-11-2021 GR amends paragraphs 8 and 9 of that GR, changing the Central Pool Account requirements and the disbursement process through PFMS. No other newer GR in the corpus changes this GR.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "7. Treasury officer shall not demand the list of Beneficiaries along with the Bill. It is to be noted in this context that the AG Mumbai and AG Nagpur offices shall be provided following features in the DBT portal",
+      "page": 4,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "सदर निर्णयानुसार संदर्भाधिन शासन निर्णयातील परि.क्र. ८ व ९ मध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amends paragraphs 8 and 9 of the 12-10-2018 GR: specifies that DDOs must deposit funds from Specific Scheme Accounts into the department's Central Pool Account opened in State Bank of India, and clarifies that disbursement starts after funds are credited to the Central Pool Account with PFMS linking and DSC authentication by the DDO."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12-10-2018 has been amended. The 30-11-2021 GR amends paragraphs 8 and 9 of that GR, changing the Central Pool Account requirements and the disbursement process through PFMS. No other newer GR in the corpus changes this GR.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "7. Treasury officer shall not demand the list of Beneficiaries along with the Bill. It is to be noted in this context that the AG Mumbai and AG Nagpur offices shall be provided following features in the DBT portal",
+      "page": 4
+     },
+     {
+      "code": "202111301136272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": null,
+      "quote": "सदर निर्णयानुसार संदर्भाधिन शासन निर्णयातील परि.क्र. ८ व ९ मध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amends paragraphs 8 and 9 of the 12-10-2018 GR: specifies that DDOs must deposit funds from Specific Scheme Accounts into the department's Central Pool Account opened in State Bank of India, and clarifies that disbursement starts after funds are credited to the Central Pool Account with PFMS linking and DSC authentication by the DDO."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12 October 2018 has been amended. A newer GR dated 30 November 2021 amends paragraphs 8 and 9 of the 2018 GR, requiring departments to open separate Central Pool Accounts for each scheme in State Bank of India and adding mandatory Digital Service Certificate (DSC) authentication by the DDO, with the file also sent to State Bank of India for re-verification.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "7. Treasury officer shall not demand the list of Beneficiaries along with the Bill. It is to be noted in this context that the AG Mumbai and AG Nagpur offices shall be provided following features in the DBT portal",
+      "page": 4,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "सदर निर्णयानुसार संदर्भाधिन शासन निर्णयातील परि.क्र. ८ व ९ मध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amended paragraphs 8 and 9 of the 2018 GR: required departments to open a separate Central Pool Account for each scheme in State Bank of India, and added that Digital Service Certificate (DSC) authentication by the DDO is mandatory, and the payment file must also be sent to State Bank of India for re-verification."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12 October 2018 has been amended. A newer GR dated 30 November 2021 amends paragraphs 8 and 9 of the 2018 GR, requiring departments to open separate Central Pool Accounts for each scheme in State Bank of India and adding mandatory Digital Service Certificate (DSC) authentication by the DDO, with the file also sent to State Bank of India for re-verification.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "7. Treasury officer shall not demand the list of Beneficiaries along with the Bill. It is to be noted in this context that the AG Mumbai and AG Nagpur offices shall be provided following features in the DBT portal",
+      "page": 4
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2011",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "सदर निर्णयानुसार संदर्भाधिन शासन निर्णयातील परि.क्र. ८ व ९ मध्ये खालीलप्रमाणे सुधारणा करण्यात येत आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amended paragraphs 8 and 9 of the 2018 GR: required departments to open a separate Central Pool Account for each scheme in State Bank of India, and added that Digital Service Certificate (DSC) authentication by the DDO is mandatory, and the payment file must also be sent to State Bank of India for re-verification."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12 October 2018 has been amended by the GR dated 30 November 2021. Earlier, the 12-10-2018 GR required the DDO to transfer the amount to the Central Pool Account at the earliest after receiving it in the scheme specific Bank account; the 30-11-2021 GR amended paragraphs 8 and 9 to require departments to open a separate Central Pool Account in State Bank of India for each scheme, and updated the PFMS authentication and cross-check requirements.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "Once the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4,
+      "quote_verified": false
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "परि. 8. - आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amended paragraphs 8 and 9: required DDOs to deposit funds into a Central Pool Account in State Bank of India for each scheme, and modified the PFMS authentication and cross-check requirements by the SBI."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12 October 2018 has been amended by the GR dated 30 November 2021. Earlier, the 12-10-2018 GR required the DDO to transfer the amount to the Central Pool Account at the earliest after receiving it in the scheme specific Bank account; the 30-11-2021 GR amended paragraphs 8 and 9 to require departments to open a separate Central Pool Account in State Bank of India for each scheme, and updated the PFMS authentication and cross-check requirements.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "Once the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "परि. 8. - आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amended paragraphs 8 and 9: required DDOs to deposit funds into a Central Pool Account in State Bank of India for each scheme, and modified the PFMS authentication and cross-check requirements by the SBI."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12-10-2018 has been changed. The amendment dated 30-11-2021 amends paragraphs 8 and 9 of that GR, requiring departments to open a separate Central Pool Account in State Bank of India for each scheme and specifying that disbursement files sent to PFMS must be authenticated by the DDO via Digital Service Certificate (DSC) and sent to State Bank of India for re-verification.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "परि. ८. - आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीत स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "विभागांनी सदर “Central Pool Account” खात्याचा वापर लाभ केवळ लाभार्थ्यांना महाडीबीटी पोर्टलद्वारे लाभांचे वितरण करण्यासाठीच करावा आणि हे खाते PFMS यांच्याशी संलग्न करण्यात यावे.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Paragraph 8 was amended to require departments to open a separate Central Pool Account in State Bank of India for each scheme and use it only for MahaDBT disbursements linked to PFMS. Paragraph 9 was amended to state that disbursement starts after funds are credited to the scheme-wise Central Pool Account, and to add that the disbursement file sent to PFMS must be authenticated by the DDO via Digital Service Certificate (DSC) and also sent to State Bank of India for re-verification."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, the Maha DBT disbursement GR of 12-10-2018 has been changed. The amendment dated 30-11-2021 amends paragraphs 8 and 9 of that GR, requiring departments to open a separate Central Pool Account in State Bank of India for each scheme and specifying that disbursement files sent to PFMS must be authenticated by the DDO via Digital Service Certificate (DSC) and sent to State Bank of India for re-verification.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा.",
+      "page": 1
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "परि. ८. - आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीत स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1
+     },
+     {
+      "code": "201810121542078211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": null,
+      "quote": "After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2011",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "विभागांनी सदर “Central Pool Account” खात्याचा वापर लाभ केवळ लाभार्थ्यांना महाडीबीटी पोर्टलद्वारे लाभांचे वितरण करण्यासाठीच करावा आणि हे खाते PFMS यांच्याशी संलग्न करण्यात यावे.",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Paragraph 8 was amended to require departments to open a separate Central Pool Account in State Bank of India for each scheme and use it only for MahaDBT disbursements linked to PFMS. Paragraph 9 was amended to state that disbursement starts after funds are credited to the scheme-wise Central Pool Account, and to add that the disbursement file sent to PFMS must be authenticated by the DDO via Digital Service Certificate (DSC) and also sent to State Bank of India for re-verification."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

@@ -1,0 +1,473 @@
+{
+ "id": 4,
+ "set": "main",
+ "question": "A file cites the State cloud policy dated 19/01/2018. Is that current?",
+ "case": "AM",
+ "task": "S",
+ "lang": "EN,MR",
+ "gold_answer": "Same policy (the corpus dates it 29-01-2018; another GR cites 17.1.2018). Not current as issued; see Q1",
+ "gold_grs": [
+  "201801291824268911",
+  "201906191741481211",
+  "201907051642210511",
+  "202104231756150811"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201801291824268911",
+   "date": "29-01-2018",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf"
+  },
+  {
+   "code": "201906191741481211",
+   "date": "19-06-2019",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf"
+  },
+  {
+   "code": "201907051642210511",
+   "date": "05-07-2019",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf"
+  },
+  {
+   "code": "202104231756150811",
+   "date": "23-04-2021",
+   "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "not_found",
+    "answer": "The corpus does not contain a GR dated 19/01/2018. However, the State cloud policy is referred to in later GRs: 201802161919110111 (16-02-2018) mentions a cloud policy in a DIT GR dated 19/01/2018, and 201906191741481211 (19-06-2019) states the policy was approved on 17.1.2018. The 202407191742379111 (19-07-2024) GR notes that all other provisions of the IT department's GR dated 19/01/2018 remain applicable as they are.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT. Any expenditure towards hosting charge",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": null,
+      "title": null,
+      "url": null,
+      "quote": "",
+      "page": null
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "The said policy has been approved by the Government on 17.1.2018.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus that revokes or supersedes the State cloud policy dated 19/01/2018; the corpus only cites that date and notes that all remaining provisions of the IT Department GR dated 19/01/2018 shall remain in force as they are.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT",
+      "page": 4,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Supersedes Annexure 1 Tier-2 empanelment rates of the 19-05-2018 GR and adds additional cloud services (e.g., Platform as a service, Software as a service, extra virtual machine packs)."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Supersedes the earlier cloud empanelment (DIT/060/3/2017/1 dated 16-05-2018) by moving procurement to GeM portal; earlier empanelment and rates expire on 30-04-2021, and ongoing rates expire 15-06-2021."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus that revokes or supersedes the State cloud policy dated 19/01/2018; the corpus only cites that date and notes that all remaining provisions of the IT Department GR dated 19/01/2018 shall remain in force as they are.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT",
+      "page": 1
+     },
+     {
+      "code": "201909111829110711",
+      "date": "11-09-2019",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909111829110711.pdf",
+      "quote": "२०१९ संदर्भ:-१. शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८",
+      "page": 1
+     },
+     {
+      "code": "201912191347332011",
+      "date": "19-12-2019",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912191347332011.pdf",
+      "quote": "सा.प्र.वि.) विभाग शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८",
+      "page": 1
+     },
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "सा.प्र.वि.(मातं), शासन निर्णय क्र.मातंसं-१७१६/प्र.क्र.५१७/३९, दि.१९ जानेवारी, २०१८",
+      "page": 1
+     },
+     {
+      "code": "202407191742379111",
+      "date": "19-07-202011",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "ाची वागणूक द्यावी. ०४. या संदर्भातील माहिती तंत्रज्ञान विभागाच्या दि. १९/०१/२०१८ रोजीच्या शासन निर्णयातील उर्वरित सर्व तरतूदी जशाच्या तशा लागू राहतील.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Supersedes the earlier cloud empanelment (DIT/060/3/2017/1 dated 16-05-2018) by moving procurement to GeM portal; earlier empanelment and rates expire on 30-04-2021, and ongoing rates expire 15-06-2021."
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Supersedes Annexure 1 Tier-2 empanelment rates of the 19-05-2018 GR and adds additional cloud services (e.g., Platform as a service, Software as a service, extra virtual machine packs)."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The State cloud policy dated 19/01/2018 is cited in multiple later GRs, including 201802161919110111 which notes it was approved on 17.1.2018, and 202407191742379111 which states that all remaining provisions of the IT department's GR dated 19/01/2018 shall remain as they are.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT.",
+      "page": 2
+     },
+     {
+      "code": "201909111829110711",
+      "date": "11-09-2019",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909111829110711.pdf",
+      "quote": ", २०१९ संदर्भ:-१. शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८. २. इलेक्ट्रॉनिक्स आणि माहिती तंत्रज्ञान मंत्रालय, भारत सरकार यांचे द",
+      "page": 1
+     },
+     {
+      "code": "201912191347332011",
+      "date": "19-12-2019",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912191347332011.pdf",
+      "quote": "सा.प्र.वि.) विभाग शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८. परिपत्रक आपले सरकार सेवा केंद्रामार्फत देण्यात येणाऱ्या भूलेख संकेतस",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": null,
+      "title": null,
+      "url": null,
+      "quote": ". ४. सा.प्र.वि.(मातं), शासन निर्णय क्र.मातंसं-१७१६/प्र.क्र.५१७/३९, दि.१९ जानेवारी, २०१८. प्रस्तावना :- सामान्य जनतेला विविध शासकीय सेवा मिळविण्यासाठी लागणारा",
+      "page": 1
+     },
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "ाची वागणूक द्यावी. ०४. या संदर्भातील माहिती तंत्रज्ञान विभागाच्या दि. १९/०१/२०१८ रोजीच्या शासन निर्णयातील उर्वरित सर्व तरतूदी जशाच्या तशा लागू राहतील.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The earlier cloud empanelment and rates expired on 30 April 2021, and all cloud service procurement must now be done via the GeM portal; ongoing empanelment rates expire on 15 June 2021."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus directly changes the State cloud policy dated 19/01/2018, but the 23-04-2021 GR (M/s 2021/3/060) replaced the earlier cloud empanelment and rate structure with GeM portal procurement, ending the 3-year empanelment on 30-04-2021. Earlier, the 29-01-2018 GR (060/3/2017) issued the original Cloud Computing Policy, and the 16-05-2018 GR (060/3/2017/1) detailed CSP empanelment and rates until 30-04-2020, later amended by the 04-08-2018 and 19-05-2018 GRs.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT.",
+      "page": 4,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "what_changed": "Updated the empanelled CSP list and superseding Annexure 1 with new rates and contact details, replacing the earlier 16-05-2018 GR."
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Added new cloud service offerings (Additional Virtual Machine Packs, PaaS, SaaS) and superseded Annexure 1 Tier 2 empanelment rates."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Replaced the cloud service provider empanelment and rate structure with procurement through the GeM portal, ending the 3-year empanelment on 30-04-2021, and required migration to the new portal within 45 days."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus directly changes the State cloud policy dated 19/01/2018, but the 23-04-2021 GR (M/s 2021/3/060) replaced the earlier cloud empanelment and rate structure with GeM portal procurement, ending the 3-year empanelment on 30-04-2021. Earlier, the 29-01-2018 GR (060/3/2017) issued the original Cloud Computing Policy, and the 16-05-2018 GR (060/3/2017/1) detailed CSP empanelment and rates until 30-04-2020, later amended by the 04-08-2018 and 19-05-2018 GRs.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT.",
+      "page": 1
+     },
+     {
+      "code": "201909111829110711",
+      "date": "11-09-2019",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909111829110711.pdf",
+      "quote": "शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८.",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": "19-12-2019",
+      "title": null,
+      "url": null,
+      "quote": "सा.प्र.वि.) विभाग शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८.",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": "19-07-2024",
+      "title": null,
+      "url": null,
+      "quote": "४. सा.प्र.वि.(मातं), शासन निर्णय क्र.मातंसं-१७१६/प्र.क्र.५१७/३९, दि.१९ जानेवारी, २०१८.",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": "19-07-2024",
+      "title": null,
+      "url": null,
+      "quote": "ाची वागणूक द्यावी. ०४. या संदर्भातील माहिती तंत्रज्ञान विभागाच्या दि. १९/०१/२०१८ रोजीच्या शासन निर्णयातील उर्वरित सर्व तरतूदी जशाच्या तशा लागू राहतील.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Replaced the cloud service provider empanelment and rate structure with procurement through the GeM portal, ending the 3-year empanelment on 30-04-2021, and required migration to the new portal within 45 days."
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Added new cloud service offerings (Additional Virtual Machine Packs, PaaS, SaaS) and superseded Annexure 1 Tier 2 empanelment rates."
+     },
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "what_changed": "Updated the empanelled CSP list and superseding Annexure 1 with new rates and contact details, replacing the earlier 16-05-2018 GR."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "fail",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus that changes the 19/01/2018 State cloud policy directly; the policy remains referenced as still applicable in the 19 July 2024 GR, which states that all remaining provisions in the IT Department's 19/01/2018 GR shall continue unchanged.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT",
+      "page": 4,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "what_changed": "Updated list of empanelled CSPs and MSPs, and supersedes Annexure 1 of the 16 May 2018 GR."
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Added additional cloud service offerings including VM packs, PaaS, SaaS, and revised Control-S empanelment to conditional Sec-A only for Annexures 8.1, 8.2, 8.3."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Empanelment and announced rates for cloud service providers end on 30 April 2021, and all government departments must procure cloud services via the GeM portal going forward; empanelment rates for ongoing services expire on 15 June 2021."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus that changes the 19/01/2018 State cloud policy directly; the policy remains referenced as still applicable in the 19 July 2024 GR, which states that all remaining provisions in the IT Department's 19/01/2018 GR shall continue unchanged.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "elled as per the cloud policy of the State Government in DIT GR dated 19/01/2018 and at rates finalized by DIT",
+      "page": 1
+     },
+     {
+      "code": "201909111829110711",
+      "date": "11-09-2019",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909111829110711.pdf",
+      "quote": "शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८",
+      "page": 1
+     },
+     {
+      "code": "201912191347332011",
+      "date": "19-12-2019",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912191347332011.pdf",
+      "quote": "सा.प्र.वि.) विभाग शासन निर्णय क्र. मातंसं-१७१६/प्र.क्र.५१७/३९, दिनांक १९ जानेवारी, २०१८",
+      "page": 1
+     },
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "सा.प्र.वि.(मातं), शासन निर्णय क्र.मातंसं-१७१६/प्र.क्र.५१7/३९, दि.१९ जानेवारी, २०१८",
+      "page": 1
+     },
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": null,
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "या संदर्भातील माहिती तंत्रज्ञान विभागाच्या दि. १९/०१/२०१८ रोजीच्या शासन निर्णयातील उर्वरित सर्व तरतूदी जशाच्या तशा लागू राहतील",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Empanelment and announced rates for cloud service providers end on 30 April 2021, and all government departments must procure cloud services via the GeM portal going forward; empanelment rates for ongoing services expire on 15 June 2021."
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Added additional cloud service offerings including VM packs, PaaS, SaaS, and revised Control-S empanelment to conditional Sec-A only for Annexures 8.1, 8.2, 8.3."
+     },
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "what_changed": "Updated list of empanelled CSPs and MSPs, and supersedes Annexure 1 of the 16 May 2018 GR."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

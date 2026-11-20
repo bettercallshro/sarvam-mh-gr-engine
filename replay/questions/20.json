@@ -1,0 +1,401 @@
+{
+ "id": 20,
+ "set": "main",
+ "question": "Which bank must hold a scheme's Maha DBT Central Pool Account?",
+ "case": "AM",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "State Bank of India (30-11-2021)",
+ "gold_grs": [
+  "202111301536272711"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202111301536272711",
+   "date": "30-11-2021",
+   "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 2021 GR amends the 2018 GR to require that each department open its scheme-wise Central Pool Account in State Bank of India, because that bank is linked to both the MahaDBT portal and PFMS. The 2018 GR originally only required the DDO to transfer funds to a Central Pool Account without specifying the bank.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest",
+      "page": 4,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amends paragraph 8 to state that departments must open Central Pool Accounts in State Bank of India, as it is linked to MahaDBT portal and PFMS, and departments must open a separate account for each scheme."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 2021 GR amends the 2018 GR to require that each department open its scheme-wise Central Pool Account in State Bank of India, because that bank is linked to both the MahaDBT portal and PFMS. The 2018 GR originally only required the DDO to transfer funds to a Central Pool Account without specifying the bank.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest",
+      "page": 4
+     },
+     {
+      "code": "202111301015546691",
+      "date": "14-05-2019",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": null,
+      "quote": "the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest",
+      "page": 4
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amends paragraph 8 to state that departments must open Central Pool Accounts in State Bank of India, as it is linked to MahaDBT portal and PFMS, and departments must open a separate account for each scheme."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "fail",
+    "latest": "pass",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": "special case: right answer, invented source"
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The bank that must hold a scheme's Maha DBT Central Pool Account is State Bank of India. The 2018 GR requires the DDO to transfer funds to a Central Pool Account, and the 2021 GR amends this to specify that each scheme's Central Pool Account must be opened in State Bank of India because it is linked to the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "Once the Bill is received from the Departments, after required processing and approval, the Treasury officer shall transfer the approved amount of fund to the scheme specific Bank account, which is registered in BEAMS by the respective Department.",
+      "page": 3,
+      "quote_verified": true
+     },
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे. स्टेट बँक ऑफ इंडिया ही महाडीबीटी पोर्टल व सार्वजनिक वित्तीय व्यवस्थापन प्रणाली (Public Financial Management System (PFMS) ) या दोन्हीशी संलग्न असल्यामुळे त्याच बँकेत खाते उघडणे आवश्यक आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "It amends paragraph 8 to require that each scheme’s Central Pool Account be opened in State Bank of India because it is linked to MahaDBT Portal and PFMS, and amends paragraph 9 to add that the amount sent to PFMS must also be sent to State Bank of India for re-verification of authentication."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The bank that must hold a scheme's Maha DBT Central Pool Account is State Bank of India. The 2018 GR requires the DDO to transfer funds to a Central Pool Account, and the 2021 GR amends this to specify that each scheme's Central Pool Account must be opened in State Bank of India because it is linked to the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "Once the Bill is received from the Departments, after required processing and approval, the Treasury officer shall transfer the approved amount of fund to the scheme specific Bank account, which is registered in BEAMS by the respective Department.",
+      "page": 4
+     },
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for effect of delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2011",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे. स्टेट बँक ऑफ इंडिया ही महाडीबीटी पोर्टल व सार्वजनिक वित्तीय व्यवस्थापन प्रणाली (Public Financial Management System (PFMS) ) या दोन्हीशी संलग्न असल्यामुळे त्याच बँकेत खाते उघडणे आवश्यक आहे.",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "It amends paragraph 8 to require that each scheme’s Central Pool Account be opened in State Bank of India because it is linked to MahaDBT Portal and PFMS, and amends paragraph 9 to add that the amount sent to PFMS must also be sent to State Bank of India for re-verification of authentication."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The State Bank of India must hold a scheme's Maha DBT Central Pool Account. The 2018 GR originally required transfer of funds to a Central Pool Account, and the 2021 amendment clarifies that each scheme's Central Pool Account must be opened in State Bank of India because it is linked to both the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "Once the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4,
+      "quote_verified": false
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amended paragraphs 8 and 9 to require that the Central Pool Account for each scheme be opened in State Bank of India, because State Bank of India is linked to both MahaDBT portal and PFMS."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The State Bank of India must hold a scheme's Maha DBT Central Pool Account. The 2018 GR originally required transfer of funds to a Central Pool Account, and the 2021 amendment clarifies that each scheme's Central Pool Account must be opened in State Bank of India because it is linked to both the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "Once the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4
+     },
+     {
+      "code": "2021113011536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and interests in Maharashtra",
+      "url": null,
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amended paragraphs 8 and 9 to require that the Central Pool Account for each scheme be opened in State Bank of India, because State Bank of India is linked to both MahaDBT portal and PFMS."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The scheme's Maha DBT Central Pool Account must be held by State Bank of India. Earlier, the 2018 GR required departments to open scheme-wise bank accounts but did not name the bank. The 2021 amendment explicitly directs departments to open each scheme's Central Pool Account in State Bank of India because it is linked to both the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "Open Scheme wise/specific Bank accounts\ne. Register the scheme wise/specific account in BEAMS against the scheme with the help of Treasury Officers.",
+      "page": 3,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "It specifies that each scheme's Central Pool Account must be opened in State Bank of India, because it is linked to both MahaDBT portal and PFMS, and the account must be linked to PFMS."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The scheme's Maha DBT Central Pool Account must be held by State Bank of India. Earlier, the 2018 GR required departments to open scheme-wise bank accounts but did not name the bank. The 2021 amendment explicitly directs departments to open each scheme's Central Pool Account in State Bank of India because it is linked to both the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542073211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": null,
+      "quote": "Open Scheme wise/specific Bank accounts\ne. Register the scheme wise/specific account in BEAMS against the scheme with the help of Treasury Officers.",
+      "page": 2
+     },
+     {
+      "code": "202111301536626211",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": null,
+      "quote": "याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "It specifies that each scheme's Central Pool Account must be opened in State Bank of India, because it is linked to both MahaDBT portal and PFMS, and the account must be linked to PFMS."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "State Bank of India must hold the scheme's Maha DBT Central Pool Account. Earlier, the 2018 GR only required that the amount be transferred to a Central Pool Account without specifying the bank. The 2021 amendment (30-11-2021) amends paragraphs 8 and 9 to mandate that departments open a separate Central Pool Account for each scheme in State Bank of India because it is linked to both the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4,
+      "quote_verified": true
+     },
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202111301536272711.pdf",
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amends paragraphs 8 and 9 to specify that the Central Pool Account must be opened in State Bank of India, because it is linked to both the MahaDBT portal and PFMS."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "State Bank of India must hold the scheme's Maha DBT Central Pool Account. Earlier, the 2018 GR only required that the amount be transferred to a Central Pool Account without specifying the bank. The 2021 amendment (30-11-2021) amends paragraphs 8 and 9 to mandate that departments open a separate Central Pool Account for each scheme in State Bank of India because it is linked to both the MahaDBT portal and PFMS.",
+    "cited": [
+     {
+      "code": "201810121542077211",
+      "date": "12-10-2018",
+      "title": "Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan-State portal for delivery of benefits, subsidies and services in Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201810121542077211.pdf",
+      "quote": "After the amount is received by DDO in their scheme specific Bank account from Treasury, the DDO shall transfer the said amount to the \"Central Pool Account\" at the earliest.",
+      "page": 4
+     },
+     {
+      "code": "202111301511301536272711",
+      "date": "30-11-2021",
+      "title": "Amendment to the Disbursement process of Maharashtra Direct Benefit Transfer and Services (Maha DBT) Portal as the single Pan State portal for delivery of benefits, subsidies and services in Maharashtra -",
+      "url": null,
+      "quote": "आहरण व संवितरण अधिकाऱ्याला योजनानिहाय “विशिष्ट बँक” खात्यामध्ये (Specific Scheme Account) खात्यामध्ये कोषागराकडून निधी प्राप्त झाल्यावर, सदर निधी त्यांनी विभागाच्या “Central Pool Account” मध्ये जमा करावा. याकरीता विभागांने प्रत्येक योजनेकरीता स्वतंत्र खाते “Central Pool Account” स्टेट बँक ऑफ इंडिया मध्ये उघडावे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202111301536272711",
+      "date": "30-11-2021",
+      "what_changed": "Amends paragraphs 8 and 9 to specify that the Central Pool Account must be opened in State Bank of India, because it is linked to both the MahaDBT portal and PFMS."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

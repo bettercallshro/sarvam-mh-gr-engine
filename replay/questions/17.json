@@ -1,0 +1,350 @@
+{
+ "id": 17,
+ "set": "main",
+ "question": "Can a department change the qualifications it asks of empanelled consultants?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "Yes for the profile of personnel, through change orders (RFP 24.19); not the years of experience (05-03-2024)",
+ "gold_grs": [
+  "202403051249430211"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202403051249430211",
+   "date": "05-03-2024",
+   "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 201803201319308011 GR on consultant qualifications. The 202403051249430211 circular clarifies that departments can change the 'Profile of Personnel' via RFP clauses but cannot change the 'Years of Experience' mentioned in the GR, which pertains to the broader empanelment framework but does not amend the specific educational qualification table in the 2018 GR.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "With reference to above and the Educational Qualifications mentioned in the GR the Departments (or the allied offices under it / corporations / boards (independent bodies) etc.) can: e Use clauses under Section 24.19 of the RFP (Change Orders) to change the \"Profile of Personnel\" required for the engagement. Relevant RFP section attached as Annexure A. e Not change the \"Years of Experience\" mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": null,
+      "title": null,
+      "url": null,
+      "quote": "",
+      "page": null
+     }
+    ],
+    "newer": [
+     {
+      "code": "20240305124940211",
+      "date": "05-03-2024",
+      "what_changed": "Clarifies that departments can use clauses under Section 24.19 of the RFP (Change Orders) to change the 'Profile of Personnel' required for the engagement, but cannot change the 'Years of Experience' mentioned in the GR for the category of resources required."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": "facts right, forced into a no-newer-GR frame"
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders) to change the Profile of Personnel required for the engagement, but it cannot change the Years of Experience mentioned in the GR for the Category of resources required for the engagement. I couldn't find any newer GR in this corpus that amends, replaces, stays, extends, or clarifies this rule.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "With reference to above and the Educational Qualifications mentioned in the GR the Departments (or the allied offices under it / corporations / boards (independent bodies) etc.) can: e Use clauses under Section 24.19 of the RFP (Change Orders) to change the \"Profile of Personnel\" required for the engagement.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the \"Years of Experience\" mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders) to change the Profile of Personnel required for the engagement, but it cannot change the Years of Experience mentioned in the GR for the Category of resources required for the engagement. I couldn't find any newer GR in this corpus that amends, replaces, stays, extends, or clarifies this rule.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "With reference to above and the Educational Qualifications mentioned in the GR the Departments (or the allied offices under it / corporations / boards (independent bodies) etc.) can: e Use clauses under Section 24.19 of the RFP (Change Orders) to change the \"Profile of Personnel\" required for the engagement.",
+      "page": 1
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the \"Years of Experience\" mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by altering the profile of personnel through clauses under Section 24.19 of the RFP (Change Orders), but it cannot change the years of experience mentioned in the GR for the category of resources required for the engagement. This is based on the 05-03-2024 Government Circular clarifying the educational qualification rules.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Use clauses under Section 24.19 of the RFP (Change Orders) to change the \"Profile of Personnel\" required for the engagement. Relevant RFP section attached as Annexure A.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the \"Years of Experience\" mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments may change the profile of personnel via RFP Section 24.19 change orders, but cannot change the years of experience specified in the GR for the required resource categories."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by altering the profile of personnel through clauses under Section 24.19 of the RFP (Change Orders), but it cannot change the years of experience mentioned in the GR for the category of resources required for the engagement. This is based on the 05-03-2024 Government Circular clarifying the educational qualification rules.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Use clauses under Section 24.19 of the RFP (Change Orders) to change the \"Profile of Personnel\" required for the engagement. Relevant RFP section attached as Annexure A.",
+      "page": 1
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the \"Years of Experience\" mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments may change the profile of personnel via RFP Section 24.19 change orders, but cannot change the years of experience specified in the GR for the required resource categories."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders) to change the 'Profile of Personnel' required for the engagement, but it may not change the 'Years of Experience' mentioned in the GR for the category of resources required. This rule is stated in the 05-03-2024 circular.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "With reference to above and the Educational Qualifications mentioned in the GR the Departments (or the allied offices under it / corporations / boards (independent bodies) etc.) can: e Use clauses under Section 24.19 of the RFP (Change Orders) to change the \"Profile of Personnel\" required for the engagement.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the \"Years of Experience\" mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Departments may use RFP change-order clauses to change the 'Profile of Personnel' required for engagement, but they may not change the 'Years of Experience' mentioned in the GR for the category of resources required."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders) to change the 'Profile of Personnel' required for the engagement, but it may not change the 'Years of Experience' mentioned in the GR for the category of resources required. This rule is stated in the 05-03-2024 circular.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "With reference to above and the Educational Qualifications mentioned in the GR the Departments (or the allied offices under it / corporations / boards (independent bodies) etc.) can: e Use clauses under Section 24.19 of the RFP (Change Orders) to change the \"Profile of Personnel\" required for the engagement.",
+      "page": 1
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the \"Years of Experience\" mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Departments may use RFP change-order clauses to change the 'Profile of Personnel' required for engagement, but they may not change the 'Years of Experience' mentioned in the GR for the category of resources required."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders) to change the Profile of Personnel, as clarified by the GR dated 05-03-2024. Earlier, the GR dated 05-10-2023 and 20-03-2018 simply listed educational qualifications in tables without explicitly addressing departmental changes to them.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "With reference to above and the Educational Qualifications mentioned in the GR the Departments (or the allied offices under it / corporations / boards (independent bodies) etc.) can: e Use clauses under Section 24.19 of the RFP (Change Orders) to change the Profile of Personnel required for the engagement.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the Years of Experience mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarifies that departments can use RFP change orders to change the 'Profile of Personnel' (educational qualifications) but cannot change the 'Years of Experience' specified in the GR for the category of resources."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, a department can change the qualifications it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders) to change the Profile of Personnel, as clarified by the GR dated 05-03-2024. Earlier, the GR dated 05-10-2023 and 20-03-2018 simply listed educational qualifications in tables without explicitly addressing departmental changes to them.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "With reference to above and the Educational Qualifications mentioned in the GR the Departments (or the allied offices under it / corporations / boards (independent bodies) etc.) can: e Use clauses under Section 24.19 of the RFP (Change Orders) to change the Profile of Personnel required for the engagement.",
+      "page": 1
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the Years of Experience mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarifies that departments can use RFP change orders to change the 'Profile of Personnel' (educational qualifications) but cannot change the 'Years of Experience' specified in the GR for the category of resources."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

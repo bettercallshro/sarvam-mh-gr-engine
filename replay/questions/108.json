@@ -1,0 +1,238 @@
+{
+ "id": 108,
+ "set": "holdout",
+ "question": "Have the contact details of the IT consultancy firms empanelled in October 2023 changed?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "Yes. The circular of 27-10-2023 modified the firms' contact details in Annexure 1 of the GR of 05-10-2023",
+ "gold_grs": [
+  "202310041905383211",
+  "202310271649358711"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202310041905383211",
+   "date": "05-10-2023",
+   "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf"
+  },
+  {
+   "code": "202310271649358711",
+   "date": "27-10-2023",
+   "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 27-10-2023 GR states that the contact details of the empanelled firms were modified as per Annexure 1. No newer GR in the corpus amends, replaces, stays, extends, or clarifies those contact details.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 27-10-2023 GR states that the contact details of the empanelled firms were modified as per Annexure 1. No newer GR in the corpus amends, replaces, stays, extends, or clarifies those contact details.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 2023-10-27 GR itself states that the contact details of the empanelled firms are being modified as mentioned in Annexure 1 below. No newer GR in this corpus amends, replaces, extends, or clarifies that GR.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 2023-10-27 GR itself states that the contact details of the empanelled firms are being modified as mentioned in Annexure 1 below. No newer GR in this corpus amends, replaces, extends, or clarifies that GR.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, the contact details of the IT consultancy firms empanelled in October 2023 were changed. The GR dated 27-10-2023 explicitly states that the contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below. Earlier, the 05-10-2023 GR listed the contact details of the empaneled firms in Annexure 1.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "The contact details of the above firms are provided in Annexure 1.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, the contact details of the IT consultancy firms empanelled in October 2023 were changed. The GR dated 27-10-2023 explicitly states that the contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below. Earlier, the 05-10-2023 GR listed the contact details of the empaneled firms in Annexure 1.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "The contact details of the above firms are provided in Annexure 1.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Yes, the contact details of the IT consultancy firms empanelled in October 2023 were changed. The GR dated 27-10-2023 (202310271649358711) states that the contact details of the empanelled firms (Annexure 1) are being modified as mentioned in Annexure 1 below.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Yes, the contact details of the IT consultancy firms empanelled in October 2023 were changed. The GR dated 27-10-2023 (202310271649358711) states that the contact details of the empanelled firms (Annexure 1) are being modified as mentioned in Annexure 1 below.",
+    "cited": [
+     {
+      "code": "202310271649358711",
+      "date": "27-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Change in Contact details",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310271649358711.pdf",
+      "quote": "The Contact details of the empanelled firms (Annexure 1) of the above referred GR are being modified as mentioned in Annexure 1 below.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

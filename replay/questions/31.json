@@ -1,0 +1,248 @@
+{
+ "id": 31,
+ "set": "main",
+ "question": "Has the model RFP GR of September 2019 been updated?",
+ "case": "CO",
+ "task": "S",
+ "lang": "EN",
+ "gold_answer": "No newer GR found in this corpus",
+ "gold_grs": [
+  "201909202117198311"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201909202117198311",
+   "date": "20-09-2019",
+   "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 20-09-2019 Model RFP GR. The only candidate reviewed cites a shared file pattern but does not change the 2019 GR.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "The Directorate of IT, Government of Maharashtra has developed Maharashtra Model RFP document to streamline IT & e-Governance procurement after consultation with various stakeholders including NAASCOM, IT-industry & consultants.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 20-09-2019 Model RFP GR. The only candidate reviewed cites a shared file pattern but does not change the 2019 GR.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "The Directorate of IT, Government of Maharashtra has developed Maharashtra Model RFP document to streamline IT & e-Governance procurement after consultation with various stakeholders including NAASCOM, IT-industry & consultants.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the Maharashtra Model RFP GR of 20-09-2019. The only candidate GR reviewed does not change it.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "The Directorate of IT, Government of Maharashtra has developed Maharashtra Model RFP document to streamline IT & e-governance procurement after consultation with various stakeholders including NAASCOM",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the Maharashtra Model RFP GR of 20-09-2019. The only candidate GR reviewed does not change it.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "The Directorate of IT, Government of Maharashtra has developed Maharashtra Model RFP document to streamline IT & e-governance procurement after consultation with various stakeholders including NAASCOM",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the Model RFP GR of 20-09-2019.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "Any changes and/or any future versions to the Maharashtra Model RFP will only be accepted upon the ratifications and approval of the Directorate of Information Technology Government of Maharashtra or a competent authority authorized by Directorate of Information Technology.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the Model RFP GR of 20-09-2019.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "Any changes and/or any future versions to the Maharashtra Model RFP will only be accepted upon the ratifications and approval of the Directorate of Information Technology Government of Maharashtra or a competent authority authorized by Directorate of Information Technology.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) has updated the model RFP GR of 20-09-2019. The original GR issued on 20-09-2019 established the Maharashtra Model RFP document for IT and e-Governance projects and mandated its adoption by all IT departments with immediate effect.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "The Directorate of IT, Government of Maharashtra has developed Maharashtra Model RFP document to streamline IT & e-Governance procurement after consultation with various stakeholders including NAASCOM",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) has updated the model RFP GR of 20-09-2019. The original GR issued on 20-09-2019 established the Maharashtra Model RFP document for IT and e-Governance projects and mandated its adoption by all IT departments with immediate effect.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "The Directorate of IT, Government of Maharashtra has developed Maharashtra Model RFP document to streamline IT & e-Governance procurement after consultation with various stakeholders including NAASCOM",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays or extends the September 2019 Model RFP GR. The GR of 20-09-2019 itself states that any future versions to the Maharashtra Model RFP will only be accepted upon ratification and approval of the Directorate of Information Technology or a competent authority.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2019",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays or extends the September 2019 Model RFP GR. The GR of 20-09-2019 itself states that any future versions to the Maharashtra Model RFP will only be accepted upon ratification and approval of the Directorate of Information Technology or a competent authority.",
+    "cited": [
+     {
+      "code": "201909202117198311",
+      "date": "20-09-2009",
+      "title": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201909202117198311.pdf",
+      "quote": "Maharashtra Model RFP document For IT and e-Governance projects.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

@@ -1,0 +1,349 @@
+{
+ "id": 115,
+ "set": "holdout",
+ "question": "मातंस २०१८/प्र.क्र.४५/से-१/का.३९: who represents Land Records for the Mumbai Suburban District on the blockchain working group?",
+ "case": "DV",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "The District Superintendent, Land Records, Mumbai Suburban District, per the corrigendum of 31-07-2019. The original GR of 11-04-2019 named the Director, Land Records (Suburbs), Bandra. The later corrigendum of 04-10-2019 changed only the health member, not this one",
+ "gold_grs": [
+  "201904111526241211",
+  "201908011113322811",
+  "201910041107154511"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201904111526241211",
+   "date": "11-04-2019",
+   "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf"
+  },
+  {
+   "code": "201908011113322811",
+   "date": "31-07-2019",
+   "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf"
+  },
+  {
+   "code": "201910041107154511",
+   "date": "04-10-2019",
+   "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.- Corrigendum.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910041107154511.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The District Superintendent, Land Records, Mumbai Suburban District is listed as an administrative member of the land records working group in GR मातंस २०१८/प्र.क्र. ४५/से-१/का.३९ dated 11-04-2019. The 31-07-2019 GR amends this by replacing the previous director-level post with the same district superintendent post.",
+    "cited": [
+     {
+      "code": "201904111526241211",
+      "date": "11-04-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "what_changed": "It replaces members 7, 8, and 9 of the land records working group: member 7 becomes Deputy Manager, Land Records, Konkan Region; member 8 becomes District Superintendent, Land Records, Mumbai Suburban District, Administrative Member; member 9 becomes Town Geo Assessment Officer, Vile Parle."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The District Superintendent, Land Records, Mumbai Suburban District is listed as an administrative member of the land records working group in GR मातंस २०१८/प्र.क्र. ४५/से-१/का.३९ dated 11-04-2019. The 31-07-2019 GR amends this by replacing the previous director-level post with the same district superintendent post.",
+    "cited": [
+     {
+      "code": "201904111526241211",
+      "date": "11-04-20019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य",
+      "page": 2
+     },
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and newer group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "what_changed": "It replaces members 7, 8, and 9 of the land records working group: member 7 becomes Deputy Manager, Land Records, Konkan Region; member 8 becomes District Superintendent, Land Records, Mumbai Suburban District, Administrative Member; member 9 becomes Town Geo Assessment Officer, Vile Parle."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 11-04-2019 GR lists the Director, Land Records, Fort, Mumbai as a member, and the Director, Land Records (Suburban), Bandra (East), Mumbai as a member, for the Land Records working group. The 31-07-2019 GR amends those memberships by replacing the Director, Land Records, Fort, Mumbai with the Deputy Director, Land Records, Konkan Region, Fort, Mumbai, replacing the Director, Land Records (Suburban) with the District Superintendent, Land Records, Mumbai Suburban District, and replacing the District Superintendent with the Town Geo Assessment Officer, Vile Parle. For the Mumbai Suburban District specifically, the District Superintendent, Land Records, Mumbai Suburban District is the representative.",
+    "cited": [
+     {
+      "code": "201904111526241211",
+      "date": "11-04-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "संचालक, भूमि अभिलेख, फोर्ट, मुंबई-४०००२३. सदस्य ८.संचालक, भूमि अभिलेख (उपनगर), बांद्रा (पूर्व), मुंबई-४०००५१. सदस्य ९.संचालक भूमि अभिलेख, विलेपार्ले (प.), मुंबई ४०००४७. सदस्य",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "७.उपसंचालक,भूमिअभिलेख, कोकणप्रदेश, फोर्ट, मुंबई - ४०००२३. सदस्य ८.जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य इमारत,१० वा मजला, शासकीय वसाहत,चेतना कॉलेज जवळ, बांद्रा (पूर्व), मुंबई-४०००५१. ९ नगर भूमापन अधिकारी, १०६, एसवी रोड, सुरेश कॉलनी, एलआयसी सदस्य कॉलनी, विलेपार्ले-४०००४७",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 11-04-2019 GR lists the Director, Land Records, Fort, Mumbai as a member, and the Director, Land Records (Suburban), Bandra (East), Mumbai as a member, for the Land Records working group. The 31-07-2019 GR amends those memberships by replacing the Director, Land Records, Fort, Mumbai with the Deputy Director, Land Records, Konkan Region, Fort, Mumbai, replacing the Director, Land Records (Suburban) with the District Superintendent, Land Records, Mumbai Suburban District, and replacing the District Superintendent with the Town Geo Assessment Officer, Vile Parle. For the Mumbai Suburban District specifically, the District Superintendent, Land Records, Mumbai Suburban District is the representative.",
+    "cited": [
+     {
+      "code": "201904111526241211",
+      "date": "11-04-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "संचालक, भूमि अभिलेख, फोर्ट, मुंबई-४०००२३. सदस्य ८.संचालक, भूमि अभिलेख (उपनगर), बांद्रा (पूर्व), मुंबई-४०००५१. सदस्य ९.संचालक भूमि अभिलेख, विलेपार्ले (प.), मुंबई ४०००४७. सदस्य",
+      "page": 1
+     },
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and cited group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "७.उपसंचालक,भूमिअभिलेख, कोकणप्रदेश, फोर्ट, मुंबई - ४०००२३. सदस्य ८.जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य इमारत,१० वा मजला, शासकीय वसाहत,चेतना कॉलेज जवळ, बांद्रा (पूर्व), मुंबई-४०००५१. ९ नगर भूमापन अधिकारी, १०६, एसवी रोड, सुरेश कॉलनी, एलआयसी सदस्य कॉलनी, विलेपार्ले-४०००४७",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Land Records representative for the Mumbai Suburban District on the blockchain working group is the District Superintendent, Land Records, Mumbai Suburban District, listed as an administrative member. This was substituted by the 31-07-2019 GR, which amended the original 11-04-2019 GR's working group composition for Land Records. Earlier, the group had the Director, Land Records (Suburbs) as the member.",
+    "cited": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "च्या ऐवजी खालीलप्रमाणे वाचावे.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "७.उपसंचालक,भूमिअभिलेख, कोकणप्रदेश, फोर्ट, मुंबई - ४०००२३. सदस्य",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "८.जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "what_changed": "Replaced the Land Records working group members: 7. Director, Land Records, Fort, Mumbai-400023 with Deputy Manager, Land Records, Konkan Region, Fort, Mumbai-400023; 8. Director, Land Records (Suburbs), Bandra (East), Mumbai-400051 with District Superintendent, Land Records, Mumbai Suburban District, Administrative Member; 9. Director Land Records, Vile Parle (p.), Mumbai 400047 with Town Geo Assessment Officer, 106, SV Road, Suresh Colony, LIC Member Colony, Vile Parle-400047."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Land Records representative for the Mumbai Suburban District on the blockchain working group is the District Superintendent, Land Records, Mumbai Suburban District, listed as an administrative member. This was substituted by the 31-07-2019 GR, which amended the original 11-04-2019 GR's working group composition for Land Records. Earlier, the group had the Director, Land Records (Suburbs) as the member.",
+    "cited": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2009",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "च्या ऐवजी खालीलप्रमाणे वाचावे.",
+      "page": 1
+     },
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "७.उपसंचालक,भूमिअभिलेख, कोकणप्रदेश, फोर्ट, मुंबई - ४०००२३. सदस्य",
+      "page": 1
+     },
+     {
+      "code": "201908011113322819",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": null,
+      "quote": "८.जिल्हा अधिक्षक, भूमि अभिलेख, मुंबई उपनगर जिल्हा, प्रशासकीय सदस्य",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "what_changed": "Replaced the Land Records working group members: 7. Director, Land Records, Fort, Mumbai-400023 with Deputy Manager, Land Records, Konkan Region, Fort, Mumbai-400023; 8. Director, Land Records (Suburbs), Bandra (East), Mumbai-400051 with District Superintendent, Land Records, Mumbai Suburban District, Administrative Member; 9. Director Land Records, Vile Parle (p.), Mumbai 400047 with Town Geo Assessment Officer, 106, SV Road, Suresh Colony, LIC Member Colony, Vile Parle-400047."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The District Superintendent of Land Records, Mumbai Suburban District, serves as the administrative member representing Land Records for the Mumbai Suburban District on the blockchain working group. Earlier, the 11-04-2019 GR listed the Director of Land Records, Fort, Mumbai; the Director of Land Records (Suburban), Bandra (East); and the Director of Land Records, Vile Parle (p.), Mumbai as members. The 31-07-2019 GR amended these positions.",
+    "cited": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908011113322811.pdf",
+      "quote": "च्या ऐवजी खालीलप्रमाणे वाचावे. ७.उपसंचालक,भूमिअभिलेख, कोकणप्रदेश, फोर्ट, मुंबई - ४०००२३. सदस्य",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201904111526241211",
+      "date": "11-04-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "७. संचालक, भूमि अभिलेख, फोर्ट, मुंबई-४०००२३. सदस्य ८. संचालक, भूमि अभिलेख (उपनगर), बांद्रा (पूर्व), मुंबई - ४०००५१. सदस्य",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "what_changed": "Replaced the original land records working group members (points 7, 8, 9) with: 7. Deputy Manager, Land Records, Konkan Region, Fort, Mumbai-400023 as member; 8. District Superintendent, Land Records, Mumbai Suburban District, Administrative Member at Bandra (East); 9. Town Geo Assessment Officer, 106 SV Road, Suresh Colony, LIC Member Colony, Vile Parle-400047 as member."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The District Superintendent of Land Records, Mumbai Suburban District, serves as the administrative member representing Land Records for the Mumbai Suburban District on the blockchain working group. Earlier, the 11-04-2019 GR listed the Director of Land Records, Fort, Mumbai; the Director of Land Records (Suburban), Bandra (East); and the Director of Land Records, Vile Parle (p.), Mumbai as members. The 31-07-2019 GR amended these positions.",
+    "cited": [
+     {
+      "code": "201908011113322911",
+      "date": "31-07-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": null,
+      "quote": "च्या ऐवजी खालीलप्रमाणे वाचावे. ७.उपसंचालक,भूमिअभिलेख, कोकणप्रदेश, फोर्ट, मुंबई - ४०००२३. सदस्य",
+      "page": 1
+     },
+     {
+      "code": "201904111526241211",
+      "date": "11-04-2019",
+      "title": "Regarding the use of Block Records in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "७. संचालक, भूमि अभिलेख, फोर्ट, मुंबई-४०००२३. सदस्य ८. संचालक, भूमि अभिलेख (उपनगर), बांद्रा (पूर्व), मुंबई - ४०००५१. सदस्य",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201908011113322811",
+      "date": "31-07-2019",
+      "what_changed": "Replaced the original land records working group members (points 7, 8, 9) with: 7. Deputy Manager, Land Records, Konkan Region, Fort, Mumbai-400023 as member; 8. District Superintendent, Land Records, Mumbai Suburban District, Administrative Member at Bandra (East); 9. Town Geo Assessment Officer, 106 SV Road, Suresh Colony, LIC Member Colony, Vile Parle-400047 as member."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

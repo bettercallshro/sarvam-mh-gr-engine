@@ -1,0 +1,361 @@
+{
+ "id": 29,
+ "set": "main",
+ "question": "What did the 19 July 2021 corrigendum change in the 6 April 2021 disability-reservation GR?",
+ "case": "AM",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "It deleted the sentence in para 2 saying senior and junior scientific officer posts were left out because an earlier GR (18-02-2021) covers them. The rest of para 2 is unchanged",
+ "gold_grs": [
+  "202104061557307811",
+  "202107191443218111"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202104061557307811",
+   "date": "06-04-2021",
+   "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf"
+  },
+  {
+   "code": "202107191443218111",
+   "date": "19-07-2021",
+   "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum removed the sentence in paragraph 2 of the 6 April 2021 GR that had excluded two posts (Senior Scientist/Junior Scientist) at the Rajiv Gandhi Science and Technology Commission from this decision because they were already covered in a prior SE-1 government decision.",
+    "cited": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गिट केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयनात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे।",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक/कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही।",
+      "page": 2,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "It removes the sentence in paragraph 2 of the 06-04-2021 GR stating that two posts (Senior Scientist/Junior Scientist) at the Rajiv Gandhi Science and Technology Commission were not included in this decision because they were already included in a prior SE-1 government decision."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum removed the sentence in paragraph 2 of the 6 April 2021 GR that had excluded two posts (Senior Scientist/Junior Scientist) at the Rajiv Gandhi Science and Technology Commission from this decision because they were already covered in a prior SE-1 government decision.",
+    "cited": [
+     {
+      "code": "20210719143218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": null,
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गिट केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयनात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे।",
+      "page": 1
+     },
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक/कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही।",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "It removes the sentence in paragraph 2 of the 06-04-2021 GR stating that two posts (Senior Scientist/Junior Scientist) at the Rajiv Gandhi Science and Technology Commission were not included in this decision because they were already included in a prior SE-1 government decision."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum deleted the sentence in paragraph 2 of the 6 April 2021 GR that excluded two posts (senior scientist/junior scientist) in the Rajiv Gandhi Science and Technology Commission because they were already covered in an SE-1 GR, thereby including those posts.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गत्तित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "In paragraph 2 of the 06-04-2021 GR, the sentence stating that two posts (senior scientist/junior scientist) in the Rajiv Gandhi Science and Technology Commission were not included because they were already included in an SE-1 GR has been deleted, thereby including those posts."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum deleted the sentence in paragraph 2 of the 6 April 2021 GR that excluded two posts (senior scientist/junior scientist) in the Rajiv Gandhi Science and Technology Commission because they were already covered in an SE-1 GR, thereby including those posts.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2
+     },
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गत्तित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "In paragraph 2 of the 06-04-2021 GR, the sentence stating that two posts (senior scientist/junior scientist) in the Rajiv Gandhi Science and Technology Commission were not included because they were already included in an SE-1 GR has been deleted, thereby including those posts."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The 19-07-2021 corrigendum amends the 06-04-2021 GR by deleting the exclusion sentence in paragraph 2, so that the two posts of Senior Scientist and Junior Scientist in the Rajiv Gandhi Science and Technology Commission are now included in the disability reservation. No other newer GR in the corpus changes this.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "It removes the exclusion clause from paragraph 2 of the 06-04-2021 GR, meaning the two posts of Senior Scientist/Junior Scientist in the Rajiv Gandhi Science and Technology Commission are now included in the disability reservation."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum amends the 6 April 2021 GR by removing the sentence from paragraph 2 that excluded two posts (Senior Scientist/Junior Scientist) in the Rajiv Gandhi Science and Technology Commission because they had already been included elsewhere. Earlier, paragraph 2 stated that those two posts were not included in this GR.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पसे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "In paragraph 2 of the 6 April 2021 GR, the sentence stating that two posts in the Rajiv Gandhi Science and Technology Commission (Senior Scientist/Junior Scientist) were not included because they had already been included in a separate SE-1 decision is removed/omitted."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum amends the 6 April 2021 GR by removing the sentence from paragraph 2 that excluded two posts (Senior Scientist/Junior Scientist) in the Rajiv Gandhi Science and Technology Commission because they had already been included elsewhere. Earlier, paragraph 2 stated that those two posts were not included in this GR.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2
+     },
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पसे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "In paragraph 2 of the 6 April 2021 GR, the sentence stating that two posts in the Rajiv Gandhi Science and Technology Commission (Senior Scientist/Junior Scientist) were not included because they had already been included in a separate SE-1 decision is removed/omitted."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 19-07-2021 corrigendum amended the 06-04-2021 GR by removing the sentence in paragraph 2 that excluded two posts in the Rajiv Gandhi Science and Technology Commission because they were covered by a separate SE-1 government decision. Earlier, the 06-04-2021 GR stated that those two posts were not included in this decision.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक/कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयनात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "Removed the sentence in paragraph 2 of the 06-04-2021 GR that said two posts in the Rajiv Gandhi Science and Technology Commission were excluded because they were covered by a separate SE-1 government decision."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 19-07-2021 corrigendum amended the 06-04-2021 GR by removing the sentence in paragraph 2 that excluded two posts in the Rajiv Gandhi Science and Technology Commission because they were covered by a separate SE-1 government decision. Earlier, the 06-04-2021 GR stated that those two posts were not included in this decision.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक/कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2
+     },
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयनात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "Removed the sentence in paragraph 2 of the 06-04-2021 GR that said two posts in the Rajiv Gandhi Science and Technology Commission were excluded because they were covered by a separate SE-1 government decision."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

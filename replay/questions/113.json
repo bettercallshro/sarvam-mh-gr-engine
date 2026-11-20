@@ -1,0 +1,318 @@
+{
+ "id": 113,
+ "set": "holdout",
+ "question": "Show me the 17 February 2018 telecom infrastructure policy GR.",
+ "case": "MI",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "Not in this corpus. (The corpus's GR of 17-02-2018 is a different one: a tender evaluation committee for consultants.) It is cited by the GRs of 03-03-2018, 08-07-2019, 07-06-2021 and 04-11-2022, and the policy was revised by the telecom infrastructure policy GR of 04-11-2022",
+ "gold_grs": [
+  "201803031333271711",
+  "202211041809363311"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201803031333271711",
+   "date": "03-03-2018",
+   "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf"
+  },
+  {
+   "code": "202211041809363311",
+   "date": "04-11-2022",
+   "title": "Telecom Infrastructure Policy.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on telecom infrastructure policy dated 17 February 2018 in the corpus. The corpus contains a GR dated 17-02-2018 (201802171427235111) titled 'Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.', which is unrelated. The actual telecom infrastructure policy is referenced by later GRs (e.g., 202211041809363311 dated 04-11-2022 and 201907111447186811 dated 08-07-2019) as Government Resolution No. मातंसं०६५/प्र.क्र.१/२०१८, dated 17.02.2018, but its full text is not provided in the retrieved set.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं०६५/प्र.क्र.१/२०१८, दिनांक: १७.०२.२०१८.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201803031333271711",
+      "date": "03-03-2018",
+      "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf",
+      "quote": "शासनादेश क्रमांक मातंसं ०६५/प्र.क्र.१/२०१८, दिनांक: १७ मार्च, २०१८.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "201907111447186811",
+      "date": "08-07-2019",
+      "title": "Inclusion of IP-1 Institutions in Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907111447186811.pdf",
+      "quote": "शासनादेश क्रमांक मातंसं०६५/प्र.क्र.१/२०१८, दि.१७.०२.२०१८",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on telecom infrastructure policy dated 17 February 2018 in the corpus. The corpus contains a GR dated 17-02-2018 (201802171427235111) titled 'Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.', which is unrelated. The actual telecom infrastructure policy is referenced by later GRs (e.g., 202211041809363311 dated 04-11-2022 and 201907111447186811 dated 08-07-2019) as Government Resolution No. मातंसं०६५/प्र.क्र.१/२०१८, dated 17.02.2018, but its full text is not provided in the retrieved set.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1
+     },
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "शासन निर्णय क्रमांक मातंसं०६५/प्र.क्र.१/२०१८, दिनांक: १७.०२.२०१८.",
+      "page": 1
+     },
+     {
+      "code": "201803031333271711",
+      "date": "03-03-2018",
+      "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf",
+      "quote": "शासनादेश क्रमांक मातंसं ०६५/प्र.क्र.१/२०१८, दिनांक: १७ मार्च, २०१८.",
+      "page": 1
+     },
+     {
+      "code": "201907111447186811",
+      "date": "08-07-2019",
+      "title": "Inclusion of IP-1 Institutions in Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907111447186811.pdf",
+      "quote": "शासनादेश क्रमांक मातंसं०६५/प्र.क्र.१/२०१८, दि.१७.०२.२०१८",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The corpus GR dated 17-02-2018 (code 201802171427235111) is about the Tender Evaluation Committee for empanelment of consultants for IT projects, not a telecom infrastructure policy. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this GR.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The corpus GR dated 17-02-2018 (code 201802171427235111) is about the Tender Evaluation Committee for empanelment of consultants for IT projects, not a telecom infrastructure policy. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this GR.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The current rule, as amended by GR dated 08-07-2019, includes IP-1 institutions and roof top towers under mobile towers in the telecom infrastructure policy. Earlier, the 17 February 2018 GR (Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra) only constituted a Tender Evaluation Committee for empanelment of consultants and did not cover telecom infrastructure policy contents.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201803031333271711",
+      "date": "03-03-2018",
+      "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf",
+      "quote": "वाचा- १. मा.तं.सं. शा. नि. क्र. मातंसं ०६५/प्र.क्र.१/२०१८, दि. १७ फेब्रुवारी, २०१८",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201907111447186811",
+      "date": "08-07-2019",
+      "title": "Inclusion of IP-1 Institutions in Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907111447186811.pdf",
+      "quote": "वाचा १. शा. नि. क्र. मातंसं०६५/प्र.क्र.१/२०८, दि. १७.०२.२०१८",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "201907111447186811",
+      "date": "08-07-2019",
+      "what_changed": "Included IP-1 institutions in the policy and added roof top towers to the definition of mobile towers."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current rule, as amended by GR dated 08-07-2019, includes IP-1 institutions and roof top towers under mobile towers in the telecom infrastructure policy. Earlier, the 17 February 2018 GR (Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra) only constituted a Tender Evaluation Committee for empanelment of consultants and did not cover telecom infrastructure policy contents.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1
+     },
+     {
+      "code": "201803031333271711",
+      "date": "03-03-2019",
+      "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf",
+      "quote": "वाचा- १. मा.तं.सं. शा. नि. क्र. मातंसं ०६५/प्र.क्र.१/२०१८, दि. १७ फेब्रुवारी, २०१८",
+      "page": 1
+     },
+     {
+      "code": "201907111447186811",
+      "date": "08-07-2019",
+      "title": "Inclusion of IP-1 Institutions in Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907111447186811.pdf",
+      "quote": "वाचा १. शा. नि. क्र. मातंसं०६५/प्र.क्र.१/२०८, दि. १७.०२.२०१८",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201907111447186811",
+      "date": "08-07-2019",
+      "what_changed": "Included IP-1 institutions in the policy and added roof top towers to the definition of mobile towers."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The asked-for GR dated 17-02-2018 establishes the Tender Evaluation Committee for the 5-year empanelment of IT project consultants. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this GR.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The asked-for GR dated 17-02-2018 establishes the Tender Evaluation Committee for the 5-year empanelment of IT project consultants. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this GR.",
+    "cited": [
+     {
+      "code": "201802171427235111",
+      "date": "17-02-2018",
+      "title": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802171427235111.pdf",
+      "quote": "Tender Evaluation Committee for Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "n/a",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

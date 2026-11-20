@@ -1,0 +1,334 @@
+{
+ "id": 105,
+ "set": "holdout",
+ "question": "From what date must ministry departments run their work on the e-office system?",
+ "case": "AM",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "From 01-04-2023, per the standard operating procedure circular of 23-02-2023 (which cites a circular of 02-02-2023 not in this corpus). The 2020 mahaeoffice GR and SOP (19-10-2020, 09-11-2020) came earlier",
+ "gold_grs": [
+  "202302231826565311",
+  "202010191540488111",
+  "202011091654026811"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202302231826565311",
+   "date": "23-02-2023",
+   "title": "Standard Operating Procedures for implement eOffice....",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202302231826565311.pdf"
+  },
+  {
+   "code": "202010191540488111",
+   "date": "19-10-2020",
+   "title": "Use of mahaeoffice portal for of official work.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf"
+  },
+  {
+   "code": "202011091654026811",
+   "date": "09-11-2020",
+   "title": "SOP for use of mahaeoffice portal for of official work.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011091654026811.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 19-10-2020 GR directs that the mahaeoffice web-based system must be implemented immediately in all ministerial departments. It further mandates that from 01-11-2020, e-Dharika must be fully operationalised in the listed ministerial departments, and thereafter all ministerial departments must start using the e-office system in a phased manner. The 09-11-2020 GR fixes the SOP for this implementation but does not state a new compliance date for ministry departments. The 23-02-2023 GR states that e-office system use must be made effective from 01-04-2023 in all ministry administrative departments and regional offices, and that e-postal/e-holidays must be sent through e-office from that date, with physical mail sent only by hand where e-office is not possible. No newer GR in the corpus amends, replaces, stays, extends or clarifies the 19-10-2020 GR; the 2023 GR concerns SOP procedure rather than the original directive date.",
+    "cited": [
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "मंत्रालयात एन.आय.सी.च्या ई-ऑफीस (URL) mahaeoffice.maharashtra.gov.in या प्रणालीची अंमलबजावणी तात्काळ करणे आवश्यक आहे.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "सदर प्रणालीद्वारे विभागांनी दिनांक १.११.२०२० पासून ई-टपाल/ ई-रजा कार्यान्वित करण्यात याव्यात, असे यापूर्वीच संदर्भाधीन क्र.४ येथील पत्रान्वये कळविण्यात आले आहे.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "त्यानंतर टप्प्याटप्प्याने सर्व मंत्रालयीन विभागांनी ई-ऑफीस प्रणालीचा वापर सुरु करावा.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202302231826565311",
+      "date": "23-02-2023",
+      "title": "Standard Operating Procedures for implement eOffice....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202302231826565311.pdf",
+      "quote": "मंत्रालयीन सर्व प्रशासकीय विभागांमधील तसेच क्षेत्रीय कार्यालयातील शासकीय कामकाजात संर्भीय परिपत्रकानुसार दि. ०१ एप्रिल, २०२३ पासून ई-ऑफिस प्रणालीचा वापर प्रभावी पणे करावयाचा आहे",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202302231826565311",
+      "date": "23-02-2023",
+      "title": "Standard Operating Procedures for implement eOffice....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202302231826565311.pdf",
+      "quote": "तसेच परिपत्रकानुसार मंत्रालयीन प्रशासकीय विभाग तसेच क्षेत्रीय कार्यालयामार्फत पाठविण्यात येणारे जे टपाल (उदा. नकाशे, पुस्तके इत्यादी.) ई-ऑफिस माध्यमातून पाठविणे शक्य होणार नाही. केवळ असेच टपाल हस्तबटवडयाने पाठविण्यात यावे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 19-10-2020 GR directs that the mahaeoffice web-based system must be implemented immediately in all ministerial departments. It further mandates that from 01-11-2020, e-Dharika must be fully operationalised in the listed ministerial departments, and thereafter all ministerial departments must start using the e-office system in a phased manner. The 09-11-2020 GR fixes the SOP for this implementation but does not state a new compliance date for ministry departments. The 23-02-2023 GR states that e-office system use must be made effective from 01-04-2023 in all ministry administrative departments and regional offices, and that e-postal/e-holidays must be sent through e-office from that date, with physical mail sent only by hand where e-office is not possible. No newer GR in the corpus amends, replaces, stays, extends or clarifies the 19-10-2020 GR; the 2023 GR concerns SOP procedure rather than the original directive date.",
+    "cited": [
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "मंत्रालयात एन.आय.सी.च्या ई-ऑफीस (URL) mahaeoffice.maharashtra.gov.in या प्रणालीची अंमलबजावणी तात्काळ करणे आवश्यक आहे.",
+      "page": 2
+     },
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "सदर प्रणालीद्वारे विभागांनी दिनांक १.११.२०२० पासून ई-टपाल/ ई-रजा कार्यान्वित करण्यात याव्यात, असे यापूर्वीच संदर्भाधीन क्र.४ येथील पत्रान्वये कळविण्यात आले आहे.",
+      "page": 2
+     },
+     {
+      "code": "20201019154040488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": null,
+      "quote": "त्यानंतर टप्प्याटप्प्याने सर्व मंत्रालयीन विभागांनी ई-ऑफीस प्रणालीचा वापर सुरु करावा.",
+      "page": 2
+     },
+     {
+      "code": "202302231826565311",
+      "date": "23-02-2023",
+      "title": "Standard Operating Procedures for implement eOffice....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202302231826565311.pdf",
+      "quote": "मंत्रालयीन सर्व प्रशासकीय विभागांमधील तसेच क्षेत्रीय कार्यालयातील शासकीय कामकाजात संर्भीय परिपत्रकानुसार दि. ०१ एप्रिल, २०२३ पासून ई-ऑफिस प्रणालीचा वापर प्रभावी पणे करावयाचा आहे",
+      "page": 1
+     },
+     {
+      "code": "202302231826565311",
+      "date": "2023-02-23",
+      "title": "Standard Operating Procedures for implement eOffice....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202302231826565311.pdf",
+      "quote": "तसेच परिपत्रकानुसार मंत्रालयीन प्रशासकीय विभाग तसेच क्षेत्रीय कार्यालयामार्फत पाठविण्यात येणारे जे टपाल (उदा. नकाशे, पुस्तके इत्यादी.) ई-ऑफिस माध्यमातून पाठविणे शक्य होणार नाही. केवळ असेच टपाल हस्तबटवडयाने पाठविण्यात यावे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "Based on the GR dated 19-10-2020, ministry departments must run their work on the e-office system from 01-11-2020, when e-dharika is to be fully operationalized in the first phase by the listed departments.",
+    "cited": [
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "सदर प्रणालीद्वारे विभागांनी दिनांक १.११.२०२० पासून ई-टपाल/ ई-रजा कार्यान्वित करण्यात याव्यात, असे यापूर्वीच संदर्भाधीन क्र.४ येथील पत्रान्वये कळविण्यात आले आहे.",
+      "page": 2
+     },
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "दिनांक ०१.११.२०२० पासून पहिल्या टप्प्यामध्ये मध्ये ई- धारीका सामान्य प्रशासन विभागामार्फत निश्चित केलेल्या खालील विभागांमार्फत पूर्णतः कार्यान्वित करण्यात याव्यात.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 2020-10-19 GR mandates that all ministry departments run their work on the e-office system from 01-11-2020. The later SOP GR of 09-11-2020 clarifies the procedure but does not alter that date. Earlier, the 2020-10-19 GR listed specific departments for the first phase and required e-post/e-holidays from 1.11.2020, while the ministry e-office system was to be fully implemented in phased manner thereafter.",
+    "cited": [
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "सर्व मंत्रालयीन विभागातील अधिकारी / कर्मचारी यांना यापूर्वी ई-ऑफीस प्रणालीचे प्रशिक्षण देण्यात आले आहे। तथापि, त्या अनुषंगाने काही तांत्रिक सहाय्य / प्रशिक्षणाची पुन्हा आवश्यकता भासल्यास माहिती तंत्रज्ञान विभागातील ई-ऑफीसशी संबंधित नोडल अधिकारी तसेच ई-ऑफीस सपोर्ट टीमकडे संपर्क साधावा। ई-ऑफीस प्रणालीची प्रभावी अंमलबजावणी करण्याच्या दृष्टीने पुढील टप्प्यात खालीलप्रमाणे कार्यवाही करण्यात यावी।",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "202011091654026811",
+      "date": "09-11-2020",
+      "title": "SOP for use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011091654026811.pdf",
+      "quote": "मंत्रालयात ई-ऑफीस प्रणालीचा प्रभावीपणे वापर करण्याचा निर्णय घेण्यात आला आहे। याकरिता एन.आय.सी.च्या ई-ऑफीस (URL) mahaeoffice1.maharashtra. gov.in या प्रणालीची अंमलबजा<arg_value>implementation करण्याबाबत संदर्भाधीन शासन निर्णयान्वये आदेश निर्गमित करण्यात आले आहेत। त्याअनुषंगाने मंत्रालयात ई-ऑफीस प्रणाली कार्यान्वित करण्यासाठी आवश्यक असलेली प्रमाण कार्यपध्दती (S.O.P.) निश्चित करण्यात आली असून ती विवरणपत्र-अ (Annexure-1)प्रमाणे आहे।",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 2020-10-19 GR mandates that all ministry departments run their work on the e-office system from 01-11-2020. The later SOP GR of 09-11-2020 clarifies the procedure but does not alter that date. Earlier, the 2020-10-19 GR listed specific departments for the first phase and required e-post/e-holidays from 1.11.2020, while the ministry e-office system was to be fully implemented in phased manner thereafter.",
+    "cited": [
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "सर्व मंत्रालयीन विभागातील अधिकारी / कर्मचारी यांना यापूर्वी ई-ऑफीस प्रणालीचे प्रशिक्षण देण्यात आले आहे। तथापि, त्या अनुषंगाने काही तांत्रिक सहाय्य / प्रशिक्षणाची पुन्हा आवश्यकता भासल्यास माहिती तंत्रज्ञान विभागातील ई-ऑफीसशी संबंधित नोडल अधिकारी तसेच ई-ऑफीस सपोर्ट टीमकडे संपर्क साधावा। ई-ऑफीस प्रणालीची प्रभावी अंमलबजावणी करण्याच्या दृष्टीने पुढील टप्प्यात खालीलप्रमाणे कार्यवाही करण्यात यावी।",
+      "page": 2
+     },
+     {
+      "code": "202011091654026811",
+      "date": "09-11-2020",
+      "title": "SOP for use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011091654026811.pdf",
+      "quote": "मंत्रालयात ई-ऑफीस प्रणालीचा प्रभावीपणे वापर करण्याचा निर्णय घेण्यात आला आहे। याकरिता एन.आय.सी.च्या ई-ऑफीस (URL) mahaeoffice1.maharashtra. gov.in या प्रणालीची अंमलबजा<arg_value>implementation करण्याबाबत संदर्भाधीन शासन निर्णयान्वये आदेश निर्गमित करण्यात आले आहेत। त्याअनुषंगाने मंत्रालयात ई-ऑफीस प्रणाली कार्यान्वित करण्यासाठी आवश्यक असलेली प्रमाण कार्यपध्दती (S.O.P.) निश्चित करण्यात आली असून ती विवरणपत्र-अ (Annexure-1)प्रमाणे आहे।",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Ministry departments must run their work on the e-office system from 01-11-2020. The 09-11-2020 GR fixed the SOP for this but did not change the start date. Earlier, the 19-10-2020 GR directed all ministries to implement the NIC e-office system immediately and start e-tpal/e-rja from 01-11-2020, with e-Dharika to begin in phases from 01-11-2020.",
+    "cited": [
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "सदर प्रणालीद्वारे विभागांनी दिनांक १.११.२०२० पासून ई-टपाल/ ई-रजा कार्यान्वित करण्यात याव्यात",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202011091654026811",
+      "date": "09-11-2020",
+      "title": "SOP for use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011091654026811.pdf",
+      "quote": "मंत्रालयात ई-ऑफीस प्रणालीचा प्रभावीपणे वापर करण्याचा निर्णय घेण्यात आला आहे",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011091654026811",
+      "date": "09-11-2020",
+      "what_changed": "It fixes the SOP for e-office implementation in the Ministry, referencing the 19-10-2020 GR, but does not alter the 01-11-2020 start date for e-tpal/e-rja or e-Dharika."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Ministry departments must run their work on the e-office system from 01-11-2020. The 09-11-2020 GR fixed the SOP for this but did not change the start date. Earlier, the 19-10-2020 GR directed all ministries to implement the NIC e-office system immediately and start e-tpal/e-rja from 01-11-2020, with e-Dharika to begin in phases from 01-11-2020.",
+    "cited": [
+     {
+      "code": "202010191540488111",
+      "date": "19-10-2020",
+      "title": "Use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202010191540488111.pdf",
+      "quote": "सदर प्रणालीद्वारे विभागांनी दिनांक १.११.२०२० पासून ई-टपाल/ ई-रजा कार्यान्वित करण्यात याव्यात",
+      "page": 2
+     },
+     {
+      "code": "202011091654026811",
+      "date": "09-11-2020",
+      "title": "SOP for use of mahaeoffice portal for of official work.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011091654026811.pdf",
+      "quote": "मंत्रालयात ई-ऑफीस प्रणालीचा प्रभावीपणे वापर करण्याचा निर्णय घेण्यात आला आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011091654026811",
+      "date": "09-11-2020",
+      "what_changed": "It fixes the SOP for e-office implementation in the Ministry, referencing the 19-10-2020 GR, but does not alter the 01-11-2020 start date for e-tpal/e-rja or e-Dharika."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

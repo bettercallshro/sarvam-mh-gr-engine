@@ -1,0 +1,400 @@
+{
+ "id": 7,
+ "set": "main",
+ "question": "What is the maximum spend on a laptop or tablet for an IAS, IPS or IFS officer?",
+ "case": "AM",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "Rs 1,20,000 (12-04-2023). Earlier cap Rs 85,000 (24-12-2019)",
+ "gold_grs": [
+  "202304131657547811",
+  "201912241451082111"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202304131657547811",
+   "date": "12-04-2023",
+   "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf"
+  },
+  {
+   "code": "201912241451082111",
+   "date": "24-12-2019",
+   "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS or IFS officer is Rs. 120,000, as set by the 2023 GR which superseded the 2019 GR that had Rs. 85,000. No other GR in the corpus changes this.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum spend limit for purchase of laptop/iPad/tablet by IAS/IPS/IFS officers was increased from Rs. 85,000 to Rs. 120,000, and the 2019 GR is superseded by this 2023 GR."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS or IFS officer is Rs. 120,000, as set by the 2023 GR which superseded the 2019 GR that had Rs. 85,000. No other GR in the corpus changes this.",
+    "cited": [
+     {
+      "code": "20191224145101082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": null,
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum spend limit for purchase of laptop/iPad/tablet by IAS/IPS/IFS officers was increased from Rs. 85,000 to Rs. 120,000, and the 2019 GR is superseded by this 2023 GR."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS, or IFS officer is Rs. 120,000, as set by the newer GR dated 12-04-2023 which amended the earlier limit of Rs. 85,000. This higher limit applies to mid-range or high-end equipment for e-governance purposes.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Changed the maximum purchase limit for laptop/iPad/tablet from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS, or IFS officer is Rs. 120,000, as set by the newer GR dated 12-04-2023 which amended the earlier limit of Rs. 85,000. This higher limit applies to mid-range or high-end equipment for e-governance purposes.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Changed the maximum purchase limit for laptop/iPad/tablet from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS or IFS officer is Rs. 1,20,000, as set by the 2023 GR. The 2019 GR had previously set the limit at Rs. 85,000, but it was superseded by the 2023 GR which raised the cap.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Changed the maximum purchase limit for laptops/iPad/tablets for IAS, IPS, IFS officers from Rs. 85,000 to Rs. 1,20,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS or IFS officer is Rs. 1,20,000, as set by the 2023 GR. The 2019 GR had previously set the limit at Rs. 85,000, but it was superseded by the 2023 GR which raised the cap.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131653583211",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": null,
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Changed the maximum purchase limit for laptops/iPad/tablets for IAS, IPS, IFS officers from Rs. 85,000 to Rs. 1,20,000."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The current maximum spend on a laptop or tablet for an IAS, IPS, or IFS officer is Rs. 120,000, as set by the GR dated 12-04-2023. Earlier, the GR dated 24-12-2019 had set the maximum at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum purchase limit for laptops/iPads/tablets for IAS, IPS, and IFS officers was raised from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current maximum spend on a laptop or tablet for an IAS, IPS, or IFS officer is Rs. 120,000, as set by the GR dated 12-04-2023. Earlier, the GR dated 24-12-2019 had set the maximum at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum purchase limit for laptops/iPads/tablets for IAS, IPS, and IFS officers was raised from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS or IFS officer is Rs. 120,000, as set by the GR dated 12-04-2023. Earlier, the GR dated 24-12-2019 set the maximum limit at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Increased the maximum purchase limit from Rs. 85,000 to Rs. 120,000 for laptops/iPad/tablets for IAS, IPS, and IFS officers"
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The maximum spend on a laptop or tablet for an IAS, IPS or IFS officer is Rs. 120,000, as set by the GR dated 12-04-2023. Earlier, the GR dated 24-12-2019 set the maximum limit at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Increased the maximum purchase limit from Rs. 85,000 to Rs. 120,000 for laptops/iPad/tablets for IAS, IPS, and IFS officers"
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

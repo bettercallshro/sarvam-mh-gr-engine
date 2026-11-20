@@ -1,0 +1,347 @@
+{
+ "id": 2,
+ "set": "main",
+ "question": "What is the deadline for moving existing department applications to the cloud?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "31-03-2020, set by the 19-06-2019 addendum (the original said 30-10-2018)",
+ "gold_grs": [
+  "201906191741481211"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201906191741481211",
+   "date": "19-06-2019",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "According to GR 201801291824268911 dated 29-01-2018, existing applications not hosted in a cloud environment must be migrated to cloud on or before 30.10.2018, and all Departments must review their existing software applications to ensure they are cloud ready in time for that migration.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018. All Departments must review their existing software applications and ensure that the applications are cloud ready in time for the above migration.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "According to GR 201801291824268911 dated 29-01-2018, existing applications not hosted in a cloud environment must be migrated to cloud on or before 30.10.2018, and all Departments must review their existing software applications to ensure they are cloud ready in time for that migration.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018. All Departments must review their existing software applications and ensure that the applications are cloud ready in time for the above migration.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud was originally 30.10.2018, but it was extended to 31.03.2020 by GR dated 19-06-2019.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "The migration deadline was extended from 30.10.2018 to 31.03.2020."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud was originally 30.10.2018, but it was extended to 31.03.2020 by GR dated 19-06-2019.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "The migration deadline was extended from 30.10.2018 to 31.03.2020."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud was initially 30-10-2018 under GR 201801291824268911, but it was amended to 31-03-2020 by GR 201906191741481211. No other newer GR in the corpus changes this deadline further.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Changed the deadline for migrating existing applications not hosted in a cloud environment from 30-10-2018 to 31-03-2020."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud was initially 30-10-2018 under GR 201801291824268911, but it was amended to 31-03-2020 by GR 201906191741481211. No other newer GR in the corpus changes this deadline further.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Changed the deadline for migrating existing applications not hosted in a cloud environment from 30-10-2018 to 31-03-2020."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud was extended to 31.03.2020 by the GR dated 19-06-2019. Earlier, the GR dated 29-01-2018 had set the deadline as 30.10.2018.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extended the migration deadline for existing applications not hosted in a cloud environment from 30.10.2018 to 31.03.2020."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud was extended to 31.03.2020 by the GR dated 19-06-2019. Earlier, the GR dated 29-01-2018 had set the deadline as 30.10.2018.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extended the migration deadline for existing applications not hosted in a cloud environment from 30.10.2018 to 31.03.2020."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud is 31.03.2020, as extended by GR dated 19-06-2019. Earlier, the deadline was 30.10.2018 under GR dated 29-01-2018.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extended the deadline for migrating existing applications to cloud from 30.10.2018 to 31.03.2020."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The deadline for migrating existing department applications to the cloud is 31.03.2020, as extended by GR dated 19-06-2019. Earlier, the deadline was 30.10.2018 under GR dated 29-01-2018.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2009",
+      "what_changed": "Extended the deadline for migrating existing applications to cloud from 30.10.2018 to 31.03.2020."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

@@ -1,0 +1,337 @@
+{
+ "id": 10,
+ "set": "main",
+ "question": "मातंस ३८१४/प्र.क्र.१७४/३९: what is the current limit?",
+ "case": "DV",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "Rs 1,20,000 (12-04-2023)",
+ "gold_grs": [
+  "202304131657547811",
+  "201912241451082111"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202304131657547811",
+   "date": "12-04-2023",
+   "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf"
+  },
+  {
+   "code": "201912241451082111",
+   "date": "24-12-2019",
+   "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": null,
+    "answer": "",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current maximum purchase limit is Rs. 120,000, as set by the GR dated 12-04-2023. The earlier GR dated 24-12-2019 had set the limit at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Increased the maximum purchase limit for laptops/iPad/tablet from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current maximum purchase limit is Rs. 120,000, as set by the GR dated 12-04-2023. The earlier GR dated 24-12-2019 had set the limit at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "202304131657549511",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": null,
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी",
+      "page": 1
+     },
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Increased the maximum purchase limit for laptops/iPad/tablet from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The current limit is Rs. 120,000. This was raised from Rs. 85,000 by the GR dated 12-04-2023, which amended the paragraph 1 limit of the 24-12-2019 GR.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Increased the maximum purchase limit for laptop/iPad/tablet from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current limit is Rs. 120,000. This was raised from Rs. 85,000 by the GR dated 12-04-2023, which amended the paragraph 1 limit of the 24-12-2019 GR.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Increased the maximum purchase limit for laptop/iPad/tablet from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current limit for purchase is Rs. 120,000, as set by the GR dated 12-04-2023. Earlier, the limit under the GR dated 24-12-2019 was Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum purchase limit for laptops/iPads/tablets was increased from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current limit for purchase is Rs. 120,000, as set by the GR dated 12-04-2023. Earlier, the limit under the GR dated 24-12-2019 was Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "2023041316517547811",
+      "date": "12-04-2024",
+      "title": null,
+      "url": null,
+      "quote": "",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum purchase limit for laptops/iPads/tablets was increased from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The current limit under the latest applicable GR is Rs. 1,20,000, as set by the GR dated 12-04-2023. Earlier, the GR dated 24-12-2019 had set the limit at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum purchase limit for laptops/iPads/tablets under this GR was increased from Rs. 85,000 to Rs. 1,20,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current limit under the latest applicable GR is Rs. 1,20,000, as set by the GR dated 12-04-2023. Earlier, the GR dated 24-12-2019 had set the limit at Rs. 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर खरेदी रू. १२००००/- (रूपये एक लाख वीस हजार फक्त) या कमाल मर्यादेत असावी.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "The maximum purchase limit for laptops/iPads/tablets under this GR was increased from Rs. 85,000 to Rs. 1,20,000."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}
