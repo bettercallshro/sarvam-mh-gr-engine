@@ -1,24 +1,30 @@
 #!/usr/bin/env bash
-# Sparse-clone the Information Technology department GRs from orgpedia/mahGRs.
-# The full repository is large; only GRs/Information_Technology_Department/ is checked out.
-# Corpus: https://github.com/orgpedia/mahGRs (MIT licence, Orgpedia Foundation).
+# Re-fetch the corpus: the Information Technology department GRs from orgpedia/mahGRs
+# at the pinned commit, copied unchanged into corpus/.
+# The corpus already ships in corpus/; this script is only needed to re-create it.
+# Source: https://github.com/orgpedia/mahGRs (MIT licence, Orgpedia Foundation).
 set -euo pipefail
 
 REPO_URL="https://github.com/orgpedia/mahGRs.git"
 # Pinned commit so every run indexes the same corpus. Change deliberately.
 COMMIT="c96e88f731589e1284ecab60ff1a63d3b9c6bb82"
-DEST="${1:-data/mahGRs}"
+CLONE="${1:-data/mahGRs}"     # sparse clone (git-ignored)
+TARGET="${2:-corpus}"         # where the engine reads the corpus
 SUBDIR="GRs/Information_Technology_Department"
 
-if [ ! -d "$DEST/.git" ]; then
-  mkdir -p "$(dirname "$DEST")"
-  git clone --filter=blob:none --no-checkout "$REPO_URL" "$DEST"
+if [ ! -d "$CLONE/.git" ]; then
+  mkdir -p "$(dirname "$CLONE")"
+  git clone --filter=blob:none --no-checkout "$REPO_URL" "$CLONE"
 fi
 
-cd "$DEST"
-git sparse-checkout set --no-cone "/$SUBDIR/" /LICENSE /README.md
-git fetch --depth 1 origin "$COMMIT" 2>/dev/null || git fetch origin
-git checkout -q --detach "$COMMIT"
+(
+  cd "$CLONE"
+  # The full repository is large; only the IT-department folder is checked out.
+  git sparse-checkout set --no-cone "/$SUBDIR/" /LICENSE /README.md
+  git fetch --depth 1 origin "$COMMIT" 2>/dev/null || git fetch origin
+  git checkout -q --detach "$COMMIT"
+)
 
-echo "Corpus at $DEST (commit $COMMIT)"
-echo "Files in $SUBDIR: $(ls "$SUBDIR" | wc -l)"
+mkdir -p "$TARGET"
+cp "$CLONE/$SUBDIR"/* "$TARGET"/
+echo "Copied $(ls "$CLONE/$SUBDIR" | wc -l) files from $SUBDIR at $COMMIT into $TARGET/"

@@ -18,7 +18,7 @@ Automatic measures only; they are proxies, not the hand scores. "Raw" is the mod
 | r1a, r1b | round 1 (layout, answer first, plumbing) | `v3-run1`, `v3-run2-2` | answer_v3 | Rs 6.82, Rs 1.77 |
 | r2a, r2b | round 2 (this round) | `v4-run1-2`, `v4-run2` | answer_v4 | Rs 6.35, Rs 2.78 |
 
-`runs/2026-11-18-v4-run1.jsonl` is a first attempt at r2a. It stopped after Q1 because the
+`runs/partial/2026-11-18-v4-run1.jsonl` is a first attempt at r2a. It stopped after Q1 because the
 run-cost projection was made from one question (Rs 0.56 × 37 = Rs 20.88). Since commit
 `767eb54` the run stops when the actual spend passes the cap, and projects only after 5
 questions. Spent today: Rs 24.88. Both round-2 runs were far below the Rs 20 stop line.

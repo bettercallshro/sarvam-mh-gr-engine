@@ -1,35 +1,105 @@
 # sarvam-mh-gr-engine
 
-An engine that answers questions about Maharashtra Information Technology department
-Government Resolutions (GRs), 2018 to 2024, with citations. It handles two kinds of question:
+By Shro ([bettercallshro.com](https://www.bettercallshro.com))
 
-1. "Is this GR still in force?"
-2. "What is the latest GR on a topic, and what changed?"
+A question-answering engine for Government Resolutions (GRs) of the Maharashtra
+Information Technology department, 2018 to 2024. It answers two kinds of question:
 
-Every answer cites the GR it rests on (date, number, official PDF link) and flags any newer
-GR in the corpus that amends, replaces or stays it. When the evidence is thin, it says it
-couldn't find a GR on this in the corpus. It is scored on a fixed set of 37 questions
-(`eval/questions.jsonl`).
+1. **Is this GR still in force?**
+2. **What is the latest GR on a topic, and what changed?**
+
+The GRs are in Marathi and English. Every answer cites the GR it rests on (date, code,
+official PDF link, quote from the original text). It flags any newer GR that amends,
+replaces or stays it, and says "I couldn't find a GR on this in the corpus" when the
+evidence is thin. Answers are written by Sarvam's `sarvam-105b`; search and indexing run
+locally.
 
 Independent case study, not affiliated with Sarvam.
 
-## Status
+## Results
 
-| Step | What | State |
+Scored on the raw model answer against the rubric below. "Fully correct" means right
+answer, right citation, newest change named, and no confident error.
+
+**37 evaluation questions** (`eval/questions.jsonl`)
+
+| Version | Fully correct | Confident-wrong |
 |---|---|---|
-| E1 | Corpus, index, twin detection, citation graph | done |
-| E2 | Retrieval and retrieval check on the 37 questions | done: 37/37 in top 5 ([report](eval/results/e2_retrieval.md)) |
-| E3–E6 | Answer step (`sarvam-105b`), logging, key handling, smoke test | done (reports in eval/results/) |
-| F1 | Baseline run of all 37 | run, not yet scored ([report](eval/results/f1_baseline.md), [CSV](runs/2026-11-18-baseline.csv)) |
+| Baseline | 25 / 37 | 5 |
+| Final, run A | 33 / 37 | 0 |
+| Final, run B | 31 / 37 | 2 |
+
+**Hold-out: 15 new questions** (`eval/holdout_questions.jsonl`), written and locked after
+the fixes, with no changes before or after. Baseline and final versions, two runs each:
+
+| Version | Fully correct (run 1, run 2) | Confident-wrong (run 1, run 2) |
+|---|---|---|
+| Baseline | 10, 8 | 1, 3 |
+| Final | 11, 9 | 3, 3 |
+
+The fixes held where an amending GR cites the one it changes, not where it doesn't.
+
+Per-question scores: [`eval/scores.csv`](eval/scores.csv). Reports for each step:
+[`eval/results/`](eval/results/).
+
+## How it works
+
+1. **Search.** BM25 over ~120-word passages of both text files of each GR (original
+   language and English version), with titles added. It also looks up a date or GR number
+   in the question directly. When a question names a date that no GR in the corpus has,
+   search returns the GRs that cite that date. English and Marathi copies of the same GR
+   count as one.
+2. **Citation graph.** Each GR is linked to the earlier GRs it cites, matched by date and
+   by GR number (Marathi and English forms, OCR noise and Devanagari digits normalised).
+   Each link records its evidence, strongest first: date and number, number only, date
+   only, shared file number. A link means "cites", not "changes". It only proposes
+   newer-GR candidates.
+3. **Answer step.** `sarvam-105b` gets the full text of the top 5 retrieved GRs and of
+   every newer-GR candidate. It must review each candidate from its text (amends, replaces,
+   stays, cites only, …), lead with the rule as it stands now, quote the original language
+   word for word, and reply in a fixed JSON format. An invalid reply is retried once.
+4. **Checks.** Before the product shows an answer, the checks:
+   - drop GR codes the model wasn't given, and repair mistyped ones;
+   - take dates, titles and links from the metadata;
+   - find each quote in the text to set its page;
+   - flag wording problems and dates that match nothing.
+
+   Every change is logged against the raw model answer, which is what gets scored.
+
+**Versions** (each run's commit; the results were committed afterwards)
+
+| Version | Run at | Results added | Prompt | What changed |
+|---|---|---|---|---|
+| Baseline | `2b41877` | `835367c` | answer_v2 | Search, citation graph, full texts in the prompt, JSON mode, checks, one retry for invalid replies. |
+| Round 1 | `213c181`; run B rerun at `e8e3e09` | `1e28879` | answer_v3 | Every newer-GR candidate gets its own full-text block and must be reviewed; the first sentence answers directly. |
+| Final | `767eb54` | `49ee4ae` | answer_v4 | The current rule comes first (checked in code, one retry); a failed reply still gets a shown answer; simpler review format. |
+
+The hold-out ran the baseline at `835367c` (same engine code as `2b41877`) and the final
+version at `49ee4ae`.
+
+## Scoring rubric
+
+Each answer is scored on four things:
+
+| Measure | Values |
+|---|---|
+| Answer | 2 right, 1 partly right, 0 wrong |
+| Citation | pass if the right GR is named and no GR is invented |
+| Latest | pass if the newest changing GR is named; n/a if there is none |
+| Confident-wrong | yes if a wrong answer or an invented source is stated without hedging |
+
+**Fully correct** = answer 2, citation pass, latest pass or n/a, confident-wrong no.
+Scored against the rubric and confirmed row by row by the author, on the raw model answer
+(before the checks). The checks and decisions behind the scoring are in
+[`docs/review-log.md`](docs/review-log.md).
 
 ## How to run
 
-Requires Python 3.10+ and git. Standard library only.
+Requires Python 3.10+. Standard library only. The corpus ships in `corpus/`.
 
 ```bash
-./scripts/fetch_corpus.sh          # sparse clone of the IT-department GRs into data/mahGRs
-python -m grengine.build_index     # writes data/index/ and prints a report
-python -m grengine.eval_retrieval  # retrieval check, writes eval/results/e2_retrieval.md
+python -m grengine.build_index     # builds data/index/ from corpus/ and prints a report
+python -m grengine.eval_retrieval  # retrieval check on the 37 questions (no API calls)
 python -m unittest discover -s tests
 ```
 
@@ -37,76 +107,59 @@ Answer step (needs a Sarvam API key in `SARVAM_API_KEY`; `.env` is git-ignored):
 
 ```bash
 python -m grengine.run --name smoke --ids 1,7,11,30,36
-python -m grengine.run --name baseline --csv     # all 37 + hand-scoring CSV
+python -m grengine.run --name baseline --csv     # all 37, plus a scoring CSV
 ```
 
-Guards: `DAILY_SPEND_CAP_INR` (default 50) and `RUN_SPEND_CAP_INR` (default 20). Our own
-rate limit is 30 requests a minute. On 402 the run stops; 429 and 5xx are retried with
-backoff.
+Guards:
+- Spend caps: `DAILY_SPEND_CAP_INR` (default 50) and `RUN_SPEND_CAP_INR` (default 20).
+- Rate limit: 30 requests a minute.
+- Errors: a 402 (no credits) stops the run; 429 and 5xx are retried with backoff.
 
-## Layout
+A full run of the 37 cost Rs 2 to 7 at Sarvam's introductory pricing.
+
+## Repository layout
 
 ```
-grengine/
-  normalize.py     Devanagari digits to ASCII, whitespace, OCR spacing in numbers
-  dates.py         dates in English and Marathi text, as dd-mm-yyyy
-  orders.py        GR numbers reduced to a (file, case) key across scripts and OCR forms
-  corpus.py        load GRs.json and the per-GR text files, split pages
-  twins.py         English/Marathi copies of one GR (different codes)
-  citations.py     citation graph and newer-GR candidates (ranked by evidence)
-  build_index.py   E1 entry point
-  search.py        BM25 over both text files + lookup by date, GR number, missing cited date
-  eval_retrieval.py  E2 retrieval check on the 37 questions
-  answer.py        E3 answer step: context, schema validation and retry, post-answer checks
-  prompts/         answer prompts (current: answer_v2.md)
-  sarvam.py        Sarvam API client: key, retries, rate limit, cost, spend cap
-  run.py           runs questions, one JSONL log per run in runs/, scoring CSV
-scripts/fetch_corpus.sh
-eval/questions.jsonl
-eval/results/      step reports (E2 to F1)
-runs/              run logs and the scoring CSV
+grengine/          the engine
+  corpus.py        load the GRs from corpus/
+  normalize.py     Devanagari digits, OCR spacing
+  dates.py         dates in English and Marathi text
+  orders.py        GR numbers across scripts and OCR forms
+  twins.py         English/Marathi copies of one GR
+  citations.py     citation graph, newer-GR candidates
+  build_index.py   builds data/index/
+  search.py        retrieval
+  answer.py        answer step and checks
+  prompts/         answer prompts (answer_v1 to answer_v4)
+  sarvam.py        Sarvam API client, spend and rate guards
+  run.py           runs questions, logs, scoring CSV
+  eval_retrieval.py, compare_runs.py   evaluation helpers
+corpus/            the 112 GRs, copied unchanged from orgpedia/mahGRs
+eval/              questions, hold-out questions, hand scores, step reports
+runs/              run logs and scoring sheets (see runs/README.md)
+docs/              review log
+scripts/           fetch_corpus.sh (re-fetch the corpus)
 tests/
 ```
 
-## How the corpus is handled
-
-- **Dates** come from the `date` field in `GRs.json`, never from the code (the code is an
-  upload timestamp).
-- **Digits.** Marathi text writes numbers as ०–९. Matching runs on an ASCII-digit copy.
-  Quotes always come from the original text.
-- **Twins.** Some GRs were issued as an English and a Marathi PDF with different codes.
-  They count as one GR when deciding which GR is latest. A pair is a twin when it has the
-  same date, a different original language, the same GR number, and English-version text
-  cosine similarity ≥ 0.8.
-- **Citation graph.** Each GR is linked to the earlier corpus GRs it cites, matched by
-  date and by GR number. A reference reads "No. X, dated D", so the number just before a
-  date decides which GR the date points to. A cited date with a different number is kept
-  as an *unresolved* reference: a GR the corpus doesn't hold. It is never treated as one
-  that doesn't exist. An edge means "cites". Whether the later GR changes the earlier one
-  has to be read from its text. Edge evidence, strongest first: `date+order`, `order`,
-  `date`, `same_file` (only the shared file number in the header).
-- **Newer-GR candidates** come from the graph, ranked by evidence (date+order, order,
-  date, same_file). A candidate whose only link is a shared file number is marked
-  *candidate only*: it is never proof of a newer GR, and the answer step must read its text.
-- **`order_type`** in the metadata is sometimes wrong, so nothing depends on it.
-
-## Retrieval
-
-`grengine/search.py`, standard library only:
-
-- **Text:** BM25 over ~120-word passages from both text files (original language and
-  English version), with the title prepended to each passage. A GR scores its best
-  passage. Twins share one result. Dates and GR numbers are removed from the text query.
-- **Direct lookup:** an exact date or a GR number in the question matches GRs directly.
-  A month and year adds a smaller boost.
-- **Missing GRs:** if a question names a date that no GR in the corpus has, the GRs that
-  cite that date are returned, but only when the citation shares a distinctive word with
-  the question. The answer must then say the asked-for GR isn't in the corpus.
-
-## Corpus credit
+## Data source and licence
 
 The GR texts and metadata come from [orgpedia/mahGRs](https://github.com/orgpedia/mahGRs)
-by the Orgpedia Foundation, used under the MIT licence. Their licence notice is kept in
-[`LICENSES/mahGRs-LICENSE.txt`](LICENSES/mahGRs-LICENSE.txt). Only
-`GRs/Information_Technology_Department/` is used, pinned to commit `c96e88f` in
-`scripts/fetch_corpus.sh`. The corpus is fetched, not copied into this repository.
+by the Orgpedia Foundation, used under the MIT licence. The folder
+`GRs/Information_Technology_Department/` is copied unchanged into `corpus/` at commit
+`c96e88f`; see [`corpus/README.md`](corpus/README.md). Orgpedia's licence notice is in
+[`LICENSES/mahGRs-LICENSE.txt`](LICENSES/mahGRs-LICENSE.txt). `scripts/fetch_corpus.sh`
+re-fetches the folder.
+
+The code is under the MIT licence: see [`LICENSE`](LICENSE).
+
+## Limits
+
+- Search was tuned while looking at the 37 evaluation questions.
+- One person wrote the questions and scored the answers.
+- Small samples: 37 questions (one baseline run, two final runs) and 15 hold-out
+  questions (two runs per version). Results vary between runs.
+- Nearly half of the citation links (53 of 116) rest only on a shared file number. The
+  model has to decide from the text whether a linked GR changes anything.
+- The corpus covers IT-department GRs from 2018 to 2024 only. A GR missing from it is
+  reported as not found, not as non-existent.

@@ -1,4 +1,4 @@
-"""Checks against the real corpus. Skipped if scripts/fetch_corpus.sh has not been run."""
+"""Checks against the real corpus in corpus/."""
 import unittest
 
 from grengine.citations import build_graph
@@ -6,7 +6,7 @@ from grengine.corpus import DEFAULT_CORPUS_DIR, load_corpus
 from grengine.twins import find_twins, group_ids
 
 
-@unittest.skipUnless((DEFAULT_CORPUS_DIR / "GRs.json").exists(), "corpus not fetched")
+@unittest.skipUnless((DEFAULT_CORPUS_DIR / "GRs.json").exists(), "corpus/ missing")
 class TestCorpusIndex(unittest.TestCase):
     @classmethod
     def setUpClass(cls):

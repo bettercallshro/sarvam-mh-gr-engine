@@ -33,7 +33,7 @@ for later).
   51 calls.
 - **Run 2:** `runs/2026-11-18-v3-run2-2.jsonl`, CSV `runs/2026-11-18-v3-run2-2.csv`.
   Rs 1.77, 51 calls; 97% of prompt tokens were cached. It was rerun in full after the
-  first attempt (`runs/2026-11-18-v3-run2.jsonl`, CSV `runs/2026-11-18-v3-run2.csv`)
+  first attempt (`runs/partial/2026-11-18-v3-run2.jsonl`, CSV `runs/partial/2026-11-18-v3-run2.csv`)
   stopped at Q16 on a bug in reply processing (fixed in `e8e3e09`; Rs 0.62).
 - **Total spent today:** Rs 15.18. No run came near the Rs 20 stop line.
 

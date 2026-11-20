@@ -7,7 +7,7 @@ from pathlib import Path
 from .normalize import devanagari_ratio
 from .orders import key_str, order_key
 
-DEFAULT_CORPUS_DIR = Path("data/mahGRs/GRs/Information_Technology_Department")
+DEFAULT_CORPUS_DIR = Path("corpus")  # copied unchanged from orgpedia/mahGRs at c96e88f; see corpus/README.md
 COVERAGE = "Information Technology GRs, 2018 to 2024"
 
 _PAGE_RE = re.compile(r"^# Page (\d+)\s*$", re.MULTILINE)
@@ -73,7 +73,8 @@ def load_corpus(corpus_dir: Path = DEFAULT_CORPUS_DIR) -> tuple[list[GR], list[d
     corpus_dir = Path(corpus_dir)
     meta_path = corpus_dir / "GRs.json"
     if not meta_path.exists():
-        raise FileNotFoundError(f"{meta_path} not found. Run scripts/fetch_corpus.sh first.")
+        raise FileNotFoundError(f"{meta_path} not found. The corpus ships in corpus/; "
+                                "scripts/fetch_corpus.sh re-fetches it.")
     meta = json.loads(meta_path.read_text(encoding="utf-8"))
 
     grs, failures = [], []
