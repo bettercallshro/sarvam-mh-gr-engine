@@ -1,0 +1,294 @@
+{
+ "id": 114,
+ "set": "holdout",
+ "question": "What did the 16 September 2016 GR setting up the state DBT committee say?",
+ "case": "MI",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "Not in this corpus. It is cited by the GR of 14-05-2021, which reconstituted that committee",
+ "gold_grs": [
+  "202105141255466911"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202105141255466911",
+   "date": "14-05-2021",
+   "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "The 16-09-2016 GR establishing the state DBT committee is not among the corpus texts. The 2021-05-14 GR (reorganization of DBT Action Committee) cites it by referencing the government decision dated 16 September 2016 (Maatans 054/31/2016/39) and states that the DBT Cell constituted thereunder is being reconstituted with a new membership list. No corpus GR reproduces the original 2016 text.",
+    "cited": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ प्रस्तावना :",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "शासन पुरकपत्र – शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ अन्वये स्थापन करण्यात आलेल्या राज्य स्तरावर प्रत्यक्ष लाभ हस्तांतरण (Direct Benefit Transfer) कृती समितीचे (DBT Cell) खालीलप्रमाणे पुर्नगठन करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "The 16-09-2016 GR establishing the state DBT committee is not among the corpus texts. The 2021-05-14 GR (reorganization of DBT Action Committee) cites it by referencing the government decision dated 16 September 2016 (Maatans 054/31/2016/39) and states that the DBT Cell constituted thereunder is being reconstituted with a new membership list. No corpus GR reproduces the original 2016 text.",
+    "cited": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ प्रस्तावना :",
+      "page": 1
+     },
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2011",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "शासन पुरकपत्र – शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ अन्वये स्थापन करण्यात आलेल्या राज्य स्तरावर प्रत्यक्ष लाभ हस्तांतरण (Direct Benefit Transfer) कृती समितीचे (DBT Cell) खालीलप्रमाणे पुर्नगठन करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 16 September 2016 GR established the state DBT committee under Government Resolution No. मातंसं ०५४/३१/२०१६/३९. A later GR dated 14-05-2021 reconstituted that committee with a new composition, listing the Additional Chief Secretary (Finance) as Chairman and the Director (IT) as Member Secretary.",
+    "cited": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "शासन पुरकपत्र क्र. मातंसं ०५४/३३/२०१६/३९, दिनांक - १४ मे, २०२१ वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "संदर्भधिन शासन निर्णयान्वये स्थापन करण्यात आलेल्या राज्य स्तरावर प्रत्यक्ष लाभ हस्तांतरण (Direct Benefit Transfer) कृती समितीचे (DBT Cell) खालीलप्रमाणे पुर्नगठन करण्यात येत आहे.",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "The DBT Cell is being reconstituted as follows: 1. m. Additional Chief Secretary (Finance) Chairman 2. Additional/ Principal Secretary, Chief Minister's Office Member 3. Principal Secretary (Mother) Member 4. Chairman, State Level Banks Committee (SLBC) Member",
+      "page": 2,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "what_changed": "Reconstituted the state DBT committee set up by the 16-09-2016 GR, listing a new chair and members such as Additional Chief Secretary (Finance) as Chairman and Director (IT) as Member Secretary."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 16 September 2016 GR established the state DBT committee under Government Resolution No. मातंसं ०५४/३१/२०१६/३९. A later GR dated 14-05-2021 reconstituted that committee with a new composition, listing the Additional Chief Secretary (Finance) as Chairman and the Director (IT) as Member Secretary.",
+    "cited": [
+     {
+      "code": "20210514125546911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": null,
+      "quote": "शासन पुरकपत्र क्र. मातंसं ०५४/३३/२०१६/३९, दिनांक - १४ मे, २०२१ वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६",
+      "page": 1
+     },
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "संदर्भधिन शासन निर्णयान्वये स्थापन करण्यात आलेल्या राज्य स्तरावर प्रत्यक्ष लाभ हस्तांतरण (Direct Benefit Transfer) कृती समितीचे (DBT Cell) खालीलप्रमाणे पुर्नगठन करण्यात येत आहे.",
+      "page": 2
+     },
+     {
+      "code": "202105141266911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for English",
+      "url": null,
+      "quote": "The DBT Cell is being reconstituted as follows: 1. m. Additional Chief Secretary (Finance) Chairman 2. Additional/ Principal Secretary, Chief Minister's Office Member 3. Principal Secretary (Mother) Member 4. Chairman, State Level Banks Committee (SLBC) Member",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "what_changed": "Reconstituted the state DBT committee set up by the 16-09-2016 GR, listing a new chair and members such as Additional Chief Secretary (Finance) as Chairman and Director (IT) as Member Secretary."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 14-05-2021 GR (202105141255466911) cites the 16 September 2016 decision (Mat 054/31/2016/39) as the founding Government Resolution that established the state-level DBT Cell, and says it is now being reconstituted.",
+    "cited": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "शासन पुरकपत्र – शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३ं१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ अन्वये स्थापन करण्यात आलेल्या राज्य स्तरावर प्रत्यक्ष लाभ हस्तांतरण (Direct Benefit Transfer) कृती समितीचे (DBT Cell) खालीलप्रमाणे पुर्नगठन करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 14-05-2021 GR (202105141255466911) cites the 16 September 2016 decision (Mat 054/31/2016/39) as the founding Government Resolution that established the state-level DBT Cell, and says it is now being reconstituted.",
+    "cited": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६",
+      "page": 1
+     },
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2016",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "शासन पुरकपत्र – शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३ं१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ अन्वये स्थापन करण्यात आलेल्या राज्य स्तरावर प्रत्यक्ष लाभ हस्तांतरण (Direct Benefit Transfer) कृती समितीचे (DBT Cell) खालीलप्रमाणे पुर्नगठन करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 14-05-2021 GR (code 202105141255466911) cites a Government Decision dated 16 September 2016 (GR number मातंसं ०५४/३१/२०१६/३९) as the decision that established the state-level DBT committee, and states that the committee was being reconstituted. It does not reproduce the text of the 16 September 2016 GR itself.",
+    "cited": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ प्रस्तावना : राज्यशासन/केंद्रशासनाद्वारे राबविण्यात येणाऱ्या विविध कल्याणकारी योजनांच्या लाभांचे वाटप सीधेपणे लाभार्थ्यांना",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 14-05-2021 GR (code 202105141255466911) cites a Government Decision dated 16 September 2016 (GR number मातंसं ०५४/३१/२०१६/३९) as the decision that established the state-level DBT committee, and states that the committee was being reconstituted. It does not reproduce the text of the 16 September 2016 GR itself.",
+    "cited": [
+     {
+      "code": "202105141255466911",
+      "date": "14-05-2021",
+      "title": "Reorganization of Dicrect Benefit Transfer Action Committee at State Level for Direct Benefits of Government Schemes",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105141255466911.pdf",
+      "quote": "वाचा :- शासन निर्णय, सामान्य प्रशासन विभाग, मातंसं ०५४/३१/२०१६/३९, दि. १६ सप्टेंबर, २०१६ प्रस्तावना : राज्यशासन/केंद्रशासनाद्वारे राबविण्यात येणाऱ्या विविध कल्याणकारी योजनांच्या लाभांचे वाटप सीधेपणे लाभार्थ्यांना",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

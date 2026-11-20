@@ -1,0 +1,379 @@
+{
+ "id": 21,
+ "set": "main",
+ "question": "What rent support does the Fintech policy give start-ups?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "Up to Rs 4 lakh a year for 3 years for early-stage start-ups, added by the addendum of 30-11-2018",
+ "gold_grs": [
+  "201802161919110111",
+  "201811301239595811"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201802161919110111",
+   "date": "16-02-2018",
+   "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf"
+  },
+  {
+   "code": "201811301239595811",
+   "date": "30-11-2018",
+   "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Fintech policy provides rent reimbursement for early stage Fintech start-ups up to an upper limit of Rs. 4 lakh per year for a total period of 3 years. Start-ups operating out of co-working spaces can adjust the co-working space rent at source if the co-working site is a partner with Mumbai Fintech Hub.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "The Government hereby approves the Fintech policy of the State and the setting up of the \"Global Fintech Hub\" in the Mumbai Metropolitan Region. For operationalization of the policy, the following instructions are being issued.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "In the Government Resolution No. DIT-2018/C.R-17/D-1/39 dated 16th February 2018 under the head “Incentive to start-ups” in point no. 11 after no.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Fintech policy provides rent reimbursement for early stage Fintech start-ups up to an upper limit of Rs. 4 lakh per year for a total period of 3 years. Start-ups operating out of co-working spaces can adjust the co-working space rent at source if the co-working site is a partner with Mumbai Fintech Hub.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "The Government hereby approves the Fintech policy of the State and the setting up of the \"Global Fintech Hub\" in the Mumbai Metropolitan Region. For operationalization of the policy, the following instructions are being issued.",
+      "page": 1
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "In the Government Resolution No. DIT-2018/C.R-17/D-1/39 dated 16th February 2018 under the head “Incentive to start-ups” in point no. 11 after no.",
+      "page": 1
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The Fintech policy (Government Resolution DIT-2018/C.R-17/D-1/39 dated 16 February 2018) does not itself contain a rent reimbursement provision in its original text; it is added by the later Government Addendum dated 30 November 2018. That addendum provides reimbursement of rent for office space up to Rs. 4 Lakh per year for a total period of 3 years for early stage Fintech start-ups, and allows those operating in co-working spaces to adjust the rent at source if the co-working site is a partner with Mumbai Fintech Hub.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "Reimbursement of rent for office space",
+      "page": 1
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an an upper limit Rs. 4 Lakh year for a total period of 03 years.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "what_changed": "Added point (iv) under Incentives to start-ups: reimbursement of rent for office space up to Rs. 4 Lakh per year for a total period of 3 years, and allows fintech start-ups in co-working spaces to adjust rent at source if the co-working site is a partner with Mumbai Fintech Hub."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The Fintech policy gives start-ups rent reimbursement for office space, capped at Rs. 4 Lakh per year for a total period of 3 years, and allows co-working space rent adjustment at source if the co-working site is a partner with Mumbai Fintech Hub. This was added by the 30 November 2018 addendum to the original 16 February 2018 GR.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "Reimbursement of rent for office space",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "what_changed": "Added point (iv) under 'Incentives to start-ups' (point 11), introducing reimbursement of rent for office space paid by early stage Fintech start-ups capped at Rs. 4 Lakh per year for a total of 3 years, and allowed fintech start-ups in co-working spaces to adjust rent at source if the co-working site is a partner with Mumbai Fintech Hub."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Fintech policy gives start-ups rent reimbursement for office space, capped at Rs. 4 Lakh per year for a total period of 3 years, and allows co-working space rent adjustment at source if the co-working site is a partner with Mumbai Fintech Hub. This was added by the 30 November 2018 addendum to the original 16 February 2018 GR.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-20018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "Reimbursement of rent for office space",
+      "page": 1
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-20018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "what_changed": "Added point (iv) under 'Incentives to start-ups' (point 11), introducing reimbursement of rent for office space paid by early stage Fintech start-ups capped at Rs. 4 Lakh per year for a total of 3 years, and allowed fintech start-ups in co-working spaces to adjust rent at source if the co-working site is a partner with Mumbai Fintech Hub."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The Fintech policy reimburses rent for office space paid by early stage Fintech start-ups, subject to an upper limit of Rs. 4 Lakh per year for a total period of 3 years; Fintech start-ups operating out of co-working spaces can adjust the co-working space rent at source if the co-working site is a partner with Mumbai Fintech Hub. No newer GR found in this corpus (covers 2018 to 2024) changes this rent support provision.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Fintech policy reimburses rent for office space paid by early stage Fintech start-ups, subject to an upper limit of Rs. 4 Lakh per year for a total period of 3 years; Fintech start-ups operating out of co-working spaces can adjust the co-working space rent at source if the co-working site is a partner with Mumbai Fintech Hub. No newer GR found in this corpus (covers 2018 to 2024) changes this rent support provision.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 2
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of 3 years.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "The Fintech policy gives start-ups rent reimbursement for office space up to Rs. 4 Lakh per year for a total of 3 years, and co-working space rent can be adjusted at source if the co-working site is a partner with Mumbai Fintech Hub. This was added by the Government Addendum dated 30-11-2018. Earlier, the base policy GR dated 16-02-2018 did not contain any rent support provision.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "Incentive to start-ups",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "Reimbursement of rent for office space The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of  newer GRs, ",
+      "page": null,
+      "quote_verified": false
+     },
+     {
+      "code": "201811301240117211",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301240117211.pdf",
+      "quote": "In the Government Resolution No. DIT-2018/C.R-17/D-1/39 dated 16th February 2018 in paragraph 2 in line no 3 for the words United payments Interface UPI read the words Unified payment Interface UPI",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "what_changed": "Added clause (iv) Reimbursement of rent for office space: early stage Fintech start-ups get rent reimbursement up to Rs. 4 Lakh per year for 3 years; co-working space rent can be adjusted at source if the site is a partner with Mumbai Fintech Hub."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Fintech policy gives start-ups rent reimbursement for office space up to Rs. 4 Lakh per year for a total of 3 years, and co-working space rent can be adjusted at source if the co-working site is a partner with Mumbai Fintech Hub. This was added by the Government Addendum dated 30-11-2018. Earlier, the base policy GR dated 16-02-2018 did not contain any rent support provision.",
+    "cited": [
+     {
+      "code": "201802161919110111",
+      "date": "16-02-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201802161919110111.pdf",
+      "quote": "Incentive to start-ups",
+      "page": 1
+     },
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2008",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301239595811.pdf",
+      "quote": "Reimbursement of rent for office space The rent for office space paid by early stage Fintech start-ups will be reimbursed by state government subject to an upper limit Rs. 4 Lakh year for a total period of  newer GRs, ",
+      "page": null
+     },
+     {
+      "code": "201811301240117211",
+      "date": "30-11-2018",
+      "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301240117211.pdf",
+      "quote": "In the Government Resolution No. DIT-2018/C.R-17/D-1/39 dated 16th February 2018 in paragraph 2 in line no 3 for the words United payments Interface UPI read the words Unified payment Interface UPI",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201811301239595811",
+      "date": "30-11-2018",
+      "what_changed": "Added clause (iv) Reimbursement of rent for office space: early stage Fintech start-ups get rent reimbursement up to Rs. 4 Lakh per year for 3 years; co-working space rent can be adjusted at source if the site is a partner with Mumbai Fintech Hub."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

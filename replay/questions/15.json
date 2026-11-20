@@ -1,0 +1,391 @@
+{
+ "id": 15,
+ "set": "main",
+ "question": "What is the monthly rate for a Principal Consultant?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "Rs 4,54,000 excluding taxes (05-10-2023). The 2018 rate was Rs 3,24,000",
+ "gold_grs": [
+  "202310041905383211"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202310041905383211",
+   "date": "05-10-2023",
+   "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The monthly rate for a Principal Consultant under the 20-03-2018 GR is INR 3,24,000 per month per person (excluding taxes). The 05-10-2023 GR revises this rate to INR 4,54,000 per month per person (excluding taxes) for the newly empaneled period from 20-09-2023 to 19-09-2028.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The monthly rate for a Principal Consultant under the 20-03-2018 GR is INR 3,24,000 per month per person (excluding taxes). The 05-10-2023 GR revises this rate to INR 4,54,000 per month per person (excluding taxes) for the newly empaneled period from 20-09-2023 to 19-09-2028.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The monthly rate for a Principal Consultant under the 2018 GR is 3,24,000 INR per month per person (excluding taxes) for >15 years of experience. This was replaced by the 2023 GR, which sets the rate at 454,000 INR per month per person (excluding taxes) for >13 years of experience.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the empanelment period for 6 months from 20th March 2023 to 19th September 2023 without any change in commercial and other terms and conditions, thereby keeping the 2018 rates in force during the extension."
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the Principal Consultant rate of 3,24,000 INR per month (for >15 years experience) with 454,000 INR per month (for >13 years experience) and updated the empanelment period to 20th September 2023 to 19th September 2028."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The monthly rate for a Principal Consultant under the 2018 GR is 3,24,000 INR per month per person (excluding taxes) for >15 years of experience. This was replaced by the 2023 GR, which sets the rate at 454,000 INR per month per person (excluding taxes) for >13 years of experience.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the Principal Consultant rate of 3,24,000 INR per month (for >15 years experience) with 454,000 INR per month (for >13 years experience) and updated the empanelment period to 20th September 2023 to 19th September 2028."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the empanelment period for 6 months from 20th March 2023 to 19th September 2023 without any change in commercial and other terms and conditions, thereby keeping the 2018 rates in force during the extension."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The monthly rate for a Principal Consultant under the 2018 GR was 3,24,000 INR per month (excluding taxes), but the 2023 GR replaced it with a rate of 4,54,000 INR per month (excluding taxes) for consultants with more than 13 years of experience. No other GR in the corpus changes this rate.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR's empanelment and rates: Principal Consultant rate changed from 3,24,000 INR per month to 4,54,000 INR per month, and experience threshold changed from >15 years to >13 years."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The monthly rate for a Principal Consultant under the 2018 GR was 3,24,000 INR per month (excluding taxes), but the 2023 GR replaced it with a rate of 4,54,000 INR per month (excluding taxes) for consultants with more than 13 years of experience. No other GR in the corpus changes this rate.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR's empanelment and rates: Principal Consultant rate changed from 3,24,000 INR per month to 4,54,000 INR per month, and experience threshold changed from >15 years to >13 years."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current monthly rate for a Principal Consultant is 454,000 INR per month per person (excluding taxes), as set by the Government Resolution dated 05-10-2023. Earlier, the 20-03-2018 GR set the rate at 3,24,000 INR for Principal Consultants with more than 15 years of experience.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR entirely with a new empanelment and set the Principal Consultant rate at 454,000 INR per month per person (excluding taxes) for >13 years experience."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current monthly rate for a Principal Consultant is 454,000 INR per month per person (excluding taxes), as set by the Government Resolution dated 05-10-2023. Earlier, the 20-03-2018 GR set the rate at 3,24,000 INR for Principal Consultants with more than 15 years of experience.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR entirely with a new empanelment and set the Principal Consultant rate at 454,000 INR per month per person (excluding taxes) for >13 years experience."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current monthly rate for a Principal Consultant is INR 454,000 (excluding taxes), applicable for more than 13 years of experience, under the GR dated 05-10-2023. Earlier, under the GR dated 20-03-2018, the rate was INR 3,24,000 for more than 15 years of experience.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR with new consultant categories, experience thresholds, and monthly rates: Principal Consultant >13 years at INR 454,000 per month (excluding taxes)."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current monthly rate for a Principal Consultant is INR 454,000 (excluding taxes), applicable for more than 13 years of experience, under the GR dated 05-10-2023. Earlier, under the GR dated 20-03-2018, the rate was INR 3,24,000 for more than 15 years of experience.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Principal Consultant | >15 Years | 3,24,000/",
+      "page": 1
+     },
+     {
+      "code": "2023100419053832011",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra.",
+      "url": null,
+      "quote": "Principal Consultant | > 13 years | 454,000",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR with new consultant categories, experience thresholds, and monthly rates: Principal Consultant >13 years at INR 454,000 per month (excluding taxes)."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

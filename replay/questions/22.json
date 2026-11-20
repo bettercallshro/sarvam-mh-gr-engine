@@ -1,0 +1,153 @@
+{
+ "id": 22,
+ "set": "main",
+ "question": "Did the 30 November 2018 Fintech corrigendum change any benefit?",
+ "case": "TY",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "No. It only corrects United payments Interface to Unified payment Interface",
+ "gold_grs": [
+  "201811301240117211"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201811301240117211",
+   "date": "30-11-2018",
+   "title": "Setting up of Global Fintech Hub and implementation of Fintech policy",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811301240117211.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The corpus does not contain any newer GR that amends, replaces, stays, extends or clarifies the 30 November 2018 corrigendum (code 201811301240117211). No newer GR found in this corpus (covers 2018 to 2024).",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The corpus does not contain any newer GR that amends, replaces, stays, extends or clarifies the 30 November 2018 corrigendum (code 201811301240117211). No newer GR found in this corpus (covers 2018 to 2024).",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "repaired",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 30 November 2018 Fintech corrigendum (code 201811301240117211) did not change any benefit; it only corrected a typographical error in the 16 February 2018 GR, changing \"United payments Interface (UPI)\" to \"Unified payment Interface (UPI)\".",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 30 November 2018 Fintech corrigendum (code 201811301240117211) did not change any benefit; it only corrected a typographical error in the 16 February 2018 GR, changing \"United payments Interface (UPI)\" to \"Unified payment Interface (UPI)\".",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

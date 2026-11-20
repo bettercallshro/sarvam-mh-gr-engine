@@ -1,0 +1,289 @@
+{
+ "id": 102,
+ "set": "holdout",
+ "question": "Is the 20 July 2021 seniority list of Assistant (Technical) staff in the Directorate of IT final?",
+ "case": "AM",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "No. It was provisional (objections invited within 15 days). The final seniority list was published by the circular of 03-09-2021",
+ "gold_grs": [
+  "202107201251572411",
+  "202109031145424411"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202107201251572411",
+   "date": "20-07-2021",
+   "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf"
+  },
+  {
+   "code": "202109031145424411",
+   "date": "03-09-2021",
+   "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 20-07-2021 GR published a temporary seniority list and invited objections within 15 days. The 03-09-2021 GR replaced it by publishing the final seniority list for the same period, and directed employees to obtain a copy from the website. No newer GR in the corpus changes this final list.",
+    "cited": [
+     {
+      "code": "202107201251572411",
+      "date": "20-07-2021",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf",
+      "quote": "या परिपत्रकासोबत जोडलेल्या “प्रपत्र - अ” मध्ये नमूद ज्येष्ठतासूचीबाबत काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "सामान्य प्रशासन विभागाच्या दिनांक २१.१०.२०११ रोजीच्या शासन निर्णयातील तरतूदी व महाराष्ट्र नागरी सेवा (ज्येष्ठतेचे विनियमन) नियमावली, १९८२ मधील तरतूदीस अनुसरुन माहिती तंत्रज्ञान संचालनालयातील सहायक (तांत्रिक) या संवर्गाची दि.०१.०१.२००४ ते दि.०१.01.२०२१ रोजीची सामायिक ज्येष्ठतासूची आता अंतिम करण्यात येत असून ती या परिपत्रकान्वये प्रसिध्द करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "संबंधित कर्मचाऱ्यांनी सदर ज्येष्ठतासूचीची प्रत संकेतस्थळावरुन उपलब्ध करुन घ्यावी.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 20-07-2021 GR published a temporary seniority list and invited objections within 15 days. The 03-09-2021 GR replaced it by publishing the final seniority list for the same period, and directed employees to obtain a copy from the website. No newer GR in the corpus changes this final list.",
+    "cited": [
+     {
+      "code": "202107201251572411",
+      "date": "20-07-2021",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf",
+      "quote": "या परिपत्रकासोबत जोडलेल्या “प्रपत्र - अ” मध्ये नमूद ज्येष्ठतासूचीबाबत काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत.",
+      "page": 1
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "सामान्य प्रशासन विभागाच्या दिनांक २१.१०.२०११ रोजीच्या शासन निर्णयातील तरतूदी व महाराष्ट्र नागरी सेवा (ज्येष्ठतेचे विनियमन) नियमावली, १९८२ मधील तरतूदीस अनुसरुन माहिती तंत्रज्ञान संचालनालयातील सहायक (तांत्रिक) या संवर्गाची दि.०१.०१.२००४ ते दि.०१.01.२०२१ रोजीची सामायिक ज्येष्ठतासूची आता अंतिम करण्यात येत असून ती या परिपत्रकान्वये प्रसिध्द करण्यात येत आहे.",
+      "page": 1
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "संबंधित कर्मचाऱ्यांनी सदर ज्येष्ठतासूचीची प्रत संकेतस्थळावरुन उपलब्ध करुन घ्यावी.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 20 July 2021 temporary seniority list was superseded by the 3 September 2021 GR, which finalised and published the common seniority list as final. Therefore, the 20 July 2021 list is no longer final.",
+    "cited": [
+     {
+      "code": "202107201251572411",
+      "date": "20-07-2021",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf",
+      "quote": "या परिपत्रकासोबत जोडलेल्या “प्रपत्र - अ” मध्ये नमूद ज्येष्ठतासूचीबाबत काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "सामान्य प्रशासन विभागाच्या दिनांक २१.१०.२०११ रोजीच्या शासन निर्णयातील तरतूदी व महाराष्ट्र नागरी सेवा (ज्येष्ठतेचे विनियमन) नियमावली, १९८२ मधील तरतूदीस अनुसरुन माहिती तंत्रज्ञान संचालनालयातील सहायक (तांत्रिक) या संवर्गाची दि.०१.०१.२००४ ते दि.०१.०१.२०२१ रोजीची सामायिक ज्येष्ठतासूची आता अंतिम करण्यात येत असून ती या परिपत्रकान्वये प्रसिध्द करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 20 July 2021 temporary seniority list was superseded by the 3 September 2021 GR, which finalised and published the common seniority list as final. Therefore, the 20 July 2021 list is no longer final.",
+    "cited": [
+     {
+      "code": "202107201251572411",
+      "date": "20-07-2021",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of IT from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf",
+      "quote": "या परिपत्रकासोबत जोडलेल्या “प्रपत्र - अ” मध्ये नमूद ज्येष्ठतासूचीबाबत काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत.",
+      "page": 1
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of IT from 01.01.2001 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "सामान्य प्रशासन विभागाच्या दिनांक २१.१०.२०११ रोजीच्या शासन निर्णयातील तरतूदी व महाराष्ट्र नागरी सेवा (ज्येष्ठतेचे विनियमन) नियमावली, १९८२ मधील तरतूदीस अनुसरुन माहिती तंत्रज्ञान संचालनालयातील सहायक (तांत्रिक) या संवर्गाची दि.०१.०१.२००४ ते दि.०१.०१.२०२१ रोजीची सामायिक ज्येष्ठतासूची आता अंतिम करण्यात येत असून ती या परिपत्रकान्वये प्रसिध्द करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 20 July 2021 seniority list was temporary, not final. A later GR dated 03-09-2021 converted it into the final seniority list.",
+    "cited": [
+     {
+      "code": "202107201251572411",
+      "date": "20-07-2021",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf",
+      "quote": "जर काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 20 July 2021 seniority list was temporary, not final. A later GR dated 03-09-2021 converted it into the final seniority list.",
+    "cited": [
+     {
+      "code": "20210720120572411",
+      "date": "20-07-2021",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": null,
+      "quote": "जर काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that changes the 20-07-2021 temporary seniority list. Earlier, the 20-07-2021 GR published the temporary seniority list and allowed objections within 15 days. The 03-09-2021 GR published the final seniority list based on the same period.",
+    "cited": [
+     {
+      "code": "202107201251572411",
+      "date": "20-07-2021",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf",
+      "quote": "या परिपत्रकासोबत जोडलेल्या “प्रपत्र - अ” मध्ये नमूद ज्येष्ठतासूचीबाबत काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "सामान्य प्रशासन विभागाच्या दिनांक २१.१०.२०११ रोजीच्या शासन निर्णयातील तरतूदी व महाराष्ट्र नागरी सेवा (ज्येष्ठतेचे विनियमन) नियमावली, १९८२ मधील तरतूदीस अनुसरुन माहिती तंत्रज्ञान संचालनालयातील सहायक (तांत्रिक) या संवर्गाची दि.०१.०१.२००४ ते दि.०१.०१.२०२१ रोजीची सामायिक ज्येष्ठतासूची आता अंतिम करण्यात येत असून ती या परिपत्रकान्वये प्रसिध्द करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that changes the 20-07-2021 temporary seniority list. Earlier, the 20-07-2021 GR published the temporary seniority list and allowed objections within 15 days. The 03-09-2021 GR published the final seniority list based on the same period.",
+    "cited": [
+     {
+      "code": "202107201251572411",
+      "date": "20-07-2011",
+      "title": "Regarding the publication of the temporary seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of the Directorate of Information Technology from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107201251572411.pdf",
+      "quote": "या परिपत्रकासोबत जोडलेल्या “प्रपत्र - अ” मध्ये नमूद ज्येष्ठतासूचीबाबत काही आक्षेप असल्यास संबंधित कर्मचाऱ्यांनी सदर आक्षेप १५ दिवसात सादर करावेत.",
+      "page": 1
+     },
+     {
+      "code": "202109031145424411",
+      "date": "03-09-2021",
+      "title": "Final seniority list - Regarding publication of final seniority list of Assistant (Technical) Group-B (Non-Gazetted) employees of Directorate of IT from 01.01.2004 to 01.01.2021.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202109031145424411.pdf",
+      "quote": "सामान्य प्रशासन विभागाच्या दिनांक २१.१०.२०११ रोजीच्या शासन निर्णयातील तरतूदी व महाराष्ट्र नागरी सेवा (ज्येष्ठतेचे विनियमन) नियमावली, १९८२ मधील तरतूदीस अनुसरुन माहिती तंत्रज्ञान संचालनालयातील सहायक (तांत्रिक) या संवर्गाची दि.०१.०१.२००४ ते दि.०१.०१.२०२१ रोजीची सामायिक ज्येष्ठतासूची आता अंतिम करण्यात येत असून ती या परिपत्रकान्वये प्रसिध्द करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

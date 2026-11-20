@@ -1,0 +1,248 @@
+{
+ "id": 35,
+ "set": "main",
+ "question": "What is the latest GR on the Setu Kendra tender process?",
+ "case": "CO",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "19-07-2024; no newer GR found in this corpus",
+ "gold_grs": [
+  "202407191742379111"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202407191742379111",
+   "date": "19-07-2024",
+   "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process is dated 19-07-2024 (code 202407191742379111), titled Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state..... It directs that all district headquarters and tehsil Setu Kendras must remain operational, and where agency tenure has expired or centres are closed, the concerned Collector must initiate the tender process immediately and complete it within three months.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "राज्यातील जिल्हाधिकारी व तहसिल कार्यालयातील सेतू केंद्रांच्या निविदा प्रक्रियेबाबत.....",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process is dated 19-07-2024 (code 202407191742379111), titled Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state..... It directs that all district headquarters and tehsil Setu Kendras must remain operational, and where agency tenure has expired or centres are closed, the concerned Collector must initiate the tender process immediately and complete it within three months.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "राज्यातील जिल्हाधिकारी व तहसिल कार्यालयातील सेतू केंद्रांच्या निविदा प्रक्रियेबाबत.....",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process in the corpus is dated 19-07-2024 (code 202407191742379111). It directs that all Setu Kendra centres at district headquarters and tehsil offices be kept operational, and that districts where the agency term has expired or centres are closed must start the tender process immediately and complete it within three months.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process in the corpus is dated 19-07-2024 (code 202407191742379111). It directs that all Setu Kendra centres at district headquarters and tehsil offices be kept operational, and that districts where the agency term has expired or centres are closed must start the tender process immediately and complete it within three months.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process in this corpus is dated 19-07-2024 and requires all Setu Kendras at district headquarters and tehsil offices to remain operational, with the tender process to be completed within three months where it has expired or centres are closed. No newer GR in the corpus amends, replaces, stays, extends or clarifies it.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process in this corpus is dated 19-07-2024 and requires all Setu Kendras at district headquarters and tehsil offices to remain operational, with the tender process to be completed within three months where it has expired or centres are closed. No newer GR in the corpus amends, replaces, stays, extends or clarifies it.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process is the one dated 19-07-2024, which requires all Setu Kendras at district headquarters and tehsil offices to remain operational and the tender process to be completed within 3 months.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process is the one dated 19-07-2024, which requires all Setu Kendras at district headquarters and tehsil offices to remain operational and the tender process to be completed within 3 months.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process is dated 19-07-2024 and mandates that all Setu Kendras at district headquarters and tahsil offices must remain operational, with tendering completed within three months where agency terms have expired.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Setu Kendra tender process is dated 19-07-2024 and mandates that all Setu Kendras at district headquarters and tahsil offices must remain operational, with tendering completed within three months where agency terms have expired.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

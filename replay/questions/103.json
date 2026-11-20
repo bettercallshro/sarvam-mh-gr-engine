@@ -1,0 +1,217 @@
+{
+ "id": 103,
+ "set": "holdout",
+ "question": "How does a company apply for permission to put up a mobile tower or lay optical fibre in Maharashtra?",
+ "case": "AM",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "Fresh applications go through the GatiShakti Sanchar portal (gatishaktisanchar.gov.in), per the telecom infrastructure policy GR of 04-11-2022 (forest department applications excepted; regularisation of existing infrastructure through the Mahasanchar portal). Earlier, the 03-03-2018 circular had applications filed in hard copy with local authorities until the DGIT single-window portal was ready",
+ "gold_grs": [
+  "201803031333271711",
+  "202211041809363311"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201803031333271711",
+   "date": "03-03-2018",
+   "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf"
+  },
+  {
+   "code": "202211041809363311",
+   "date": "04-11-2022",
+   "title": "Telecom Infrastructure Policy.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 2019 GR (08-07-2019, Inclusion of IP-1 Institutions in Telecom Infrastructure Policy) cites the missing 2018 GR (03-03-2018) in its preamble, stating that the 2018 GR fixed the policy for construction and maintenance of telecommunication infrastructure and that applications were to be accepted in hard-copy form until the online portal became active.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The 2019 GR (08-07-2019, Inclusion of IP-1 Institutions in Telecom Infrastructure Policy) cites the missing 2018 GR (03-03-2018) in its preamble, stating that the 2018 GR fixed the policy for construction and maintenance of telecommunication infrastructure and that applications were to be accepted in hard-copy form until the online portal became active.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "The 2018 GR (03-03-2018) states that until the online single-window portal is activated, applicants must submit hard-copy applications to the concerned local authorities for telecom towers, micro cells, masts, base stations, and optical fibre cable, and these must be processed according to the policy dated 17.02.2018. A copy should also be sent by email to mahatip@maharashtra.gov.in. I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "The 2018 GR (03-03-2018) states that until the online single-window portal is activated, applicants must submit hard-copy applications to the concerned local authorities for telecom towers, micro cells, masts, base stations, and optical fibre cable, and these must be processed according to the policy dated 17.02.2018. A copy should also be sent by email to mahatip@maharashtra.gov.in. I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "A company applies for permission to put up a mobile tower or lay optical fibre through the GatiShakti Sanchar Portal for new applications, and through the Mahasanchar Portal for regularization, as per the Telecom Infrastructure Policy dated 04-11-2022. Earlier, applications were to be submitted in hard copy to local authorities until the online portal became operational, under the 2018 policy dated 03-03-2018. No newer GR in the corpus changes this procedure.",
+    "cited": [
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "दूरसंचार पायाभूत सुविधा उभारणीच्या धोरान्वये माहिती तंत्रज्ञान संचालनालयास एकमेव संपर्क कार्यालय म्हणून नेमण्यात आले आहे",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "दूरसंचार पायाभूत सुविधांसाठी आणि 5G पायाभूत सुविधांच्या स्थापनेसाठी नवीन अर्ज गतीशक्ती संचार पोर्टल द्वारे केले जातील",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "पायाभूत सुविधांच्या उभारणीच्या तारखेपासून ते नियमितीकरण/मंजुरीच्या तारखेपर्यंतच्या मधल्या कालावधीसाठी, सक्षम प्राधिकरणांनी निश्चित केल्याप्रमाणे शुल्क आकारले जाईल",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "A company applies for permission to put up a mobile tower or lay optical fibre through the GatiShakti Sanchar Portal for new applications, and through the Mahasanchar Portal for regularization, as per the Telecom Infrastructure Policy dated 04-11-2022. Earlier, applications were to be submitted in hard copy to local authorities until the online portal became operational, under the 2018 policy dated 03-03-2018. No newer GR in the corpus changes this procedure.",
+    "cited": [
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "दूरसंचार पायाभूत सुविधा उभारणीच्या धोरान्वये माहिती तंत्रज्ञान संचालनालयास एकमेव संपर्क कार्यालय म्हणून नेमण्यात आले आहे",
+      "page": 1
+     },
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "दूरसंचार पायाभूत सुविधांसाठी आणि 5G पायाभूत सुविधांच्या स्थापनेसाठी नवीन अर्ज गतीशक्ती संचार पोर्टल द्वारे केले जातील",
+      "page": 2
+     },
+     {
+      "code": "202211041809363311",
+      "date": "04-11-2022",
+      "title": "Telecom Infrastructure Policy.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202211041809363311.pdf",
+      "quote": "पायाभूत सुविधांच्या उभारणीच्या तारखेपासून ते नियमितीकरण/मंजुरीच्या तारखेपर्यंतच्या मधल्या कालावधीसाठी, सक्षम प्राधिकरणांनी निश्चित केल्याप्रमाणे शुल्क आकारले जाईल",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "A company must apply in hard copy form to the concerned competent authority for permission to put up a mobile tower or lay optical fibre cable until the online single window portal is activated, and a copy must be sent by email to mahatip@maharashtra.gov.in. Earlier, the policy dated 17.02.2018 governed the permission process.",
+    "cited": [
+     {
+      "code": "201803031333271711",
+      "date": "03-03-2018",
+      "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf",
+      "quote": "दूरसंचार मनोरे, दूरसंचार मायक्रो सेल्स, मास्ट्स, बेस स्टेशन इ. तसेच ऑप्टीकल फायबर केबलच्या परवानगीसाठी अर्जदारांनी संबंधित सक्षम प्राधिकाऱ्यांकडे हार्ड कॉपी स्वरुपात सादर केलेले अर्ज संबंधित सक्षम प्राधिकरणांनी स्विकारावयाचे आहेत व दि.१७.२.२०१८ रोजीच्या धोरणानुसार परवानगीबाबतची कार्यवाही करावयाची आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "A company must apply in hard copy form to the concerned competent authority for permission to put up a mobile tower or lay optical fibre cable until the online single window portal is activated, and a copy must be sent by email to mahatip@maharashtra.gov.in. Earlier, the policy dated 17.02.2018 governed the permission process.",
+    "cited": [
+     {
+      "code": "201803031333271711",
+      "date": "03-03-2018",
+      "title": "Action related to the establishment and maintenance of Tele-communication Infrastructure in the state till implementation of online portal.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803031333271711.pdf",
+      "quote": "दूरसंचार मनोरे, दूरसंचार मायक्रो सेल्स, मास्ट्स, बेस स्टेशन इ. तसेच ऑप्टीकल फायबर केबलच्या परवानगीसाठी अर्जदारांनी संबंधित सक्षम प्राधिकाऱ्यांकडे हार्ड कॉपी स्वरुपात सादर केलेले अर्ज संबंधित सक्षम प्राधिकरणांनी स्विकारावयाचे आहेत व दि.१७.२.२०१८ रोजीच्या धोरणानुसार परवानगीबाबतची कार्यवाही करावयाची आहे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

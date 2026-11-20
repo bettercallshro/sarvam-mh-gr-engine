@@ -1,0 +1,298 @@
+{
+ "id": 3,
+ "set": "main",
+ "question": "There was a cloud policy circular a couple of years ago, something about migration. Which GR?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "The cloud policy of 29-01-2018 (not recent), plus its later changes; latest is 23-04-2021",
+ "gold_grs": [
+  "201801291824268911",
+  "201906191741481211",
+  "201907051642210511",
+  "202104231756150811"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201801291824268911",
+   "date": "29-01-2018",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf"
+  },
+  {
+   "code": "201906191741481211",
+   "date": "19-06-2019",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf"
+  },
+  {
+   "code": "201907051642210511",
+   "date": "05-07-2019",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf"
+  },
+  {
+   "code": "202104231756150811",
+   "date": "23-04-2021",
+   "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR matching a specific date described as \"a couple of years ago\" in the question among the given texts, but the corpus contains several cloud policy circulars on migration. The 19-06-2019 GR (GAD-IT-060/3/2017) titled \"Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications\" explicitly instructs that existing applications not hosted in a cloud environment must be migrated to cloud on or before 31.03.2020. The 29-01-2018 GR (060/3/2017) similarly mandates migration by 30.10.2018, while the 05-07-2019 GR adds instructions on defining data to be migrated and confirming archived data with the CSP.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR matching a specific date described as \"a couple of years ago\" in the question among the given texts, but the corpus contains several cloud policy circulars on migration. The 19-06-2019 GR (GAD-IT-060/3/2017) titled \"Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications\" explicitly instructs that existing applications not hosted in a cloud environment must be migrated to cloud on or before 31.03.2020. The 29-01-2018 GR (060/3/2017) similarly mandates migration by 30.10.2018, while the 05-07-2019 GR adds instructions on defining data to be migrated and confirming archived data with the CSP.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The GR dated 19-06-2019 (code 201906191741481211, number GAD-IT-060/3/2017) is the cloud policy circular about migration, setting a migration deadline of 31.03.2020 for existing applications not hosted in a cloud environment. No newer GR in this corpus amends or replaces it.",
+    "cited": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The GR dated 19-06-2019 (code 201906191741481211, number GAD-IT-060/3/2017) is the cloud policy circular about migration, setting a migration deadline of 31.03.2020 for existing applications not hosted in a cloud environment. No newer GR in this corpus amends or replaces it.",
+    "cited": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The GR dated 19-06-2019 (201906191741481211), which is an addendum to GAD-IT-060/3/2017, extended the cloud migration deadline for existing applications to 31-03-2020 and made security audits mandatory before going live. It was later superseded for procurement by the GR dated 23-04-2021 (202104231756150811), which moved all cloud service purchasing to the GeM portal after 30-04-2021. Earlier, the GR dated 16-05-2018 (201805171357566211) had set the initial migration deadline of 30-10-2018.",
+    "cited": [
+     {
+      "code": "201805171357566211",
+      "date": "16-05-2018",
+      "title": "Cloud Computing Policy- Empanelment of Cloud Service Providers and Guidelines for Government organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201805171357566211.pdf",
+      "quote": "the action expected from the Government organizations to ensure that all IT applications are migrated to cloud by 30.10.2018",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment and in the process of Migration, Government organizations must ensure that before the applications are migrated to cloud and Go Live from Cloud Departments must review their existing application's data and define clearly the data to be migrated to cloud and communicate this to CSP and DIT in writing.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "The migration deadline for existing applications not hosted in a cloud environment is extended from 30-10-2018 to 31-03-2020, and adds that the DIT PIC is authorized to select CSPs and that website/application security audit is mandatory before going live."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The earlier CSP empanelment and rates under GRs dated 16-05-2018 and 19-06-2019 are replaced by procurement of cloud services through the GeM portal, with the prior empanelment expiring on 30-04-2021 and continued rates expiring on 15-06-2021 for departments with existing work orders."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The GR dated 19-06-2019 (201906191741481211), which is an addendum to GAD-IT-060/3/2017, extended the cloud migration deadline for existing applications to 31-03-2020 and made security audits mandatory before going live. It was later superseded for procurement by the GR dated 23-04-2021 (202104231756150811), which moved all cloud service purchasing to the GeM portal after 30-04-2021. Earlier, the GR dated 16-05-2018 (201805171357566211) had set the initial migration deadline of 30-10-2018.",
+    "cited": [
+     {
+      "code": "201805171357566211",
+      "date": "16-05-2018",
+      "title": "Cloud Computing Policy- Empanelment of Cloud Service Providers and Guidelines for Government organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201805171357566211.pdf",
+      "quote": "the action expected from the Government organizations to ensure that all IT applications are migrated to cloud by 30.10.2018",
+      "page": 1
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020",
+      "page": 1
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment and in the process of Migration, Government organizations must ensure that before the applications are migrated to cloud and Go Live from Cloud Departments must review their existing application's data and define clearly the data to be migrated to cloud and communicate this to CSP and DIT in writing.",
+      "page": 1
+     },
+     {
+      "code": "202104231756150811",
+      "date": "2021-04-23",
+      "title": "Cloud Computing policy Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "20210423176150811",
+      "date": "23-04-2021",
+      "what_changed": "The earlier CSP empanelment and rates under GRs dated 16-05-2018 and 19-06-2019 are replaced by procurement of cloud services through the GeM portal, with the prior empanelment expiring on 30-04-2021 and continued rates expiring on 15-06-2021 for departments with existing work orders."
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "The migration deadline for existing applications not hosted in a cloud environment is extended from 30-10-2018 to 31-03-2020, and adds that the DIT PIC is authorized to select CSPs and that website/application security audit is mandatory before going live."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn’t find a GR on this in the corpus.",
+    "cited": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "परिपत्रक माहिती तंत्रज्ञान विभागाने वरील संदर्भाधीन पत्र क्र. ०६०/३/२०१७/१, दिनांक १६ मे, २०१८ अन्वये क्लाऊड सेवा पुरवठादार यांच्या Empanelment तसेच क्लाऊड सेवेचे दर जाहीर केले होते.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn’t find a GR on this in the corpus.",
+    "cited": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "परिपत्रक माहिती तंत्रज्ञान विभागाने वरील संदर्भाधीन पत्र क्र. ०६०/३/२०१७/१, दिनांक १६ मे, २०१८ अन्वये क्लाऊड सेवा पुरवठादार यांच्या Empanelment तसेच क्लाऊड सेवेचे दर जाहीर केले होते.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "pass",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

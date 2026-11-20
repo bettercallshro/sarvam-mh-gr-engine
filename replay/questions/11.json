@@ -1,0 +1,383 @@
+{
+ "id": 11,
+ "set": "main",
+ "question": "Is the 26 November 2020 GR on the computer qualification certificate in force?",
+ "case": "ST",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "No. Stayed until further orders by the GR of 27-11-2020, which reinstated the orders under the 20-11-2018 letter",
+ "gold_grs": [
+  "202011261535430611",
+  "202011271209526511"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202011261535430611",
+   "date": "26-11-2020",
+   "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf"
+  },
+  {
+   "code": "202011271209526511",
+   "date": "27-11-2020",
+   "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 26-11-2020 GR on the computer qualification certificate is stayed by the 27-11-2020 GR, which puts it on hold till further orders and restores the 20-11-2018 letter orders. Therefore, it is not currently in force.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे. तसेच संदर्भाधिन अनु.क्र.१ येथील दि. २० नोव्हेंबर,२०१८ च्या पत्रान्वये निर्गमित करण्यात आलेले आदेश पुनर्संचयित/ पुर्नस्थापित करण्यात येत आहे।",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays the 26-11-2020 GR on the computer qualification certificate, putting it on hold till further orders, and restores the orders issued by the 20-11-2018 letter."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 26-11-2020 GR on the computer qualification certificate is stayed by the 27-11-2020 GR, which puts it on hold till further orders and restores the 20-11-2018 letter orders. Therefore, it is not currently in force.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे. तसेच संदर्भाधिन अनु.क्र.१ येथील दि. २० नोव्हेंबर,२०१८ च्या पत्रान्वये निर्गमित करण्यात आलेले आदेश पुनर्संचयित/ पुर्नस्थापित करण्यात येत आहे।",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays the 26-11-2020 GR on the computer qualification certificate, putting it on hold till further orders, and restores the orders issued by the 20-11-2018 letter."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 26 November 2020 GR is not in force because the 27 November 2020 GR stayed it until further orders. The 27 November 2020 GR also restored the earlier 20 November 2018 letter orders. The 26 November 2020 GR set the final extension for the computer qualification certificate deadline as 31-12-2007 and mandated recovery of excess payment.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "The 2027-11-2020 GR stayed the 26-11-2020 GR until further orders and restored the earlier 20-11-2018 letter orders."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 26 November 2020 GR is not in force because the 27 November 2020 GR stayed it until further orders. The 27 November 2020 GR also restored the earlier 20 November 2018 letter orders. The 26 November 2020 GR set the final extension for the computer qualification certificate deadline as 31-12-2007 and mandated recovery of excess payment.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 2
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "The 2027-11-2020 GR stayed the 26-11-2020 GR until further orders and restored the earlier 20-11-2018 letter orders."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus that keeps the 26 November 2020 GR in force; instead, a GR dated 27 November 2020 stayed it till further orders. Therefore, the 26 November 2020 GR is not in force.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "The GR issued on 26 November 2020 is stayed/suspended till further orders, and the orders issued under the 20 November 2018 letter are restored."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus that keeps the 26 November 2020 GR in force; instead, a GR dated 27 November 2020 stayed it till further orders. Therefore, the 26 November 2020 GR is not in force.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 1
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "The GR issued on 26 November 2020 is stayed/suspended till further orders, and the orders issued under the 20 November 2018 letter are restored."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 26 November 2020 GR is not in force because it was stayed on 27 November 2020 until further orders. Earlier, the GR dated 26-11-2020 declared that the extension up to 31-12-2007 is the final extension and ordered recovery of overpaid salary for those who did not submit the certificate.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "Suspended the 26-11-2020 GR on the final date for submission of compulsory computer qualification certificate and recovery of excess payment until further orders, and restored the earlier 20-11-2018 letter orders."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 26 November 2020 GR is not in force because it was stayed on 27 November 2020 until further orders. Earlier, the GR dated 26-11-2020 declared that the extension up to 31-12-2007 is the final extension and ordered recovery of overpaid salary for those who did not submit the certificate.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 2
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "Suspended the 26-11-2020 GR on the final date for submission of compulsory computer qualification certificate and recovery of excess payment until further orders, and restored the earlier 20-11-2018 letter orders."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 26 November 2020 GR is not in force because the 27 November 2020 GR stays it until further orders. Earlier, the 26 November 2020 GR provided that the extension up to 31/12/2007 was the final extension and directed recovery of overpaid salary.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays the 26 November 2020 GR until further orders, and restores the orders issued by the 20 November 2018 letter."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 26 November 2020 GR is not in force because the 27 November 2020 GR stays it until further orders. Earlier, the 26 November 2020 GR provided that the extension up to 31/12/2007 was the final extension and directed recovery of overpaid salary.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अंतिमपणे देण्यात आलेली दि. ३१/१२/२००७ पर्यंतची मुदतवाढ हीच अंतिम मुदतवाढ समजण्यात यावी.",
+      "page": 2
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays the 26 November 2020 GR until further orders, and restores the orders issued by the 20 November 2018 letter."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

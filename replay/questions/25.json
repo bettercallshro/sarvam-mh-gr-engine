@@ -1,0 +1,427 @@
+{
+ "id": 25,
+ "set": "main",
+ "question": "Find the Urban MahaNet GR of 28 September 2018.",
+ "case": "DU",
+ "task": "S",
+ "lang": "EN,MR",
+ "gold_answer": "One GR with English and Marathi copies; later amended 10-04-2019",
+ "gold_grs": [
+  "201809281816318011",
+  "201809281811031811"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201809281816318011",
+   "date": "28-09-2018",
+   "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281816318011.pdf"
+  },
+  {
+   "code": "201809281811031811",
+   "date": "28-09-2018",
+   "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR of 28 September 2018 is code 201809281811031811, titled 'Implementation of Urban MahaNet project and Delivery of E-Governance Services'. It was amended on 10-04-2019 by GR 201904101409364011, which waived ROW fees across the state, allowed Smart Poles installation, and extended the TSP contract to 5 years.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प” म्हणून घोषित करण्यात येत",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waives Right of Way (ROW) fees across the state for the project, allows TSP option for installation of Smart Poles, and extends total contract with TSP to 5 years."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR of 28 September 2018 is code 201809281811031811, titled 'Implementation of Urban MahaNet project and Delivery of E-Governance Services'. It was amended on 10-04-2019 by GR 201904101409364011, which waived ROW fees across the state, allowed Smart Poles installation, and extended the TSP contract to 5 years.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प” म्हणून घोषित करण्यात येत",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waives Right of Way (ROW) fees across the state for the project, allows TSP option for installation of Smart Poles, and extends total contract with TSP to 5 years."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 (code 201809281811031811) was found in the corpus. It declares the Urban MahaNet scheme as an \"important public purpose project\" and directs implementation by MahaIT. A later GR on 10-04-2019 amends it by waiving ROW fees, allowing Smart Poles, and setting the contract period to 5 years.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प” म्हणून घोषित करण्यात येत",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Added amendments: waived Right of Way (ROW) fees across the state for underground and aerial; allowed TSP option for installation of Smart Poles for digital signage, microcells, 4G/5G, IoT sensors, FTTH and Wi-Fi; and changed the Total Contract with TSP to a period of 5 years."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 (code 201809281811031811) was found in the corpus. It declares the Urban MahaNet scheme as an \"important public purpose project\" and directs implementation by MahaIT. A later GR on 10-04-2019 amends it by waiving ROW fees, allowing Smart Poles, and setting the contract period to 5 years.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प” म्हणून घोषित करण्यात येत",
+      "page": 2
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Added amendments: waived Right of Way (ROW) fees across the state for underground and aerial; allowed TSP option for installation of Smart Poles for digital signage, microcells, 4G/5G, IoT sensors, FTTH and Wi-Fi; and changed the Total Contract with TSP to a period of 5 years."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 (code 201809281811031811) is found in the corpus. A later GR dated 10-04-2019 (code 201904101409364011) amends it by waiving ROW fees, adding Smart Pole options, and setting a 5-year contract period. Another GR from 24-12-2018 (code 201812241259427911) clarifies the centralised payment procedure from departments.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प\" म्हणून घोषित करण्यात येत आहे.",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Cabinet, in its meeting dated 18.09.2018 had approved the implementation of Urban MahaNet project. Subsequently, a Government Resolution (Resolution No.: GAD-HI2018/CR 25/Sect3/39 dated 28.09.2018).",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Read: GR No. No. GAD-2018/CR 25/Sect3/39 dated 28/09/2018 on above subject Amendment in the GR.: In addition to the points mentioned in the Government Resolution, following amendment are being added;",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Added amendments including waiver of Right of Way (ROW) fees across the state for the project, option for installation of Smart Poles for 4G/5G/IoT/FTTH/Wi-Fi, and changed the total contract period with TSP to 5 years."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 (code 201809281811031811) is found in the corpus. A later GR dated 10-04-2019 (code 201904101409364011) amends it by waiving ROW fees, adding Smart Pole options, and setting a 5-year contract period. Another GR from 24-12-2018 (code 201812241259427911) clarifies the centralised payment procedure from departments.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प\" म्हणून घोषित करण्यात येत आहे.",
+      "page": 2
+     },
+     {
+      "code": "201812241259427911",
+      "date": "28-09-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Cabinet, in its meeting dated 18.09.2018 had approved the implementation of Urban MahaNet project. Subsequently, a Government Resolution (Resolution No.: GAD-HI2018/CR 25/Sect3/39 dated 28.09.2018).",
+      "page": 1
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Read: GR No. No. GAD-2018/CR 25/Sect3/39 dated 28/09/2018 on above subject Amendment in the GR.: In addition to the points mentioned in the Government Resolution, following amendment are being added;",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Added amendments including waiver of Right of Way (ROW) fees across the state for the project, option for installation of Smart Poles for 4G/5G/IoT/FTTH/Wi-Fi, and changed the total contract period with TSP to 5 years."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 was amended by the GR dated 10-04-2019 to waive ROW fees, allow Smart Pole installations, and extend the TSP contract to 5 years. Earlier, the 28-09-2018 GR declared the Urban MahaNet scheme as a \"Important Public Purpose Project\" and approved its implementation by MahaIT.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प\" म्हणून घोषित करण्यात येत",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Cabinet, in its meeting dated 18.09.2018 had approved the implementation of Urban MahaNet project.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "what_changed": "Introduced centralized payment from departments/offices to MahalT for bandwidth connectivity, including budget allocation, timelines, and invoice processing."
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waived ROW fees across the state, allowed TSP to install Smart Poles and deploy FTTH/Wi-Fi, and extended the total contract period with TSP to 5 years."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 was amended by the GR dated 10-04-2019 to waive ROW fees, allow Smart Pole installations, and extend the TSP contract to 5 years. Earlier, the 28-09-2018 GR declared the Urban MahaNet scheme as a \"Important Public Purpose Project\" and approved its implementation by MahaIT.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प\" म्हणून घोषित करण्यात येत",
+      "page": 2
+     },
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Cabinet, in its meeting dated 18.09.2018 had approved the implementation of Urban MahaNet project.",
+      "page": 1
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waived ROW fees across the state, allowed TSP to install Smart Poles and deploy FTTH/Wi-Fi, and extended the total contract period with TSP to 5 years."
+     },
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "what_changed": "Introduced centralized payment from departments/offices to MahalT for bandwidth connectivity, including budget allocation, timelines, and invoice processing."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The current rule for the Urban MahaNet project, as amended on 10-04-2019, waives right of way fees across the state, allows the TSP to install Smart Poles and Wi-Fi provisioning, and sets the total contract period with the TSP at 5 years. Earlier, the 28-09-2018 GR declared the Urban MahaNet scheme a \"important public purpose project\", authorised implementation by MahaIT, and provided initial right of way and smart pole provisions.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प\" म्हणून घोषित करण्यात येत",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waived ROW fees across the state, allowed TSP option for Smart Poles and FTTH/Wi-Fi, and extended the total contract period with TSP to 5 years."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current rule for the Urban MahaNet project, as amended on 10-04-2019, waives right of way fees across the state, allows the TSP to install Smart Poles and Wi-Fi provisioning, and sets the total contract period with the TSP at 5 years. Earlier, the 28-09-2018 GR declared the Urban MahaNet scheme a \"important public purpose project\", authorised implementation by MahaIT, and provided initial right of way and smart pole provisions.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प\" म्हणून घोषित करण्यात येत",
+      "page": 2
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waived ROW fees across the state, allowed TSP option for Smart Poles and FTTH/Wi-Fi, and extended the total contract period with TSP to 5 years."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

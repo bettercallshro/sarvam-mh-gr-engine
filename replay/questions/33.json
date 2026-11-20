@@ -1,0 +1,229 @@
+{
+ "id": 33,
+ "set": "main",
+ "question": "What is the latest GR on the Maharashtra Unified Citizen Data Hub?",
+ "case": "CO",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "04-02-2022; no newer GR found in this corpus",
+ "gold_grs": [
+  "202202042136207511"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202202042136207511",
+   "date": "04-02-2022",
+   "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The retrieved GR 202202042136207511 (04-02-2022) is the Maharashtra Unified Citizen Data Hub implementation GR, but the question asks for the latest GR on that topic; no newer GR in the corpus amends, replaces, stays, extends, or clarifies it.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The retrieved GR 202202042136207511 (04-02-2022) is the Maharashtra Unified Citizen Data Hub implementation GR, but the question asks for the latest GR on that topic; no newer GR in the corpus amends, replaces, stays, extends, or clarifies it.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "fail",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Maharashtra Unified Citizen Data Hub in the corpus is dated 04-02-202022. It approves the scheme for creating a centralized data hub and allocates Rs 294.02 crore (excluding GST) for its implementation by Maharashtra Information Technology Corporation Limited (MahaIT) under the IT Department's supervision.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "महाराष्ट्र युनिफाइड सिटिझन डाटा फ़ॉर डिजीट्ल डिलीव्हरी ऑफ़ बेनेफ़िट्स व सर्विसेस योजना राबविण्याकरीता शासनाने रुपये २९४.०२ कोटी (जीएसटी वगळता) इतक्या रकमेस",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Maharashtra Unified Citizen Data Hub in the corpus is dated 04-02-202022. It approves the scheme for creating a centralized data hub and allocates Rs 294.02 crore (excluding GST) for its implementation by Maharashtra Information Technology Corporation Limited (MahaIT) under the IT Department's supervision.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "महाराष्ट्र युनिफाइड सिटिझन डाटा फ़ॉर डिजीट्ल डिलीव्हरी ऑफ़ बेनेफ़िट्स व सर्विसेस योजना राबविण्याकरीता शासनाने रुपये २९४.०२ कोटी (जीएसटी वगळता) इतक्या रकमेस",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Maharashtra Unified Citizen Data Hub in this corpus is dated 04-02-2022. It is Government Resolution No. मातंसं-११०८८/प्र.क्र.९/२०२१, which approves the implementation of the hub for digitalization of government services and allocates Rs 294.02 crore for the project.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "शासकीय सेवा डिजिटल करण्याकरीता महाराष्ट्र युनिफाइड सिटिझन डाटा हबची अंमलबजावणी करण्याबाबत",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Maharashtra Unified Citizen Data Hub in this corpus is dated 04-02-2022. It is Government Resolution No. मातंसं-११०८८/प्र.क्र.९/२०२१, which approves the implementation of the hub for digitalization of government services and allocates Rs 294.02 crore for the project.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "शासकीय सेवा डिजिटल करण्याकरीता महाराष्ट्र युनिफाइड सिटिझन डाटा हबची अंमलबजावणी करण्याबाबत",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR on the Maharashtra Unified Citizen Data Hub is the one dated 04-02-2022, which establishes the scheme and allocates Rs 294.02 crore for its implementation. No newer GR in this corpus amends, replaces, or extends it.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "महाराष्ट्र युनिफाइड सिटिझन डाटा फ़ॉर डिजीट्ल डिलीव्हरी ऑफ़ बेनेफ़िट्स व सर्विसेस योजना राबविण्याकरीता शासनाने रुपये २९४.०२ कोटी (जीएसटी वगळता) इतक्या रकमेस",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR on the Maharashtra Unified Citizen Data Hub is the one dated 04-02-2022, which establishes the scheme and allocates Rs 294.02 crore for its implementation. No newer GR in this corpus amends, replaces, or extends it.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "महाराष्ट्र युनिफाइड सिटिझन डाटा फ़ॉर डिजीट्ल डिलीव्हरी ऑफ़ बेनेफ़िट्स व सर्विसेस योजना राबविण्याकरीता शासनाने रुपये २९४.०२ कोटी (जीएसटी वगळता) इतक्या रकमेस",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the Maharashtra Unified Citizen Data Hub is dated 04-02-2022 (GR 202202042136207511), which approves the implementation of the hub for digitalization of government services with an administrative approval and allocation of Rs 294.02 crore for the project. No newer GR in the corpus amends, replaces, stays, extends or clarifies it.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "महाराष्ट्र युनिफाइड सिटिझन डाटा फ़ॉर डिजीट्ल डिलीव्हरी ऑफ़ बेनेफ़िट्स व सर्विसेस योजना राबविण्याकरीता शासनाने रुपये २९४.०२ कोटी (जीएसटी वगळता) इतक्या रकमेस",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the Maharashtra Unified Citizen Data Hub is dated 04-02-2022 (GR 202202042136207511), which approves the implementation of the hub for digitalization of government services with an administrative approval and allocation of Rs 294.02 crore for the project. No newer GR in the corpus amends, replaces, stays, extends or clarifies it.",
+    "cited": [
+     {
+      "code": "202202042136207511",
+      "date": "04-02-2022",
+      "title": "Regarding implementation of Maharashtra Unified Citizen Data Hub for digitalization of government services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202202042136207511.pdf",
+      "quote": "महाराष्ट्र युनिफाइड सिटिझन डाटा फ़ॉर डिजीट्ल डिलीव्हरी ऑफ़ बेनेफ़िट्स व सर्विसेस योजना राबविण्याकरीता शासनाने रुपये २९४.०२ कोटी (जीएसटी वगळता) इतक्या रकमेस",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

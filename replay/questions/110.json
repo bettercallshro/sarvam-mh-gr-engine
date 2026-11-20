@@ -1,0 +1,214 @@
+{
+ "id": 110,
+ "set": "holdout",
+ "question": "Has the 26 February 2020 approval for the Chief Minister's Helpline been changed by a later GR?",
+ "case": "CO",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "No newer GR found in this corpus (covers 2018 to 2024)",
+ "gold_grs": [
+  "202002261550215011"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202002261550215011",
+   "date": "26-02-2020",
+   "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 26 February 2020 approval for the Chief Minister's Helpline. The newer-GR candidate 201907311131241311 is unrelated to this approval. I couldn't find a later GR changing that specific approval.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2020",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "नागरिकांना शासनाच्या विविध कल्याणकारी योजना / प्रकल्प, शासनाकडून देण्यात येणाऱ्या सेवा इत्यादींची माहिती, तसेच नागरिकांच्या तक्रारी शासनापर्यत पोहचविण्याकरीता एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन ही एकच दूरध्वनी क्रमांक असलेला प्रकल्प राबविण्याचा प्रस्ताव शासनाच्या विचाराधीन होता.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 26 February 2020 approval for the Chief Minister's Helpline. The newer-GR candidate 201907311131241311 is unrelated to this approval. I couldn't find a later GR changing that specific approval.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2020",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "नागरिकांना शासनाच्या विविध कल्याणकारी योजना / प्रकल्प, शासनाकडून देण्यात येणाऱ्या सेवा इत्यादींची माहिती, तसेच नागरिकांच्या तक्रारी शासनापर्यत पोहचविण्याकरीता एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन ही एकच दूरध्वनी क्रमांक असलेला प्रकल्प राबविण्याचा प्रस्ताव शासनाच्या विचाराधीन होता.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 26-02-2020 approval for the Chief Minister's Helpline. The only newer-GR candidate reviewed, 201907311131241311, cites a different GR and is unrelated to the Chief Minister Helpline approval.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2020",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "महाराष्ट्र राज्यातील एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन हा शासनाचा प्रकल्प राबविण्याकरीता प्रशासकीय मान्यता देण्याबाबत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 26-02-2020 approval for the Chief Minister's Helpline. The only newer-GR candidate reviewed, 201907311131241311, cites a different GR and is unrelated to the Chief Minister Helpline approval.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2000",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "महाराष्ट्र राज्यातील एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन हा शासनाचा प्रकल्प राबविण्याकरीता प्रशासकीय मान्यता देण्याबाबत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that changes the 26 February 2020 administrative approval for the Chief Minister's Helpline. The retrieved GR from 26-02-2020 itself grants the administrative approval for integrating citizen contact with a single telephone number for the Chief Minister's Helpline, approving 80 seats for three years at a per-seat monthly cost of Rs. 21,462 plus GST and toll-free number expenses totaling Rs. 6,83,26,560 excluding GST.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2020",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "महाराष्ट्र राज्यातील एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन हा शासनाचा प्रकल्प राबविण्याकरीता प्रशासकीय मान्यता देण्याबाबत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that changes the 26 February 2020 administrative approval for the Chief Minister's Helpline. The retrieved GR from 26-02-2020 itself grants the administrative approval for integrating citizen contact with a single telephone number for the Chief Minister's Helpline, approving 80 seats for three years at a per-seat monthly cost of Rs. 21,462 plus GST and toll-free number expenses totaling Rs. 6,83,26,560 excluding GST.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2000",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "महाराष्ट्र राज्यातील एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन हा शासनाचा प्रकल्प राबविण्याकरीता प्रशासकीय मान्यता देण्याबाबत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) has amended, replaced, stayed, extended, or clarified the 26 February 2020 administrative approval for the Chief Minister's Helpline.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2020",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "नागरिकांना शासनाच्या विविध कल्याणकारी योजना / प्रकल्प, शासनाकडून देण्यात येणाऱ्या सेवा इत्यादींची माहिती, तथा नागरिकांच्या तक्रारी शासनापर्यत पोहचविण्याकरीता एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन ही एकच दूरध्वनी क्रमांक असलेला प्रकल्पास उच्च स्तरीय समितीच्या दिनांक २८ फेब्रुवारी, २०१९ रोजी झालेल्या बैठकीत मान्यता देण्यात आली आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) has amended, replaced, stayed, extended, or clarified the 26 February 2020 administrative approval for the Chief Minister's Helpline.",
+    "cited": [
+     {
+      "code": "202002261550215011",
+      "date": "26-02-2020",
+      "title": "Administrative approval for the Implementation of Hon. Chief Minister Helpline, in the State of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002261550215011.pdf",
+      "quote": "नागरिकांना शासनाच्या विविध कल्याणकारी योजना / प्रकल्प, शासनाकडून देण्यात येणाऱ्या सेवा इत्यादींची माहिती, तथा नागरिकांच्या तक्रारी शासनापर्यत पोहचविण्याकरीता एकात्मिक नागरीक संपर्क केंद्र - मुख्यमंत्री हेल्पलाईन ही एकच दूरध्वनी क्रमांक असलेला प्रकल्पास उच्च स्तरीय समितीच्या दिनांक २८ फेब्रुवारी, २०१९ रोजी झालेल्या बैठकीत मान्यता देण्यात आली आहे.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

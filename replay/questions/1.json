@@ -1,0 +1,702 @@
+{
+ "id": 1,
+ "set": "main",
+ "question": "Is the 29 January 2018 cloud computing circular still current?",
+ "case": "AM",
+ "task": "S",
+ "lang": "EN,MR",
+ "gold_answer": "Not as issued. Deadline moved to 31-03-2020 (19-06-2019); data archival and review rules added (05-07-2019); cloud empanelment ended 30-04-2021 and buying moved to GeM (23-04-2021). Latest: 23-04-2021",
+ "gold_grs": [
+  "201801291824268911",
+  "201906191741481211",
+  "201907051642210511",
+  "202104231756150811"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201801291824268911",
+   "date": "29-01-2018",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf"
+  },
+  {
+   "code": "201906191741481211",
+   "date": "19-06-2019",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf"
+  },
+  {
+   "code": "201907051642210511",
+   "date": "05-07-2019",
+   "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf"
+  },
+  {
+   "code": "202104231756150811",
+   "date": "23-04-2021",
+   "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The 29 January 2018 cloud computing circular is no longer current in force. The 19 June 2019 addendum extended its migration deadline to 31 March 2020 and added security audit requirements, the 5 July 2019 addendum clarified data migration and archival procedures, and the 23 April 2021 circular superseded it by ending the empanelment on 30 April 2021 and mandating all future cloud procurement through the GeM portal.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf",
+      "quote": "All departments to define and communicate to DIT in writing the Data that needs to be Migrated /Hosted on cloud and the time period it is to be on cloud.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "The empanelment and the announced rates are as on 30th April, 2021 is coming to an end.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Amends the original 29.1.2018 circular by extending the application migration deadline from 30.10.2018 to 31.03.2020, adding mandatory website and application security audits before going live, and authorizing DIT PIC to select CSPs for other department projects."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Clarifies the 29.1.2018 policy by adding instructions on defining data to be migrated, archiving data, automated removal of data, and periodic review of applications and data on cloud."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Replaces the 29.1.2018 circular and the 16.05.2018 empanelment by ending the empanelment and rates on 30.04.2021 and mandating procurement of cloud services through the GeM portal from 23.04.2021, with existing work orders to transition within 45 days."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 29 January 2018 cloud computing circular is no longer current in force. The 19 June 2019 addendum extended its migration deadline to 31 March 2020 and added security audit requirements, the 5 July 2019 addendum clarified data migration and archival procedures, and the 23 April 2021 circular superseded it by ending the empanelment on 30 April 2021 and mandating all future cloud procurement through the GeM portal.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 1
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf",
+      "quote": "All departments to define and communicate to DIT in writing the Data that needs to be Migrated /Hosted on cloud and the time period it is to be on cloud.",
+      "page": 1
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "The empanelment and the announced rates are as on 30th April, 2021 is coming to an end.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Amends the original 29.1.2018 circular by extending the application migration deadline from 30.10.2018 to 31.03.2020, adding mandatory website and application security audits before going live, and authorizing DIT PIC to select CSPs for other department projects."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Clarifies the 29.1.2018 policy by adding instructions on defining data to be migrated, archiving data, automated removal of data, and periodic review of applications and data on cloud."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Replaces the 29.1.2018 circular and the 16.05.2018 empanelment by ending the empanelment and rates on 30.04.2021 and mandating procurement of cloud services through the GeM portal from 23.04.2021, with existing work orders to transition within 45 days."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not still current. The original migration deadline of 30.10.2018 was extended to 31.03.2020 by the 19 June 2019 addendum, and the empanelment under related circulars ended on 30.04.2021, with procurement shifted to GeM portal. The 23 April 2021 GR states that the empanelment and rates under DIT/060/3/2017/1 dated 16.05.2018 ended on 30.04.2021.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extended the cloud migration deadline from 30.10.2018 to 31.03.2020 and added mandatory website and application security audit before going live."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Extended the cloud migration deadline from 30.10.2018 to before migration and go-live, and added requirements to define data for migration, archive data, and periodically review applications and data on cloud."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The empanelment and rates under DIT/060/3/2017/1 dated 16.05.2018 ended on 30.04.2021; procurement must now be through GeM portal. For ongoing services, the old empanelment rates expired on 15.06.2021."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not still current. The original migration deadline of 30.10.2018 was extended to 31.03.2020 by the 19 June 2019 addendum, and the empanelment under related circulars ended on 30.04.2021, with procurement shifted to GeM portal. The 23 April 2021 GR states that the empanelment and rates under DIT/060/3/2017/1 dated 16.05.2018 ended on 30.04.2021.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 2
+     },
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 2
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The empanelment and rates under DIT/060/3/2017/1 dated 16.05.2018 ended on 30.04.2021; procurement must now be through GeM portal. For ongoing services, the old empanelment rates expired on 15.06.2021."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Extended the cloud migration deadline from 30.10.2018 to before migration and go-live, and added requirements to define data for migration, archive data, and periodically review applications and data on cloud."
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extended the cloud migration deadline from 30.10.2018 to 31.03.2020 and added mandatory website and application security audit before going live."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not currently current because the 23 April 2021 GR ended the empanelment and rates under the related 2018 circulars and required all departments to procure cloud services through the GeM portal. Earlier addendums had extended migration deadlines and added security audit requirements, but the 2021 GR superseded those empanelment arrangements.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The empanelment and rates announced under the 16.05.2018 circular ended on 30.04.2021; thereafter all cloud services must be procured via the GeM portal. Ongoing empanelment rates expired on 15.06.2021, requiring departments to migrate to the GeM portal within 45 days."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not currently current because the 23 April 2021 GR ended the empanelment and rates under the related 2018 circulars and required all departments to procure cloud services through the GeM portal. Earlier addendums had extended migration deadlines and added security audit requirements, but the 2021 GR superseded those empanelment arrangements.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 1
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The empanelment and rates announced under the 16.05.2018 circular ended on 30.04.2021; thereafter all cloud services must be procured via the GeM portal. Ongoing empanelment rates expired on 15.06.2021, requiring departments to migrate to the GeM portal within 45 days."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not current; it was superseded by a newer Government Circular on 23 April 2021, which ended the empanelment and rates under the 16 May 2018 circular on 30 April 2021 and directed all future cloud service purchases to be made through the GeM portal. Earlier, the 29 January 2018 circular had set a migration deadline of 30 October 2018 for existing applications, which was later extended to 31 March 2020 by the 19 June 2019 addendum.",
+    "cited": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf",
+      "quote": "All departments to define and communicate to DIT in writing the Data that needs to be Migrated /Hosted on cloud and the time period it is to be on cloud.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "title": "Cloud Computing Policy- Empanelment of Cloud Service Providers and Guidelines for Government organizations",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201808041826435611.pdf",
+      "quote": "In addition to the cloud services being provided by the Cloud service providers, below additional services are being included in the list of cloud service offerings to be provided by the empanelled CSPs.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "title": "Cloud Computing Policy-Empanelment of Cloud Service Providers and Guidelines for Government organizations",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201805211415360511.pdf",
+      "quote": "The following Cloud service providers (CSP) are being hereby empanelled by DIT for a period of 3 years for providing cloud services to the all Government Departments... from 1.5.2018 till 30.4.2021.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "201805171357566211",
+      "date": "16-05-2018",
+      "title": "Cloud Computing Policy- Empanelment of Cloud Service Providers and Guidelines for Government organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201805171357566211.pdf",
+      "quote": "As per para 4 of the above circular and approval of High Power Committee (IT) in its meeting held on 8.3.2018, DIT carried out a tendering process for empanelment of Cloud Service Providers (CSPs) and discovery of rates for various cloud services.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201805171357566211",
+      "date": "16-05-2018",
+      "what_changed": "Details the empanelment of CSPs and the migration deadline of 30.10.2018 for existing applications to cloud."
+     },
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "what_changed": "Empanels Cloud Service Providers for a period of 3 years from 1.5.2018 till 30.4.2021 and lists detailed CSP/MSP contact and service information."
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Adds new cloud service offerings including Platform as a service, Software as a service, and additional Virtual Machine Packs to the empanelled CSPs."
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extends the migration deadline for existing applications from 30.10.2018 to 31.03.2020 and adds mandatory website and application security audit before going live on cloud."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Clarifies data migration and archival requirements, instructing departments to define data to be migrated, confirm archived data, and periodically review applications and data on cloud."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The empanelment and rates under the 16.05.2018 circular are ended on 30.04.2021; future cloud service purchases must be done via GeM portal, and ongoing empanelment rates expire on 15.06.2021."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not current; it was superseded by a newer Government Circular on 23 April 2021, which ended the empanelment and rates under the 16 May 2018 circular on 30 April 2021 and directed all future cloud service purchases to be made through the GeM portal. Earlier, the 29 January 2018 circular had set a migration deadline of 30 October 2018 for existing applications, which was later extended to 31 March 2020 by the 19 June 2019 addendum.",
+    "cited": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf",
+      "quote": "All departments to define and communicate to DIT in writing the Data that needs to be Migrated /Hosted on cloud and the time period it is to be on cloud.",
+      "page": 1
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "title": "Cloud Computing Policy- Empanelment of Cloud Service Providers and Guidelines for Government organizations",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201808041826435611.pdf",
+      "quote": "In addition to the cloud services being provided by the Cloud service providers, below additional services are being included in the list of cloud service offerings to be provided by the empanelled CSPs.",
+      "page": 1
+     },
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "title": "Cloud Computing Policy-Empanelment of Cloud Service Providers and Guidelines for Government organizations",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201805211415360511.pdf",
+      "quote": "The following Cloud service providers (CSP) are being hereby empanelled by DIT for a period of 3 years for providing cloud services to the all Government Departments... from 1.5.2018 till 30.4.2021.",
+      "page": 1
+     },
+     {
+      "code": "201805171357566211",
+      "date": "16-05-2018",
+      "title": "Cloud Computing Policy- Empanelment of Cloud Service Providers and Guidelines for Government organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201805171357566211.pdf",
+      "quote": "As per para 4 of the above circular and approval of High Power Committee (IT) in its meeting held on 8.3.2018, DIT carried out a tendering process for empanelment of Cloud Service Providers (CSPs) and discovery of rates for various cloud services.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "The empanelment and rates under the 16.05.2018 circular are ended on 30.04.2021; future cloud service purchases must be done via GeM portal, and ongoing empanelment rates expire on 15.06.2021."
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extends the migration deadline for existing applications from 30.10.2018 to 31.03.2020 and adds mandatory website and application security audit before going live on cloud."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Clarifies data migration and archival requirements, instructing departments to define data to be migrated, confirm archived data, and periodically review applications and data on cloud."
+     },
+     {
+      "code": "201808041826435611",
+      "date": "04-08-2018",
+      "what_changed": "Adds new cloud service offerings including Platform as a service, Software as a service, and additional Virtual Machine Packs to the empanelled CSPs."
+     },
+     {
+      "code": "201805211415360511",
+      "date": "19-05-2018",
+      "what_changed": "Empanels Cloud Service Providers for a period of 3 years from 1.5.2018 till 30.4.2021 and lists detailed CSP/MSP contact and service information."
+     },
+     {
+      "code": "201805171357566211",
+      "date": "16-05-2018",
+      "what_changed": "Details the empanelment of CSPs and the migration deadline of 30.10.2018 for existing applications to cloud."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not current as a standalone instrument; it was superseded by later instructions. Earlier, it required migration of existing applications to the cloud by 30.10.2018. Further, an addendum dated 19-06-2019 extended that migration deadline to 31.03.2020, and a GR dated 23-04-2021 ended the empanelment and rates under the 29 January 2018 policy by directing procurement through the GeM portal after 30.04.2021.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extended the migration deadline for existing applications to cloud from 30.10.2018 to 31.03.2020, added mandatory website and application security audit, and authorized DIT PIC for CSP selection."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Extended operational instructions by requiring departments to define and communicate data to be migrated/hosted, confirm data for archival, verify datasets for automated removal from online to archival, and periodically review cloud applications and data for cost-effective efficiency."
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Ended the empanelment and rates under the 29 Jan 2018 policy by directing all future cloud service procurement through the GeM portal after 30 Apr 2021, with ongoing services rates expiring 15 Jun 2021."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 29 January 2018 cloud computing circular is not current as a standalone instrument; it was superseded by later instructions. Earlier, it required migration of existing applications to the cloud by 30.10.2018. Further, an addendum dated 19-06-2019 extended that migration deadline to 31.03.2020, and a GR dated 23-04-2021 ended the empanelment and rates under the 29 January 2018 policy by directing procurement through the GeM portal after 30.04.2021.",
+    "cited": [
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "The following instructions are issued in supersession of all earlier instructions issued in this regard.",
+      "page": 1
+     },
+     {
+      "code": "201801291824268911",
+      "date": "29-01-2018",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201801291824268911.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 30.10.2018.",
+      "page": 1
+     },
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104231756150811.pdf",
+      "quote": "सदर Empanelment आणि जाहीर करण्यात आलेले सेवा दर दिनांक ३० एप्रिल, २०२१ रोजी संपुष्टात येत आहेत.",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": "23-04-2021",
+      "title": "Cloud Computing policy  Empanelment of Cloud Service Providers and Guidelines for Government Organizations.",
+      "url": null,
+      "quote": "आता क्लाऊड सेवा केंद्र शासनामार्फत GeM पोर्टल वर उपलब्ध करुन देण्यात आलेली आहे.",
+      "page": 1
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201906191741481211.pdf",
+      "quote": "In case of existing applications not hosted in a cloud environment, Government organizations must ensure that the applications are migrated to cloud on or before 31.03.2020.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202104231756150811",
+      "date": "23-04-2021",
+      "what_changed": "Ended the empanelment and rates under the 29 Jan 2018 policy by directing all future cloud service procurement through the GeM portal after 30 Apr 2021, with ongoing services rates expiring 15 Jun 2021."
+     },
+     {
+      "code": "201906191741481211",
+      "date": "19-06-2019",
+      "what_changed": "Extended the migration deadline for existing applications to cloud from 30.10.2018 to 31.03.2020, added mandatory website and application security audit, and authorized DIT PIC for CSP selection."
+     },
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "what_changed": "Extended operational instructions by requiring departments to define and communicate data to be migrated/hosted, confirm data for archival, verify datasets for automated removal from online to archival, and periodically review cloud applications and data for cost-effective efficiency."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

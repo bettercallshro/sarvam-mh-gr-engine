@@ -1,0 +1,366 @@
+{
+ "id": 8,
+ "set": "main",
+ "question": "Is the 24 December 2019 laptop corrigendum still in force?",
+ "case": "ST",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "No. Superseded by the 12-04-2023 corrigendum, which replaces paragraph 1",
+ "gold_grs": [
+  "202304131657547811",
+  "201912241451082111"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202304131657547811",
+   "date": "12-04-2023",
+   "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf"
+  },
+  {
+   "code": "201912241451082111",
+   "date": "24-12-2019",
+   "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The 24 December 2019 laptop corrigendum is not in force because the 12 April 2023 GR supersedes it; the newer GR raises the maximum purchase limit from Rs. 85,000 to Rs. 120,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Supersedes the 201912241451082111 corrigendum and raises the maximum laptop/iPad/tablet purchase limit from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 24 December 2019 laptop corrigendum is not in force because the 12 April 2023 GR supersedes it; the newer GR raises the maximum purchase limit from Rs. 85,000 to Rs. 120,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657543551",
+      "date": "12-04-2023",
+      "what_changed": "Supersedes the 201912241451082111 corrigendum and raises the maximum laptop/iPad/tablet purchase limit from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 24 December 2019 laptop corrigendum is not still in force because a newer GR dated 12-04-2023 superseded it. That 2023 GR also raised the maximum purchase limit from Rs 85,000 to Rs 120,000.",
+    "cited": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Superseded the 24-12-2019 corrigendum and increased the maximum purchase limit for laptops/tablets from Rs 85,000 to Rs 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 24 December 2019 laptop corrigendum is not still in force because a newer GR dated 12-04-2023 superseded it. That 2023 GR also raised the maximum purchase limit from Rs 85,000 to Rs 120,000.",
+    "cited": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2020",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Superseded the 24-12-2019 corrigendum and increased the maximum purchase limit for laptops/tablets from Rs 85,000 to Rs 120,000."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 24 December 2019 laptop corrigendum is not in force because it has been superseded by the 12 April 2023 GR, which also raised the maximum purchase limit to Rs. 120,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Superseded the 2019 corrigendum and increased the maximum purchase limit from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 24 December 2019 laptop corrigendum is not in force because it has been superseded by the 12 April 2023 GR, which also raised the maximum purchase limit to Rs. 120,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Superseded the 2019 corrigendum and increased the maximum purchase limit from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "No, the 24 December 2019 laptop corrigendum is not still in force; it was superseded by the GR dated 12-04-2023, which also raised the purchase limit to Rs 1,20,000. Earlier, the 24-12-2019 GR set the limit at Rs 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "खरेदी पश्चात संबंधित कार्यालयास प्रत्यक्ष खर्चाएवढा निधी हस्तांतरीत करण्यात येईल।",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे।",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Supersedes the 201912241451082111 corrigendum and raises the laptop/tablet/iPad purchase limit from Rs 85,000 to Rs 1,20,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No, the 24 December 2019 laptop corrigendum is not still in force; it was superseded by the GR dated 12-04-2023, which also raised the purchase limit to Rs 1,20,000. Earlier, the 24-12-2019 GR set the limit at Rs 85,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "खरेदी पश्चात संबंधित कार्यालयास प्रत्यक्ष खर्चाएवढा निधी हस्तांतरीत करण्यात येईल।",
+      "page": 1
+     },
+     {
+      "code": "2023041316547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": null,
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे।",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Supersedes the 201912241451082111 corrigendum and raises the laptop/tablet/iPad purchase limit from Rs 85,000 to Rs 1,20,000."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 24 December 2019 laptop corrigendum is no longer in force because it was superseded by the GR dated 12-04-2023, which replaced it and raised the maximum purchase limit to Rs. 120,000. Earlier, the 24-12-2019 GR had set the limit at Rs. 85,000 and allowed procurement of mid-range or high-end devices as specified.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "It supersedes the 24 December 2019 corrigendum and increases the maximum purchase limit for laptops/iPads/tablets from Rs. 85,000 to Rs. 120,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 24 December 2019 laptop corrigendum is no longer in force because it was superseded by the GR dated 12-04-2023, which replaced it and raised the maximum purchase limit to Rs. 120,000. Earlier, the 24-12-2019 GR had set the limit at Rs. 85,000 and allowed procurement of mid-range or high-end devices as specified.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर खरेदी रू. ८५०००/- या कमाल मर्यादेत असावी.",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "It supersedes the 24 December 2019 corrigendum and increases the maximum purchase limit for laptops/iPads/tablets from Rs. 85,000 to Rs. 120,000."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

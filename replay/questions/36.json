@@ -1,0 +1,153 @@
+{
+ "id": 36,
+ "set": "main",
+ "question": "Is the 2022 GR on generative AI use in government offices in force?",
+ "case": "MI",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "No such 2022 GR in this corpus. Closest: the circular of 03-03-2020 on AI, Marathi language technology and NLP in government work; a good answer names it without claiming it is the GR asked for",
+ "gold_grs": [
+  "202003031509142811"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202003031509142811",
+   "date": "03-03-2020",
+   "title": "Regarding use of Artificial Intelligence Marathi Language Technology, Natural Language Processing (NLP)  Natural Language Understanding (NLU) in Government work.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202003031509142811.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on the use of generative AI in government offices in the corpus. The corpus contains GRs on AI/NLP/NLU (03-03-2020), telecom/5G infrastructure (04-11-2022, 27-03-2023), e-office (23-02-2023), and fintech (16-02-2018, 19-04-2018, 05-11-2018), but none specifically address generative AI.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on the use of generative AI in government offices in the corpus. The corpus contains GRs on AI/NLP/NLU (03-03-2020), telecom/5G infrastructure (04-11-2022, 27-03-2023), e-office (23-02-2023), and fintech (16-02-2018, 19-04-2018, 05-11-2018), but none specifically address generative AI.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. None of the retrieved or candidate GRs mention a 2022 government resolution regarding generative AI use in government offices; the corpus only contains GRs on AI/NLP (2020), telecom/5G (2022, 2023), Fintech (2018), and e-Office (2023).",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. None of the retrieved or candidate GRs mention a 2022 government resolution regarding generative AI use in government offices; the corpus only contains GRs on AI/NLP (2020), telecom/5G (2022, 2023), Fintech (2018), and e-Office (2023).",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The corpus contains no GR dated 2022 on generative AI use in government offices; the only 2022 GR retrieved is the Telecom Infrastructure Policy (04-11-2022), and the referenced 2018 GRs concern Fintech.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The corpus contains no GR dated 2022 on generative AI use in government offices; the only 2022 GR retrieved is the Telecom Infrastructure Policy (04-11-2022), and the referenced 2018 GRs concern Fintech.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The corpus contains no 2022 GR on generative AI use in government offices; the retrieved and newer-GR candidates all concern Artificial Intelligence broadly (2020), telecom infrastructure (2022), Fintech (2018), 5G task force (2023), and e-Office (2023).",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The corpus contains no 2022 GR on generative AI use in government offices; the retrieved and newer-GR candidates all concern Artificial Intelligence broadly (2020), telecom infrastructure (2022), Fintech (2018), 5G task force (2023), and e-Office (2023).",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. None of the retrieved GRs or newer-GR candidates address generative AI use in government offices, and the question appears to refer to a GR that is not present in the provided corpus.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. None of the retrieved GRs or newer-GR candidates address generative AI use in government offices, and the question appears to refer to a GR that is not present in the provided corpus.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

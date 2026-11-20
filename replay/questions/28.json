@@ -1,0 +1,422 @@
+{
+ "id": 28,
+ "set": "main",
+ "question": "Which groups does the Maha-Pariksha GR of 20 February 2020 apply to?",
+ "case": "AM",
+ "task": "L",
+ "lang": "MR",
+ "gold_answer": "Group C and Group D. The preamble said Group B and C; the corrigendum of 24-02-2020 corrected it to Group C and D",
+ "gold_grs": [
+  "202002201713214911",
+  "202002241155355511"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202002201713214911",
+   "date": "20-02-2020",
+   "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf"
+  },
+  {
+   "code": "202002241155355511",
+   "date": "24-02-2020",
+   "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 applies to Group-B and Group-C category recruitment examinations conducted through the Maha-Pariksha portal in all administrative departments and their subordinate offices of the Government of Maharashtra. No newer GR in the corpus amends, replaces, stays, extends or clarifies this GR.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये ऑनलाईन पध्दतीने महापरिक्षा पोर्टलद्वारे घेण्यात येतात.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 applies to Group-B and Group-C category recruitment examinations conducted through the Maha-Pariksha portal in all administrative departments and their subordinate offices of the Government of Maharashtra. No newer GR in the corpus amends, replaces, stays, extends or clarifies this GR.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये ऑनलाईन पध्दतीने महापरिक्षा पोर्टलद्वारे घेण्यात येतात.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20 February 2020 applies to Group-B and Group-C category posts in all administrative departments and their subordinate offices across the state. However, a 24 February 2020 correction amended the preamble to apply to Group-C and Group-D instead.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "The preamble first line is amended to read 'गट-क व गट-ड' instead of 'गट-ब व गट-क'."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20 February 2020 applies to Group-B and Group-C category posts in all administrative departments and their subordinate offices across the state. However, a 24 February 2020 correction amended the preamble to apply to Group-C and Group-D instead.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये",
+      "page": 1
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "The preamble first line is amended to read 'गट-क व गट-ड' instead of 'गट-ब व गट-क'."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 applies to Group-C and Group-D divisional posts in all administrative departments and their subordinate offices of the Government in the State. The 24-02-2020 clearing paper amended this to change the wording from Group-B and Group-C to Group-C and Group-D in the preamble. No newer GR found in this corpus (covers 2018 to 2024).",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये ऑनलाईन पध्दतीने महापरिक्षा पोर्टलद्वारे घेण्यात येतात.",
+      "page": 1
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "Amended the preamble of the 20-02-2020 GR to replace 'गट-ब व गट-क' with 'गट-क व गट-ड' in the first line."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 applies to Group-C and Group-D recruitment in all administrative departments and their subordinate offices of the Government in the State. Earlier, the 20-02-2020 GR referred to Group-B and Group-C, but a clearing paper on 24-02-2020 amended the preamble to Group-C and Group-D. The corpus also contains subsequent GRs that concretise the 20-02-2020 procedure by naming OMR vendors and fixing rates for Group-B and Group-C recruitment.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "title": "Appointment of OMR Vender Empanelment for Recruitment of Class B (Ungazetted) and Class C Post.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202101211644450911.pdf",
+      "quote": "महाराष्ट्र माहिती तंत्रज्ञान महामंडळ, मुंबई (महाआयटी) यांच्याकडे देण्यात आली होती. त्यानुसार, महाआयटी यांनी यासंदर्भाधीन शासन निर्णय दिनांक २०.९.२०१७ मधील तरतुदींना अनुसरुन सर्व विभागांना महापरीक्षा पोर्टलद्वारे परीक्षा राबविणे बंधनकारक करण्यात आले होते.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "The preamble of the 20-02-2020 GR was amended to read Group-C and Group-D instead of Group-B and Group-C."
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "what_changed": "The 20-02-2020 GR's general procedure for empanelment was concretised by naming four specific OMR vendors (Aptech, GA Software, Ginger Webs, Meta-I) and fixing a per-candidate registration fee of Rs. 210.04 for Group-B (non-gazetted) and Group-C recruitment."
+     },
+     {
+      "code": "202103041719472911",
+      "date": "04-03-2021",
+      "what_changed": "A fifth OMR vendor, Nyas Communication Pvt Ltd, was added to the empanelment list for Group-B and Group-C recruitment under Maha-Pariksha at the same per-candidate registration fee."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 applies to Group-C and Group-D recruitment in all administrative departments and their subordinate offices of the Government in the State. Earlier, the 20-02-2020 GR referred to Group-B and Group-C, but a clearing paper on 24-02-2020 amended the preamble to Group-C and Group-D. The corpus also contains subsequent GRs that concretise the 20-02-2020 procedure by naming OMR vendors and fixing rates for Group-B and Group-C recruitment.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": null,
+      "quote": "शासनाचे विविध विभागाच्या गट-क व गट-ड च्या पदभरती संदर्भात परीक्षा प्रक्रिया राबविण्याकरिता नवीन निविदाप्रक्रिया राबविण्यात येवून सर्व्हस प्रोव्हायडर (Service Provider) चे Empanelment करण्याची कार्यवाही महाआयटी मार्फत करण्यात येईल.",
+      "page": 2
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "title": "Appointment of OMR Vender Empanelment for Recruitment of Class B (Ungazetted) and Class C Post.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202101211644450911.pdf",
+      "quote": "महाराष्ट्र माहिती तंत्रज्ञान महामंडळ, मुंबई (महाआयटी) यांच्याकडे देण्यात आली होती. त्यानुसार, महाआयटी यांनी यासंदर्भाधीन शासन निर्णय दिनांक २०.९.२०१७ मधील तरतुदींना अनुसरुन सर्व विभागांना महापरीक्षा पोर्टलद्वारे परीक्षा राबविणे बंधनकारक करण्यात आले होते.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "what_changed": "The 20-02-2020 GR's general procedure for empanelment was concretised by naming four specific OMR vendors (Aptech, GA Software, Ginger Webs, Meta-I) and fixing a per-candidate registration fee of Rs. 210.04 for Group-B (non-gazetted) and Group-C recruitment."
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "The preamble of the 20-02-2020 GR was amended to read Group-C and Group-D instead of Group-B and Group-C."
+     },
+     {
+      "code": "202103041719472911",
+      "date": "04-03-2021",
+      "what_changed": "A fifth OMR vendor, Nyas Communication Pvt Ltd, was added to the empanelment list for Group-B and Group-C recruitment under Maha-Pariksha at the same per-candidate registration fee."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 applies to Group-C and Group-D posts in all administrative departments and their subordinate offices of the Government in Maharashtra, as amended by the supplementary GR of 24-02-2020 which changed the preamble from Group-B and Group-C to Group-C and Group-D. Earlier, the 2020 GR stated that it applied to Group-B and Group-C posts. The 2020 GR also introduced a new tender and empanelment process for service providers for these examinations.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "title": "Appointment of OMR Vender Empanelment for Recruitment of Class B (Ungazetted) and Class C Post.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202101211644450911.pdf",
+      "quote": "भुतपूर्व दुय्यम सेवा निवड मंडळाच्या कार्यकक्षेतील (महाराष्ट्र लोकसेवा आयोगाच्या कक्षेबाहेरील) गट-ब (अराजपत्रित) व गट-क पदे सरळसेवेने भरतांना महापरिक्षा पोर्टल पध्दतीत बदल करुन सुधारीत कार्यपध्दतीचा वापर करण्याबाबत",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "Changed the preamble of the 2020 GR from Group-B and Group-C to Group-C and Group-D."
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "what_changed": "Amended the 2020 GR by appointing four OMR vendors and fixing registration fee at Rs. 210.04 per candidate for Group-B (ungazetted) and Group-C posts under MahaPariksha."
+     },
+     {
+      "code": "202103041719472911",
+      "date": "04-03-2021",
+      "what_changed": "Extended the 2021 GR by adding a fifth OMR vendor (Nyas Communication Pvt. Ltd.) to the empanelment list at the same registration fee of Rs. 210.04."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 applies to Group-C and Group-D posts in all administrative departments and their subordinate offices of the Government in Maharashtra, as amended by the supplementary GR of 24-02-2020 which changed the preamble from Group-B and Group-C to Group-C and Group-D. Earlier, the 2020 GR stated that it applied to Group-B and Group-C posts. The 2020 GR also introduced a new tender and empanelment process for service providers for these examinations.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा",
+      "page": 1
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे",
+      "page": 1
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "title": "Appointment of OMR Vender Empanelment for Recruitment of Class B (Ungazetted) and Class C Post.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202101211644450911.pdf",
+      "quote": "भुतपूर्व दुय्यम सेवा निवड मंडळाच्या कार्यकक्षेतील (महाराष्ट्र लोकसेवा आयोगाच्या कक्षेबाहेरील) गट-ब (अराजपत्रित) व गट-क पदे सरळसेवेने भरतांना महापरिक्षा पोर्टल पध्दतीत बदल करुन सुधारीत कार्यपध्दतीचा वापर करण्याबाबत",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "Changed the preamble of the 2020 GR from Group-B and Group-C to Group-C and Group-D."
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "what_changed": "Amended the 2020 GR by appointing four OMR vendors and fixing registration fee at Rs. 210.04 per candidate for Group-B (ungazetted) and Group-C posts under MahaPariksha."
+     },
+     {
+      "code": "202103041719472911",
+      "date": "04-03-2021",
+      "what_changed": "Extended the 2021 GR by adding a fifth OMR vendor (Nyas Communication Pvt. Ltd.) to the empanelment list at the same registration fee of Rs. 210.04."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

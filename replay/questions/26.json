@@ -1,0 +1,248 @@
+{
+ "id": 26,
+ "set": "main",
+ "question": "Within how many days must a department pay MahaIT's Urban MahaNet invoice?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "15 days from the invoice date (24-12-2018)",
+ "gold_grs": [
+  "201812241259427911"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201812241259427911",
+   "date": "24-12-2018",
+   "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The department or office must pay MahaIT's Urban MahaNet invoice within 15 days from the date of issuance, as per the 24-12-2018 GR.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The department or office must pay MahaIT's Urban MahaNet invoice within 15 days from the date of issuance, as per the 24-12-2018 GR.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "A department must pay MahalT's Urban MahaNet invoice within 15 days from the date of invoice issuance. No newer GR in the corpus changes this deadline.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "A department must pay MahalT's Urban MahaNet invoice within 15 days from the date of invoice issuance. No newer GR in the corpus changes this deadline.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Departments must pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance. No newer GR in this corpus amends or replaces that payment deadline.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Departments must pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance. No newer GR in this corpus amends or replaces that payment deadline.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The current rule requires departments to pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance, as set by the 24-12-2018 GR. No newer GR in this corpus amends, replaces, stays, extends or clarifies this payment deadline.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The current rule requires departments to pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance, as set by the 24-12-2018 GR. No newer GR in this corpus amends, replaces, stays, extends or clarifies this payment deadline.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Departments must pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance, as per GR dated 24-12-2018. No newer GR in this corpus changes this rule.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "MahalT will issue Demand Note/invoice (including MahalT service charge) to the departments for transfer of funds. Considering GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Departments must pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance, as per GR dated 24-12-2018. No newer GR in this corpus changes this rule.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "MahalT will issue Demand Note/invoice (including MahalT service charge) to the departments for transfer of funds. Considering GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

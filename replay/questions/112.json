@@ -1,0 +1,231 @@
+{
+ "id": 112,
+ "set": "holdout",
+ "question": "Has the 16 August 2019 GR on data standardisation and interoperability been changed?",
+ "case": "CO",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "No newer GR found in this corpus",
+ "gold_grs": [
+  "201908161445040311"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "201908161445040311",
+   "date": "16-08-2019",
+   "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 16 August 2019 GR on data standardisation and interoperability.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजीच्या बैठकीचे इतिवृत्त. संदर्भ: उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजीच्या बैठकीचे इतिवृत्त.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 16 August 2019 GR on data standardisation and interoperability.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजीच्या बैठकीचे इतिवृत्त. संदर्भ: उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजीच्या बैठकीचे इतिवृत्त.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run1.jsonl"
+  },
+  {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 16 August 2019 GR on data standardisation and interoperability. The corpus contains the GR itself but nothing subsequent changes it.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजी झालेल्या बैठकीत रु. ११३.०६ कोटी इतक्या रकमेस मंजुरी देण्यात आलेली आहे.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the 16 August 2019 GR on data standardisation and interoperability. The corpus contains the GR itself but nothing subsequent changes it.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजी झालेल्या बैठकीत रु. ११३.०६ कोटी इतक्या रकमेस मंजुरी देण्यात आलेली आहे.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-old-run2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) changes the 16 August 2019 GR on data standardisation and interoperability. The corpus contains that GR as 201908161445040311, which grants administrative approval for the Data Standardization and Interoperability and Digital Services Delivery project for Rs. 113.06 crore and transfers it to MahaIT.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजी झालेल्या बैठकीत रु. ११३.०६ कोटी इतक्या रकमेस मंजुरी देण्यात आलेली आहे.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजीच्या मान्यतेस अनुलक्षून Data Standardization and Interoperability व Digital Services Delivery प्रकल्पास प्रशासकीय मान्यता प्रदान करण्यात येत आहे.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) changes the 16 August 2019 GR on data standardisation and interoperability. The corpus contains that GR as 201908161445040311, which grants administrative approval for the Data Standardization and Interoperability and Digital Services Delivery project for Rs. 113.06 crore and transfers it to MahaIT.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजी झालेल्या बैठकीत रु. ११३.०६ कोटी इतक्या रकमेस मंजुरी देण्यात आलेली आहे.",
+      "page": 2
+     },
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजीच्या मान्यतेस अनुलक्षून Data Standardization and Interoperability व Digital Services Delivery प्रकल्पास प्रशासकीय मान्यता प्रदान करण्यात येत आहे.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run1.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "49ee4ae",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) has changed the 16 August 2019 GR on data standardisation and interoperability. The 16-08-2019 GR granted administrative approval to the Data Standardization and Interoperability and Digital Services Delivery project for Rs. 113.06 crore and transferred it to Maharashtra Information Technology Corporation.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजी झालेल्या बैठकीत Data Standardization and Interoperability व Digital Services Delivery प्रकल्प राबविण्याकरिता रु. ११३.०६ कोटी इतक्या रकमेस मंजुरी देण्यात आलेली आहे.",
+      "page": 2,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) has changed the 16 August 2019 GR on data standardisation and interoperability. The 16-08-2019 GR granted administrative approval to the Data Standardization and Interoperability and Digital Services Delivery project for Rs. 113.06 crore and transferred it to Maharashtra Information Technology Corporation.",
+    "cited": [
+     {
+      "code": "201908161445040311",
+      "date": "16-08-2019",
+      "title": "Regarding Government Approval for implementation of Data Standardization and Interoperability and Digital Services Delivery Projects through Maharashtra Information Technology Corporation.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201908161445040311.pdf",
+      "quote": "उच्च स्तरीय समितीच्या दिनांक ५ ऑगस्ट २०१९ रोजी झालेल्या बैठकीत Data Standardization and Interoperability व Digital Services Delivery प्रकल्प राबविण्याकरिता रु. ११३.०६ कोटी इतक्या रकमेस मंजुरी देण्यात आलेली आहे.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-20-holdout-final-run2.jsonl"
+  }
+ ]
+}

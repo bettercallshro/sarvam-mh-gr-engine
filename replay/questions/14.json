@@ -1,0 +1,553 @@
+{
+ "id": 14,
+ "set": "main",
+ "question": "From what date do the new IT consultant rates apply?",
+ "case": "AM",
+ "task": "L",
+ "lang": "EN",
+ "gold_answer": "20-09-2023, per the 15-12-2023 clarification (not the 05-10-2023 GR date)",
+ "gold_grs": [
+  "202310041905383211",
+  "202312151508137711"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202310041905383211",
+   "date": "05-10-2023",
+   "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf"
+  },
+  {
+   "code": "202312151508137711",
+   "date": "15-12-2023",
+   "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as clarified by the circular dated 15-12-2023. The 2018 GR stated its rates would apply for work orders issued after 20th March 2018, but the 2023 GR replaced those rates with a new table effective from 20th September 2023.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Note: I. The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Note: a) The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf",
+      "quote": "With reference to above, DIT hereby clarifies that the rates mentioned in the above referenced GR will be applicable from 20th September 2023",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the 2018 GR's empanelment for 6 months until 19th September 2023 without changing commercial terms, effectively staying the 2018 rates during that extension."
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR with new empanelment period from 20th September 2023 to 19th September 2028 and new consultant rates in a new table (Associate Consultant 285,000; Consultant 345,000; Senior Consultant 385,000; Principal Consultant 454,000 per month excluding taxes)."
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarified that the rates from the referenced 2023 GR apply from 20th September 2023."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as clarified by the circular dated 15-12-2023. The 2018 GR stated its rates would apply for work orders issued after 20th March 2018, but the 2023 GR replaced those rates with a new table effective from 20th September 2023.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Note: I. The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 2
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Note: a) The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 2
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf",
+      "quote": "With reference to above, DIT hereby clarifies that the rates mentioned in the above referenced GR will be applicable from 20th September 2023",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR with new empanelment period from 20th September 2023 to 19th September 2028 and new consultant rates in a new table (Associate Consultant 285,000; Consultant 345,000; Senior Consultant 385,000; Principal Consultant 454,000 per month excluding taxes)."
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarified that the rates from the referenced 2023 GR apply from 20th September 2023."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the 2018 GR's empanelment for 6 months until 19th September 2023 without changing commercial terms, effectively staying the 2018 rates during that extension."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as clarified by the 15-12-2023 circular and set by the 05-10-2023 GR for work orders issued from its date.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf",
+      "quote": "DIT hereby clarifies that the rates mentioned in the above referenced GR will be applicable from 20th September 2023.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "Amended paragraphs 5.1 and 9.C and 9.D of the 2018 GR to change references from DIT to ACS/PS/Secretary of concerned Department."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the 2018 empanelment for 6 months from 20th March 2023 till 19th September 2023 without changing rates or terms."
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 consultant empanelment and rates with a new empanelment from 20th September 2023 to 19th September 2028, introducing new rates."
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarified that the rates mentioned in the referenced GR will be applicable from 20th September 2023."
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments cannot change the 'Years of Experience' mentioned in the GR for the category of resources required."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as clarified by the 15-12-2023 circular and set by the 05-10-2023 GR for work orders issued from its date.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 2
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf",
+      "quote": "DIT hereby clarifies that the rates mentioned in the above referenced GR will be applicable from 20th September 2023.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 consultant empanelment and rates with a new empanelment from 20th September 2023 to 19th September 2028, introducing new rates."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the 2018 empanelment for 6 months from 20th March 2023 till 19th September 2023 without changing rates or terms."
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "Amended paragraphs 5.1 and 9.C and 9.D of the 2018 GR to change references from DIT to ACS/PS/Secretary of concerned Department."
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments cannot change the 'Years of Experience' mentioned in the GR for the category of resources required."
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarified that the rates mentioned in the referenced GR will be applicable from 20th September 2023."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as clarified by the 15-12-2023 circular, and the 2023 GR (dated 05-10-2023) states that its rates apply for all work orders issued from its date of issue. The earlier 2018 GR stated its rates apply for work orders issued after its date of issue (20-03-2018).",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of90",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 2
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf",
+      "quote": "the rates mentioned in the above referenced GR will be applicable from 20th September 2023",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the empanelment of IT Consultancy firms from 20th March 2023 to 19th September 2023 without changing commercials or rates."
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "Amended paragraphs 5 and 9 of the 2018 GR, changing the concurrence authority and adding performance-based continuation language."
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments may change educational qualifications via Change Orders but cannot change years of experience; did not alter rates or applicability date."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as set by the GR dated 05-10-2023 (202310041905383211), which replaced the earlier 2018 GR. Earlier, the 2018 GR stated that its rates would apply for work orders issued after its date of issue on 20th March 2018.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Note: I. The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "i.e. from 20th March 2018 to 19th March 2023",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "from 20th September 2023 to 19th September 2028",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "Amended paragraphs 5 and 9 of the 2018 GR to change the approval authority for scope of work and reporting to ACS/PS/Secretary of the concerned Department."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the empanelment period of the 2018 GR by 6 months from 20-03-2023 to 19-09-2023 without altering commercial terms or rates."
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR entirely with new empanelment from 20-09-2023 to 19-09-2028 and new consultant rates (Associate Consultant 285,000; Consultant 345,000; Senior Consultant 385,000; Principal Consultant 454,000 per month excluding taxes)."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as set by the GR dated 05-10-2023 (202310041905383211), which replaced the earlier 2018 GR. Earlier, the 2018 GR stated that its rates would apply for work orders issued after its date of issue on 20th March 2018.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Note: I. The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1
+     },
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "i.e. from 20th March 2018 to 19th March 2023",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "from 20th September 2023 to 19th September 2028",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+      "url": null,
+      "quote": "the rates mentioned in the above referenced GR will be applicable from 20th September 2023",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR entirely with new empanelment from 20-09-2023 to 19-09-2028 and new consultant rates (Associate Consultant 285,000; Consultant 345,000; Senior Consultant 385,000; Principal Consultant 454,000 per month excluding taxes)."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the empanelment period of the 2018 GR by 6 months from 20-03-2023 to 19-09-2023 without altering commercial terms or rates."
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2019",
+      "what_changed": "Amended paragraphs 5 and 9 of the 2018 GR to change the approval authority for scope of work and reporting to ACS/PS/Secretary of the concerned Department."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as clarified in the Government Circular dated 15-12-2023 (code 202312151508137711). The original 2018 GR stated that its rates would apply for work orders issued after its date of issue (20-03-2018), but the 2023 circular overrides that start date for the new empanelment rates.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Note: I. The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Clarification reg start date",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf",
+      "quote": "DIT hereby clarifies that the rates mentioned in the above referenced GR will be applicable from 20th September 2023",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "Note: a) The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Issued new empanelment with new rates and stated that the above rates will apply for all work orders issued from the date of issue of this GR (05-10-2023), but the later clarification circular sets the effective date as 20th September 2023."
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarified that the rates mentioned in the 2023 GR (dated 05-10-2023) will be applicable from 20th September 2023."
+     }
+    ],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The new IT consultant rates apply from 20th September 2023, as clarified in the Government Circular dated 15-12-2023 (code 202312151508137711). The original 2018 GR stated that its rates would apply for work orders issued after its date of issue (20-03-2018), but the 2023 circular overrides that start date for the new empanelment rates.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Note: I. The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 2
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "title": "Regarding Empanelment of Consultants for Government of Maharashtra - Clarification reg start date",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202312151508137711.pdf",
+      "quote": "DIT hereby clarifies that the rates mentioned in the above referenced GR will be applicable from 20th September 2023",
+      "page": 1
+     },
+     {
+      "code": "2023100419053832011",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": null,
+      "quote": "Note: a) The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarified that the rates mentioned in the 2023 GR (dated 05-10-2023) will be applicable from 20th September 2023."
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Issued new empanelment with new rates and stated that the above rates will apply for all work orders issued from the date of issue of this GR (05-10-2023), but the later clarification circular sets the effective date as 20th September 2023."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

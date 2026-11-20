@@ -1,0 +1,229 @@
+{
+ "id": 30,
+ "set": "main",
+ "question": "Is the e-Tenders GR of 11 May 2021 still the latest on e-tendering?",
+ "case": "CO",
+ "task": "S",
+ "lang": "MR",
+ "gold_answer": "No newer GR found in this corpus (covers 2018 to 2024)",
+ "gold_grs": [
+  "202105111646307611"
+ ],
+ "gold_grs_detail": [
+  {
+   "code": "202105111646307611",
+   "date": "11-05-2021",
+   "title": "Implementation of E-Tenders",
+   "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf"
+  }
+ ],
+ "runs": [
+  {
+   "version": "Baseline",
+   "run": "run 1",
+   "commit": "2b41877",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The asked-for GR dated 11-05-2021 (Implementation of E-Tenders) is not amended, replaced, stayed, extended, or clarified by any newer GR in the corpus. No newer GR was found in this corpus (covers 2018 to 2024).",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2021",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "शासनाधीन आदेश अधिक्रमीत करण्यात येत आहेत. यापुढे ई-निविदा संबंधित कार्यवाहीसाठी उद्योग, ऊर्जा व कामगार विभागाने खरेदी संदर्भात वेळोवेळी निर्गमित केलेल्या शासन निर्णयाच्या अनुषंगाने पुढील कार्यवाही करण्यात यावी।",
+      "page": 2,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The asked-for GR dated 11-05-2021 (Implementation of E-Tenders) is not amended, replaced, stayed, extended, or clarified by any newer GR in the corpus. No newer GR was found in this corpus (covers 2018 to 2024).",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2021",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "शासनाधीन आदेश अधिक्रमीत करण्यात येत आहेत. यापुढे ई-निविदा संबंधित कार्यवाहीसाठी उद्योग, ऊर्जा व कामगार विभागाने खरेदी संदर्भात वेळोवेळी निर्गमित केलेल्या शासन निर्णयाच्या अनुषंगाने पुढील कार्यवाही करण्यात यावी।",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-baseline.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 1",
+   "commit": "213c181",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The asked-for GR on e-tendering dated 11-05-2021 is not among the retrieved texts. No newer GR in the corpus amends, replaces, stays, extends or clarifies it.",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2021",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "शासकीय कामे, साधन सामुग्रीची खरेदी इत्यादीमध्ये पारदर्शीपणा आणण्यासाठी शासकीय खरेदी कामे इत्यादी करिता ई-निविदा पध्दतीचा अवलंब करण्याचा निर्णय संदर्भाधीन अनु. क्र. १ येथील शासन निर्णयान्वये घेण्यात आला होता.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The asked-for GR on e-tendering dated 11-05-2021 is not among the retrieved texts. No newer GR in the corpus amends, replaces, stays, extends or clarifies it.",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2011",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "शासकीय कामे, साधन सामुग्रीची खरेदी इत्यादीमध्ये पारदर्शीपणा आणण्यासाठी शासकीय खरेदी कामे इत्यादी करिता ई-निविदा पध्दतीचा अवलंब करण्याचा निर्णय संदर्भाधीन अनु. क्र. १ येथील शासन निर्णयान्वये घेण्यात आला होता.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run1.jsonl"
+  },
+  {
+   "version": "Round 1",
+   "run": "run 2",
+   "commit": "e8e3e09",
+   "prompt_version": "answer_v3",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the e-Tenders GR of 11 May 2021. The GR of 11 May 2021 itself supersedes earlier e-tendering orders in paragraphs 1 to 3 and states that further e-tendering proceedings should follow the Industry, Energy and Labour Department's procurement decisions from time to time.",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2021",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "शासन निर्णय क्रमांक: मातंसं ०५४/३१/२०१६/३९,\nकरण्यात आलेले संदर्भाधीन अनु.क्र.१ ते ३ येथील आदेश अधिक्रमीत करण्यात येत आहेत.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends, or clarifies the e-Tenders GR of 11 May 2021. The GR of 11 May 2021 itself supersedes earlier e-tendering orders in paragraphs 1 to 3 and states that further e-tendering proceedings should follow the Industry, Energy and Labour Department's procurement decisions from time to time.",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2011",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "शासन निर्णय क्रमांक: मातंसं ०५४/३१/२०१६/३९,\nकरण्यात आलेले संदर्भाधीन अनु.क्र.१ ते ३ येथील आदेश अधिक्रमीत करण्यात येत आहेत.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-18-v3-run2-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 1",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends or clarifies the e-Tenders GR of 11 May 2021. The Government Resolution dated 11-05-2021 (Implementation of E-Tenders) supersedes earlier orders in paragraphs 1 to 3 and directs that further e-tendering proceedings be taken in accordance with the Department of Industry, Energy and Labour's procurement government decisions issued from time to time.",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2021",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "यापुढे ई-निविदा संबंधित कार्यवाहीसाठी उद्योग, ऊर्जा व कामगार विभागाने खरेदी संदर्भात वेळोवेळी निर्गमित केलेल्या शासन निर्णयाच्या अनुषंगाने पुढील कार्यवाही करण्यात यावी",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) that amends, replaces, stays, extends or clarifies the e-Tenders GR of 11 May 2021. The Government Resolution dated 11-05-2021 (Implementation of E-Tenders) supersedes earlier orders in paragraphs 1 to 3 and directs that further e-tendering proceedings be taken in accordance with the Department of Industry, Energy and Labour's procurement government decisions issued from time to time.",
+    "cited": [
+     {
+      "code": "202105111646307611",
+      "date": "11-05-2021",
+      "title": "Implementation of E-Tenders",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202105111646307611.pdf",
+      "quote": "यापुढे ई-निविदा संबंधित कार्यवाहीसाठी उद्योग, ऊर्जा व कामगार विभागाने खरेदी संदर्भात वेळोवेळी निर्गमित केलेल्या शासन निर्णयाच्या अनुषंगाने पुढील कार्यवाही करण्यात यावी",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run1-2.jsonl"
+  },
+  {
+   "version": "Final",
+   "run": "run 2",
+   "commit": "767eb54",
+   "prompt_version": "answer_v4",
+   "format": "failed",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) changes the e-Tenders GR of 11-05-2021 (202105111646307611). Earlier, that GR amended the purchase limit for e-Tender procurements to Rs.10 lakhs and superseded prior orders dated 06-08-2010, 19-01-2013, 26-11-2014 and 01-12-2016, while directing that future e-Tender proceedings follow the industry, energy and labour department's rules.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": true
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024) changes the e-Tenders GR of 11-05-2021 (202105111646307611). Earlier, that GR amended the purchase limit for e-Tender procurements to Rs.10 lakhs and superseded prior orders dated 06-08-2010, 19-01-2013, 26-11-2014 and 01-12-2016, while directing that future e-Tender proceedings follow the industry, energy and labour department's rules.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-18-v4-run2.jsonl"
+  }
+ ]
+}

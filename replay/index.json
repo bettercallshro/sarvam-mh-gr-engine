@@ -1,0 +1,667 @@
+[
+ {
+  "id": 1,
+  "set": "main",
+  "question": "Is the 29 January 2018 cloud computing circular still current?",
+  "case": "AM",
+  "task": "S",
+  "lang": "EN,MR",
+  "gold_answer": "Not as issued. Deadline moved to 31-03-2020 (19-06-2019); data archival and review rules added (05-07-2019); cloud empanelment ended 30-04-2021 and buying moved to GeM (23-04-2021). Latest: 23-04-2021",
+  "gold_grs": [
+   "201801291824268911",
+   "201906191741481211",
+   "201907051642210511",
+   "202104231756150811"
+  ]
+ },
+ {
+  "id": 2,
+  "set": "main",
+  "question": "What is the deadline for moving existing department applications to the cloud?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "31-03-2020, set by the 19-06-2019 addendum (the original said 30-10-2018)",
+  "gold_grs": [
+   "201906191741481211"
+  ]
+ },
+ {
+  "id": 3,
+  "set": "main",
+  "question": "There was a cloud policy circular a couple of years ago, something about migration. Which GR?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "The cloud policy of 29-01-2018 (not recent), plus its later changes; latest is 23-04-2021",
+  "gold_grs": [
+   "201801291824268911",
+   "201906191741481211",
+   "201907051642210511",
+   "202104231756150811"
+  ]
+ },
+ {
+  "id": 4,
+  "set": "main",
+  "question": "A file cites the State cloud policy dated 19/01/2018. Is that current?",
+  "case": "AM",
+  "task": "S",
+  "lang": "EN,MR",
+  "gold_answer": "Same policy (the corpus dates it 29-01-2018; another GR cites 17.1.2018). Not current as issued; see Q1",
+  "gold_grs": [
+   "201801291824268911",
+   "201906191741481211",
+   "201907051642210511",
+   "202104231756150811"
+  ]
+ },
+ {
+  "id": 5,
+  "set": "main",
+  "question": "Can my department still buy cloud services from the empanelled cloud providers?",
+  "case": "ST",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "No. The empanelment and its rates ended 30-04-2021; departments were to buy through GeM within 45 days; the rates for ongoing cloud services expired 15-06-2021",
+  "gold_grs": [
+   "202104231756150811"
+  ]
+ },
+ {
+  "id": 6,
+  "set": "main",
+  "question": "What did the July 2019 cloud GR change?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "Added rules on which data moves to cloud, archival and periodic review. No deadline or amount change",
+  "gold_grs": [
+   "201907051642210511"
+  ]
+ },
+ {
+  "id": 7,
+  "set": "main",
+  "question": "What is the maximum spend on a laptop or tablet for an IAS, IPS or IFS officer?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "Rs 1,20,000 (12-04-2023). Earlier cap Rs 85,000 (24-12-2019)",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ]
+ },
+ {
+  "id": 8,
+  "set": "main",
+  "question": "Is the 24 December 2019 laptop corrigendum still in force?",
+  "case": "ST",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No. Superseded by the 12-04-2023 corrigendum, which replaces paragraph 1",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ]
+ },
+ {
+  "id": 9,
+  "set": "main",
+  "question": "Show me the 24 February 2015 GR on laptops for officers.",
+  "case": "MI",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "Not in this corpus. Its paragraph 1 was amended in 2019 and again in 2023 (cap now Rs 1,20,000)",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ]
+ },
+ {
+  "id": 10,
+  "set": "main",
+  "question": "मातंस ३८१४/प्र.क्र.१७४/३९: what is the current limit?",
+  "case": "DV",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "Rs 1,20,000 (12-04-2023)",
+  "gold_grs": [
+   "202304131657547811",
+   "201912241451082111"
+  ]
+ },
+ {
+  "id": 11,
+  "set": "main",
+  "question": "Is the 26 November 2020 GR on the computer qualification certificate in force?",
+  "case": "ST",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No. Stayed until further orders by the GR of 27-11-2020, which reinstated the orders under the 20-11-2018 letter",
+  "gold_grs": [
+   "202011261535430611",
+   "202011271209526511"
+  ]
+ },
+ {
+  "id": 12,
+  "set": "main",
+  "question": "Will excess salary be recovered from staff who were late with the computer certificate?",
+  "case": "ST",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "The recovery order of 26-11-2020 was stayed on 27-11-2020; no newer order in this corpus",
+  "gold_grs": [
+   "202011261535430611",
+   "202011271209526511"
+  ]
+ },
+ {
+  "id": 13,
+  "set": "main",
+  "question": "Is the 2018 empanelment of IT consultants still valid?",
+  "case": "ST",
+  "task": "S",
+  "lang": "EN",
+  "gold_answer": "No. It expired 19-03-2023, was extended to 19-09-2023 (24-04-2023), and was replaced by a new empanelment from 20-09-2023 to 19-09-2028 (05-10-2023)",
+  "gold_grs": [
+   "201803201319308011",
+   "202304241816282211",
+   "202310041905383211"
+  ]
+ },
+ {
+  "id": 14,
+  "set": "main",
+  "question": "From what date do the new IT consultant rates apply?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "20-09-2023, per the 15-12-2023 clarification (not the 05-10-2023 GR date)",
+  "gold_grs": [
+   "202310041905383211",
+   "202312151508137711"
+  ]
+ },
+ {
+  "id": 15,
+  "set": "main",
+  "question": "What is the monthly rate for a Principal Consultant?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "Rs 4,54,000 excluding taxes (05-10-2023). The 2018 rate was Rs 3,24,000",
+  "gold_grs": [
+   "202310041905383211"
+  ]
+ },
+ {
+  "id": 16,
+  "set": "main",
+  "question": "What did the 9 May 2019 IT consultant GR say?",
+  "case": "MI",
+  "task": "S",
+  "lang": "EN",
+  "gold_answer": "Not in this corpus, though later GRs cite it",
+  "gold_grs": [
+   "202103191753279311"
+  ]
+ },
+ {
+  "id": 17,
+  "set": "main",
+  "question": "Can a department change the qualifications it asks of empanelled consultants?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "Yes for the profile of personnel, through change orders (RFP 24.19); not the years of experience (05-03-2024)",
+  "gold_grs": [
+   "202403051249430211"
+  ]
+ },
+ {
+  "id": 18,
+  "set": "main",
+  "question": "Whose concurrence is needed for a consultant's scope of work?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "The department's ACS/PS/Secretary, not DIT (corrigendum 19-03-2021). Not changed by a later GR in this corpus",
+  "gold_grs": [
+   "202103191753279311"
+  ]
+ },
+ {
+  "id": 19,
+  "set": "main",
+  "question": "Has the Maha DBT disbursement GR of 12 October 2018 been changed?",
+  "case": "DU,AM",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "Yes. Paragraphs 8 and 9 amended 30-11-2021. The English and Marathi copies of 12-10-2018 are one GR",
+  "gold_grs": [
+   "201810121542077211",
+   "201810161857288711",
+   "202111301536272711"
+  ]
+ },
+ {
+  "id": 20,
+  "set": "main",
+  "question": "Which bank must hold a scheme's Maha DBT Central Pool Account?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "State Bank of India (30-11-2021)",
+  "gold_grs": [
+   "202111301536272711"
+  ]
+ },
+ {
+  "id": 21,
+  "set": "main",
+  "question": "What rent support does the Fintech policy give start-ups?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "Up to Rs 4 lakh a year for 3 years for early-stage start-ups, added by the addendum of 30-11-2018",
+  "gold_grs": [
+   "201802161919110111",
+   "201811301239595811"
+  ]
+ },
+ {
+  "id": 22,
+  "set": "main",
+  "question": "Did the 30 November 2018 Fintech corrigendum change any benefit?",
+  "case": "TY",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "No. It only corrects United payments Interface to Unified payment Interface",
+  "gold_grs": [
+   "201811301240117211"
+  ]
+ },
+ {
+  "id": 23,
+  "set": "main",
+  "question": "Who represents the National Health Mission on the blockchain health-records working group?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "The Additional Director, NHM (corrigendum 04-10-2019), not the Director",
+  "gold_grs": [
+   "201904111526241211",
+   "201910041107154511"
+  ]
+ },
+ {
+  "id": 24,
+  "set": "main",
+  "question": "Did the April 2019 Urban MahaNet GR replace the September 2018 GR?",
+  "case": "AM",
+  "task": "S",
+  "lang": "EN",
+  "gold_answer": "No. It adds three items (statewide ROW waiver, smart poles, 5-year total contract); the 2018 GR stands",
+  "gold_grs": [
+   "201809281816318011",
+   "201904101409364011"
+  ]
+ },
+ {
+  "id": 25,
+  "set": "main",
+  "question": "Find the Urban MahaNet GR of 28 September 2018.",
+  "case": "DU",
+  "task": "S",
+  "lang": "EN,MR",
+  "gold_answer": "One GR with English and Marathi copies; later amended 10-04-2019",
+  "gold_grs": [
+   "201809281816318011",
+   "201809281811031811"
+  ]
+ },
+ {
+  "id": 26,
+  "set": "main",
+  "question": "Within how many days must a department pay MahaIT's Urban MahaNet invoice?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "15 days from the invoice date (24-12-2018)",
+  "gold_grs": [
+   "201812241259427911"
+  ]
+ },
+ {
+  "id": 27,
+  "set": "main",
+  "question": "Which university is responsible for the Academic module of the IUMS project?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "S.N.D.T. Women's University (corrigendum 18-04-2019); earlier Dr. Babasaheb Ambedkar Technological University, Lonere (12-12-2018)",
+  "gold_grs": [
+   "201812121239033611",
+   "201904181742272811"
+  ]
+ },
+ {
+  "id": 28,
+  "set": "main",
+  "question": "Which groups does the Maha-Pariksha GR of 20 February 2020 apply to?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "Group C and Group D. The preamble said Group B and C; the corrigendum of 24-02-2020 corrected it to Group C and D",
+  "gold_grs": [
+   "202002201713214911",
+   "202002241155355511"
+  ]
+ },
+ {
+  "id": 29,
+  "set": "main",
+  "question": "What did the 19 July 2021 corrigendum change in the 6 April 2021 disability-reservation GR?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "It deleted the sentence in para 2 saying senior and junior scientific officer posts were left out because an earlier GR (18-02-2021) covers them. The rest of para 2 is unchanged",
+  "gold_grs": [
+   "202104061557307811",
+   "202107191443218111"
+  ]
+ },
+ {
+  "id": 30,
+  "set": "main",
+  "question": "Is the e-Tenders GR of 11 May 2021 still the latest on e-tendering?",
+  "case": "CO",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No newer GR found in this corpus (covers 2018 to 2024)",
+  "gold_grs": [
+   "202105111646307611"
+  ]
+ },
+ {
+  "id": 31,
+  "set": "main",
+  "question": "Has the model RFP GR of September 2019 been updated?",
+  "case": "CO",
+  "task": "S",
+  "lang": "EN",
+  "gold_answer": "No newer GR found in this corpus",
+  "gold_grs": [
+   "201909202117198311"
+  ]
+ },
+ {
+  "id": 32,
+  "set": "main",
+  "question": "What is the latest GR on the State Data Center as critical information infrastructure?",
+  "case": "CO",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "05-10-2019; no newer GR found in this corpus",
+  "gold_grs": [
+   "201910051257224511"
+  ]
+ },
+ {
+  "id": 33,
+  "set": "main",
+  "question": "What is the latest GR on the Maharashtra Unified Citizen Data Hub?",
+  "case": "CO",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "04-02-2022; no newer GR found in this corpus",
+  "gold_grs": [
+   "202202042136207511"
+  ]
+ },
+ {
+  "id": 34,
+  "set": "main",
+  "question": "Is there a GR on a 5G task force, and has it changed?",
+  "case": "CO",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "27-03-2023; no newer GR found in this corpus",
+  "gold_grs": [
+   "202303301831230311"
+  ]
+ },
+ {
+  "id": 35,
+  "set": "main",
+  "question": "What is the latest GR on the Setu Kendra tender process?",
+  "case": "CO",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "19-07-2024; no newer GR found in this corpus",
+  "gold_grs": [
+   "202407191742379111"
+  ]
+ },
+ {
+  "id": 36,
+  "set": "main",
+  "question": "Is the 2022 GR on generative AI use in government offices in force?",
+  "case": "MI",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No such 2022 GR in this corpus. Closest: the circular of 03-03-2020 on AI, Marathi language technology and NLP in government work; a good answer names it without claiming it is the GR asked for",
+  "gold_grs": [
+   "202003031509142811"
+  ]
+ },
+ {
+  "id": 37,
+  "set": "main",
+  "question": "What did the 19 September 2017 Maha-Pariksha GR say?",
+  "case": "MI",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "Not in this corpus. It was superseded by the GR of 20-02-2020",
+  "gold_grs": [
+   "202002201713214911"
+  ]
+ },
+ {
+  "id": 101,
+  "set": "holdout",
+  "question": "Who is the Member Secretary of the Rajiv Gandhi Science and Technology Commission?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "Shri Narendra Shah, retired professor, IIT Bombay, appointed by the GR of 02-11-2021. Earlier Shri Anil Shrikrishna Manekar (GR of 19-07-2019), who asked to be relieved before his term ended",
+  "gold_grs": [
+   "201907191239438711",
+   "202111021709449611"
+  ]
+ },
+ {
+  "id": 102,
+  "set": "holdout",
+  "question": "Is the 20 July 2021 seniority list of Assistant (Technical) staff in the Directorate of IT final?",
+  "case": "AM",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No. It was provisional (objections invited within 15 days). The final seniority list was published by the circular of 03-09-2021",
+  "gold_grs": [
+   "202107201251572411",
+   "202109031145424411"
+  ]
+ },
+ {
+  "id": 103,
+  "set": "holdout",
+  "question": "How does a company apply for permission to put up a mobile tower or lay optical fibre in Maharashtra?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "Fresh applications go through the GatiShakti Sanchar portal (gatishaktisanchar.gov.in), per the telecom infrastructure policy GR of 04-11-2022 (forest department applications excepted; regularisation of existing infrastructure through the Mahasanchar portal). Earlier, the 03-03-2018 circular had applications filed in hard copy with local authorities until the DGIT single-window portal was ready",
+  "gold_grs": [
+   "201803031333271711",
+   "202211041809363311"
+  ]
+ },
+ {
+  "id": 104,
+  "set": "holdout",
+  "question": "Which GR sets MahaIT's current rates for supplying technical manpower to departments?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "The GR of 22-04-2020, with rates for 01-04-2020 to 31-03-2021: the latest in this corpus. It follows the rate GRs for 2018-19 (03-04-2018) and 2019-20 (09-04-2019). No newer rate GR in this corpus",
+  "gold_grs": [
+   "201804031521270211",
+   "201904091114390811",
+   "202004221243514111"
+  ]
+ },
+ {
+  "id": 105,
+  "set": "holdout",
+  "question": "From what date must ministry departments run their work on the e-office system?",
+  "case": "AM",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "From 01-04-2023, per the standard operating procedure circular of 23-02-2023 (which cites a circular of 02-02-2023 not in this corpus). The 2020 mahaeoffice GR and SOP (19-10-2020, 09-11-2020) came earlier",
+  "gold_grs": [
+   "202302231826565311",
+   "202010191540488111",
+   "202011091654026811"
+  ]
+ },
+ {
+  "id": 106,
+  "set": "holdout",
+  "question": "Is Nyas Communication Pvt. Ltd. an empanelled OMR vendor for Maha-Pariksha recruitment?",
+  "case": "AM",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "Yes. It was not in the list in the GR of 21-01-2021; it was added by the supplement of 04-03-2021, after MahaIT heard the company and verified its documents following a High Court decision",
+  "gold_grs": [
+   "202101211644450911",
+   "202103041719472911"
+  ]
+ },
+ {
+  "id": 107,
+  "set": "holdout",
+  "question": "Is Amazon Web Services an empanelled cloud service provider for Maharashtra government departments?",
+  "case": "ST",
+  "task": "S",
+  "lang": "EN,MR",
+  "gold_answer": "Not any more. It was empanelled as a Tier-1 provider from 01-05-2018 to 30-04-2021 (circulars of 19-05-2018 and 04-08-2018), but the empanelment ended on 30-04-2021 and departments were told to buy cloud services through GeM (23-04-2021)",
+  "gold_grs": [
+   "201805211415360511",
+   "201808041826435611",
+   "202104231756150811"
+  ]
+ },
+ {
+  "id": 108,
+  "set": "holdout",
+  "question": "Have the contact details of the IT consultancy firms empanelled in October 2023 changed?",
+  "case": "AM",
+  "task": "L",
+  "lang": "EN",
+  "gold_answer": "Yes. The circular of 27-10-2023 modified the firms' contact details in Annexure 1 of the GR of 05-10-2023",
+  "gold_grs": [
+   "202310041905383211",
+   "202310271649358711"
+  ]
+ },
+ {
+  "id": 109,
+  "set": "holdout",
+  "question": "Did the 14 May 2021 GR change the Maha DBT disbursement process?",
+  "case": "CO",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No. It reconstitutes the state-level DBT Working Committee (first set up by a GR of 16-09-2016 not in this corpus). The disbursement process of 12-10-2018 was amended only by the GR of 30-11-2021 (paragraphs 8 and 9)",
+  "gold_grs": [
+   "202105141255466911"
+  ]
+ },
+ {
+  "id": 110,
+  "set": "holdout",
+  "question": "Has the 26 February 2020 approval for the Chief Minister's Helpline been changed by a later GR?",
+  "case": "CO",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No newer GR found in this corpus (covers 2018 to 2024)",
+  "gold_grs": [
+   "202002261550215011"
+  ]
+ },
+ {
+  "id": 111,
+  "set": "holdout",
+  "question": "What is the latest GR on free 7/12 and 8A land record extracts through Aaple Sarkar centres?",
+  "case": "CO",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "The circular of 19-12-2019; no newer GR found in this corpus",
+  "gold_grs": [
+   "201912191347332011"
+  ]
+ },
+ {
+  "id": 112,
+  "set": "holdout",
+  "question": "Has the 16 August 2019 GR on data standardisation and interoperability been changed?",
+  "case": "CO",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "No newer GR found in this corpus",
+  "gold_grs": [
+   "201908161445040311"
+  ]
+ },
+ {
+  "id": 113,
+  "set": "holdout",
+  "question": "Show me the 17 February 2018 telecom infrastructure policy GR.",
+  "case": "MI",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "Not in this corpus. (The corpus's GR of 17-02-2018 is a different one: a tender evaluation committee for consultants.) It is cited by the GRs of 03-03-2018, 08-07-2019, 07-06-2021 and 04-11-2022, and the policy was revised by the telecom infrastructure policy GR of 04-11-2022",
+  "gold_grs": [
+   "201803031333271711",
+   "202211041809363311"
+  ]
+ },
+ {
+  "id": 114,
+  "set": "holdout",
+  "question": "What did the 16 September 2016 GR setting up the state DBT committee say?",
+  "case": "MI",
+  "task": "S",
+  "lang": "MR",
+  "gold_answer": "Not in this corpus. It is cited by the GR of 14-05-2021, which reconstituted that committee",
+  "gold_grs": [
+   "202105141255466911"
+  ]
+ },
+ {
+  "id": 115,
+  "set": "holdout",
+  "question": "मातंस २०१८/प्र.क्र.४५/से-१/का.३९: who represents Land Records for the Mumbai Suburban District on the blockchain working group?",
+  "case": "DV",
+  "task": "L",
+  "lang": "MR",
+  "gold_answer": "The District Superintendent, Land Records, Mumbai Suburban District, per the corrigendum of 31-07-2019. The original GR of 11-04-2019 named the Director, Land Records (Suburbs), Bandra. The later corrigendum of 04-10-2019 changed only the health member, not this one",
+  "gold_grs": [
+   "201904111526241211",
+   "201908011113322811",
+   "201910041107154511"
+  ]
+ }
+]
