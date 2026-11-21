@@ -84,6 +84,122 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. However, the 19 September 2017 GR (GAD-DIT 088/27/2016/DIT (MH)) is cited in later GRs. For example, the 20-02-2020 GR states that the 19-09-2017 GR was superseded by it, and the 28-11-2018 GR merely references it as the background resolution for e-Maha Pariksha SOP instructions.",
+    "cited": [
+     {
+      "code": "201811281816489211",
+      "date": "28-11-2018",
+      "title": "Regarding Standard Operating Procedure (SOP) for use of e-Maha Pariksha Portal as a pan-State Examination Management Solution",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811281816489211.pdf",
+      "quote": "Reference Government Resolution No: - GAD-DIT 088/27/2016/DIT (MH), Dated - 19/09/2017. Introduction Various Departments and field offices of the Government of Maharashtra are conducting examinations",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "शासनाने यापूर्वी घेतलेला संदर्भाधीन शासन निर्णय दिनांक १९ सप्टेंबर, २०१७ चा शासन निर्णय हा या शासन निर्णयान्वये अधिक्रमित करण्यात येऊन खालीलप्रमाणे निर्णय घेण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "title": "Appointment of OMR Vender Empanelment for Recruitment of Class B (Ungazetted) and Class C Post.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202101211644450911.pdf",
+      "quote": "महाराष्ट्र शासनाच्या शासकीय कार्यालयातील गट-ब (अराजपत्रित) व गट-क पदे सरळसेवेने भरण्यासंदर्भात संदर्भाधीन शासन निर्णय दिनांक १९.९.२०१७ मधील तरतुदीनुसार सर्व विभागांना महापरीक्षा पोर्टलद्वारे परीक्षा राबविणे बंधनकारक करण्यात आले होते.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202103041719472911",
+      "date": "04-03-2021",
+      "title": "Appointment of OMR vender Empanelment for recruitment of Class -B (Ungazetted) and Class-C Post (Addendum).",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103041719472911.pdf",
+      "quote": "संदर्भ : १) शासन निर्णय, सामान्य प्रशासन विभाग क्र.मातंस-०८८/२७/२०१६-DIR IT(MH), दिनांक १९ सप्टेंबर, २०१७",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. However, the 19 September 2017 GR (GAD-DIT 088/27/2016/DIT (MH)) is cited in later GRs. For example, the 20-02-2020 GR states that the 19-09-2017 GR was superseded by it, and the 28-11-2018 GR merely references it as the background resolution for e-Maha Pariksha SOP instructions.",
+    "cited": [
+     {
+      "code": "201811281816489211",
+      "date": "28-11-2018",
+      "title": "Regarding Standard Operating Procedure (SOP) for use of e-Maha Pariksha Portal as a pan-State Examination Management Solution",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201811281816489211.pdf",
+      "quote": "Reference Government Resolution No: - GAD-DIT 088/27/2016/DIT (MH), Dated - 19/09/2017. Introduction Various Departments and field offices of the Government of Maharashtra are conducting examinations",
+      "page": 1
+     },
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "शासनाने यापूर्वी घेतलेला संदर्भाधीन शासन निर्णय दिनांक १९ सप्टेंबर, २०१७ चा शासन निर्णय हा या शासन निर्णयान्वये अधिक्रमित करण्यात येऊन खालीलप्रमाणे निर्णय घेण्यात येत आहे.",
+      "page": 1
+     },
+     {
+      "code": "202002241155355511",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1
+     },
+     {
+      "code": "202101211644450911",
+      "date": "21-01-2021",
+      "title": "Appointment of OMR Vender Empanelment for Recruitment of Class B (Ungazetted) and Class C Post.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202101211644450911.pdf",
+      "quote": "महाराष्ट्र शासनाच्या शासकीय कार्यालयातील गट-ब (अराजपत्रित) व गट-क पदे सरळसेवेने भरण्यासंदर्भात संदर्भाधीन शासन निर्णय दिनांक १९.९.२०१७ मधील तरतुदीनुसार सर्व विभागांना महापरीक्षा पोर्टलद्वारे परीक्षा राबविणे बंधनकारक करण्यात आले होते.",
+      "page": 1
+     },
+     {
+      "code": "202103041719472911",
+      "date": "04-03-2021",
+      "title": "Appointment of OMR vender Empanelment for recruitment of Class -B (Ungazetted) and Class-C Post (Addendum).",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103041719472911.pdf",
+      "quote": "संदर्भ : १) शासन निर्णय, सामान्य प्रशासन विभाग क्र.मातंस-०८८/२७/२०१६-DIR IT(MH), दिनांक १९ सप्टेंबर, २०१७",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

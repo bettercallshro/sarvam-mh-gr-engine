@@ -86,6 +86,66 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found that changes the substance of the 26 November 2020 GR, but a later GR dated 27 November 2020 stays it until further orders. Therefore, the 26 November 2020 GR is currently suspended, not in force.",
+    "cited": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays the 26 November 2020 GR on compulsory computer qualification certificate submission and excess payment recovery until further orders."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found that changes the substance of the 26 November 2020 GR, but a later GR dated 27 November 2020 stays it until further orders. Therefore, the 26 November 2020 GR is currently suspended, not in force.",
+    "cited": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays the 26 November 2020 GR on compulsory computer qualification certificate submission and excess payment recovery until further orders."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": "no-newer-GR opener (Q17 precedent)"
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

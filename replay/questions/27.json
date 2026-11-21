@@ -44,6 +44,110 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 12-12-2018 GR assigns Dr. Babasaheb Ambedkar Technology University, Lonere as the responsible university for the Academic module, while the later 18-04-2018 GR reverts to S.N.D.T. Women's University, Mumbai. Because the 12-12-2018 GR is dated earlier than 18-04-2019, the 12-12-2018 GR is the most recent assignment in the corpus.",
+    "cited": [
+     {
+      "code": "201804031706228211",
+      "date": "03-04-2018",
+      "title": "Regarding setting up of the Governance Structure and Domain groups for effective implementation of the Integrated University Management System (IUMS) Project.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031706228211.pdf",
+      "quote": "Domain groups will be constituted for each of the 5 verticals of the IUMS project- Students, Faculty, College, Academic and Administration.",
+      "page": 3,
+      "quote_verified": true
+     },
+     {
+      "code": "201812121239033611",
+      "date": "12-12-2018",
+      "title": "Regarding setting up of the Governance Structure and Domain groups oversight committee for effective implementation of the Integrated University Management System (IUMS) Project.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812121239033611.pdf",
+      "quote": "4. | Academic | Dr. Babasaheb Ambedkar Technology University, Lonere | Vice Chancellor | Dr. Sunil Bamre, Registrar",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "201904181742272811",
+      "date": "18-04-2019",
+      "title": "Regarding setting up of the Governance Structure and Domain groups oversight committee for effective implementation of the Integrated University Management System (IUMS) Project.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904181742272811.pdf",
+      "quote": "4. | Academic | S.N.D.T. Women's University, Mumbai | Professor & Head, Department of Resource Management | Dr. Archana Bhatnagar",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201812121239033611",
+      "date": "12-12-2018",
+      "what_changed": "Replaces SNDT Women's University with Dr. Babasaheb Ambedkar Technology University, Lonere as the responsible university for the Academic module, headed by Vice Chancellor and co-ordinated by Dr. Sunil Bamre, Registrar."
+     },
+     {
+      "code": "201904181742272811",
+      "date": "18-04-2019",
+      "what_changed": "Assigns S.N.D.T. Women's University, Mumbai as the responsible university for the Academic module with Dr. Archana Bhatnagar as Co-Ordinator."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 12-12-2018 GR assigns Dr. Babasaheb Ambedkar Technology University, Lonere as the responsible university for the Academic module, while the later 18-04-2018 GR reverts to S.N.D.T. Women's University, Mumbai. Because the 12-12-2018 GR is dated earlier than 18-04-2019, the 12-12-2018 GR is the most recent assignment in the corpus.",
+    "cited": [
+     {
+      "code": "201804031706228211",
+      "date": "03-04-2018",
+      "title": "Regarding setting up of the Governance Structure and Domain groups for effective implementation of the Integrated University Management System (IUMS) Project.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201804031706228211.pdf",
+      "quote": "Domain groups will be constituted for each of the 5 verticals of the IUMS project- Students, Faculty, College, Academic and Administration.",
+      "page": 1
+     },
+     {
+      "code": "201812121239033611",
+      "date": "12-12-2018",
+      "title": "Regarding setting up of the Governance Structure and Domain groups oversight committee for effective implementation of the Integrated University Management System (IUMS) Project.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812121239033611.pdf",
+      "quote": "4. | Academic | Dr. Babasaheb Ambedkar Technology University, Lonere | Vice Chancellor | Dr. Sunil Bamre, Registrar",
+      "page": 2
+     },
+     {
+      "code": "201904181742272811",
+      "date": "18-04-2019",
+      "title": "Regarding setting up of the Governance Structure and Domain groups oversight committee for effective implementation of the IUMS Project.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904181742272811.pdf",
+      "quote": "4. | Academic | S.N.D.T. Women's University, Mumbai | Professor & Head, Department of Resource Management | Dr. Archana Bhatnagar",
+      "page": 2
+     }
+    ],
+    "newer": [
+     {
+      "code": "2019041817322811",
+      "date": "18-04-2019",
+      "what_changed": "Assigns S.N.D.T. Women's University, Mumbai as the responsible university for the Academic module with Dr. Archana Bhatnagar as Co-Ordinator."
+     },
+     {
+      "code": "201812121239033611",
+      "date": "12-12-2018",
+      "what_changed": "Replaces SNDT Women's University with Dr. Babasaheb Ambedkar Technology University, Lonere as the responsible university for the Academic module, headed by Vice Chancellor and co-ordinated by Dr. Sunil Bamre, Registrar."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 0,
+    "citation": "pass",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": "misdated the 2019 GR as 2018; wrong conclusion"
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

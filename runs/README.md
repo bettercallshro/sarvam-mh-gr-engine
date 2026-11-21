@@ -7,6 +7,7 @@ Hand scores for the scored runs are in `../eval/scores.csv`.
 ## Scored runs
 
 - `2026-11-18-baseline.jsonl` / `.csv`: baseline, all 37 questions (commit 2b41877, prompt answer_v2; results added in 835367c).
+- `2026-11-21-baseline-run2.jsonl` / `.csv`: baseline, run 2, all 37 questions (commit 835367c, same engine code as 2b41877, prompt answer_v2); a repeat run to measure run-to-run variation.
 - `2026-11-18-v4-run1-2.jsonl` / `.csv`: final version, run A, all 37 (commit 767eb54, prompt answer_v4).
 - `2026-11-18-v4-run2.jsonl` / `.csv`: final version, run B, all 37 (commit 767eb54, prompt answer_v4).
 - `2026-11-20-holdout-old-run1.jsonl` / `.csv`: hold-out, 15 new questions, baseline version, run 1 (835367c, same engine code as 2b41877).

@@ -86,6 +86,83 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 is the resolution numbered मातंसं २०१८/प्र.क्र . २५/से-३/३ ९ (also referenced as GAD-HI2018/CR 25/Sect3/39), titled 'Implementation of Urban MahaNet project and Delivery of E-Governance Services'. A 2019 GR on 10-04-2019 amends it by waiving ROW fees across the state, allowing TSP Smart Pole installation options, and extending the total TSP contract to 5 years.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प” म्हणून घोषित करण्यात येत",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "In addition to the points mentioned in the Government Resolution, following amendment are being added; Government resolution: Part I- Urban Mahanet: i. Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waived ROW fees across the state for the project; allowed TSP option for Smart Pole installation; extended total contract with TSP to 5 years."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The Urban MahaNet GR dated 28-09-2018 is the resolution numbered मातंसं २०१८/प्र.क्र . २५/से-३/३ ९ (also referenced as GAD-HI2018/CR 25/Sect3/39), titled 'Implementation of Urban MahaNet project and Delivery of E-Governance Services'. A 2019 GR on 10-04-2019 amends it by waiving ROW fees across the state, allowing TSP Smart Pole installation options, and extending the total TSP contract to 5 years.",
+    "cited": [
+     {
+      "code": "201809281811031811",
+      "date": "28-09-2018",
+      "title": "Implementation of Urban MahaNet project  and Delivery of E-Governance Services",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201809281811031811.pdf",
+      "quote": "शहरी महानेट योजनेला \"महत्त्वपूर्ण सार्वजानिक हेतू प्रकल्प” म्हणून घोषित करण्यात येत",
+      "page": 1
+     },
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "title": "Implementation of Urban MahaNet Project and Delivery of E-Governance Services.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904101409364011.pdf",
+      "quote": "In addition to the points mentioned in the Government Resolution, following amendment are being added; Government resolution: Part I- Urban Mahanet: i. Right of Way (ROW) fees across the state (including underground and aerial) is hereby waived off for the project.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201904101409364011",
+      "date": "10-04-2019",
+      "what_changed": "Waived ROW fees across the state for the project; allowed TSP option for Smart Pole installation; extended total contract with TSP to 5 years."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

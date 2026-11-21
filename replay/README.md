@@ -15,7 +15,7 @@ past runs, not live answers.** Nothing here calls the model.
 
 | Set | Version | Runs | Logs |
 |---|---|---|---|
-| main (37) | Baseline | run 1 | `runs/2026-11-18-baseline.jsonl` |
+| main (37) | Baseline | run 1, run 2 | `runs/2026-11-18-baseline.jsonl`, `runs/2026-11-21-baseline-run2.jsonl` |
 | main | Round 1 | run 1, run 2 | `runs/2026-11-18-v3-run1.jsonl`, `runs/2026-11-18-v3-run2-2.jsonl` |
 | main | Final | run 1, run 2 | `runs/2026-11-18-v4-run1-2.jsonl`, `runs/2026-11-18-v4-run2.jsonl` |
 | holdout (15) | Baseline | run 1, run 2 | `runs/2026-11-20-holdout-old-run1.jsonl`, `-old-run2.jsonl` |
@@ -28,8 +28,8 @@ Each run has:
 | `version`, `run`, `commit`, `prompt_version` | which engine produced it |
 | `format` | `ok`, `retried` (valid after one retry), `repaired` (small format slip fixed), or `failed` (still invalid after the retry) |
 | `product` | the answer as the product shows it, after the checks: `status`, `answer`, `cited`, `newer`, `format_repaired`. `null` where the product showed nothing: format failures in the baseline and round 1, before the final version always showed an answer. |
-| `raw` | the model's own answer, before the checks: `status`, `answer`, `cited`, `newer`. This is what was scored. |
-| `scores` | hand scores from `eval/scores.csv`: `answer` (2/1/0), `citation`, `latest`, `confident_wrong`, `fully_correct`, `note`. `null` for round 1, which was not scored. |
+| `raw` | the model's own answer, before the checks: `status`, `answer`, `cited`, `newer`. This is what was scored. `null` where the reply was not readable JSON (its text is in the run log). |
+| `scores` | hand scores from `eval/scores.csv`: `answer` (2/1/0), `citation`, `latest`, `confident_wrong`, `fully_correct`, `note`. `null` for round 1, which was not scored, and for runs whose rows in `eval/scores.csv` are not filled in yet. |
 | `log` | the run log the entry came from |
 
 `cited` items have `code`, `date`, `title`, `url` (official PDF), `quote` and `page`.

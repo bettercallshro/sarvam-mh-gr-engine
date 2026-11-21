@@ -86,6 +86,83 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 24 December 2019 laptop corrigendum is superseded by the GR dated 12-04-2023, which replaces it and raises the maximum purchase limit to Rs. 1,20,000. No newer GR found after 2023 in this corpus.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर शुध्दिपत्रक रू. ८५०००/- या कमाल मर्यादेत असावी",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Supersedes the 2019 corrigendum and raises the maximum purchase limit from Rs. 85,000 to Rs. 1,20,000."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 24 December 2019 laptop corrigendum is superseded by the GR dated 12-04-2023, which replaces it and raises the maximum purchase limit to Rs. 1,20,000. No newer GR found after 2023 in this corpus.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "सदर शुध्दिपत्रक रू. ८५०००/- या कमाल मर्यादेत असावी",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2024",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Supersedes the 2019 corrigendum and raises the maximum purchase limit from Rs. 85,000 to Rs. 1,20,000."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

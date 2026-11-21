@@ -140,6 +140,80 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The new IT consultant rates introduced by the 2023 GR apply from 20th September 2023. The 2018 rates originally applied from the date of issue of that GR (20th March 2018) for work orders issued after that date. The 2023 GR replaced the 2018 empanelment, and a 2023 circular clarified that its rates apply from 20th September 2023.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "The above rates will apply for all work orders issued after the date of issue of this GR.",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "The above rates will apply for all work orders issued from the date of issue of this GR.",
+      "page": 1
+     },
+     {
+      "code": null,
+      "date": null,
+      "title": null,
+      "url": null,
+      "quote": "",
+      "page": null
+     }
+    ],
+    "newer": [
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "what_changed": "Replaced the 2018 GR with a new five-year empanelment from 20th September 2023 to 19th September 2028 and introduced new rates, ending the applicability of the 2018 rates."
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarified that the rates mentioned in the 2023 GR are applicable from 20th September 2023."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extended the 2018 empanelment and its rates for six months from 20th March 2023 to 19th September 2023 without changing commercial terms."
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "Amended paragraphs 5 and 9 of the 2018 GR by changing approval authority to ACS/PS/Secretary and modifying reporting requirements to include performance-based continuation decisions."
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarified that departments may change personnel profiles via change orders but cannot change the years of experience mentioned in the GR."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

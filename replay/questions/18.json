@@ -67,6 +67,83 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "Under the 2018 GR, departments must finalize the scope of work for consultancy with the concurrence of DIT. The 2021 GR amends this by requiring concurrence from the ACS / PS / Secretary of the concerned Department instead.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Departments need to finalize the scope of work for consultancy with concurrence of DIT",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "Departments need to finalize the Scope of work for consultancy with concurrence of ACS /PS /Secretary of concerned Department",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "It amends the asked-for GR by changing the concurrence required for finalizing the scope of work for consultancy from DIT to ACS / PS / Secretary of the concerned Department."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "Under the 2018 GR, departments must finalize the scope of work for consultancy with the concurrence of DIT. The 2021 GR amends this by requiring concurrence from the ACS / PS / Secretary of the concerned Department instead.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "Departments need to finalize the scope of work for consultancy with concurrence of DIT",
+      "page": 2
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "Departments need to finalize the Scope of work for consultancy with concurrence of ACS /PS /Secretary of concerned Department",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "It amends the asked-for GR by changing the concurrence required for finalizing the scope of work for consultancy from DIT to ACS / PS / Secretary of the concerned Department."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": "old rule first, then the change (run 1 Q15 precedent)"
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

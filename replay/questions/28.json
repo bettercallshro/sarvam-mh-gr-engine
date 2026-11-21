@@ -74,6 +74,52 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The Maha-Pariksha GR of 20-02-2020 (202002201713214911) applies to Group-C and Group-D category posts in all administrative departments of the government and their subordinate offices in the state, as stated in its preamble.",
+    "cited": [
+     {
+      "code": "202002201713214911",
+      "date": "20-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002201713214911.pdf",
+      "quote": "राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय पदभरतीसाठीची परिक्षा सामान्य प्रशासन विभाग ( मातंस) यांच्या संदर्भाधीन शासन निर्णय क्र.१ अन्वये ऑनलाईन पध्दतीने महापरिक्षा पोर्टलद्वारे घेण्यात येतात.",
+      "page": 1
+     },
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "title": "About updated process of Exams Conduction under Maha-Pariksha.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202002241155355511.pdf",
+      "quote": "उपरोक्त वाचा येथील दि.२०/०२/२०२० च्या शासन निर्णयातील प्रस्तावनेतील पहिल्या ओळीतील राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-ब व गट-क वर्गीय च्या ऐवजी राज्यात शासनाचे सर्व प्रशासकीय विभाग व त्यांच्या अधिनस्त कार्यालयात गट-क व गट-ड वर्गीय असे वाचावे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202002241155355511",
+      "date": "24-02-2020",
+      "what_changed": "Clarifies that the 20-02-2020 GR applies to Group-C and Group-D posts instead of Group-B and Group-C by correcting the preamble."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": "right; attribution slip (preamble)"
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

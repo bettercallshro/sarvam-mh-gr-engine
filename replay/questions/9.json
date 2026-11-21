@@ -154,6 +154,83 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR dated 24-02-2015 in the corpus. The corpus contains the 24.12-2019 GR (201912241451082111) and the 12-04-2023 GR (202304131657547811), both on the same file number Matans 3814/Pr.Kr.174/39. The 24.12-2019 GR issued a corrigendum to the 24.02.2015 GR, and the 12-04-2023 GR superseded the 24.12-2019 GR and raised the maximum purchase limit for laptops/iPads/tablets from Rs. 85,000 to Rs. 1,20,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "उपरोक्त वाचा येथील शासन निर्णय क्रमांक मातंस ३८१४/प्र.क्र.१७४/३९, दि. २४.०२.२०१५ अन्वये निर्गमित करण्यात आला आहे",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "what_changed": "Supersedes the 24.02.2015 GR and raises the maximum laptop/iPad/tablet purchase limit from Rs. 85,000/- to Rs. 1,20,000/- (Rupees One Lakh Twenty Thousand only)."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR dated 24-02-2015 in the corpus. The corpus contains the 24.12-2019 GR (201912241451082111) and the 12-04-2023 GR (202304131657547811), both on the same file number Matans 3814/Pr.Kr.174/39. The 24.12-2019 GR issued a corrigendum to the 24.02.2015 GR, and the 12-04-2023 GR superseded the 24.12-2019 GR and raised the maximum purchase limit for laptops/iPads/tablets from Rs. 85,000 to Rs. 1,20,000.",
+    "cited": [
+     {
+      "code": "201912241451082111",
+      "date": "24-12-2019",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201912241451082111.pdf",
+      "quote": "उपरोक्त वाचा येथील शासन निर्णय क्रमांक मातंस ३८१४/प्र.क्र.१७४/३९, दि. २४.०२.२०१५ अन्वये निर्गमित करण्यात आला आहे",
+      "page": 1
+     },
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2023",
+      "title": "To Provide Computer/Laptop/Tablet/IPad to Government Officials/Employees..",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304131657547811.pdf",
+      "quote": "सदर शुध्दिपत्रक या शुध्दिपत्रकान्वये अधिक्रमित करण्यात येत आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202304131657547811",
+      "date": "12-04-2012",
+      "what_changed": "Supersedes the 24.02.2015 GR and raises the maximum laptop/iPad/tablet purchase limit from Rs. 85,000/- to Rs. 1,20,000/- (Rupees One Lakh Twenty Thousand only)."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

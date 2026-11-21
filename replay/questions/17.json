@@ -65,6 +65,83 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "A department can change the qualifications (profile of personnel) it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders), but it cannot change the 'Years of Experience' mentioned in the GR for the category of resources required. The corpus does not contain any other GR that amends the qualifications in the 202310041905383211 GR beyond this clarification.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Use clauses under Section 24.19 of the RFP to change the Profile of Personnel required for the engagement. Relevant RFP section attached as Annexure A.",
+      "page": 1,
+      "quote_verified": false
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the Years of Experience mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "It clarifies that departments can change the 'Profile of Personnel' using RFP clauses, but cannot change the 'Years of Experience' mentioned in the GR for the required resource category."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "A department can change the qualifications (profile of personnel) it asks of empanelled consultants by using clauses under Section 24.19 of the RFP (Change Orders), but it cannot change the 'Years of Experience' mentioned in the GR for the category of resources required. The corpus does not contain any other GR that amends the qualifications in the 202310041905383211 GR beyond this clarification.",
+    "cited": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Use clauses under Section 24.19 of the RFP to change the Profile of Personnel required for the engagement. Relevant RFP section attached as Annexure A.",
+      "page": 1
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Government of Maharashtra - Educational Qualification of Consultants",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202403051249430211.pdf",
+      "quote": "e Not change the Years of Experience mentioned in the GR for the Category of resources required for the engagement.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "It clarifies that departments can change the 'Profile of Personnel' using RFP clauses, but cannot change the 'Years of Experience' mentioned in the GR for the required resource category."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

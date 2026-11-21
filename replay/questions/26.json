@@ -67,6 +67,54 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The department must pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance, as stated in the Government Resolution GAD--2018/CR 25/Sect3/39 dated 24-12-2018.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The department must pay MahaIT's Urban MahaNet invoice within 15 days from the date of invoice issuance, as stated in the Government Resolution GAD--2018/CR 25/Sect3/39 dated 24-12-2018.",
+    "cited": [
+     {
+      "code": "201812241259427911",
+      "date": "24-12-2018",
+      "title": "Centralised payment from departments/offices for the implementation of Urban MahaNet project",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201812241259427911.pdf",
+      "quote": "Considering the GST timelines, department/office to ensure that payment is made to MahalT within 15 days from date of invoice issuance.",
+      "page": 2
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

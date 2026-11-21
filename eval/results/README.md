@@ -15,3 +15,4 @@ In the order the work happened. Hand scores for the scored runs are in `../score
 11. `q22_diagnosis.md`: why Q22 said "couldn't find" although the corrigendum was retrieved first.
 12. `holdout_before_after.md`: 15 new questions, baseline and final versions, two runs each, raw answers side by side.
 13. `q6_diagnosis.md`: why final run B said a 2021 GR amended the July 2019 GR.
+14. `baseline_run2.md`: run notes for a second run of the baseline on the 37 questions, to measure run-to-run variation.

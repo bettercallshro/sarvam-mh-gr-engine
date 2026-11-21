@@ -67,6 +67,38 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The July 2019 cloud GR (05-07-2019) issued instructions that all government departments must define and communicate to DIT in writing the data to be migrated or hosted on cloud and the time period, confirm data to be archived, verify datasets for automated removal, and review applications and data on cloud periodically.",
+    "cited": [
+     {
+      "code": "201907051642210511",
+      "date": "05-07-2019",
+      "title": "Cloud Computing Policy- Instructions to Departments regarding hosting of IT applications",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201907051642210511.pdf",
+      "quote": "Para 7.13 of the State's E-Governance policy (DIT GR dated 23.09.2011), “The State shall explore the option of cloud computing as a preferred way for implementing all e Governance projects in the State.",
+      "page": null
+     }
+    ],
+    "newer": []
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

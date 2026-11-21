@@ -72,6 +72,83 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "answered",
+    "answer": "The 26-11-2020 GR decides that excess salary should be recovered from officers/employees who did not submit the computer qualification certificate within the final deadline, because their increment was not stopped. However, the 27-11-2020 GR stays that decision till further orders and restores the earlier 20-11-2018 letter orders.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अतिप्रदान करण्यात आलेल्या वेतनाच्या वसूली करण्यात यावी",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "title": "Stay order for GR issued on 26 November 2020 about the decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays (suspends) the 26-11-2020 GR on final date for computer qualification certificate and recovery of excess payment, putting it on hold till further orders, and restores the earlier 20-11-2018 letter orders."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 26-11-2020 GR decides that excess salary should be recovered from officers/employees who did not submit the computer qualification certificate within the final deadline, because their increment was not stopped. However, the 27-11-2020 GR stays that decision till further orders and restores the earlier 20-11-2018 letter orders.",
+    "cited": [
+     {
+      "code": "202011261535430611",
+      "date": "26-11-2020",
+      "title": "Decision regarding final date for submission of compulsory computer qualification certificate and recovery of excess payment.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011261535430611.pdf",
+      "quote": "अतिप्रदान करण्यात आलेल्या वेतनाच्या वसूली करण्यात यावी",
+      "page": 2
+     },
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2019",
+      "title": "About Computer Eligibility Certificate for CPTP officers.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202011271209526511.pdf",
+      "quote": "सदर शासन निर्णयास पुढील आदेशापर्यंत प्रशासकीय कारणास्तव स्थगिती देण्यात येत आहे",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202011271209526511",
+      "date": "27-11-2020",
+      "what_changed": "It stays (suspends) the 26-11-2020 GR on final date for computer qualification certificate and recovery of excess payment, putting it on hold till further orders, and restores the earlier 20-11-2018 letter orders."
+     }
+    ]
+   },
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": null
+   },
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",
