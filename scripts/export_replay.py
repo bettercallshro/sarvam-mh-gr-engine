@@ -19,6 +19,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # (set, version, run label, score label in eval/scores.csv or None, run log)
 RUNS = [
     ("main", "Baseline", "run 1", "baseline", "runs/2026-11-18-baseline.jsonl"),
+    ("main", "Baseline", "run 2", "baseline-run2", "runs/2026-11-21-baseline-run2.jsonl"),
     ("main", "Round 1", "run 1", None, "runs/2026-11-18-v3-run1.jsonl"),
     ("main", "Round 1", "run 2", None, "runs/2026-11-18-v3-run2-2.jsonl"),
     ("main", "Final", "run 1", "final-A", "runs/2026-11-18-v4-run1-2.jsonl"),
@@ -45,6 +46,9 @@ def load_scores():
     out = {}
     with (ROOT / "eval/scores.csv").open(encoding="utf-8") as f:
         for r in csv.DictReader(f):
+            if not r["answer"].strip():
+                out[(r["run"], int(r["question_id"]))] = None  # row present, not scored yet
+                continue
             out[(r["run"], int(r["question_id"]))] = {
                 "answer": int(r["answer"]),
                 "citation": r["citation"],

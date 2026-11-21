@@ -103,6 +103,76 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The National Health Mission is represented on the blockchain health-records working group by the Additional Mission Director, National Health Mission, Mumbai-1. The original GR listed the Director, National Directorate of Health Services, Mumbai-400001 as a member, but the corrigendum of 04-10-2019 corrected the designation to Additional Mission Director, National Health Mission, Mumbai-1.",
+    "cited": [
+     {
+      "code": "201904111526241211",
+      "date": "11-04-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "संचालक, राष्ट्रीय आरोग्य संचालनालय, मुंबई - ४००००१. सदस्य",
+      "page": 2,
+      "quote_verified": true
+     },
+     {
+      "code": "201910041107154511",
+      "date": "04-10-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.- Corrigendum.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910041107154511.pdf",
+      "quote": "अतिरिक्त अभियान संचालक, राष्ट्रीय आरोग्य अभियान, मुंबई - १. सदस्य",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [
+     {
+      "code": "201910041107154511",
+      "date": "04-10-2019",
+      "what_changed": "It clarifies and corrects the member designation under Public Health- Health Records from 'संचालक, राष्ट्रीय आरोग्य संचालनालय, मुंबई - ४००००१' to 'अतिरिक्त अभियान संचालक, राष्ट्रीय आरोग्य अभियान, मुंबई - १'."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The National Health Mission is represented on the blockchain health-records working group by the Additional Mission Director, National Health Mission, Mumbai-1. The original GR listed the Director, National Directorate of Health Services, Mumbai-400001 as a member, but the corrigendum of 04-10-2019 corrected the designation to Additional Mission Director, National Health Mission, Mumbai-1.",
+    "cited": [
+     {
+      "code": "201904111526241211",
+      "date": "11-04-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201904111526241211.pdf",
+      "quote": "संचालक, राष्ट्रीय आरोग्य संचालनालय, मुंबई - ४००००१. सदस्य",
+      "page": 2
+     },
+     {
+      "code": "201910041107154511",
+      "date": "04-10-2019",
+      "title": "Regarding the use of Block Chain Technology in Government working and setting up working group.- Corrigendum.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910041107154511.pdf",
+      "quote": "अतिरिक्त अभियान संचालक, राष्ट्रीय आरोग्य अभियान, मुंबई - १. सदस्य",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "201910041107154511",
+      "date": "04-10-2009",
+      "what_changed": "It clarifies and corrects the member designation under Public Health- Health Records from 'संचालक, राष्ट्रीय आरोग्य संचालनालय, मुंबई - ४००००१' to 'अतिरिक्त अभियान संचालक, राष्ट्रीय आरोग्य अभियान, मुंबई - १'."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

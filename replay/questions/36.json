@@ -48,6 +48,28 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The retrieved GRs cover a 2020 circular on AI/NLP in government work, a 2022 telecom infrastructure policy, a 2018 FinTech policy, a 2023 task force for 5G services, and a 2023 e-Office SOP. None mentions a 2022 GR on generative AI use in government offices.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus. The retrieved GRs cover a 2020 circular on AI/NLP in government work, a 2022 telecom infrastructure policy, a 2018 FinTech policy, a 2023 task force for 5G services, and a 2023 e-Office SOP. None mentions a 2022 GR on generative AI use in government offices.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

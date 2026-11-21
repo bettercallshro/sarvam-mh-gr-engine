@@ -67,6 +67,64 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the Setu Kendra tender process is dated 19-07-2024 (GR number आसेकें-१०२२/सेतू/प्र.क्र.११/मावतं). It directs all district headquarters and tehsil Setu Kendras to remain open, requires district collectors to start tender processes immediately where agency terms have expired or centres closed, and complete them within three months. No newer GR in this corpus amends or replaces it.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1,
+      "quote_verified": true
+     },
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "ज्या जिल्यांमध्ये सेतू केंद्रांच्या एजन्सीची मुदत संपुष्ट्टात आली आहे किंवा ज्या जिल्यातील सेतू केंद्रे बंद पडली आहेत, अशा जिल्यांमध्ये सेतू केंद्रे सुरु करण्याबाबतची निविदा प्रक्रिया तात्काळ संबंधित जिल्हाधिकारी यांनी सुरु करावी व पुढील ३ महिन्यात निविदा प्रक्रिया पूर्ण करुन जिलाधिकारी व तहसिल कार्यालयातील सेतू केंद्रे चालू करावीत.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus on the Setu Kendra tender process is dated 19-07-2024 (GR number आसेकें-१०२२/सेतू/प्र.क्र.११/मावतं). It directs all district headquarters and tehsil Setu Kendras to remain open, requires district collectors to start tender processes immediately where agency terms have expired or centres closed, and complete them within three months. No newer GR in this corpus amends or replaces it.",
+    "cited": [
+     {
+      "code": "202407191742379111",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the state.....",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202407191742379111.pdf",
+      "quote": "जिल्हा मुख्यालयातील व तहसिल कार्यालयातील सर्व सेतू केंद्रे सुरु ठेवण्यात यावीत.",
+      "page": 1
+     },
+     {
+      "code": "2024071917423791911",
+      "date": "19-07-2024",
+      "title": "Regarding the tender process of Setu Kendra in the collector and tehsil offices of the asked-for GR",
+      "url": null,
+      "quote": "ज्या जिल्यांमध्ये सेतू केंद्रांच्या एजन्सीची मुदत संपुष्ट्टात आली आहे किंवा ज्या जिल्यातील सेतू केंद्रे बंद पडली आहेत, अशा जिल्यांमध्ये सेतू केंद्रे सुरु करण्याबाबतची निविदा प्रक्रिया तात्काळ संबंधित जिल्हाधिकारी यांनी सुरु करावी व पुढील ३ महिन्यात निविदा प्रक्रिया पूर्ण करुन जिलाधिकारी व तहसिल कार्यालयातील सेतू केंद्रे चालू करावीत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

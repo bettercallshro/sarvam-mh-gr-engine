@@ -69,6 +69,28 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "retried",
+   "product": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus for a cloud policy circular a couple of years ago about migration, because the question is too vague to identify a single GR. The corpus contains several related GRs on cloud computing policy, including GR 201805171357566211 dated 16-05-2018 (Empanelment of Cloud Service Providers and Guidelines for Government organizations) and GR 201906191741481211 dated 19-06-2019 (Cloud Computing Policy – Instructions to Departments regarding hosting of IT applications), both of which include migration instructions. I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "not_found",
+    "answer": "I couldn't find a GR on this in the corpus for a cloud policy circular a couple of years ago about migration, because the question is too vague to identify a single GR. The corpus contains several related GRs on cloud computing policy, including GR 201805171357566211 dated 16-05-2018 (Empanelment of Cloud Service Providers and Guidelines for Government organizations) and GR 201906191741481211 dated 19-06-2019 (Cloud Computing Policy – Instructions to Departments regarding hosting of IT applications), both of which include migration instructions. I couldn't find a GR on this in the corpus.",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

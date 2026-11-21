@@ -67,6 +67,47 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus concerning the State Data Center as critical information infrastructure is dated 05-10-2019 (GR No. H – DIT2019/CR 34/3/39), which declares the Maharashtra State Data Center as Critical Information Infrastructure. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this 2019-10-05 GR.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State data center (SDC) is being declared a protected site considering below parameters:",
+      "page": 2,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The latest GR in the corpus concerning the State Data Center as critical information infrastructure is dated 05-10-2019 (GR No. H – DIT2019/CR 34/3/39), which declares the Maharashtra State Data Center as Critical Information Infrastructure. No newer GR in the corpus amends, replaces, stays, extends, or clarifies this 2019-10-05 GR.",
+    "cited": [
+     {
+      "code": "201910051257224511",
+      "date": "05-10-2019",
+      "title": "Declaration of Maharashtra State Data Center as Critical Information Infrastructure (CII)",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201910051257224511.pdf",
+      "quote": "Maharashtra State data center (SDC) is being declared a protected site considering below parameters:",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

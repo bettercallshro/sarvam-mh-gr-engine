@@ -103,6 +103,76 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum removed the sentence in paragraph 2 of the 6 April 2021 GR that excluded two posts (Senior Scientist/Junior Scientist) because they were already covered by a SE-1 Government decision, thereby bringing those two posts under the disability reservation.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक/ कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2,
+      "quote_verified": false
+     },
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202107191443218111.pdf",
+      "quote": "संदर्भ सामान्य प्रशासन विभाग (माहिती तंत्राज्ञान), शासन निर्णय क्रमांक: मातंसं २०२१/प्र.क्र.१५/ से-२/३९, दिनांक ६ एप्रिल, २०२१.\nशासन शुध्दीपत्रक सामान्य प्रशासन विभाग ( मातं) शासन निर्णय क्र. मातंस २०२१/प्र.क्र.१०/से.२/३९ दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा पोदे समावेश या शासन निर्णयात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे.",
+      "page": 1,
+      "quote_verified": false
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "It removes the sentence in paragraph 2 of the 06-04-2021 GR that excluded two posts (Senior Scientist/Junior Scientist) because they were already included in a SE-1 Government decision, thereby including those two posts in the disability reservation."
+     }
+    ],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The 19 July 2021 corrigendum removed the sentence in paragraph 2 of the 6 April 2021 GR that excluded two posts (Senior Scientist/Junior Scientist) because they were already covered by a SE-1 Government decision, thereby bringing those two posts under the disability reservation.",
+    "cited": [
+     {
+      "code": "202104061557307811",
+      "date": "06-04-2021",
+      "title": "Regarding ensuring posts for person with disabilities as per the Rights of persons with disabilities Act, 2016 in the Group A to Group B category in Rajiv Gandhi Science and Technology Commission, Mumbai.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202104061557307811.pdf",
+      "quote": "तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक/ कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा समावेश या शासन निर्णयात करण्यात आलेला नाही",
+      "page": 2
+     },
+     {
+      "code": "20210719143218111",
+      "date": "19-07-2021",
+      "title": "As per the Rights of Persons with Disabilities Act, 2016, to ensure posts in the Government Services for persons with Disabilities for posts in the Rajiv Gandhi Science and Technology Commission, Group A to Group D.",
+      "url": null,
+      "quote": "संदर्भ सामान्य प्रशासन विभाग (माहिती तंत्राज्ञान), शासन निर्णय क्रमांक: मातंसं २०२१/प्र.क्र.१५/ से-२/३९, दिनांक ६ एप्रिल, २०२१.\nशासन शुध्दीपत्रक सामान्य प्रशासन विभाग ( मातं) शासन निर्णय क्र. मातंस २०२१/प्र.क्र.१०/से.२/३९ दि.०६.०४.२०२१ यातील परिच्छेद क्रमांक २ मधील “तथापि, राजीव गांधी विज्ञान व तंत्रज्ञान आयोगामधील दोन पदे से-१ यांनी निर्गमित केलेल्या शासन निर्णयात वरिष्ठ वैज्ञानिक / कनिष्ठ वैज्ञानिक पदांचा समावेश करण्यात आलेला असल्यामुळे सदर पदांचा पोदे समावेश या शासन निर्णयात करण्यात आलेला नाही” हे वाक्य वगळण्यात येत आहे.",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202107191443218111",
+      "date": "19-07-2021",
+      "what_changed": "It removes the sentence in paragraph 2 of the 06-04-2021 GR that excluded two posts (Senior Scientist/Junior Scientist) because they were already included in a SE-1 Government decision, thereby including those two posts in the disability reservation."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

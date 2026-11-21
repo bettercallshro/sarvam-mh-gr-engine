@@ -84,6 +84,47 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "The corpus contains a GR dated 27-03-2023 (code 202303301831230311) that establishes a task force to launch and implement 5G services in Maharashtra. No newer GR in the corpus amends, replaces, stays, extends, or clarifies that 5G task force GR.",
+    "cited": [
+     {
+      "code": "202303301831230311",
+      "date": "27-03-2023",
+      "title": "Regarding setting up a task force to launch and implement 5G services in the state.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202303301831230311.pdf",
+      "quote": "राज्यात ५G सेवा सुरू करण्यासाठी आणि त्याची अंमलबजावणी करण्यासाठी कार्यगटाची स्थापना करण्याबाबत.",
+      "page": 1,
+      "quote_verified": true
+     }
+    ],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "The corpus contains a GR dated 27-03-2023 (code 202303301831230311) that establishes a task force to launch and implement 5G services in Maharashtra. No newer GR in the corpus amends, replaces, stays, extends, or clarifies that 5G task force GR.",
+    "cited": [
+     {
+      "code": "202303301831230311",
+      "date": "27-03-2023",
+      "title": "Regarding setting up a task force to launch and implement 5G services in the state.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202303301831230311.pdf",
+      "quote": "राज्यात ५G सेवा सुरू करण्यासाठी आणि त्याची अंमलबजावणी करण्यासाठी कार्यगटाची स्थापना करण्याबाबत.",
+      "page": 1
+     }
+    ],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

@@ -147,6 +147,89 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "failed",
+   "product": null,
+   "raw": {
+    "status": "answered",
+    "answer": "The 2018 empanelment of IT consultants was valid until 19th March 2023, then it was extended for 6 months until 19th September 2023, and it was replaced by a new 5-year empanelment from 20th September 2023 to 19th September 2028. Therefore, the original 2018 empanelment is no longer valid.",
+    "cited": [
+     {
+      "code": "201803201319308011",
+      "date": "20-03-2018",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/201803201319308011.pdf",
+      "quote": "following companies have been qualified and are empanelled with Govt. of Maharashtra for a period of five years i.e. from 20th March 2018 to 19th March 2023",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2023",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "This empanelment expired on 19th September 2023. Accordingly, RFP for new empanelment of consultants was approved by the High Power Committee (HPC) and bids were invited from reputed consultancy firms for empanelment for a period of Five (5) years to work with the state government",
+      "page": 1
+     },
+     {
+      "code": "202310041905383211",
+      "date": "05-10-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202310041905383211.pdf",
+      "quote": "As per evaluation of the Tender following companies have been qualified and are empaneled with Government Maharashtra for a period of five years i.e. from 20th September 2023 to 19th September 2028",
+      "page": 1
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "title": "Empanelment of Consultants for IT Projects in Government of Maharashtra Extension of empaneled Agencies.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202304241816282211.pdf",
+      "quote": "The empanelment of IT Consultancy firms vide GR dated 20.3.2018 is hereby extended for a period of 6 months - from 20th March, 2023 till 19th September, 2023 or till finalization of new empanelment whichever is earlier.",
+      "page": 1
+     },
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "title": "Regarding Empanelment of Consultants for IT Projects in Government of Maharashtra.",
+      "url": "https://gr.maharashtra.gov.in/Site/Upload/Government%20Resolutions/English/202103191753279311.pdf",
+      "quote": "Departments need to finalize the Scope of work for consultancy with concurrence of ACS /PS /Secretary of concerned Department",
+      "page": 1
+     }
+    ],
+    "newer": [
+     {
+      "code": "202103191753279311",
+      "date": "19-03-2021",
+      "what_changed": "Amends paragraph 5 point 1 and paragraph 9 points C and D of the 2018-03-20 GR by replacing 'concurrence of DIT' with 'concurrence of ACS/PS/Secretary of concerned Department' and adding a clause on consultant continuation based on monthly/quarterly performance."
+     },
+     {
+      "code": "202304241816282211",
+      "date": "24-04-2023",
+      "what_changed": "Extends the 2018-03-20 empanelment for 6 months from 20-03-2023 to 19-09-2023, stating no change in commercials and other terms & conditions."
+     },
+     {
+      "code": null,
+      "date": null,
+      "what_changed": ""
+     },
+     {
+      "code": "202403051249430211",
+      "date": "05-03-2024",
+      "what_changed": "Clarifies that Departments may change the 'Profile of Personnel' via RFP Change Orders but must not change the 'Years of Experience' mentioned in the GR."
+     },
+     {
+      "code": "202312151508137711",
+      "date": "15-12-2023",
+      "what_changed": "Clarifies that the rates in the referenced GR will be applicable from 20th September 2023."
+     }
+    ]
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",

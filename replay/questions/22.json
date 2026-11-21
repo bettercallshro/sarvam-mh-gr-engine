@@ -48,6 +48,28 @@
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
+   "version": "Baseline",
+   "run": "run 2",
+   "commit": "835367c",
+   "prompt_version": "answer_v2",
+   "format": "ok",
+   "product": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024).",
+    "cited": [],
+    "newer": [],
+    "format_repaired": false
+   },
+   "raw": {
+    "status": "answered",
+    "answer": "No newer GR found in this corpus (covers 2018 to 2024).",
+    "cited": [],
+    "newer": []
+   },
+   "scores": null,
+   "log": "runs/2026-11-21-baseline-run2.jsonl"
+  },
+  {
    "version": "Round 1",
    "run": "run 1",
    "commit": "213c181",
