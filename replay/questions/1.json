@@ -291,7 +291,14 @@
      }
     ]
    },
-   "scores": null,
+   "scores": {
+    "answer": 1,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": "no-newer-GR opener (Q17 precedent)"
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {

@@ -126,7 +126,14 @@
     "cited": [],
     "newer": []
    },
-   "scores": null,
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": "couldn't find, GR exists; abstention"
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {

@@ -137,7 +137,14 @@
      }
     ]
    },
-   "scores": null,
+   "scores": {
+    "answer": 0,
+    "citation": "pass",
+    "latest": "fail",
+    "confident_wrong": "yes",
+    "fully_correct": "no",
+    "note": "misdated the 2019 GR as 2018; wrong conclusion"
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {

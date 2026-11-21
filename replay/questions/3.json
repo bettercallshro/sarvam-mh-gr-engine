@@ -87,7 +87,14 @@
     "cited": [],
     "newer": []
    },
-   "scores": null,
+   "scores": {
+    "answer": 1,
+    "citation": "fail",
+    "latest": "fail",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {

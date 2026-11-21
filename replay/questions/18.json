@@ -133,7 +133,14 @@
      }
     ]
    },
-   "scores": null,
+   "scores": {
+    "answer": 2,
+    "citation": "pass",
+    "latest": "pass",
+    "confident_wrong": "no",
+    "fully_correct": "yes",
+    "note": "old rule first, then the change (run 1 Q15 precedent)"
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {

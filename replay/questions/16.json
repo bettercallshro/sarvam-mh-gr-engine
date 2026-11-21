@@ -91,7 +91,14 @@
    "format": "failed",
    "product": null,
    "raw": null,
-   "scores": null,
+   "scores": {
+    "answer": 0,
+    "citation": "fail",
+    "latest": "n/a",
+    "confident_wrong": "no",
+    "fully_correct": "no",
+    "note": null
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {
