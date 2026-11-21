@@ -38,10 +38,24 @@ The only things set outside the engine:
 
 Every reply is kept in the log as it came back. No question was re-run on its own.
 
-## Automatic counts (not final)
+## Hand scores (confirmed)
 
-From `grengine/compare_runs.py`. These are automatic proxies, not hand scores. The hand
-scores for run 2 are still to be filled in `eval/scores.csv`.
+Scored against the rubric and confirmed row by row (`eval/scores.csv`, run `baseline-run2`).
+
+| | Run 1 | Run 2 |
+|---|---|---|
+| Fully correct | 25 / 37 | 26 / 37 |
+| Confident-wrong | 5 | 1 (Q27) |
+| Answer shown (product) | 32 / 37 | 28 / 37 |
+
+13 of 37 questions changed fully-correct status between baseline runs 1 and 2:
+- fully correct in run 1 only: Q1, 11, 16, 21, 24, 30;
+- fully correct in run 2 only: Q2, 10, 17, 18, 20, 28, 33.
+
+## Automatic counts (proxies)
+
+From `grengine/compare_runs.py`. These are automatic proxies, not hand scores; the hand
+scores are above.
 
 | Measure | Run 1 | Run 2 |
 |---|---|---|

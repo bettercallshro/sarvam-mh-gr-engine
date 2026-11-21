@@ -32,11 +32,14 @@ Independent case study, not affiliated with Sarvam.
 Scored on the raw model answer against the rubric below. "Fully correct" means right
 answer, right citation, newest change named, and no confident error.
 
+On the website: Round 0 = baseline, Round 1 = round 1, Round 2 = final; runs A and B = runs 1 and 2.
+
 **37 evaluation questions** (`eval/questions.jsonl`)
 
 | Version | Fully correct | Confident-wrong |
 |---|---|---|
-| Baseline | 25 / 37 | 5 |
+| Baseline, run 1 | 25 / 37 | 5 |
+| Baseline, run 2 | 26 / 37 | 1 |
 | Final, run A | 33 / 37 | 0 |
 | Final, run B | 31 / 37 | 2 |
 
@@ -82,6 +85,7 @@ Per-question scores: [`eval/scores.csv`](eval/scores.csv). Reports for each step
 | Version | Run at | Results added | Prompt | What changed |
 |---|---|---|---|---|
 | Baseline | `2b41877` | `835367c` | answer_v2 | Search, citation graph, full texts in the prompt, JSON mode, checks, one retry for invalid replies. |
+| Baseline, run 2 | `835367c` (same engine code as `2b41877`) | `e6da3ab` (run), `2bd5f0f` (scores) | answer_v2 | Nothing: the same version run again on 21-11-2026. |
 | Round 1 | `213c181`; run B rerun at `e8e3e09` | `1e28879` | answer_v3 | Every newer-GR candidate gets its own full-text block and must be reviewed; the first sentence answers directly. |
 | Final | `767eb54` | `49ee4ae` | answer_v4 | The current rule comes first (checked in code, one retry); a failed reply still gets a shown answer; simpler review format. |
 
@@ -171,7 +175,7 @@ The code is under the MIT licence: see [`LICENSE`](LICENSE).
 
 - Search was tuned while looking at the 37 evaluation questions.
 - One person wrote the questions and scored the answers.
-- Small samples: 37 questions (one baseline run, two final runs) and 15 hold-out
+- Small samples: 37 questions (two runs per version) and 15 hold-out
   questions (two runs per version). Results vary between runs.
 - Nearly half of the citation links (53 of 116) rest only on a shared file number. The
   model has to decide from the text whether a linked GR changes anything.

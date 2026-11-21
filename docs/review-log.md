@@ -14,3 +14,4 @@ The human checks and decisions behind this repo, dated, with the commit or file 
 | 20 Nov 2026 | `eval/holdout_questions.jsonl` | 15 new questions written, answers checked against the corpus text, and locked before any run. Compared the baseline with the final version only, with no changes before or after. |
 | 20 Nov 2026 | `a0b6502`, `eval/scores.csv` | Hold-out answers scored and confirmed row by row; one edge case recorded (Q109: right answer, wrong first line). Reported as it came: a tie on new questions. |
 | 20 Nov 2026 | `runs/partial/` | Two incomplete runs kept, not deleted; both were rerun in full. |
+| 21 Nov 2026 | `e6da3ab`, `fce666b`, `2bd5f0f`, `eval/scores.csv` | Baseline run a second time at the same engine version, so every version and question set has two runs. Reported as it came; scored and confirmed row by row (26 of 37 fully correct, 1 confident-wrong). Decided to stop there: no further runs or fixes. |
