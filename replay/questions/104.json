@@ -134,6 +134,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-old-run1.jsonl"
   },
   {
@@ -203,6 +204,11 @@
     "confident_wrong": "yes",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "other",
+    "status": "fixed",
+    "text": "Led with the 2018 rate and read the yearly rate GRs as amendments of it. Fixed: right in both final runs."
    },
    "log": "runs/2026-11-20-holdout-old-run2.jsonl"
   },
@@ -274,6 +280,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run1.jsonl"
   },
   {
@@ -344,6 +351,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run2.jsonl"
   }
  ]

@@ -30,6 +30,7 @@ Each run has:
 | `product` | the answer as the product shows it, after the checks: `status`, `answer`, `cited`, `newer`, `format_repaired`. `null` where the product showed nothing: format failures in the baseline and round 1, before the final version always showed an answer. |
 | `raw` | the model's own answer, before the checks: `status`, `answer`, `cited`, `newer`. This is what was scored. `null` where the reply was not readable JSON (its text is in the run log). |
 | `scores` | hand scores from `eval/scores.csv`: `answer` (2/1/0), `citation`, `latest`, `confident_wrong`, `fully_correct`, `note`. `null` for round 1, which was not scored, and for runs whose rows in `eval/scores.csv` are not filled in yet. |
+| `why` | for an answer scored not fully correct: `cause` (a fixed code such as `layout`, `reply` or `opener`), `status` (`fixed`, `other_run`, `one_final` or `open`) and `text`, the line explaining what went wrong and whether it was fixed, from `eval/causes.csv`. `null` for answers scored fully correct and for round 1. |
 | `log` | the run log the entry came from |
 
 `cited` items have `code`, `date`, `title`, `url` (official PDF), `quote` and `page`.
@@ -46,5 +47,5 @@ Full prompt texts are left out; they are in the run logs.
 python scripts/export_replay.py
 ```
 
-The script reads the question files, `eval/scores.csv`, `corpus/GRs.json` and the run logs
-above, and rewrites this folder. It makes no API calls.
+The script reads the question files, `eval/scores.csv`, `eval/causes.csv`, `corpus/GRs.json`
+and the run logs above, and rewrites this folder. It makes no API calls.

@@ -57,6 +57,8 @@ Confident-wrong rose (1, 3 → 3, 3): on Q103 and Q113 the baseline said it coul
 Per-question scores: [`eval/scores.csv`](eval/scores.csv). Reports for each step:
 [`eval/results/`](eval/results/).
 
+Why each answer that isn't fully right went wrong, and whether it was fixed: [`eval/causes.csv`](eval/causes.csv).
+
 ## How it works
 
 1. **Search.** BM25 over ~120-word passages of both text files of each GR (original

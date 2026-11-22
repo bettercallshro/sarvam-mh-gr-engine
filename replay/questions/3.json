@@ -66,6 +66,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "notfound",
+    "status": "open",
+    "text": "Said it couldn't find a GR, then described the right ones, and missed the 2021 GR that ended the rule. Still open."
+   },
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -95,6 +100,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "notfound",
+    "status": "open",
+    "text": "Said the question was too vague to find a GR, then named some of the right ones, and missed the latest. Still open."
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {
@@ -111,6 +121,7 @@
     "newer": []
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -152,6 +163,7 @@
     "newer": []
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -273,6 +285,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "other",
+    "status": "open",
+    "text": "Named the 2019 and 2021 changes but not the original 2018 circular. The cloud policy's dates are spread across several GRs. Still open."
+   },
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -320,6 +337,11 @@
     "confident_wrong": "no",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "notfound",
+    "status": "open",
+    "text": "Said it couldn't find a GR on the cloud circular's changes. Still open."
    },
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }

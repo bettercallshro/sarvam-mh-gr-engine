@@ -81,6 +81,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-old-run1.jsonl"
   },
   {
@@ -175,6 +176,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "other",
+    "status": "fixed",
+    "text": "Described the GR from another GR that cites it, but never said the GR itself isn't in the archive. Fixed: right in both final runs."
+   },
    "log": "runs/2026-11-20-holdout-old-run2.jsonl"
   },
   {
@@ -240,6 +246,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run1.jsonl"
   },
   {
@@ -288,6 +295,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run2.jsonl"
   }
  ]

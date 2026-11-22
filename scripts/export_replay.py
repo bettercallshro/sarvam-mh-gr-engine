@@ -4,7 +4,7 @@ Usage (from the repository root):
     python scripts/export_replay.py [--out replay]
 
 Reads eval/questions.jsonl, eval/holdout_questions.jsonl, eval/scores.csv,
-corpus/GRs.json and the run logs listed in RUNS. Writes:
+eval/causes.csv, corpus/GRs.json and the run logs listed in RUNS. Writes:
     <out>/index.json              one entry per question (52)
     <out>/questions/<id>.json     every run of that question
 Full prompt texts are left out (they are in the run logs).
@@ -57,6 +57,15 @@ def load_scores():
                 "fully_correct": r["fully_correct"],
                 "note": r["note"] or None,
             }
+    return out
+
+
+def load_causes():
+    """(run, question_id) -> {"cause", "status", "text"} for each answer that isn't fully correct."""
+    out = {}
+    with (ROOT / "eval/causes.csv").open(encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            out[(r["run"], int(r["question_id"]))] = {"cause": r["cause"], "status": r["status"], "text": r["why"]}
     return out
 
 
@@ -113,7 +122,7 @@ def main(argv=None):
     out_dir = ROOT / args.out
     (out_dir / "questions").mkdir(parents=True, exist_ok=True)
 
-    meta, scores = load_meta(), load_scores()
+    meta, scores, causes = load_meta(), load_scores(), load_causes()
     questions = [("main", q) for q in read_jsonl("eval/questions.jsonl")] + \
                 [("holdout", q) for q in read_jsonl("eval/holdout_questions.jsonl")]
 
@@ -133,6 +142,7 @@ def main(argv=None):
                 "product": answer_block(r.get("answer"), meta, True),
                 "raw": answer_block(r.get("raw_answer"), meta, False),
                 "scores": scores.get((score_label, r["id"])) if score_label else None,
+                "why": causes.get((score_label, r["id"])) if score_label else None,
                 "log": path,
             })
 

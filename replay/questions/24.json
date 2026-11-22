@@ -117,6 +117,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -134,6 +135,11 @@
     "confident_wrong": "no",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "reply",
+    "status": "one_final",
+    "text": "The reply came back broken, with no answer. Right in one final run, not the other."
    },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
@@ -206,6 +212,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -293,6 +300,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -370,6 +378,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -446,6 +455,11 @@
     "confident_wrong": "no",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "yes",
+    "status": "other_run",
+    "text": "Opened \"Yes\" to \"did it replace?\", then said it amended, not replaced. Right in the other run."
    },
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }

@@ -100,6 +100,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-old-run1.jsonl"
   },
   {
@@ -182,6 +183,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-old-run2.jsonl"
   },
   {
@@ -293,6 +295,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run1.jsonl"
   },
   {
@@ -370,6 +373,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run2.jsonl"
   }
  ]

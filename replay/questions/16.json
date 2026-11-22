@@ -81,6 +81,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -98,6 +99,11 @@
     "confident_wrong": "no",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "reply",
+    "status": "fixed",
+    "text": "The reply came back broken, with no answer. Fixed: right in both final runs."
    },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
@@ -208,6 +214,7 @@
     "newer": []
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -300,6 +307,7 @@
     "newer": []
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -416,6 +424,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -501,6 +510,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }
  ]
