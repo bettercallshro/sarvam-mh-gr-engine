@@ -146,6 +146,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "unlinked",
+    "status": "open",
+    "text": "Gave the 2020 date first, the 2023 change later. The 2023 order doesn't name the GR it changes. Still open."
+   },
    "log": "runs/2026-11-20-holdout-old-run1.jsonl"
   },
   {
@@ -185,6 +190,11 @@
     "confident_wrong": "yes",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "unlinked",
+    "status": "open",
+    "text": "Gave the 2020 date as today's rule. The 2023 order that changed it doesn't name the GR it changes. Still open."
    },
    "log": "runs/2026-11-20-holdout-old-run2.jsonl"
   },
@@ -250,6 +260,11 @@
     "confident_wrong": "yes",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "unlinked",
+    "status": "open",
+    "text": "Gave the 2020 date as today's rule. The 2023 order that changed it doesn't name the GR it changes, so the fix never saw it. Still open."
    },
    "log": "runs/2026-11-20-holdout-final-run1.jsonl"
   },
@@ -327,6 +342,11 @@
     "confident_wrong": "yes",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "unlinked",
+    "status": "open",
+    "text": "Gave the 2020 date as today's rule. The 2023 order that changed it doesn't name the GR it changes. Still open."
    },
    "log": "runs/2026-11-20-holdout-final-run2.jsonl"
   }

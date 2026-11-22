@@ -41,6 +41,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "reply",
+    "status": "fixed",
+    "text": "The reply came back empty (cut off at the length limit). Fixed: right in both final runs."
+   },
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -145,6 +150,11 @@
     "fully_correct": "no",
     "note": "misdated the 2019 GR as 2018; wrong conclusion"
    },
+   "why": {
+    "cause": "other",
+    "status": "fixed",
+    "text": "Misdated the 2019 GR as 2018, so it named the wrong university as the latest, with confidence. Fixed: right in both final runs."
+   },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {
@@ -242,6 +252,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -322,6 +333,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -416,6 +428,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -520,6 +533,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }
  ]

@@ -105,6 +105,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -133,6 +134,11 @@
     "confident_wrong": "no",
     "fully_correct": "no",
     "note": "couldn't find, GR exists; abstention"
+   },
+   "why": {
+    "cause": "notfound",
+    "status": "fixed",
+    "text": "Said it couldn't find a GR; the Fintech addendum is in the archive. Fixed: right in both final runs."
    },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
@@ -173,6 +179,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -243,6 +250,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -308,6 +316,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -402,6 +411,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }
  ]

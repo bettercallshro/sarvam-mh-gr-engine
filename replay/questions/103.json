@@ -52,6 +52,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "unlinked",
+    "status": "one_final",
+    "text": "Said it couldn't find the current rule and described the 2018 one. The 2022 GR that changed it doesn't name the 2018 one. Right in one final run, not the other."
+   },
    "log": "runs/2026-11-20-holdout-old-run1.jsonl"
   },
   {
@@ -80,6 +85,11 @@
     "confident_wrong": "no",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "unlinked",
+    "status": "one_final",
+    "text": "Said it couldn't find the current rule and described the 2018 one. The 2022 GR that changed it doesn't name the 2018 one. Right in one final run, not the other."
    },
    "log": "runs/2026-11-20-holdout-old-run2.jsonl"
   },
@@ -163,6 +173,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run1.jsonl"
   },
   {
@@ -210,6 +221,11 @@
     "confident_wrong": "yes",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "unlinked",
+    "status": "other_run",
+    "text": "Gave the 2018 hard-copy rule as today's. The 2022 GR that changed it doesn't name the 2018 one. Right in the other run."
    },
    "log": "runs/2026-11-20-holdout-final-run2.jsonl"
   }

@@ -84,6 +84,11 @@
     "fully_correct": "no",
     "note": "special case: right answer, invented source"
    },
+   "why": {
+    "cause": "madeup",
+    "status": "fixed",
+    "text": "The answer was right, but it cited a GR number that doesn't exist. My checks drop it before an officer sees it. Fixed: right in both final runs."
+   },
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -161,6 +166,7 @@
     "fully_correct": "yes",
     "note": "mistyped code, not invented"
    },
+   "why": null,
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {
@@ -248,6 +254,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -318,6 +325,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -395,6 +403,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -472,6 +481,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }
  ]

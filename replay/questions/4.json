@@ -85,6 +85,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "samedate",
+    "status": "open",
+    "text": "The question's date belongs to a different GR (a Setu Kendra order). It never named the cloud policy that was meant. Still open."
+   },
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -102,6 +107,11 @@
     "confident_wrong": "no",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "reply",
+    "status": "open",
+    "text": "The reply came back broken, with no answer. Round 2 always shows an answer, but this question still fails on its dates. Still open."
    },
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
@@ -198,6 +208,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -261,6 +272,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -373,6 +385,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "samedate",
+    "status": "open",
+    "text": "Said no newer GR changed it, then named one, and never cited the cloud policy itself. The question's date belongs to a different GR. Still open."
+   },
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -484,6 +501,11 @@
     "confident_wrong": "yes",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "samedate",
+    "status": "open",
+    "text": "Took a Setu Kendra GR with the same date as the cloud policy, and called the policy still in force. Still open."
    },
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }

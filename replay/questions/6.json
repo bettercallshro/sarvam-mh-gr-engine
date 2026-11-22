@@ -64,6 +64,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-baseline.jsonl"
   },
   {
@@ -96,6 +97,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-21-baseline-run2.jsonl"
   },
   {
@@ -166,6 +168,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run1.jsonl"
   },
   {
@@ -219,6 +222,7 @@
     ]
    },
    "scores": null,
+   "why": null,
    "log": "runs/2026-11-18-v3-run2-2.jsonl"
   },
   {
@@ -267,6 +271,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-18-v4-run1-2.jsonl"
   },
   {
@@ -343,6 +348,11 @@
     "confident_wrong": "yes",
     "fully_correct": "no",
     "note": null
+   },
+   "why": {
+    "cause": "splitdate",
+    "status": "other_run",
+    "text": "Said a 2021 GR amended a 2019 one. It doesn't: a date split across two lines in the translation made a false link. Right in the other run."
    },
    "log": "runs/2026-11-18-v4-run2.jsonl"
   }

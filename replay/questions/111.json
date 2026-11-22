@@ -34,6 +34,11 @@
     "fully_correct": "no",
     "note": null
    },
+   "why": {
+    "cause": "reply",
+    "status": "fixed",
+    "text": "A control question. The reply came back empty. Fixed: right in both final runs."
+   },
    "log": "runs/2026-11-20-holdout-old-run1.jsonl"
   },
   {
@@ -82,6 +87,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-old-run2.jsonl"
   },
   {
@@ -130,6 +136,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run1.jsonl"
   },
   {
@@ -178,6 +185,7 @@
     "fully_correct": "yes",
     "note": null
    },
+   "why": null,
    "log": "runs/2026-11-20-holdout-final-run2.jsonl"
   }
  ]

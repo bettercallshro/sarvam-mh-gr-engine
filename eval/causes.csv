@@ -1,0 +1,56 @@
+run,question_id,cause,status,why
+baseline,2,layout,fixed,"Gave the old deadline. The 2019 GR that moved it was found, but shown to the model only as a one-line note, and skipped. Fixed: right in both final runs."
+baseline,3,notfound,open,"Said it couldn't find a GR, then described the right ones, and missed the 2021 GR that ended the rule. Still open."
+baseline,4,samedate,open,The question's date belongs to a different GR (a Setu Kendra order). It never named the cloud policy that was meant. Still open.
+baseline,5,yes,fixed,"Opened ""Yes, departments can still buy"", which is wrong, then contradicted itself. Search ranked the 2021 GR fifth. Fixed: right in both final runs."
+baseline,10,reply,fixed,The reply came back empty. Fixed: right in both final runs.
+baseline,17,opener,fixed,"The facts were right, but it opened with ""no newer GR"" instead of answering the question. Fixed: right in both final runs."
+baseline,18,layout,fixed,"Gave the old approver. The 2021 correction was found, but shown to the model only as a one-line note, and skipped. Fixed: right in both final runs."
+baseline,20,madeup,fixed,"The answer was right, but it cited a GR number that doesn't exist. My checks drop it before an officer sees it. Fixed: right in both final runs."
+baseline,22,opener,one_final,"Only said ""no newer GR""; never said whether a benefit changed. Right in one final run, not the other."
+baseline,27,reply,fixed,The reply came back empty (cut off at the length limit). Fixed: right in both final runs.
+baseline,28,layout,fixed,"Gave the old groups. The correction of 24 Feb 2020 was found, but shown to the model only as a one-line note, and skipped. Fixed: right in both final runs."
+baseline,33,notfound,fixed,"A control question. Said it couldn't find a GR, then named the right one; it mixed up ""no newer GR"" with ""no GR"". Fixed: right in both final runs."
+baseline-run2,1,opener,fixed,"Opened with ""no newer GR"", never said plainly the circular isn't current, and missed one of the changes. Fixed: right in both final runs."
+baseline-run2,3,notfound,open,"Said the question was too vague to find a GR, then named some of the right ones, and missed the latest. Still open."
+baseline-run2,4,reply,open,"The reply came back broken, with no answer. Round 2 always shows an answer, but this question still fails on its dates. Still open."
+baseline-run2,5,reply,fixed,"The reply came back broken, with no answer. Fixed: right in both final runs."
+baseline-run2,11,opener,fixed,"Opened with ""no newer GR found"", then said the GR is stayed and not in force. Fixed: right in both final runs."
+baseline-run2,16,reply,fixed,"The reply came back broken, with no answer. Fixed: right in both final runs."
+baseline-run2,21,notfound,fixed,Said it couldn't find a GR; the Fintech addendum is in the archive. Fixed: right in both final runs.
+baseline-run2,22,opener,one_final,"Only said ""no newer GR""; never said whether a benefit changed. Right in one final run, not the other."
+baseline-run2,24,reply,one_final,"The reply came back broken, with no answer. Right in one final run, not the other."
+baseline-run2,27,other,fixed,"Misdated the 2019 GR as 2018, so it named the wrong university as the latest, with confidence. Fixed: right in both final runs."
+baseline-run2,30,reply,fixed,"A control question. The reply came back broken, with no answer. Fixed: right in both final runs."
+final-A,3,other,open,Named the 2019 and 2021 changes but not the original 2018 circular. The cloud policy's dates are spread across several GRs. Still open.
+final-A,4,samedate,open,"Said no newer GR changed it, then named one, and never cited the cloud policy itself. The question's date belongs to a different GR. Still open."
+final-A,14,other,other_run,"The date was right, but it credited the wrong GR for it (05-10-2023, not the 15-12-2023 clarification). Right in the other run."
+final-A,22,notfound,other_run,"Said it couldn't find a GR. The corrigendum was the top result, in full, but its title doesn't say it's a correction. Right in the other run."
+final-B,3,notfound,open,Said it couldn't find a GR on the cloud circular's changes. Still open.
+final-B,4,samedate,open,"Took a Setu Kendra GR with the same date as the cloud policy, and called the policy still in force. Still open."
+final-B,6,splitdate,other_run,Said a 2021 GR amended a 2019 one. It doesn't: a date split across two lines in the translation made a false link. Right in the other run.
+final-B,12,yes,other_run,"Opened ""Yes, it will be recovered"", then said the order is on hold. Right in the other run."
+final-B,24,yes,other_run,"Opened ""Yes"" to ""did it replace?"", then said it amended, not replaced. Right in the other run."
+final-B,36,other,other_run,"Rightly said the GR isn't in the archive, but didn't name the closest real document. Right in the other run."
+holdout-old-run1,101,oldfirst,fixed,Opened with the 2019 holder of the post; the 2021 change came in the second sentence. Fixed: right in both final runs.
+holdout-old-run1,103,unlinked,one_final,"Said it couldn't find the current rule and described the 2018 one. The 2022 GR that changed it doesn't name the 2018 one. Right in one final run, not the other."
+holdout-old-run1,105,unlinked,open,"Gave the 2020 date first, the 2023 change later. The 2023 order doesn't name the GR it changes. Still open."
+holdout-old-run1,107,yes,open,"Said ""Yes"" from the 2018 list; the empanelment ended in 2021. Still open."
+holdout-old-run1,111,reply,fixed,A control question. The reply came back empty. Fixed: right in both final runs.
+holdout-old-run2,103,unlinked,one_final,"Said it couldn't find the current rule and described the 2018 one. The 2022 GR that changed it doesn't name the 2018 one. Right in one final run, not the other."
+holdout-old-run2,104,other,fixed,Led with the 2018 rate and read the yearly rate GRs as amendments of it. Fixed: right in both final runs.
+holdout-old-run2,105,unlinked,open,Gave the 2020 date as today's rule. The 2023 order that changed it doesn't name the GR it changes. Still open.
+holdout-old-run2,107,yes,open,"Said ""Yes"" from the 2018 list; the empanelment ended in 2021. Still open."
+holdout-old-run2,113,samedate,open,"Spotted the other GR with that date, but never said the one asked for isn't in the archive. Still open."
+holdout-old-run2,114,other,fixed,"Described the GR from another GR that cites it, but never said the GR itself isn't in the archive. Fixed: right in both final runs."
+holdout-old-run2,115,oldfirst,fixed,Listed the old members first; the right person came last. Fixed: right in both final runs.
+holdout-final-run1,105,unlinked,open,"Gave the 2020 date as today's rule. The 2023 order that changed it doesn't name the GR it changes, so the fix never saw it. Still open."
+holdout-final-run1,107,yes,open,"Opened ""Yes, it is empanelled"", then said the empanelment ended. Still open."
+holdout-final-run1,109,opener,open,"The facts were right, but the first line said ""no newer GR changed it""; the real answer came second. Still open."
+holdout-final-run1,113,samedate,open,"The 2018 policy asked for isn't in the archive. It took a different GR from that date, and called a 2019 GR the current rule. Still open."
+holdout-final-run2,102,opener,other_run,"Opened ""no newer GR changes it"", then named the final list. Right in the other run."
+holdout-final-run2,103,unlinked,other_run,Gave the 2018 hard-copy rule as today's. The 2022 GR that changed it doesn't name the 2018 one. Right in the other run.
+holdout-final-run2,105,unlinked,open,Gave the 2020 date as today's rule. The 2023 order that changed it doesn't name the GR it changes. Still open.
+holdout-final-run2,107,yes,open,"Opened ""Yes, as of 2018 it was"", then said clearly that it ended. Still open."
+holdout-final-run2,109,opener,open,"The facts were right, but the first line said ""no newer GR changed it""; the real answer came second. Still open."
+holdout-final-run2,113,samedate,open,The 2018 policy asked for isn't in the archive. It treated a different GR from that date as the one asked for. Still open.
