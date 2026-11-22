@@ -52,6 +52,7 @@ the fixes, with no changes before or after. Baseline and final versions, two run
 | Final | 11, 9 | 3, 3 |
 
 The fixes held where an amending GR cites the one it changes, not where it doesn't.
+Confident-wrong rose (1, 3 → 3, 3): on Q103 and Q113 the baseline said it couldn't find a GR and the final version answered, wrong in at least one run.
 
 Per-question scores: [`eval/scores.csv`](eval/scores.csv). Reports for each step:
 [`eval/results/`](eval/results/).
@@ -176,7 +177,7 @@ The code is under the MIT licence: see [`LICENSE`](LICENSE).
 - Search was tuned while looking at the 37 evaluation questions.
 - One person wrote the questions and scored the answers.
 - Small samples: 37 questions (two runs per version) and 15 hold-out
-  questions (two runs per version). Results vary between runs.
+  questions (two runs per version). Results vary between runs: 13 of 37 changed between the two baseline runs, 6 of 37 between the two final runs.
 - Nearly half of the citation links (53 of 116) rest only on a shared file number. The
   model has to decide from the text whether a linked GR changes anything.
 - The corpus covers IT-department GRs from 2018 to 2024 only. A GR missing from it is
